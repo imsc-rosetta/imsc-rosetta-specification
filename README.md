@@ -9,8 +9,6 @@ Rosetta-imsc has been developed to represent the abilities of various existing p
 
 To this end, the use of TTML constructs is highly restricted so that the exact form of the file may be specified in full without ambiguity.
 
-All styling is referenced, and style names used are fixed.  Many styles are constant.
-
 ## why Rosetta?
 The development of this file format is a collaboration between several broadcasters and suppliers; so the name is not intended to connect the specification with any specific organisation.
 
@@ -27,8 +25,17 @@ Each line (`<p>`) may contain zero or more `<span>` elements.  A `<p>` may not c
   
 `<span>` elements may only contain text (i.e. no nesting of spans).
 
+*(Note: for later versions, nested spans may be specifically allowed, but only for text requiring rubies.  In this case, text may only be contained within the leaf spans)*
+
 For archival, Subtitle times (begin and end attributes on `<div>`) must be present, and must not overlap.  `<div>` must appear in presentation order.
 
-(note that the format may be used during subtitle editing, and in this case, begin and end may be absent or invalid whilst the file is being edited).
+*(note that the format may be used during subtitle editing, and in this case, begin and end may be absent or invalid whilst the file is being edited).*
 
+All styling is referencial, and style ids used are fixed.  Many styles are *constant*.  (i.e. you may not put local style anywhere in `<body>`, and all style reference ids used are pre-defined by the specification).
 
+## XML parsing
+To simplify the XML parsing of rosetta-imsc, in general terms the document nodes only contain one child node type.  This enables the use of simple parsers which need not retain the order of different node types, only the order of same node types.  The only nodes where this is not the case are `<tt>` - which must contain exactly one `<head>` and exactly one `<body>` element, and `<head>` - which must contain one `<metadata>`, one `<styling>`, one `<layout>` element, in that order.
+
+Namespaces used and associated namespace prefixes are fixed (defined in the spec) and set only on the `<tt>` element, again to simplify parsing and writing - no namspace processing is required, and all files will look similar.  *i.e. ALL elements will always have the same namespace prefix as in other rosetta-imsc files.*
+
+Be aware that certain XML processing could change namespace prefixes, so if you have a process which does this, the output may not be a 'Rosetta-imsc' file until you normalise the file in some way.
