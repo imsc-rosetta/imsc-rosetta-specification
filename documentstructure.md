@@ -29,7 +29,7 @@ The order of elements must not be important
 one or more `<style>` elements only.
 
 ### `<style>`
-`<style>` elements must be represented exactly as found ion the style specification.
+`<style>` elements must be represented exactly as found in the style specification.
 
 `<style>` elements will not have any content, and should be represented as closed elements, e.g. `<style xml:id="ds_red" tts:color="#FF0000"/>`
 
