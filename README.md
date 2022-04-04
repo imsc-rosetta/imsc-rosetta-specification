@@ -11,6 +11,11 @@ To this end, the use of TTML constructs is highly restricted so that the exact f
 
 All styling is referenced, and style names used are fixed.  Many styles are constant.
 
+## why Rosetta?
+The development of this file format is a collaboration between several broadcasters and suppliers; so the name is not intended to connect the developement with any specific organisation.
+
+The [Rosetta Stone](https://en.wikipedia.org/wiki/Rosetta_Stone) was the key to the interpretation of anchient Egyptian scripts.  Rosetta-imsc is the key to conversion of existing proprietary subtitle formats into a useful archive and manipulatioon format, and indeed to conversion between those existing formats.
+
 ## main points
 Each subtitle is represented as a `<div>`, and there is only one `<div>` per subtitle.
   
