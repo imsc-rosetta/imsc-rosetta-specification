@@ -1,11 +1,11 @@
-# Rosetta-imsc
+# Imsc-Rosetta
 This repo represents the base specification and description of rosetta-imsc - a practical cut down [IMSC1.2](https://www.w3.org/TR/ttml-imsc1.2/) compatible subtitle format
 
-At version 0.0.1, rosetta-imsc will be suitable for horizontal translation subtitles in all languages, with the exception of advanced Japanese (i.e. no rubies yet).
+At version 0.0.1, imsc-rosetta will be suitable for horizontal translation subtitles in all languages, with the exception of advanced Japanese (i.e. no rubies yet).
 
 The general intent is to have a subtitle format which is fully IMSC complient (and so [TTML 2](https://www.w3.org/TR/2018/REC-ttml2-20181108/) complient), whilst being specifically easy to parse, and easy to create, without detailed knowledge of XML and the specs that IMSC/TTML are based on.
 
-Rosetta-imsc has been developed to represent the abilities of various existing proprietary subtitle file formats well, specifically those used in broadcast today, allowing reliable reverible conversion to and from those formats.  It is not necessarily the most efficient format for emission (e.g. although fully IMSC compatible, there are more efficient forms of IMSC for representing subtitles for OTT use).
+Imsc-rosetta has been developed to represent the abilities of various existing proprietary subtitle file formats well, specifically those used in broadcast today, allowing reliable reverible conversion to and from those formats.  It is not necessarily the most efficient format for emission (e.g. although fully IMSC compatible, there are more efficient forms of IMSC for representing subtitles for OTT use).
 
 To this end, the use of TTML constructs is highly restricted so that the exact form of the file may be specified in full without ambiguity.
 
