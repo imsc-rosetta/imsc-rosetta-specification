@@ -94,79 +94,83 @@ For text requiring Rubies, `<span>` may contain other `<span>` elements. In this
 
 
 ## Example document structure
+
+<details><summary>example document</summary>
+ 
 ```
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<tt xmlns="http://www.w3.org/ns/ttml" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:smpte="http://smpte-ra.org/schemas/2052-1/2013/smpte-tt" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:ebutts="urn:ebu:tt:style" xmlns:itts="http://www.w3.org/ns/ttml/profile/imsc1#styling" xmlns:orion="http://orion.ttml.org/imsc" ttp:timeBase="media" ttp:frameRate="25" ttp:frameRateMultiplier="1 1" ttp:cellResolution="30 15" xml:lang="el-GR" xml:space="preserve">
+<tt xmlns="http://www.w3.org/ns/ttml" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:ebutts="urn:ebu:tt:style" xmlns:itts="http://www.w3.org/ns/ttml/profile/imsc1#styling" xmlns:rosetta="https://github.com/imsc-rosetta/specification" ttp:timeBase="media" ttp:cellResolution="30 15" xml:space="preserve" ttp:frameRate="25" ttp:frameRateMultiplier="1 1" xml:lang="el-GR">
 <head>
- <metadata>
-  <rosetta:format>rosetta-imsc</rosetta:format>
-  <rosetta:version>0.0.0</rosetta:version>
-  <ttm:title>Sample</ttm:title>
-  <ttm:desc>Sample Rosetta IMSC file</ttm:desc>
- </metadata>
- <styling>
-  <style xml:id="r_region" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:fontStyle="normal" tts:fontWeight="normal" tts:color="white" tts:fontFamily="proportionalSansSerif" tts:textAlign="center" tts:fontSize="6.667rh" tts:lineHeight="125%" ebutts:linePadding="0.25c" itts:fillLineGap="true"/>
-  <style xml:id="p_font2" tts:fontFamily="proportionalSansSerif" tts:lineHeight="125%" tts:fontSize="80%"/>
-  <style xml:id="s_italic" tts:fontStyle="italic"/>
-  <style xml:id="ds_red" tts:color="#FF0000"/>
-  <style xml:id="ds_yellow" tts:color="#FFFF00"/>
-  <style xml:id="ds_green" tts:color="#00FF00"/>
-  <style xml:id="ds_cyan" tts:color="#00FFFF"/>
-  <style xml:id="ds_blue" tts:color="#0000FF"/>
-  <style xml:id="ds_magenta" tts:color="#FF00FF"/>
-  <style xml:id="ps_boxedblack" tts:backgroundColor="#000000"/>
-  <style xml:id="ds_outlineblack" tts:textOutline="#000000 0.05em"/>
-  <style xml:id="dp_start" tts:textAlign="start"/>
-  <style xml:id="dp_end" tts:textAlign="end"/>
- </styling>
- <layout>
-  <region xml:id="R0" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" style="r_region"/>
-  <region xml:id="R1" tts:origin="10% 10%" tts:extent="80% 66.66%" tts:displayAlign="after" style="r_region"/>
-  <region xml:id="R2" tts:origin="10% 10%" tts:extent="80% 53.33%" tts:displayAlign="after" style="r_region"/>
-  <region xml:id="R3" tts:origin="10% 10%" tts:extent="80% 73.33%" tts:displayAlign="after" style="r_region"/>
-  <region xml:id="R4" tts:origin="10% 10%" tts:extent="80% 60%" tts:displayAlign="after" style="r_region"/>
-  <region xml:id="R5" tts:origin="10% 10%" tts:extent="80% 46.66%" tts:displayAlign="after" style="r_region"/>
-  <region xml:id="R6" tts:origin="10% 43.33%" tts:extent="80% 46.66%" tts:displayAlign="before" style="r_region"/>
-  <region xml:id="R7" tts:origin="10% 36.66%" tts:extent="80% 53.33%" tts:displayAlign="before" style="r_region"/>
-  <region xml:id="R8" tts:origin="10% 30%" tts:extent="80% 60%" tts:displayAlign="before" style="r_region"/>
-  <region xml:id="R9" tts:origin="10% 23.33%" tts:extent="80% 66.66%" tts:displayAlign="before" style="r_region"/>
-  <region xml:id="R10" tts:origin="10% 16.66%" tts:extent="80% 73.33%" tts:displayAlign="before" style="r_region"/>
-  <region xml:id="R11" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="before" style="r_region"/>
- </layout>
+<metadata>
+ <rosetta:format>imsc-rosetta</rosetta:format>
+ <rosetta:version>0.0.0</rosetta:version>
+</metadata>
+<styling>
+ <style xml:id="r_region" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:fontStyle="normal" tts:fontWeight="normal" tts:color="white" tts:fontFamily="proportionalSansSerif" tts:textAlign="center" itts:fillLineGap="true" style="_r_default"/>
+ <style xml:id="s_italic" tts:fontStyle="italic"/>
+ <style xml:id="ds_fg_red" tts:color="#FF0000"/>
+ <style xml:id="ds_fg_yellow" tts:color="#FFFF00"/>
+ <style xml:id="ds_fg_green" tts:color="#00FF00"/>
+ <style xml:id="ds_fg_cyan" tts:color="#00FFFF"/>
+ <style xml:id="ds_fg_blue" tts:color="#0000FF"/>
+ <style xml:id="ds_fg_magenta" tts:color="#FF00FF"/>
+ <style xml:id="ps_bg_boxedblack" tts:backgroundColor="#000000"/>
+ <style xml:id="ds_outlineblack" tts:textOutline="#000000 0.05em"/>
+ <style xml:id="ds_nonered"/>
+ <style xml:id="dp_al_start" tts:textAlign="start"/>
+ <style xml:id="dp_al_end" tts:textAlign="end"/>
+ <style xml:id="p_font2" tts:fontFamily="proportionalSansSerif" tts:lineHeight="125%" tts:fontSize="100%"/>
+ <style xml:id="_d_default"/>
+ <style xml:id="_s_default"/>
+ <style xml:id="_p_default" style="p_font2"/>
+ <style xml:id="_r_default" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c"/>
+</styling>
+<layout>
+ <region xml:id="R0" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" style="r_region"/>
+ <region xml:id="R1" tts:origin="10% 10%" tts:extent="80% 73.3%" tts:displayAlign="after" style="r_region"/>
+ <region xml:id="R2" tts:origin="10% 10%" tts:extent="80% 66.7%" tts:displayAlign="after" style="r_region"/>
+ <region xml:id="R3" tts:origin="10% 10%" tts:extent="80% 60%" tts:displayAlign="after" style="r_region"/>
+ <region xml:id="R4" tts:origin="10% 10%" tts:extent="80% 53.3%" tts:displayAlign="after" style="r_region"/>
+ <region xml:id="R5" tts:origin="10% 10%" tts:extent="80% 46.7%" tts:displayAlign="after" style="r_region"/>
+ <region xml:id="R6" tts:origin="10% 43.3%" tts:extent="80% 46.7%" tts:displayAlign="before" style="r_region"/>
+ <region xml:id="R7" tts:origin="10% 36.7%" tts:extent="80% 53.3%" tts:displayAlign="before" style="r_region"/>
+ <region xml:id="R8" tts:origin="10% 30%" tts:extent="80% 60%" tts:displayAlign="before" style="r_region"/>
+ <region xml:id="R9" tts:origin="10% 23.3%" tts:extent="80% 66.7%" tts:displayAlign="before" style="r_region"/>
+ <region xml:id="R10" tts:origin="10% 16.7%" tts:extent="80% 73.3%" tts:displayAlign="before" style="r_region"/>
+ <region xml:id="R11" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="before" style="r_region"/>
+</layout>
 </head>
 <body>
-<div xml:id="sub0" region="R0" begin="10:00:10.000" end="10:00:10.040" style="ds_outlineblack"><metadata rosetta:comment="comment text"/><p style="p_font2"><span style="ps_boxedblack">First Frame of Video</span></p><p style="p_font2"><span style="ps_boxedblack">FRAME 750</span></p></div>
-<div xml:id="sub1" region="R0" begin="10:00:11.000" end="10:00:12.000" style="ds_outlineblack"><p style="dp_start p_font2"><span style="ps_boxedblack">Αα, Άά, Ββ, Γγ, Δδ, Εε, Έέ, Ζζ, Ηη, Ήή,</span></p></div>
-<div xml:id="sub2" region="R0" begin="10:00:13.000" end="10:00:14.000" style="ds_outlineblack"><p style="p_font2"><span style="ps_boxedblack">Θθ, Ιι, Ίί, Ϊϊ, Κκ, Λλ, Μμ, Νν, Ξξ, Οο,</span></p></div>
-<div xml:id="sub3" region="R0" begin="10:00:15.000" end="10:00:16.000" style="ds_outlineblack"><p style="dp_end p_font2"><span style="ps_boxedblack">Όό, Ππ, Ρρ, Σσ, Ττ, Υυ, Ύύ, Ϋϋ, Φφ, Χχ,</span></p></div>
-<div xml:id="sub4" region="R0" begin="10:00:17.000" end="10:00:18.000" style="ds_outlineblack"><p style="dp_start p_font2"><span style="ps_boxedblack">Ψψ, Ωω, Ώώ, Αα, Άά, Ββ, Γγ, Δδ, Εε, Έέ,</span></p><p style="dp_start p_font2"><span style="ps_boxedblack">Ζζ, Ηη, Ήή, Θθ, Ιι, Ίί, Ϊϊ, Κκ, Λλ, Μμ,</span></p></div>
-<div xml:id="sub5" region="R0" begin="10:00:19.000" end="10:00:20.000" style="ds_outlineblack"><p style="p_font2"><span style="ps_boxedblack">Νν, Ξξ, Οο, Όό, Ππ, Ρρ, Σσ, Ττ, Υυ, Ύύ,</span></p><p style="p_font2"><span style="ps_boxedblack">Ϋϋ, Φφ, Χχ, Ψψ, Ωω, Ώώ, Αα, Άά, Ββ, Γγ,</span></p></div>
-<div xml:id="sub6" region="R0" begin="10:00:21.000" end="10:00:22.000" style="ds_outlineblack"><p style="dp_end p_font2"><span style="ps_boxedblack">! @ # £ % « &amp; » ( ) ; ... : - , + =</span></p><p style="dp_end p_font2"><span style="ps_boxedblack">1 2 3 4 5 6 7 8 9 0 / ? ' ` ² ³</span></p></div>
-<div xml:id="sub7" region="R1" begin="10:00:23.000" end="10:00:24.000" style="ds_outlineblack"><p style="dp_start p_font2"><span style="ds_red ps_boxedblack">Αα, Άά, Ββ, Γγ, Δδ, Εε, Έέ, Ζζ, Ηη, Ήή,</span></p><p style="dp_start p_font2"><span style="ds_green ps_boxedblack">Θθ, Ιι, Ίί, Ϊϊ, Κκ, Λλ, Μμ, Νν, Ξξ, Οο,</span></p></div>
-<div xml:id="sub8" region="R1" begin="10:00:25.000" end="10:00:26.000" style="ds_outlineblack"><p style="p_font2"><span style="ds_yellow ps_boxedblack">Όό, Ππ, Ρρ, Σσ, Ττ, Υυ, Ύύ, Ϋϋ, Φφ, Χχ,</span></p><p style="p_font2"><span style="ds_blue ps_boxedblack">Ψψ, Ωω, Ώώ, Αα, Άά, Ββ, Γγ, Δδ, Εε, Έέ,</span></p></div>
-<div xml:id="sub9" region="R1" begin="10:00:27.000" end="10:00:28.000" style="ds_outlineblack"><p style="dp_end p_font2"><span style="ds_magenta ps_boxedblack">Ζζ, Ηη, Ήή, Θθ, Ιι, Ίί, Ϊϊ, Κκ, Λλ, Μμ,</span></p><p style="dp_end p_font2"><span style="ds_cyan ps_boxedblack">Νν, Ξξ, Οο, Όό, Ππ, Ρρ, Σσ, Ττ, Υυ, Ύύ,</span></p></div>
-<div xml:id="sub10" region="R2" begin="10:00:29.000" end="10:00:30.000" style="ds_outlineblack"><p style="dp_start p_font2"><span style="s_italic ps_boxedblack">Αα, Άά, Ββ, Γγ, Δδ, Εε, Έέ, Ζζ, Ηη, Ήή,</span></p></div>
-<div xml:id="sub11" region="R2" begin="10:00:31.000" end="10:00:32.000" style="ds_outlineblack"><p style="p_font2"><span style="s_italic ps_boxedblack">Θθ, Ιι, Ίί, Ϊϊ, Κκ, Λλ, Μμ, Νν, Ξξ, Οο,</span></p></div>
-<div xml:id="sub12" region="R2" begin="10:00:33.000" end="10:00:34.000" style="ds_outlineblack"><p style="dp_end p_font2"><span style="s_italic ps_boxedblack">Όό, Ππ, Ρρ, Σσ, Ττ, Υυ, Ύύ, Ϋϋ, Φφ, Χχ,</span></p></div>
-<div xml:id="sub13" region="R0" begin="10:00:35.000" end="10:00:36.000" style="ds_outlineblack"><p style="p_font2"><span style="ps_boxedblack">Αα, Άά, Ββ, Γγ, Δδ,</span></p></div>
-<div xml:id="sub14" region="R3" begin="10:00:37.000" end="10:00:38.000" style="ds_outlineblack"><p style="p_font2"><span style="ps_boxedblack">Εε, Έέ, Ζζ, Ηη, Ήή,</span></p></div>
-<div xml:id="sub15" region="R1" begin="10:00:39.000" end="10:00:40.000" style="ds_outlineblack"><p style="p_font2"><span style="ps_boxedblack">Θθ, Ιι, Ίί, Ϊϊ, Κκ,</span></p></div>
-<div xml:id="sub16" region="R4" begin="10:00:41.000" end="10:00:42.000" style="ds_outlineblack"><p style="p_font2"><span style="ps_boxedblack">Λλ, Μμ, Νν, Ξξ, Οο,</span></p></div>
-<div xml:id="sub17" region="R2" begin="10:00:43.000" end="10:00:44.000" style="ds_outlineblack"><p style="p_font2"><span style="ps_boxedblack">Όό, Ππ, Ρρ, Σσ, Ττ,</span></p></div>
-<div xml:id="sub18" region="R5" begin="10:00:45.040" end="10:00:46.000" style="ds_outlineblack"><p style="p_font2"><span style="ps_boxedblack">Υυ, Ύύ, Ϋϋ, Φφ, Χχ,</span></p></div>
-<div xml:id="sub19" region="R6" begin="10:00:47.000" end="10:00:48.000" style="ds_outlineblack"><p style="p_font2"><span style="ps_boxedblack">Ψψ, Ωω, Ώώ, Αα, Άά,</span></p></div>
-<div xml:id="sub20" region="R7" begin="10:00:49.040" end="10:00:50.000" style="ds_outlineblack"><p style="p_font2"><span style="ps_boxedblack">Ββ, Γγ, Δδ, Εε, Έέ,</span></p></div>
-<div xml:id="sub21" region="R8" begin="10:00:51.000" end="10:00:52.000" style="ds_outlineblack"><p style="p_font2"><span style="ps_boxedblack">Ζζ, Ηη, Ήή, Θθ, Ιι,</span></p></div>
-<div xml:id="sub22" region="R9" begin="10:00:53.000" end="10:00:54.000" style="ds_outlineblack"><p style="p_font2"><span style="ps_boxedblack">Ίί, Ϊϊ, Κκ, Λλ, Μμ,</span></p></div>
-<div xml:id="sub23" region="R10" begin="10:00:55.000" end="10:00:56.000" style="ds_outlineblack"><p style="p_font2"><span style="ps_boxedblack">Νν, Ξξ, Οο, Όό, Ππ,</span></p></div>
-<div xml:id="sub24" region="R11" begin="10:00:57.000" end="10:00:58.000" style="ds_outlineblack"><p style="p_font2"><span style="ps_boxedblack">Ρρ, Σσ, Ττ, Υυ, Ύύ,</span></p></div>
-<div xml:id="sub25" region="R11" begin="10:00:59.000" end="10:01:00.000" style="ds_outlineblack"><p style="dp_start p_font2"><span style="ps_boxedblack">Ζζ, Ηη, Ήή, Θθ, Ιι, Ίί, Ϊϊ, Κκ, Λλ, Μμ,</span></p><p style="dp_start p_font2"><span style="ps_boxedblack">Νν, Ξξ, Οο, Όό, Ππ, Ρρ, Σσ, Ττ, Υυ, Ύύ,</span></p></div>
-<div xml:id="sub26" region="R11" begin="10:01:00.960" end="10:01:01.960" style="ds_outlineblack"><p style="p_font2"><span style="ps_boxedblack">Όό, Ππ, Ρρ, Σσ, Ττ, Υυ, Ύύ, Ϋϋ, Φφ, Χχ,</span></p><p style="p_font2"><span style="ps_boxedblack">Ψψ, Ωω, Ώώ, Αα, Άά, Ββ, Γγ, Δδ, Εε, Έέ,</span></p></div>
-<div xml:id="sub27" region="R11" begin="10:01:03.040" end="10:01:04.000" style="ds_outlineblack"><p style="dp_end p_font2"><span style="ps_boxedblack">Αα, Άά, Ββ, Γγ, Δδ, Εε, Έέ, Ζζ, Ηη, Ήή,</span></p><p style="dp_end p_font2"><span style="ps_boxedblack">Θθ, Ιι, Ίί, Ϊϊ, Κκ, Λλ, Μμ, Νν, Ξξ, Οο,</span></p></div>
+<div xml:id="sub0" region="R0" begin="01:00:03.600" end="01:00:07.640" style="ds_outlineblack"><metadata rosetta:comment="this is a comment test a cr"/><p style="p_font2"><span style="ps_bg_boxedblack">First Frame of active video </span></p></div>
+<div xml:id="1" region="R0" begin="01:00:07.760" end="01:00:11.760"><p style="p_font2"><span>1 line </span><span style="ds_nonered">  Center</span><span> Bottom</span></p></div>
+<div xml:id="2" region="R0" begin="01:00:11.880" end="01:00:15.880" style="dp_al_start"><p style="p_font2"><span>1 line left  bottom</span></p></div>
+<div xml:id="3" region="R0" begin="01:00:16.000" end="01:00:20.000" style="dp_al_end"><p style="p_font2"><span>1 line right bottom</span></p></div>
+<div xml:id="4" region="R0" begin="01:00:20.120" end="01:00:24.120"><p style="p_font2"><span>two  line </span></p><p style="p_font2"><span>center bottom</span></p></div>
+<div xml:id="5" region="R0" begin="01:00:24.240" end="01:00:28.240" style="dp_al_start"><p style="p_font2"><span>to lines</span></p><p style="p_font2"><span>left bottom</span></p></div>
+<div xml:id="6" region="R0" begin="01:00:28.360" end="01:00:32.360" style="dp_al_end"><p style="p_font2"><span>two lines</span></p><p style="p_font2"><span>right bottom</span></p></div>
+<div xml:id="7" region="R0" begin="01:00:32.480" end="01:00:36.480"><p style="p_font2"><span>row 11</span></p></div>
+<div xml:id="8" region="R1" begin="01:00:36.640" end="01:00:40.640"><p style="p_font2"><span>row 10</span></p></div>
+<div xml:id="9" region="R2" begin="01:00:40.760" end="01:00:44.760"><p style="p_font2"><span>row 9</span></p></div>
+<div xml:id="10" region="R3" begin="01:00:44.880" end="01:00:48.880"><p style="p_font2"><span>row 8</span></p></div>
+<div xml:id="11" region="R4" begin="01:00:49.000" end="01:00:53.000"><p style="p_font2"><span>row 7</span></p></div>
+<div xml:id="12" region="R5" begin="01:00:53.120" end="01:00:57.120"><p style="p_font2"><span>row 6</span></p></div>
+<div xml:id="13" region="R6" begin="01:00:57.240" end="01:01:01.240"><p style="p_font2"><span>row 5</span></p></div>
+<div xml:id="14" region="R7" begin="01:01:01.360" end="01:01:05.360"><p style="p_font2"><span>row 4</span></p></div>
+<div xml:id="15" region="R8" begin="01:01:05.480" end="01:01:09.480"><p style="p_font2"><span>row 3</span></p></div>
+<div xml:id="16" region="R9" begin="01:01:09.640" end="01:01:13.640"><p style="p_font2"><span>row 2</span></p></div>
+<div xml:id="17" region="R10" begin="01:01:13.760" end="01:01:17.760"><p style="p_font2"><span>row 1</span></p></div>
+<div xml:id="18" region="R11" begin="01:01:17.880" end="01:01:21.880"><p style="p_font2"><span>row 0</span></p></div>
+<div xml:id="19" region="R11" begin="01:01:22.000" end="01:01:26.000"><p style="p_font2"><span>top center</span></p></div>
+<div xml:id="20" region="R11" begin="01:01:26.120" end="01:01:30.120" style="dp_al_start"><p style="p_font2"><span>top left</span></p></div>
+<div xml:id="21" region="R11" begin="01:01:30.240" end="01:01:34.240" style="dp_al_end"><p style="p_font2"><span>top right</span></p></div>
+<div xml:id="22" region="R0" begin="01:01:34.360" end="01:01:38.360"><p style="dp_al_start p_font2"><span>left</span></p><p style="p_font2"><span>center</span></p><p style="dp_al_end p_font2"><span>right</span></p></div>
+<div xml:id="23" region="R0" begin="01:01:38.520" end="01:01:42.520"><p style="p_font2"><span>normal</span><span style="s_italic"> italic</span><span> normal</span></p></div>
+<div xml:id="24" region="R0" begin="01:01:42.640" end="01:01:46.640"><p style="p_font2"><span style="ds_fg_red">red </span><span style="ds_fg_yellow">yellow </span><span style="ds_fg_green">green </span><span style="ds_fg_cyan">cyan </span><span style="ds_fg_blue">blue </span><span style="ds_fg_magenta">magenta</span></p></div>
+<div xml:id="25" region="R11" begin="01:01:46.760" end="01:01:50.760"><p style="p_font2"><span>Two lines </span></p><p style="p_font2"><span>top center</span></p></div>
 </body>
 </tt>
 ```
-
+</details>
 
 
 
