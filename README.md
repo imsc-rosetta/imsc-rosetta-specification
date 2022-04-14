@@ -3,7 +3,7 @@ This repo represents the base specification and description of rosetta-imsc - a 
 
 At version 0.0.1, imsc-rosetta will be suitable for horizontal translation subtitles in all languages, with the exception of advanced Japanese (i.e. no rubies yet).
 
-The general intent is to have a subtitle format which is fully IMSC complient (and so [TTML 2](https://www.w3.org/TR/2018/REC-ttml2-20181108/) complient), whilst being specifically easy to parse, and easy to create, without detailed knowledge of XML and the specs that IMSC/TTML are based on.
+The general intent is to have a subtitle format which is fully IMSC compliant (and so [TTML 2](https://www.w3.org/TR/2018/REC-ttml2-20181108/) compliant), whilst being specifically easy to parse, and easy to create, without detailed knowledge of XML and the specs that IMSC/TTML are based on.
 
 Imsc-rosetta has been developed to represent the abilities of various existing proprietary subtitle file formats well, specifically those used in broadcast today, allowing reliable reversible conversion to and from those formats.  It is not necessarily the most efficient format for emission (e.g. although fully IMSC compatible, there are more efficient forms of IMSC for representing subtitles for OTT use).
 
@@ -12,7 +12,7 @@ To this end, the use of TTML constructs is highly restricted so that the exact f
 ## why Rosetta?
 The development of this file format is a collaboration between several broadcasters and suppliers; so the name is not intended to connect the specification with any specific organisation.
 
-The [Rosetta Stone](https://en.wikipedia.org/wiki/Rosetta_Stone) was the key to the interpretation of anchient Egyptian scripts.  Rosetta-imsc is the key to conversion of existing proprietary subtitle formats into a useful archive and manipulatioon format, and indeed the key to conversion between those existing formats.
+The [Rosetta Stone](https://en.wikipedia.org/wiki/Rosetta_Stone) was the key to the interpretation of ancient Egyptian scripts.  Rosetta-imsc is the key to conversion of existing proprietary subtitle formats into a useful archive and manipulation format, and indeed the key to conversion between those existing formats.
 
 ## main points
 Each *subtitle* is represented as a `<div>`, and there is only one `<div>` per subtitle.
@@ -31,11 +31,11 @@ For archival, Subtitle times (begin and end attributes on `<div>`) must be prese
 
 *(note that the format may be used during subtitle editing, and in this case, begin and end may be absent or invalid whilst the file is being edited).*
 
-All styling is referencial, and style ids used are fixed.  Many styles are *constant*.  (i.e. you may not put local style anywhere in `<body>`, and all style reference ids used are pre-defined by the specification).
+All styling is referential, and style ids used are fixed.  Many styles are *constant*.  (i.e. you may not put local style anywhere in `<body>`, and all style reference ids used are pre-defined by the specification).
 
 ## XML parsing
 To simplify the XML parsing of rosetta-imsc, in general terms the document nodes only contain one child node type.  This enables the use of simple parsers which need not retain the order of different node types, only the order of same node types.  The only nodes where this is not the case are `<tt>` - which must contain exactly one `<head>` and exactly one `<body>` element, and `<head>` - which must contain one `<metadata>`, one `<styling>`, one `<layout>` element, in that order.
 
-Namespaces used and associated namespace prefixes are fixed (defined in the spec) and set only on the `<tt>` element, again to simplify parsing and writing - no namspace processing is required, and all files will look similar.  *i.e. ALL elements will always have the same namespace prefix as in other rosetta-imsc files.*
+Namespaces used and associated namespace prefixes are fixed (defined in the spec) and set only on the `<tt>` element, again to simplify parsing and writing - no namespace processing is required, and all files will look similar.  *i.e. ALL elements will always have the same namespace prefix as in other rosetta-imsc files.*
 
 Be aware that certain XML processing could change namespace prefixes, so if you have a process which does this, the output may not be a 'Rosetta-imsc' file until you normalise the file in some way.
