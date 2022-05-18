@@ -60,10 +60,3 @@ The format supports outlined text, and stores the data noting that text qwas int
 The format defines a mechanism by which line based editors can quantise position to minimise region proliferation which it comes to vertically positioning horizontal text.  
 
 It also defines regions in such a way that a change of font size does not require a complete change of region usage - regions are defined such that subtitles can easily grow from a specific anchor point.
-
-## XML parsing
-Namespaces used and associated namespace prefixes are fixed (defined in the spec) and set only on the `<tt>` element, again to simplify parsing and writing - no namespace processing is required, and all files will look similar.  *i.e. ALL elements will always have the same namespace prefix as in other rosetta-imsc files.*
-
-Note that the use of a mix of `<span>` and `<br/>` elements inside `<p>` requires the use of an XML parser (or parser mode) which will retain the order of elements with different names.
-
-Be aware that certain XML processing could change namespace prefixes, so if you have a process which does this, the output may not be a 'Rosetta-imsc' file until you normalise the file in some way.
