@@ -33,6 +33,34 @@ For archival, Subtitle times (begin and end attributes on `<div>`) must be prese
 
 All styling is referential, and style ids used are fixed.  Many styles are *constant*.  (i.e. you may not put local style anywhere in `<body>`, and all style reference ids used are pre-defined by the specification).
 
+## Subtitling features supported
+
+Many TTML implementations do not support features of subtitles which have been supported by extant propietary formats for many years.  TTML itself is capable of supporting these features, but in order to do so, a full underdtanding of TTML and it's associated standards is required.  Gaining an understanding of TTML and the associated specifications is both difficult, and fraught with the probablility of mis-interpretation.
+
+imsc-rosetta addresses this by specifically supporting various features not commonly used in TTML, and explicitly documenting how they are represented.
+
+### alignment/justification
+
+The format supports both alignment inside a single `<p>`, using ebutts:multiRowAlign to support advanced justification and alignment, but also the use of multiple `<p>` elements to represent subtitles where lines have alignments not supported by a single `<p>` subtitle (e.g. one line left, one line right).
+
+### boxing
+
+The format defines the ways to achieve boxed subtitles with a presentation consumate to a broadcast subtitle.  Specifically it uses ebutts:linePadding to ensure that boxed lines have some room on the end.
+
+Boxing forms supported include Ghost box (semi-transparent boxing of text only), Boxed (solid boxing of text only), Ghost Stripe (semi transparent boxing which occupies the full width of each line), Solid Stripe (solid boxing which occupies the full width of each line).
+
+It also supports background colours on boxing.
+
+### Outline/Dropshadow
+
+The format supports outlined text, and stores the data noting that text qwas intended to be dropshadow (although IMSC does not support this).  It also supports background colour for outlined/dropshadow text.
+
+### vertical position
+
+The format defines a mechanism by which line based editors can quantise position to minimise region proliferation which it comes to vertically positioning horizontal text.  
+
+It also defines regions in such a way that a change of font size does not require a complete change of region usage - regions are defined such that subtitles can easily grow from a specific anchor point.
+
 ## XML parsing
 Namespaces used and associated namespace prefixes are fixed (defined in the spec) and set only on the `<tt>` element, again to simplify parsing and writing - no namespace processing is required, and all files will look similar.  *i.e. ALL elements will always have the same namespace prefix as in other rosetta-imsc files.*
 
