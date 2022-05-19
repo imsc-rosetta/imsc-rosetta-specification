@@ -74,8 +74,6 @@ Zero or more `<p>` elements.
 
 The order of `<metadata rosetta:comment="comment text"/>` vs `<p>` is not important.
 
-*Special Note: XML inside `<div>` should NOT include any spacing in the XML structure - since we define `xml:space="preserve"` in the `<tt>` element, all spacing in the `<div>` element is intended for display.  Effectively this means that all `<div>` elements must be presented on a single line.*
-
 ### `<metadata>` - as used in `<div>`
 `<metadata>` used in `<div>` must have one attribute `rosetta:comment` used to carry comment text along with the subtitle.
 
@@ -99,6 +97,8 @@ A `<p>` element may contain multiple lines by use of `<br/>`, but in this case a
 Where a subtitle requires a line(s) to be aligned start, and other line(s) center or end, multiple `<p>` elements may be used within a single `<div>`.
 
 Parsers and renderers expected to process or display imsc-rosetta must be capable of understanding both scenarios of single `<p>` and multiple `<p>`.
+
+*Special Note: XML inside `<p>` should NOT include any spacing in the XML structure - since we define `xml:space="preserve"` in the `<tt>` element, all spacing in the `<p>` element is intended for display.  Effectively this means that all `<p>` elements must be presented on a single line.*
 
 ### `<span>`
 `<span>` elements may contain the following attributes:
