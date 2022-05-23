@@ -155,7 +155,7 @@
 ```
 #### Resulting Image
 
-![3603.6.png](./images/GenericTestAllStyles2+ja.imscr/3603.6.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3603.6.png width="600"
 
 
 ### subtitle at begin=01:00:07.760
@@ -170,7 +170,7 @@
 ```
 #### Resulting Image
 
-![3607.76.png](./images/GenericTestAllStyles2+ja.imscr/3607.76.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3607.76.png width="600"
 
 
 ### subtitle at begin=01:00:11.880
@@ -185,7 +185,7 @@
 ```
 #### Resulting Image
 
-![3611.88.png](./images/GenericTestAllStyles2+ja.imscr/3611.88.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3611.88.png width="600"
 
 
 ### subtitle at begin=01:00:16.000
@@ -200,7 +200,7 @@
 ```
 #### Resulting Image
 
-![3616.png](./images/GenericTestAllStyles2+ja.imscr/3616.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3616.png width="600"
 
 
 ### subtitle at begin=01:00:20.120
@@ -216,7 +216,7 @@
 ```
 #### Resulting Image
 
-![3620.12.png](./images/GenericTestAllStyles2+ja.imscr/3620.12.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3620.12.png width="600"
 
 
 ### subtitle at begin=01:00:24.240
@@ -232,7 +232,7 @@
 ```
 #### Resulting Image
 
-![3624.24.png](./images/GenericTestAllStyles2+ja.imscr/3624.24.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3624.24.png width="600"
 
 
 ### subtitle at begin=01:00:28.360
@@ -248,7 +248,7 @@
 ```
 #### Resulting Image
 
-![3628.36.png](./images/GenericTestAllStyles2+ja.imscr/3628.36.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3628.36.png width="600"
 
 
 ### subtitle at begin=01:00:32.480
@@ -263,7 +263,7 @@
 ```
 #### Resulting Image
 
-![3632.48.png](./images/GenericTestAllStyles2+ja.imscr/3632.48.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3632.48.png width="600"
 
 
 ### subtitle at begin=01:00:36.640
@@ -278,7 +278,7 @@
 ```
 #### Resulting Image
 
-![3636.64.png](./images/GenericTestAllStyles2+ja.imscr/3636.64.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3636.64.png width="600"
 
 
 ### subtitle at begin=01:00:40.760
@@ -293,7 +293,7 @@
 ```
 #### Resulting Image
 
-![3640.76.png](./images/GenericTestAllStyles2+ja.imscr/3640.76.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3640.76.png width="600"
 
 
 ### subtitle at begin=01:00:44.880
@@ -308,7 +308,7 @@
 ```
 #### Resulting Image
 
-![3644.88.png](./images/GenericTestAllStyles2+ja.imscr/3644.88.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3644.88.png width="600"
 
 
 ### subtitle at begin=01:00:49.000
@@ -323,7 +323,7 @@
 ```
 #### Resulting Image
 
-![3649.png](./images/GenericTestAllStyles2+ja.imscr/3649.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3649.png width="600"
 
 
 ### subtitle at begin=01:00:53.120
@@ -338,7 +338,7 @@
 ```
 #### Resulting Image
 
-![3653.12.png](./images/GenericTestAllStyles2+ja.imscr/3653.12.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3653.12.png width="600"
 
 
 ### subtitle at begin=01:00:57.240
@@ -353,7 +353,7 @@
 ```
 #### Resulting Image
 
-![3657.24.png](./images/GenericTestAllStyles2+ja.imscr/3657.24.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3657.24.png width="600"
 
 
 ### subtitle at begin=01:01:01.360
@@ -368,7 +368,7 @@
 ```
 #### Resulting Image
 
-![3661.36.png](./images/GenericTestAllStyles2+ja.imscr/3661.36.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3661.36.png width="600"
 
 
 ### subtitle at begin=01:01:05.480
@@ -383,7 +383,7 @@
 ```
 #### Resulting Image
 
-![3665.48.png](./images/GenericTestAllStyles2+ja.imscr/3665.48.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3665.48.png width="600"
 
 
 ### subtitle at begin=01:01:09.640
@@ -398,7 +398,7 @@
 ```
 #### Resulting Image
 
-![3669.64.png](./images/GenericTestAllStyles2+ja.imscr/3669.64.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3669.64.png width="600"
 
 
 ### subtitle at begin=01:01:13.760
@@ -413,7 +413,7 @@
 ```
 #### Resulting Image
 
-![3673.76.png](./images/GenericTestAllStyles2+ja.imscr/3673.76.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3673.76.png width="600"
 
 
 ### subtitle at begin=01:01:17.880
@@ -428,7 +428,7 @@
 ```
 #### Resulting Image
 
-![3677.88.png](./images/GenericTestAllStyles2+ja.imscr/3677.88.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3677.88.png width="600"
 
 
 ### subtitle at begin=01:01:22.000
@@ -443,7 +443,7 @@
 ```
 #### Resulting Image
 
-![3682.png](./images/GenericTestAllStyles2+ja.imscr/3682.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3682.png width="600"
 
 
 ### subtitle at begin=01:01:26.120
@@ -458,7 +458,7 @@
 ```
 #### Resulting Image
 
-![3686.12.png](./images/GenericTestAllStyles2+ja.imscr/3686.12.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3686.12.png width="600"
 
 
 ### subtitle at begin=01:01:30.240
@@ -473,7 +473,7 @@
 ```
 #### Resulting Image
 
-![3690.24.png](./images/GenericTestAllStyles2+ja.imscr/3690.24.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3690.24.png width="600"
 
 
 ### subtitle at begin=01:01:34.360
@@ -490,7 +490,7 @@
 ```
 #### Resulting Image
 
-![3694.36.png](./images/GenericTestAllStyles2+ja.imscr/3694.36.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3694.36.png width="600"
 
 
 ### subtitle at begin=01:01:38.520
@@ -506,7 +506,7 @@
 ```
 #### Resulting Image
 
-![3698.52.png](./images/GenericTestAllStyles2+ja.imscr/3698.52.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3698.52.png width="600"
 
 
 ### subtitle at begin=01:01:42.640
@@ -521,7 +521,7 @@
 ```
 #### Resulting Image
 
-![3702.64.png](./images/GenericTestAllStyles2+ja.imscr/3702.64.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3702.64.png width="600"
 
 
 ### subtitle at begin=01:01:46.760
@@ -537,7 +537,7 @@
 ```
 #### Resulting Image
 
-![3706.76.png](./images/GenericTestAllStyles2+ja.imscr/3706.76.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3706.76.png width="600"
 
 
 ### subtitle at begin=01:01:50.880
@@ -553,7 +553,7 @@
 ```
 #### Resulting Image
 
-![3710.88.png](./images/GenericTestAllStyles2+ja.imscr/3710.88.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3710.88.png width="600"
 
 
 ### subtitle at begin=01:01:54.000
@@ -569,7 +569,7 @@
 ```
 #### Resulting Image
 
-![3714.png](./images/GenericTestAllStyles2+ja.imscr/3714.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3714.png width="600"
 
 
 ### subtitle at begin=01:01:57.120
@@ -585,7 +585,7 @@
 ```
 #### Resulting Image
 
-![3717.12.png](./images/GenericTestAllStyles2+ja.imscr/3717.12.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3717.12.png width="600"
 
 
 ### subtitle at begin=01:02:00.240
@@ -601,7 +601,7 @@
 ```
 #### Resulting Image
 
-![3720.24.png](./images/GenericTestAllStyles2+ja.imscr/3720.24.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3720.24.png width="600"
 
 
 ### subtitle at begin=01:02:03.359
@@ -616,7 +616,7 @@
 ```
 #### Resulting Image
 
-![3723.359.png](./images/GenericTestAllStyles2+ja.imscr/3723.359.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3723.359.png width="600"
 
 
 ### subtitle at begin=01:02:07.359
@@ -631,7 +631,7 @@
 ```
 #### Resulting Image
 
-![3727.359.png](./images/GenericTestAllStyles2+ja.imscr/3727.359.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3727.359.png width="600"
 
 
 ### subtitle at begin=01:02:10.359
@@ -646,7 +646,7 @@
 ```
 #### Resulting Image
 
-![3730.359.png](./images/GenericTestAllStyles2+ja.imscr/3730.359.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3730.359.png width="600"
 
 
 ### subtitle at begin=01:02:13.359
@@ -662,7 +662,7 @@
 ```
 #### Resulting Image
 
-![3733.359.png](./images/GenericTestAllStyles2+ja.imscr/3733.359.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3733.359.png width="600"
 
 
 ### subtitle at begin=01:02:17.359
@@ -678,7 +678,7 @@
 ```
 #### Resulting Image
 
-![3737.359.png](./images/GenericTestAllStyles2+ja.imscr/3737.359.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3737.359.png width="600"
 
 
 ### subtitle at begin=01:02:21.359
@@ -694,7 +694,7 @@
 ```
 #### Resulting Image
 
-![3741.359.png](./images/GenericTestAllStyles2+ja.imscr/3741.359.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3741.359.png width="600"
 
 
 ### subtitle at begin=01:02:25.359
@@ -710,7 +710,7 @@
 ```
 #### Resulting Image
 
-![3745.359.png](./images/GenericTestAllStyles2+ja.imscr/3745.359.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3745.359.png width="600"
 
 
 ### subtitle at begin=01:02:30.359
@@ -726,7 +726,7 @@
 ```
 #### Resulting Image
 
-![3750.359.png](./images/GenericTestAllStyles2+ja.imscr/3750.359.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3750.359.png width="600"
 
 
 ### subtitle at begin=01:02:35.120
@@ -741,7 +741,7 @@
 ```
 #### Resulting Image
 
-![3755.12.png](./images/GenericTestAllStyles2+ja.imscr/3755.12.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3755.12.png width="600"
 
 
 ### subtitle at begin=01:02:41.120
@@ -756,7 +756,7 @@
 ```
 #### Resulting Image
 
-![3761.12.png](./images/GenericTestAllStyles2+ja.imscr/3761.12.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3761.12.png width="600"
 
 
 ### subtitle at begin=01:02:45.120
@@ -771,7 +771,7 @@
 ```
 #### Resulting Image
 
-![3765.12.png](./images/GenericTestAllStyles2+ja.imscr/3765.12.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3765.12.png width="600"
 
 
 ### subtitle at begin=01:02:46.359
@@ -787,7 +787,7 @@
 ```
 #### Resulting Image
 
-![3766.359.png](./images/GenericTestAllStyles2+ja.imscr/3766.359.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3766.359.png width="600"
 
 
 ### subtitle at begin=01:02:50.120
@@ -802,7 +802,7 @@
 ```
 #### Resulting Image
 
-![3770.12.png](./images/GenericTestAllStyles2+ja.imscr/3770.12.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3770.12.png width="600"
 
 
 ### subtitle at begin=01:02:55.120
@@ -817,7 +817,7 @@
 ```
 #### Resulting Image
 
-![3775.12.png](./images/GenericTestAllStyles2+ja.imscr/3775.12.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3775.12.png width="600"
 
 
 ### subtitle at begin=01:03:00.120
@@ -832,7 +832,7 @@
 ```
 #### Resulting Image
 
-![3780.12.png](./images/GenericTestAllStyles2+ja.imscr/3780.12.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3780.12.png width="600"
 
 
 ### subtitle at begin=01:03:05.120
@@ -847,7 +847,7 @@
 ```
 #### Resulting Image
 
-![3785.12.png](./images/GenericTestAllStyles2+ja.imscr/3785.12.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3785.12.png width="600"
 
 
 ### subtitle at begin=01:03:05.220
@@ -862,7 +862,7 @@
 ```
 #### Resulting Image
 
-![3785.22.png](./images/GenericTestAllStyles2+ja.imscr/3785.22.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3785.22.png width="600"
 
 
 ### subtitle at begin=01:03:06.120
@@ -877,7 +877,7 @@
 ```
 #### Resulting Image
 
-![3786.12.png](./images/GenericTestAllStyles2+ja.imscr/3786.12.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3786.12.png width="600"
 
 
 ### subtitle at begin=01:03:10.359
@@ -892,7 +892,7 @@
 ```
 #### Resulting Image
 
-![3790.359.png](./images/GenericTestAllStyles2+ja.imscr/3790.359.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3790.359.png width="600"
 
 
 ### subtitle at begin=01:03:14.359
@@ -907,7 +907,7 @@
 ```
 #### Resulting Image
 
-![3794.359.png](./images/GenericTestAllStyles2+ja.imscr/3794.359.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3794.359.png width="600"
 
 
 ### subtitle at begin=01:03:20.359
@@ -922,7 +922,7 @@
 ```
 #### Resulting Image
 
-![3800.359.png](./images/GenericTestAllStyles2+ja.imscr/3800.359.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3800.359.png width="600"
 
 
 ### subtitle at begin=01:03:25.359
@@ -937,7 +937,7 @@
 ```
 #### Resulting Image
 
-![3805.359.png](./images/GenericTestAllStyles2+ja.imscr/3805.359.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3805.359.png width="600"
 
 
 ### subtitle at begin=01:03:30.120
@@ -953,7 +953,7 @@
 ```
 #### Resulting Image
 
-![3810.12.png](./images/GenericTestAllStyles2+ja.imscr/3810.12.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3810.12.png width="600"
 
 
 ### subtitle at begin=01:03:30.420
@@ -969,7 +969,7 @@
 ```
 #### Resulting Image
 
-![3810.42.png](./images/GenericTestAllStyles2+ja.imscr/3810.42.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3810.42.png width="600"
 
 
 ### subtitle at begin=01:03:34.359
@@ -984,7 +984,7 @@
 ```
 #### Resulting Image
 
-![3814.359.png](./images/GenericTestAllStyles2+ja.imscr/3814.359.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3814.359.png width="600"
 
 
 ### subtitle at begin=01:03:37.359
@@ -999,7 +999,7 @@
 ```
 #### Resulting Image
 
-![3817.359.png](./images/GenericTestAllStyles2+ja.imscr/3817.359.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3817.359.png width="600"
 
 
 ### subtitle at begin=01:03:40.359
@@ -1014,6 +1014,6 @@
 ```
 #### Resulting Image
 
-![3820.359.png](./images/GenericTestAllStyles2+ja.imscr/3820.359.png | width=400)
+<img src="./images/GenericTestAllStyles2+ja.imscr/3820.359.png width="600"
 
 
