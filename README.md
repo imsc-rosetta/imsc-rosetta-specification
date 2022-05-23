@@ -18,7 +18,7 @@ The [Rosetta Stone](https://en.wikipedia.org/wiki/Rosetta_Stone) was the key to 
 
 ***imsc-rosetta is a Subtitle File Format, not a generic flavour of TTML, although it is IMSC/TTML compliant***
 
-Each *subtitle* is represented as a `<div>`, and there is only one `<div>` per subtitle.
+Each *subtitle* is represented as a `<div>`, and there is only one `<div>` per subtitle.  Timing is on `<div>`, specified only in HH:MM:SS.TTT from midnight - no other time styles are allowed, and time is not allowed on any other element.
   
 Regions extend to at least three edges being against the edge of a static subtitle presentation area.  The fourth edge is used to place the subtitle vertically (or horizontally in the case of vertical text).  This allows the subtitle font size to be changed without changing the region.  For horizontal subtitles, the regions are always the same width (i.e. left and width of all regions are static).  Regions are expected to be shared between subtitles - e.g. for most existing subtitle formats, you could expect a maximum of maybe 12 regions based on the ability to position subtitles on a line by line basis.
   
