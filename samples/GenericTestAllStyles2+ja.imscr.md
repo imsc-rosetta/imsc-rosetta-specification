@@ -4,6 +4,13 @@
 
 
 
+This file is an overall sample which demonstrates all the features of imsc-rosetta
+
+
+
+
+
+
 ```
 <tt xmlns="http://www.w3.org/ns/ttml" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:ebutts="urn:ebu:tt:style" xmlns:itts="http://www.w3.org/ns/ttml/profile/imsc1#styling" xmlns:rosetta="https://github.com/imsc-rosetta/specification" ttp:timeBase="media" ttp:cellResolution="30 15" xml:space="preserve" ttp:frameRate="25" ttp:frameRateMultiplier="1 1" xml:lang="el-GR">
  <head>
@@ -144,6 +151,14 @@
 
 ### subtitle at begin=01:00:03.600
 
+
+
+This div represents a single line of boxed text at the bottom of the screen.
+
+It's white text on black box, with black outline.
+
+
+
 #### div XML
 
 ```
@@ -204,6 +219,12 @@
 
 
 ### subtitle at begin=01:00:20.120
+
+
+
+This div represents a two line subtitle at the bottom of the screen.  The subtitle is centered and has black outline because d_outline is specified in _d_default.
+
+
 
 #### div XML
 
