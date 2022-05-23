@@ -12,20 +12,33 @@ The following is the maximal style name set, and thier default values:
 
 ```
  <style xml:id="r_region" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:fontStyle="normal" tts:fontWeight="normal" tts:color="white" tts:fontFamily="proportionalSansSerif" tts:textAlign="center" itts:fillLineGap="false" style="_r_default"/>
- 
- <style xml:id="s_italic" tts:fontStyle="italic"/>
- <style xml:id="s_bold" tts:fontWeight="bold"/>
- <style xml:id="s_underline" tts:textDecoration="underline"/>
+ <style xml:id="r_vertical" tts:writingMode="tbrl"/>
+
  
  <style xml:id="d_fillgap" itts:fillLineGap="true" />
+ <style xml:id="d_forced" itts:forcedDisplay="true"/>
+ <style xml:id="d_outline" tts:textOutline="#000000 0.05em"/>
+ <style xml:id="d_drop" tts:textOutline="#000000 0.05em"/>
 
- <style xml:id="ds_fg_black" tts:color="#000000"/>
- <style xml:id="ds_fg_red" tts:color="#FF0000"/>
- <style xml:id="ds_fg_yellow" tts:color="#FFFF00"/>
- <style xml:id="ds_fg_green" tts:color="#00FF00"/>
- <style xml:id="ds_fg_cyan" tts:color="#00FFFF"/>
- <style xml:id="ds_fg_blue" tts:color="#0000FF"/>
- <style xml:id="ds_fg_magenta" tts:color="#FF00FF"/>
+ 
+ <style xml:id="p_rtl" tts:direction="rtl"/>
+ <style xml:id="p_ltr" tts:direction="ltr"/>
+ 
+ <style xml:id="p_al_start" tts:textAlign="start"/>
+ <style xml:id="p_al_end" tts:textAlign="end"/>
+ <style xml:id="p_al_center" tts:textAlign="center"/>
+ <style xml:id="p_al_start_start" ebutts:multiRowAlign="start" tts:textAlign="start"/>
+ <style xml:id="p_al_start_center" ebutts:multiRowAlign="center" tts:textAlign="start"/>
+ <style xml:id="p_al_start_end" ebutts:multiRowAlign="end" tts:textAlign="start"/>
+ <style xml:id="p_al_end_start" ebutts:multiRowAlign="start" tts:textAlign="end"/>
+ <style xml:id="p_al_end_center" ebutts:multiRowAlign="center" tts:textAlign="end"/>
+ <style xml:id="p_al_end_end" ebutts:multiRowAlign="end" tts:textAlign="end"/>
+ <style xml:id="p_al_center_start" ebutts:multiRowAlign="start" tts:textAlign="center"/>
+ <style xml:id="p_al_center_center" ebutts:multiRowAlign="end" tts:textAlign="center"/>
+ <style xml:id="p_al_center_end" ebutts:multiRowAlign="end" tts:textAlign="center"/>
+ 
+ <style xml:id="p_font1" tts:fontFamily="proportionalSansSerif" tts:lineHeight="125%" tts:fontSize="100%"/>
+ <style xml:id="p_font2" tts:fontFamily="proportionalSansSerif" tts:lineHeight="125%" tts:fontSize="100%"/>
 
  <style xml:id="ps_bg_boxedblack" tts:backgroundColor="#000000"/>
  <style xml:id="ps_bg_boxedred" tts:backgroundColor="#FF0000"/>
@@ -45,61 +58,57 @@ The following is the maximal style name set, and thier default values:
  <style xml:id="ps_bg_ghostboxedmagenta" tts:backgroundColor="#FF00FF80"/>
  <style xml:id="ps_bg_ghostboxedwhite" tts:backgroundColor="#FFFFFF80"/>
 
- <style xml:id="ds_outlineblack" tts:textOutline="#000000 0.05em"/>
- <style xml:id="ds_outlinered" tts:textOutline="#FF0000 0.05em"/>
- <style xml:id="ds_outlineyellow" tts:textOutline="#FFFF00 0.05em"/>
- <style xml:id="ds_outlinegreen" tts:textOutline="#00FF00 0.05em"/>
- <style xml:id="ds_outlinecyan" tts:textOutline="#00FFFF 0.05em"/>
- <style xml:id="ds_outlineblue" tts:textOutline="#0000FF 0.05em"/>
- <style xml:id="ds_outlinemagenta" tts:textOutline="#FF00FF 0.05em"/>
- <style xml:id="ds_outlinewhite" tts:textOutline="#FFFFFF 0.05em"/>
+ 
+ <style xml:id="s_italic" tts:fontStyle="italic"/>
+ <style xml:id="s_bold" tts:fontWeight="bold"/>
+ <style xml:id="s_underline" tts:textDecoration="underline"/>
+ 
+ <style xml:id="s_fg_black" tts:color="#000000"/>
+ <style xml:id="s_fg_red" tts:color="#FF0000"/>
+ <style xml:id="s_fg_yellow" tts:color="#FFFF00"/>
+ <style xml:id="s_fg_green" tts:color="#00FF00"/>
+ <style xml:id="s_fg_cyan" tts:color="#00FFFF"/>
+ <style xml:id="s_fg_blue" tts:color="#0000FF"/>
+ <style xml:id="s_fg_magenta" tts:color="#FF00FF"/>
 
- <style xml:id="ds_dropblack" tts:textOutline="#000000 0.05em"/>
- <style xml:id="ds_dropred" tts:textOutline="#FF0000 0.05em"/>
- <style xml:id="ds_dropyellow" tts:textOutline="#FFFF00 0.05em"/>
- <style xml:id="ds_dropgreen" tts:textOutline="#00FF00 0.05em"/>
- <style xml:id="ds_dropcyan" tts:textOutline="#00FFFF 0.05em"/>
- <style xml:id="ds_dropblue" tts:textOutline="#0000FF 0.05em"/>
- <style xml:id="ds_dropmagenta" tts:textOutline="#FF00FF 0.05em"/>
- <style xml:id="ds_dropwhite" tts:textOutline="#FFFFFF 0.05em"/>
+ <style xml:id="s_outlineblack" tts:textOutline="#000000 0.05em"/>
+ <style xml:id="s_outlinered" tts:textOutline="#FF0000 0.05em"/>
+ <style xml:id="s_outlineyellow" tts:textOutline="#FFFF00 0.05em"/>
+ <style xml:id="s_outlinegreen" tts:textOutline="#00FF00 0.05em"/>
+ <style xml:id="s_outlinecyan" tts:textOutline="#00FFFF 0.05em"/>
+ <style xml:id="s_outlineblue" tts:textOutline="#0000FF 0.05em"/>
+ <style xml:id="s_outlinemagenta" tts:textOutline="#FF00FF 0.05em"/>
+ <style xml:id="s_outlinewhite" tts:textOutline="#FFFFFF 0.05em"/>
 
- <style xml:id="ds_noneblack"/>
- <style xml:id="ds_nonered"/>
- <style xml:id="ds_noneyellow"/>
- <style xml:id="ds_nonegreen"/>
- <style xml:id="ds_nonecyan"/>
- <style xml:id="ds_noneblue"/>
- <style xml:id="ds_nonemagenta"/>
- <style xml:id="ds_nonewhite"/>
- 
- <style xml:id="p_al_start" tts:textAlign="start"/>
- <style xml:id="p_al_end" tts:textAlign="end"/>
- <style xml:id="p_al_center" tts:textAlign="center"/>
- <style xml:id="p_al_start_start" ebutts:multiRowAlign="start" tts:textAlign="start"/>
- <style xml:id="p_al_start_center" ebutts:multiRowAlign="center" tts:textAlign="start"/>
- <style xml:id="p_al_start_end" ebutts:multiRowAlign="end" tts:textAlign="start"/>
- <style xml:id="p_al_end_start" ebutts:multiRowAlign="start" tts:textAlign="end"/>
- <style xml:id="p_al_end_center" ebutts:multiRowAlign="center" tts:textAlign="end"/>
- <style xml:id="p_al_end_end" ebutts:multiRowAlign="end" tts:textAlign="end"/>
- <style xml:id="p_al_center_start" ebutts:multiRowAlign="start" tts:textAlign="center"/>
- <style xml:id="p_al_center_center" ebutts:multiRowAlign="end" tts:textAlign="center"/>
- <style xml:id="p_al_center_end" ebutts:multiRowAlign="end" tts:textAlign="center"/>
- 
- <style xml:id="ps_bg_unboxed" tts:backgroundColor="transparent"/>
- 
- <style xml:id="d_forced" itts:forcedDisplay="true"/>
- 
- <style xml:id="p_font1" tts:fontFamily="proportionalSansSerif" tts:lineHeight="125%" tts:fontSize="100%"/>
- <style xml:id="p_font2" tts:fontFamily="proportionalSansSerif" tts:lineHeight="125%" tts:fontSize="100%"/>
+ <style xml:id="s_dropblack" tts:textOutline="#000000 0.05em"/>
+ <style xml:id="s_dropred" tts:textOutline="#FF0000 0.05em"/>
+ <style xml:id="s_dropyellow" tts:textOutline="#FFFF00 0.05em"/>
+ <style xml:id="s_dropgreen" tts:textOutline="#00FF00 0.05em"/>
+ <style xml:id="s_dropcyan" tts:textOutline="#00FFFF 0.05em"/>
+ <style xml:id="s_dropblue" tts:textOutline="#0000FF 0.05em"/>
+ <style xml:id="s_dropmagenta" tts:textOutline="#FF00FF 0.05em"/>
+ <style xml:id="s_dropwhite" tts:textOutline="#FFFFFF 0.05em"/>
 
- <style xml:id="s_rb_b" tts:ruby="base"/>
- <style xml:id="s_rb_t" tts:ruby="text"/>
+ <style xml:id="s_noneblack"/>
+ <style xml:id="s_nonered"/>
+ <style xml:id="s_noneyellow"/>
+ <style xml:id="s_nonegreen"/>
+ <style xml:id="s_nonecyan"/>
+ <style xml:id="s_noneblue"/>
+ <style xml:id="s_nonemagenta"/>
+ <style xml:id="s_nonewhite"/>
+ 
  
  <style xml:id="p_rb_res_before" tts:rubyReserve="before"/>
  <style xml:id="p_rb_res_after" tts:rubyReserve="after"/>
  <style xml:id="p_rb_res_both" tts:rubyReserve="both"/>
  <style xml:id="p_rb_res_outside" tts:rubyReserve="outside"/>
 
+ <style xml:id="ps_shear" tts:shear="16.67%"/>
+ 
+ <style xml:id="s_rb_b" tts:ruby="base"/>
+ <style xml:id="s_rb_t" tts:ruby="text"/>
+ 
  <style xml:id="s_rb_algn_center" tts:ruby="container" tts:rubyAlign="center"/>
  <style xml:id="s_rb_algn_around" tts:ruby="container" tts:rubyAlign="spaceAround"/>
  
@@ -108,11 +117,6 @@ The following is the maximal style name set, and thier default values:
  <style xml:id="s_rb_posn_outside" tts:ruby="container" tts:rubyPosition="outside"/>
  
  <style xml:id="s_combine" tts:textCombine="all"/>
- 
- <style xml:id="ps_shear" tts:shear="16.67%"/>
- 
- <style xml:id="p_rtl" tts:direction="rtl"/>
- <style xml:id="p_ltr" tts:direction="ltr"/>
  
  <style xml:id="s_emf_fcb" tts:textEmphasis="filled circle before"/>
  <style xml:id="s_emf_fdb" tts:textEmphasis="filled dot before"/>
@@ -132,12 +136,8 @@ The following is the maximal style name set, and thier default values:
  <style xml:id="s_emf_oco" tts:textEmphasis="open circle outside"/>
  <style xml:id="s_emf_odo" tts:textEmphasis="open dot outside"/>
  <style xml:id="s_emf_oso" tts:textEmphasis="open sesame outside"/>
-   
- <style xml:id="r_vertical" tts:writingMode="tbrl"/>
-  
- <style xml:id="_d_default" style="ds_outlineblack"/>
- <style xml:id="_s_default" style=""/>
- <style xml:id="_p_default" style="p_font2"/>
+ 
+ <style xml:id="_d_default" style="d_outline"/>
  <style xml:id="_r_default" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" tts:wrapOption="noWrap" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c"/>
 ```
 
@@ -181,13 +181,13 @@ general:
 
 styles prefixed with r_, _r may be applied to `<region>`.
 
-styles prefixed with d_, ds_, _d may be applied to `<div>`.
+styles prefixed with d_, _d may be applied to `<div>`.
 
 styles prefixed with p_, ps_, _p may be applied to `<p>`.
 
-styles prefixed with s_, ps_, ds_, _s may be applied to `<span>`.
+styles prefixed with s_, ps_, _s may be applied to `<span>`.
 
-if the style attribute in _d_default, _p_default or _s_default is modified, only styles applicable to div, p, span may be references appropriately.
+if the style attribute in _d_default is modified, only styles applicable to div may be referenced.
 
 ### alignment/justification.
 
@@ -213,13 +213,15 @@ Note that p_al_center and p_al_center_center are equivlent, as are p_al_start, p
 
 ### outline/dropshadow
 
-Imsc does not support dropshadow, but you may use ds_dropxxx in place of ds_outlinexxx to signify that the text is desired outlined.  This feature is to enable the dropshadow to be reproduced if the rosetta file is converted back to an extant format by a processor which fully understands the style name usage.
+Imsc does not support dropshadow, but you may use d_drop in place od d_outline, and s_dropxxx in place of s_outlinexxx to signify that the text is desired outlined.  This feature is to enable the dropshadow to be reproduced if the rosetta file is converted back to an extant format by a processor which fully understands the style name usage.
 
-Outline may be specified as a style of _d_default to apply it to the whole file.
+d_outline or d_drop may be specified as a style of _d_default to apply it to the whole file.
 
-It may also be sepcified individually on `<div>` elements.
+It may also be specified individually on `<div>` elements using d_outline or d_drop.
 
-Should a `<span>` need a different 'background' color when outlined, then ds_outlinexxx or ds_dropxxx may be specified on `<span>`.  However, ds_outlinexxx or ds_dropxxx may not be used on `<span>` unless it has been speified in _d_default or on `<div>`.
+Should a `<span>` need a different 'background' color when outlined, then s_outlinexxx or s_dropxxx may be specified on `<span>`.  
+
+***However, s_outlinexxx or s_dropxxx may not be used on `<span>` unless d_outline or d_drop (respectively) has been speified in _d_default or on `<div>`***.
 
 Note: it is normal for translation subtitles to be outlined.
 
@@ -227,7 +229,7 @@ Note: it is normal for translation subtitles to be outlined.
 
 To box only the line areas, please specify ps_bg_boxedxxx or ps_bg_ghostboxedxxx on every base level span in every `<p>`.
 
-If a subtitle contains multiple `<p>`, all base level `<span>` elements in all `<p>` for that subtitle must have the the same type of boxing style applied.
+If a subtitle contains multiple `<p>`, all base level `<span>` elements in all `<p>` for that subtitle must have the the same type (but not necessarily color) of boxing style applied.
 
 To change the background color of a single `<span>`, apply a different ps_bg_ style to it.
 
@@ -237,9 +239,9 @@ Do not box subtitles containing Ruby text (Japanese) unless you have fully check
 
 ### stripe
 
-To box lines so that the boxing reachs the edges of the region, please specify ps_bg_boxedxxx or ps_bg_ghostboxedxxx on every `<p>` in the subtitle.
+To box lines so that the boxing reachs the edges of the region, please specify ps_bg_boxedxxx or ps_bg_ghostboxedxxx on *every* `<p>` in the subtitle.
 
-To change the background color of a single `<span>`, apply a different ps_bg_ style to it - but bear in mind that in TTML, for ghist box, this will double the opacity of that span.
+To change the background color of a single `<span>`, apply a different ps_bg_ style to it - but bear in mind that in TTML, for ghost box, this will double the opacity of that span.
 
 Do not mix ps_bg_boxedxxx and ps_bg_ghostboxedxxx in a single subtitle.
 

@@ -4,18 +4,28 @@
 
 <details><summary>tt xml:space="preserve"</summary>
 
-This is essential because to represent existing formats well, we MUST preserve spaces in the subtitle.  Hence ALL whitespace inside every div is intended for display.
+This is essential because to represent existing formats well, we MUST preserve spaces in the subtitle.  Hence ALL whitespace inside every `<p>` is intended for display.
+
+Although `xml:space="normal"` Seems to resolve the issue of prettifying `<p>`, in actuality a prettified `<p>` with xml:space="normal" does not display boxing correctly (because and CRs in the XML are collapsed to a single space, and this space can fall outside of the boxed `<span>` element, so causing an unboxed space in the output between spans).
 
 It is irrelevant for the rest of the file, and hence we state it as an attribute of the tt element, and allow it to apply to the whole file.
 
+The result of specifying `xml:space="preserve"` is that IF a `<p>` gets prettified somehow (e.g. manual edit, or XML processor which does not understand this constraint), subtitles WILL present badly.  But this should be obvious for every subtitle and so easily picked up in process qualification.
+
 examples:
 
-In order to display well, a div cannot contain any space outside of span elements, e.g.:
+In order to display well, a p cannot contain any space outside of span elements, e.g.:
 ```
-<div xml:id="5" region="R0" begin="01:00:24.240" end="01:00:28.240" style="dp_al_start"><p style="p_font2"><span>two lines</span></p><p style="p_font2"><span>left bottom</span></p></div>
+<div xml:id="5" region="R0" begin="01:00:24.240" end="01:00:28.240" style="dp_al_start">
+  <p style="p_font2"><span>two lines</span></p>
+  <p style="p_font2"><span>left bottom</span></p>
+</div>
 ```
 
-The below div will display with all the extra spacing and CRs disturbing the line positions:
+The below will display with all the extra spacing and CRs disturbing the line positions:
+
+*** NOTE: Bad Formatting example - do not copy! ***
+
 ```
 <div xml:id="5" region="R0" begin="01:00:24.240" end="01:00:28.240" style="dp_al_start">
   <p style="p_font2">
@@ -27,7 +37,7 @@ The below div will display with all the extra spacing and CRs disturbing the lin
 </div>
 ```
 
-Spacing before and after div elements should not compromise presentation.
+Spacing before and after p elements will not compromise presentation.
 </details>
 
 ### Namespaces
@@ -35,6 +45,8 @@ Spacing before and after div elements should not compromise presentation.
 <details><summary>Use of namespace prefixes</summary>
     
 Namespace prefix processing is a large and unneccessary overhead when using common simple XML parsers.  By enforcing namespace prefixes, and a fixed set of namespaces, we simplify the parsing significantly.
+
+If you have an XML processor which does not retain the define XML Namespace prefixes, please normalise the file afterwards to restore them.
     
 </details>
 
@@ -46,9 +58,7 @@ Namespace prefix processing is a large and unneccessary overhead when using comm
   
   By adopting div as the 'subtitle' element, we impose a stringent structure of one 'page' per timed presentation, quite similar to an ISD (the result of parsing a TTML for presentation).  By limiting `begin` and `end` to be on div, and imposing non-overlap, timing parsing becomes trivial.  By imposing that a div must contain zero or more p only (plus a non-display metadata element if required), and that p must contain zero or more span elements, and text must be wrapped in span, parsing the structure is far simpler than allowing the variety of constructs that TTML (and IMSC) allows.
   
-  Note that nested spans does not break the parsing simplicity necessarily, but further clarification is required on this point.
-  
-  In contrast, p based TTML does not allow for different alignment per row.  Use of `<br/>` make parsing much more difficult (because the base XML parser can't just group all elements of one type - it must observe the order of differently named elements, adding two levels to any tree created).  Multiple p with the same times also  makes parsing more difficult - you have determine if there is more than one p, and then take the multiple elements.
+  This CAN be done by using a single `<p>` per subtitle, but that removes the ability to use both left and right alignment in a subtitle, which is a feature of existing line based subtitle formats. 
   
   We are not trying to be compatible with multiple forms of imsc - we are specifically making a version which has a very restricted form, but is fully IMSC complient. 
     
@@ -71,6 +81,8 @@ Namespace prefix processing is a large and unneccessary overhead when using comm
   has no style associated with it, and yet imparts meaning to the file.  (the meaning being that if a span with this style name attached was to be subsequently boxed, it should have a red background).
   
   This concept is a major difference between Imsc-Rosetta and previous TTML profiles - we don't ONLY represent a file to produce a particular visual output, but rather attempt to retain the intent of the original file, or to capture intent when preparing a file, such that it could subsequently be used to convert TO an older existing form.
+  
+  *Note: this also means that these 'features' will get lost if the files is interpreted as 'normal' ttml, and then re-created from raw data.*
       
 </details>
 
@@ -80,7 +92,7 @@ Namespace prefix processing is a large and unneccessary overhead when using comm
   
   These include _r_default, _p_default, _s_default and _d_default
   
-  Specifically these can carry some information about how the file is intended to be manipulated.  _r_default carries the origin and extent of a 'default' region, as well as fontSize (in rh) and lineHeight.  These values are specifically to help any processor calculate line quantization (i.e. know WHERE lines are intended to be positioned in the region).  Specifically, round(regionHeight/fontSize*lineHeight) should be used as a count of viable positions, and this value used to generate viable regions if moving subtitles vertically.  Quantization of line positions is used to keep the number of regions in control.  Rounding of region extent and origin to 0.1% should be enough to avoid endign up with too many regions.
+  Specifically these can carry some information about how the file is intended to be manipulated.  _r_default carries the origin and extent of a 'default' region, as well as fontSize (in rh) and lineHeight.  These values are specifically to help any processor calculate line quantization (i.e. know WHERE lines are intended to be positioned on the screen).  Specifically, round(regionHeight/fontSize*lineHeight) should be used as a count of viable positions, and this value used to generate viable regions if moving subtitles vertically.  Quantization of line positions is used to keep the number of regions in control.  Rounding of region extent and origin to 0.1% should be enough to avoid ending up with too many regions.
   
   Note that line quntization does NOT mean that you must use the default fontSize, it meerly means that we can know where regions should be put.  The actual fontSize can be modified by use of p_font1 and p_font2, where an Imsc-Rosetta writer can change the fontSize (as a percentage of the default).
       
@@ -101,7 +113,7 @@ Namespace prefix processing is a large and unneccessary overhead when using comm
   
   These include _r_default, p_font1, p_font2, ds_fg_xxxx, dp_boxedxxxx, dp_ghostboxedxxxx, dp_outlinexxxx, dp_dropxxxx
   
-  _r_default is used to define the default subtitle area, and line quantisztion, plus the initial font size.  (e.g. a height of 80%, fontSize of 0.5666rh, lineHeight of 125%, when combined hints to 12 'rows', or 11 positions which a region edge could adopt).
+  _r_default is used to define the default subtitle area, and line quantisation, plus the initial font size.  (e.g. a height of 80%, fontSize of 0.5666rh, lineHeight of 125%, when combined hints to 12 'rows', or 11 positions which a region edge could adopt).
   
   p_font1 and p_font2 can be used to select a font family, size, and lineHeight, for use with up to two fonts on a line by line basis.
   
