@@ -32,7 +32,7 @@ one or more `<style>` elements only.
 ### `<style>`
 `<style>` elements must be represented exactly as found in the style specification.
 
-`<style>` elements will not have any content, and should be represented as closed elements, e.g. `<style xml:id="ds_red" tts:color="#FF0000"/>`
+`<style>` elements will not have any content, and should be represented as closed elements, e.g. `<style xml:id="s_red" tts:color="#FF0000"/>`
 
 ### `<layout>`
 `<layout>` must have no attributes. `<layout>` contains the following elements:
@@ -84,7 +84,7 @@ The order of `<metadata rosetta:comment="comment text"/>` vs `<p>` is not import
 
 `style`
 
-The `style` attribute on `<p>` must contaihn either `p_font1` or `p_font2`.  The `style` attirbute may contain additional styles relevant to `<p>`
+The `style` attribute on `<p>` must contain either `p_font1` or `p_font2`.  The `style` attribute may contain additional styles relevant to `<p>`
 
 `<p>` contains the following elements:
 
@@ -98,16 +98,16 @@ Where a subtitle requires a line(s) to be aligned start, and other line(s) cente
 
 Parsers and renderers expected to process or display imsc-rosetta must be capable of understanding both scenarios of single `<p>` and multiple `<p>`.
 
-*Special Note: XML inside `<p>` should NOT include any spacing in the XML structure - since we define `xml:space="preserve"` in the `<tt>` element, all spacing in the `<p>` element is intended for display.  Effectively this means that all `<p>` elements must be presented on a single line.*
+***Special Note: XML inside `<p>` should NOT include any spacing in the XML structure - since we define `xml:space="preserve"` in the `<tt>` element, all spacing in the `<p>` element is intended for display.  Effectively this means that all `<p>` elements must be presented on a single line.***
 
-*Special Note: Note that `<br/>` MUST be wrapped in `<span>`.  This ensures that 'simple' parsers retain the order of spans and brs, and so greatly simplifies simple manipulation of rosetta files.
+***Special Note: Note that `<br/>` MUST be wrapped in `<span>`.  This ensures that 'simple' parsers retain the order of spans and brs, and so greatly simplifies simple manipulation of rosetta files.***
 
 ### `<span>`
 `<span>` elements may contain the following attributes:
 
 `style`
 
-`<span>` may contain *one* of the following when it is a descendant of `<p>`:
+`<span>` may contain ***one*** of the following when it is a descendant of `<p>`:
 
 - Text.  Example `<span>Some text </span><span>with more in a second span.</span>`
 
@@ -119,7 +119,7 @@ Parsers and renderers expected to process or display imsc-rosetta must be capabl
 ```
 
 
-For horizontal non- pictographic text, `<span>` will contain ONLY text. (i.e. no nested spans - all spans will be descendants of `<p>`)
+For horizontal non- pictographic text, `<span>` ***will contain ONLY text***. (i.e. no nested spans - all spans will be descendants of `<p>`)
 
 Nested `<span>` may ***only*** be used in subtitles requiring Rubies (i.e. Japanese), and be as above.  Spans contained within a base ruby span will only contain text, no further nexting is allowed.
 
