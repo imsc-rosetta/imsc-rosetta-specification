@@ -1,5 +1,7 @@
 # Outline
 
+This sample is very preliminary, and may not be accurate.  Please refer to the alignment and boxing samples for accurate samples.
+
 This file is an overall sample which demonstrates all the features of imsc-rosetta
 
 # div 01:00:03.600

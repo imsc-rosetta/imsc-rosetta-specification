@@ -22,19 +22,14 @@ The following is the maximal style name set, and thier default values:
 
  
  <style xml:id="p_rtl" tts:direction="rtl"/>
- <style xml:id="p_ltr" tts:direction="ltr"/>
  
  <style xml:id="p_al_start" tts:textAlign="start"/>
  <style xml:id="p_al_end" tts:textAlign="end"/>
- <style xml:id="p_al_center" tts:textAlign="center"/>
- <style xml:id="p_al_start_start" ebutts:multiRowAlign="start" tts:textAlign="start"/>
  <style xml:id="p_al_start_center" ebutts:multiRowAlign="center" tts:textAlign="start"/>
  <style xml:id="p_al_start_end" ebutts:multiRowAlign="end" tts:textAlign="start"/>
  <style xml:id="p_al_end_start" ebutts:multiRowAlign="start" tts:textAlign="end"/>
  <style xml:id="p_al_end_center" ebutts:multiRowAlign="center" tts:textAlign="end"/>
- <style xml:id="p_al_end_end" ebutts:multiRowAlign="end" tts:textAlign="end"/>
  <style xml:id="p_al_center_start" ebutts:multiRowAlign="start" tts:textAlign="center"/>
- <style xml:id="p_al_center_center" ebutts:multiRowAlign="end" tts:textAlign="center"/>
  <style xml:id="p_al_center_end" ebutts:multiRowAlign="end" tts:textAlign="center"/>
  
  <style xml:id="p_font1" tts:fontFamily="proportionalSansSerif" tts:lineHeight="125%" tts:fontSize="100%"/>
@@ -99,9 +94,6 @@ The following is the maximal style name set, and thier default values:
  <style xml:id="s_nonewhite"/>
  
  
- <style xml:id="p_rb_res_before" tts:rubyReserve="before"/>
- <style xml:id="p_rb_res_after" tts:rubyReserve="after"/>
- <style xml:id="p_rb_res_both" tts:rubyReserve="both"/>
  <style xml:id="p_rb_res_outside" tts:rubyReserve="outside"/>
 
  <style xml:id="ps_shear" tts:shear="16.67%"/>
@@ -112,24 +104,10 @@ The following is the maximal style name set, and thier default values:
  <style xml:id="s_rb_algn_center" tts:ruby="container" tts:rubyAlign="center"/>
  <style xml:id="s_rb_algn_around" tts:ruby="container" tts:rubyAlign="spaceAround"/>
  
- <style xml:id="s_rb_posn_before" tts:ruby="container" tts:rubyPosition="before"/>
- <style xml:id="s_rb_posn_after" tts:ruby="container" tts:rubyPosition="after"/>
  <style xml:id="s_rb_posn_outside" tts:ruby="container" tts:rubyPosition="outside"/>
  
  <style xml:id="s_combine" tts:textCombine="all"/>
  
- <style xml:id="s_emf_fcb" tts:textEmphasis="filled circle before"/>
- <style xml:id="s_emf_fdb" tts:textEmphasis="filled dot before"/>
- <style xml:id="s_emf_fsb" tts:textEmphasis="filled sesame before"/>
- <style xml:id="s_emf_ocb" tts:textEmphasis="open circle before"/>
- <style xml:id="s_emf_odb" tts:textEmphasis="open dot before"/>
- <style xml:id="s_emf_osb" tts:textEmphasis="open sesame before"/>
- <style xml:id="s_emf_fca" tts:textEmphasis="filled circle after"/>
- <style xml:id="s_emf_fda" tts:textEmphasis="filled dot after"/>
- <style xml:id="s_emf_fsa" tts:textEmphasis="filled sesame after"/>
- <style xml:id="s_emf_oca" tts:textEmphasis="open circle after"/>
- <style xml:id="s_emf_oda" tts:textEmphasis="open dot after"/>
- <style xml:id="s_emf_osa" tts:textEmphasis="open sesame after"/>
  <style xml:id="s_emf_fco" tts:textEmphasis="filled circle outside"/>
  <style xml:id="s_emf_fdo" tts:textEmphasis="filled dot outside"/>
  <style xml:id="s_emf_fso" tts:textEmphasis="filled sesame outside"/>
@@ -201,13 +179,11 @@ e.g. in vertical Japanese, start means top, end means bottom.
 
 p_al_start, p_al_end - these align a single line or multi-line `<p>` element against the region edge.
 
-p_al_center - this aligns the `<p>` element centrally in the region.
+p_al_start_center, p_al_start_end - these align the the `<p>` element against the 'start' region edge, but justify the content start/center/end
 
-p_al_start_start, p_al_start_center, p_al_start_end - these align the the `<p>` element against the 'start' region edge, but justify the content start/center/end
+p_al_end_start, p_al_end_center - these align the the `<p>` element against the 'end' region edge, but justify the content start/center/end
 
-p_al_end_start, p_al_end_center, p_al_end_end - these align the the `<p>` element against the 'end' region edge, but justify the content start/center/end
-
-p_al_center_start, p_al_center_center, p_al_center_end  - these align the the `<p>` element to the center of the region, but justify the content start/center/end
+p_al_center_start, p_al_center_end  - these align the the `<p>` element to the center of the region, but justify the content start/center/end
 
 Note that p_al_center and p_al_center_center are equivlent, as are p_al_start, p_al_start_start and p_al_end, p_al_end_end.
 

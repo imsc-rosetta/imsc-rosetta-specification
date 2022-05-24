@@ -4,6 +4,8 @@
 
 
 
+This sample is very preliminary, and may not be accurate.  Please refer to the alignment and boxing samples for accurate samples.
+
 This file is an overall sample which demonstrates all the features of imsc-rosetta
 
 
@@ -137,18 +139,18 @@ This file is an overall sample which demonstrates all the features of imsc-roset
   </layout>
  </head>
  <body>
-  <div xml:id="sub0" region="R0" begin="01:00:03.600" end="01:00:07.640" style="s_outlineblack">
+  <div xml:id="sub0" region="R0" begin="01:00:03.600" end="01:00:07.640" style="_d_default">
    <metadata rosetta:comment="this is a comment test a cr"/>
    <p style="p_font2"><span style="ps_bg_boxedblack">First Frame of active video </span></p>
   </div>
   <div xml:id="1" region="R0" begin="01:00:07.760" end="01:00:11.760" style="_d_default">
    <p style="p_font2"><span>1 line</span><span style="s_nonered"> Center</span><span> Bottom</span></p>
   </div>
-  <div xml:id="2" region="R0" begin="01:00:11.880" end="01:00:15.880" style="_d_default p_al_start">
-   <p style="p_font2"><span>1 line left  bottom</span></p>
+  <div xml:id="2" region="R0" begin="01:00:11.880" end="01:00:15.880" style="_d_default">
+   <p style="p_font2 p_al_start"><span>1 line left  bottom</span></p>
   </div>
-  <div xml:id="3" region="R0" begin="01:00:16.000" end="01:00:20.000" style="_d_default p_al_end">
-   <p style="p_font2"><span>1 line right bottom</span></p>
+  <div xml:id="3" region="R0" begin="01:00:16.000" end="01:00:20.000" style="_d_default">
+   <p style="p_font2 p_al_end"><span>1 line right bottom</span></p>
   </div>
   <div xml:id="4" region="R0" begin="01:00:20.120" end="01:00:24.120" style="_d_default">
    <p style="p_font2"><span>two line </span></p>
@@ -349,7 +351,7 @@ It's white text on black box, with black outline.
 #### div XML
 
 ```
-<div xml:id="sub0" region="R0" begin="01:00:03.600" end="01:00:07.640" style="s_outlineblack">
+<div xml:id="sub0" region="R0" begin="01:00:03.600" end="01:00:07.640" style="_d_default">
  <metadata rosetta:comment="this is a comment test a cr"/>
  <p style="p_font2"><span style="ps_bg_boxedblack">First Frame of active video </span></p>
 </div>
@@ -378,8 +380,8 @@ It's white text on black box, with black outline.
 #### div XML
 
 ```
-<div xml:id="2" region="R0" begin="01:00:11.880" end="01:00:15.880" style="_d_default p_al_start">
- <p style="p_font2"><span>1 line left  bottom</span></p>
+<div xml:id="2" region="R0" begin="01:00:11.880" end="01:00:15.880" style="_d_default">
+ <p style="p_font2 p_al_start"><span>1 line left  bottom</span></p>
 </div>
 ```
 #### Resulting Image
@@ -392,8 +394,8 @@ It's white text on black box, with black outline.
 #### div XML
 
 ```
-<div xml:id="3" region="R0" begin="01:00:16.000" end="01:00:20.000" style="_d_default p_al_end">
- <p style="p_font2"><span>1 line right bottom</span></p>
+<div xml:id="3" region="R0" begin="01:00:16.000" end="01:00:20.000" style="_d_default">
+ <p style="p_font2 p_al_end"><span>1 line right bottom</span></p>
 </div>
 ```
 #### Resulting Image
