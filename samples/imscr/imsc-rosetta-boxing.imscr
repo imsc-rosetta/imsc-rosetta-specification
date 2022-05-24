@@ -143,5 +143,11 @@
   <div xml:id="10" region="R0" begin="01:00:40.760" end="01:00:44.760" style="_d_default">
    <p style="p_font2 ps_bg_ghostboxedblack"><span>Ghost Stripe change to </span><span style="ps_bg_ghostboxedred">red </span><span>then </span><span style="ps_bg_ghostboxedblue">blue</span><span><br/></span><span>line 2</span></p>
   </div>
+  <div xml:id="11" region="R0" begin="01:00:45.760" end="01:00:48.760" style="_d_default d_fillgap">
+   <p style="p_font2"><span style="ps_bg_boxedblack">Solid Boxed - fillgap</span><span><br/></span><span style="ps_bg_boxedblack">line 2 descender:y ascender:Á</span></p>
+  </div>
+  <div xml:id="3" region="R0" begin="01:00:49.880" end="01:00:54.880" style="_d_default d_fillgap">
+   <p style="p_font2"><span style="ps_bg_ghostboxedblack">Ghost Boxed - fillgap</span><span><br/></span><span><br/></span><span style="ps_bg_ghostboxedblack">line 2</span></p>
+  </div>
 </body>
 </tt>

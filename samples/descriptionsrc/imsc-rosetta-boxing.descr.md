@@ -77,3 +77,13 @@ This is unavoidable because of the way boxing on `<p>` and `<span>` work in TTML
 
 Note that black outline is retained.  Comments?
 
+# div 11
+
+Solid black box with d_fillgap specified on `<div>`.
+
+# div 3
+
+Ghost box with d_fillgap specified on `<div>`, but with a blank line in between the lines.
+
+***The result is probably not desirable.***
+

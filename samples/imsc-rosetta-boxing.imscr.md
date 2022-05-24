@@ -167,6 +167,12 @@ The background color of text can be changed if boxed
   <div xml:id="10" region="R0" begin="01:00:40.760" end="01:00:44.760" style="_d_default">
    <p style="p_font2 ps_bg_ghostboxedblack"><span>Ghost Stripe change to </span><span style="ps_bg_ghostboxedred">red </span><span>then </span><span style="ps_bg_ghostboxedblue">blue</span><span><br/></span><span>line 2</span></p>
   </div>
+  <div xml:id="11" region="R0" begin="01:00:45.760" end="01:00:48.760" style="_d_default d_fillgap">
+   <p style="p_font2"><span style="ps_bg_boxedblack">Solid Boxed - fillgap</span><span><br/></span><span style="ps_bg_boxedblack">line 2 descender:y ascender:Á</span></p>
+  </div>
+  <div xml:id="3" region="R0" begin="01:00:49.880" end="01:00:54.880" style="_d_default d_fillgap">
+   <p style="p_font2"><span style="ps_bg_ghostboxedblack">Ghost Boxed - fillgap</span><span><br/></span><span><br/></span><span style="ps_bg_ghostboxedblack">line 2</span></p>
+  </div>
  </body>
 </tt>
 ```
@@ -218,9 +224,10 @@ Sometimes used as a channel style.  Other times used to make text readable when 
 ### subtitle 3 at begin=01:00:11.880
 
 
-Ghost box
+Ghost box with d_fillgap specified on `<div>`, but with a blank line in between the lines.
 
-Sometimes used as a channel style.  Other times used to make text readable when on top of a bright or contrasty background.
+***The result is probably not desirable.***
+
 
 
 #### div XML
@@ -367,7 +374,6 @@ This is unavoidable because of the way boxing on `<p>` and `<span>` work in TTML
 Note that black outline is retained.  Comments?
 
 
-
 #### div XML
 
 ```
@@ -378,5 +384,44 @@ Note that black outline is retained.  Comments?
 #### Resulting Image
 
 <img src="./images/imsc-rosetta-boxing.imscr/3640.76.png" width="600"/>
+
+
+### subtitle 11 at begin=01:00:45.760
+
+
+Solid black box with d_fillgap specified on `<div>`.
+
+
+#### div XML
+
+```
+<div xml:id="11" region="R0" begin="01:00:45.760" end="01:00:48.760" style="_d_default d_fillgap">
+ <p style="p_font2"><span style="ps_bg_boxedblack">Solid Boxed - fillgap</span><span><br/></span><span style="ps_bg_boxedblack">line 2 descender:y ascender:Á</span></p>
+</div>
+```
+#### Resulting Image
+
+<img src="./images/imsc-rosetta-boxing.imscr/3645.76.png" width="600"/>
+
+
+### subtitle 3 at begin=01:00:49.880
+
+
+Ghost box with d_fillgap specified on `<div>`, but with a blank line in between the lines.
+
+***The result is probably not desirable.***
+
+
+
+#### div XML
+
+```
+<div xml:id="3" region="R0" begin="01:00:49.880" end="01:00:54.880" style="_d_default d_fillgap">
+ <p style="p_font2"><span style="ps_bg_ghostboxedblack">Ghost Boxed - fillgap</span><span><br/></span><span><br/></span><span style="ps_bg_ghostboxedblack">line 2</span></p>
+</div>
+```
+#### Resulting Image
+
+<img src="./images/imsc-rosetta-boxing.imscr/3649.88.png" width="600"/>
 
 
