@@ -141,7 +141,7 @@ fontSize must be set as a percentage (of the size specified in _r_default), e.g.
 
 Since lineHeight can be a problematic variable, it MUST be set every time fontSize is set.  It is probably best to set it to "125%".
 
-fontFamily should be set to "proportionalSansSerif" unless specific requirments state otherwise.
+fontFamily should be set to "proportionalSansSerif" unless specific requirements state otherwise.
 
 ### colors
 
