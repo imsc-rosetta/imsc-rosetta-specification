@@ -404,7 +404,7 @@ Solid black box with d_fillgap specified on `<div>`.
 <img src="./images/imsc-rosetta-boxing.imscr/3645.76.png" width="600"/>
 
 
-### subtitle 3 at begin=01:00:49.880
+### subtitle 12 at begin=01:00:49.880
 
 
 Ghost box with d_fillgap specified on `<div>`, but with a blank line in between the lines.

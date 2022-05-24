@@ -2,7 +2,7 @@
 
 ## style p_rtl
 
-add style p_rtl to each p which contains right to left language (e.g. arabic, hebrew, etc.)
+add style p_rtl to each p which contains right to left language (e.g. Arabic, Hebrew, etc.)
 
 ***Do not use embedded direction control characters, e.g.:***
 
