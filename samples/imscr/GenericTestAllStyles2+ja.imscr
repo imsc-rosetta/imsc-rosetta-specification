@@ -62,15 +62,11 @@
    <style xml:id="s_nonewhite"/>
    <style xml:id="p_al_start" tts:textAlign="start"/>
    <style xml:id="p_al_end" tts:textAlign="end"/>
-   <style xml:id="p_al_center" tts:textAlign="center"/>
-   <style xml:id="p_al_start_start" ebutts:multiRowAlign="start" tts:textAlign="start"/>
    <style xml:id="p_al_start_center" ebutts:multiRowAlign="center" tts:textAlign="start"/>
    <style xml:id="p_al_start_end" ebutts:multiRowAlign="end" tts:textAlign="start"/>
    <style xml:id="p_al_end_start" ebutts:multiRowAlign="start" tts:textAlign="end"/>
    <style xml:id="p_al_end_center" ebutts:multiRowAlign="center" tts:textAlign="end"/>
-   <style xml:id="p_al_end_end" ebutts:multiRowAlign="end" tts:textAlign="end"/>
    <style xml:id="p_al_center_start" ebutts:multiRowAlign="start" tts:textAlign="center"/>
-   <style xml:id="p_al_start_center" ebutts:multiRowAlign="center" tts:textAlign="center"/>
    <style xml:id="p_al_center_end" ebutts:multiRowAlign="end" tts:textAlign="center"/>
    <style xml:id="d_forced" itts:forcedDisplay="true"/>
    <style xml:id="p_font1" tts:fontFamily="proportionalSansSerif" tts:lineHeight="125%" tts:fontSize="100%"/>

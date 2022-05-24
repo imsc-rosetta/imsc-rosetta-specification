@@ -7,7 +7,6 @@
 This file is an overall sample which demonstrates all the features of imsc-rosetta
 
 
-
 <details><summary>GenericTestAllStyles2+ja.imscr</summary>
 
 ```
@@ -75,15 +74,11 @@ This file is an overall sample which demonstrates all the features of imsc-roset
    <style xml:id="s_nonewhite"/>
    <style xml:id="p_al_start" tts:textAlign="start"/>
    <style xml:id="p_al_end" tts:textAlign="end"/>
-   <style xml:id="p_al_center" tts:textAlign="center"/>
-   <style xml:id="p_al_start_start" ebutts:multiRowAlign="start" tts:textAlign="start"/>
    <style xml:id="p_al_start_center" ebutts:multiRowAlign="center" tts:textAlign="start"/>
    <style xml:id="p_al_start_end" ebutts:multiRowAlign="end" tts:textAlign="start"/>
    <style xml:id="p_al_end_start" ebutts:multiRowAlign="start" tts:textAlign="end"/>
    <style xml:id="p_al_end_center" ebutts:multiRowAlign="center" tts:textAlign="end"/>
-   <style xml:id="p_al_end_end" ebutts:multiRowAlign="end" tts:textAlign="end"/>
    <style xml:id="p_al_center_start" ebutts:multiRowAlign="start" tts:textAlign="center"/>
-   <style xml:id="p_al_start_center" ebutts:multiRowAlign="center" tts:textAlign="center"/>
    <style xml:id="p_al_center_end" ebutts:multiRowAlign="end" tts:textAlign="center"/>
    <style xml:id="d_forced" itts:forcedDisplay="true"/>
    <style xml:id="p_font1" tts:fontFamily="proportionalSansSerif" tts:lineHeight="125%" tts:fontSize="100%"/>
@@ -343,14 +338,12 @@ This file is an overall sample which demonstrates all the features of imsc-roset
 
 
 
-### subtitle at begin=01:00:03.600
-
+### subtitle sub0 at begin=01:00:03.600
 
 
 This div represents a single line of boxed text at the bottom of the screen.
 
 It's white text on black box, with black outline.
-
 
 
 #### div XML
@@ -366,7 +359,7 @@ It's white text on black box, with black outline.
 <img src="./images/GenericTestAllStyles2+ja.imscr/3603.6.png" width="600"/>
 
 
-### subtitle at begin=01:00:07.760
+### subtitle 1 at begin=01:00:07.760
 
 #### div XML
 
@@ -380,7 +373,7 @@ It's white text on black box, with black outline.
 <img src="./images/GenericTestAllStyles2+ja.imscr/3607.76.png" width="600"/>
 
 
-### subtitle at begin=01:00:11.880
+### subtitle 2 at begin=01:00:11.880
 
 #### div XML
 
@@ -394,7 +387,7 @@ It's white text on black box, with black outline.
 <img src="./images/GenericTestAllStyles2+ja.imscr/3611.88.png" width="600"/>
 
 
-### subtitle at begin=01:00:16.000
+### subtitle 3 at begin=01:00:16.000
 
 #### div XML
 
@@ -408,8 +401,7 @@ It's white text on black box, with black outline.
 <img src="./images/GenericTestAllStyles2+ja.imscr/3616.png" width="600"/>
 
 
-### subtitle at begin=01:00:20.120
-
+### subtitle 4 at begin=01:00:20.120
 
 
 This div represents a two line subtitle at the bottom of the screen.  The subtitle is centered and has black outline because d_outline is specified in _d_default.
@@ -428,7 +420,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3620.12.png" width="600"/>
 
 
-### subtitle at begin=01:00:24.240
+### subtitle 5 at begin=01:00:24.240
 
 #### div XML
 
@@ -443,7 +435,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3624.24.png" width="600"/>
 
 
-### subtitle at begin=01:00:28.360
+### subtitle 6 at begin=01:00:28.360
 
 #### div XML
 
@@ -458,7 +450,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3628.36.png" width="600"/>
 
 
-### subtitle at begin=01:00:32.480
+### subtitle 7 at begin=01:00:32.480
 
 #### div XML
 
@@ -472,7 +464,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3632.48.png" width="600"/>
 
 
-### subtitle at begin=01:00:36.640
+### subtitle 8 at begin=01:00:36.640
 
 #### div XML
 
@@ -486,7 +478,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3636.64.png" width="600"/>
 
 
-### subtitle at begin=01:00:40.760
+### subtitle 9 at begin=01:00:40.760
 
 #### div XML
 
@@ -500,7 +492,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3640.76.png" width="600"/>
 
 
-### subtitle at begin=01:00:44.880
+### subtitle 10 at begin=01:00:44.880
 
 #### div XML
 
@@ -514,7 +506,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3644.88.png" width="600"/>
 
 
-### subtitle at begin=01:00:49.000
+### subtitle 11 at begin=01:00:49.000
 
 #### div XML
 
@@ -528,7 +520,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3649.png" width="600"/>
 
 
-### subtitle at begin=01:00:53.120
+### subtitle 12 at begin=01:00:53.120
 
 #### div XML
 
@@ -542,7 +534,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3653.12.png" width="600"/>
 
 
-### subtitle at begin=01:00:57.240
+### subtitle 13 at begin=01:00:57.240
 
 #### div XML
 
@@ -556,7 +548,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3657.24.png" width="600"/>
 
 
-### subtitle at begin=01:01:01.360
+### subtitle 14 at begin=01:01:01.360
 
 #### div XML
 
@@ -570,7 +562,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3661.36.png" width="600"/>
 
 
-### subtitle at begin=01:01:05.480
+### subtitle 15 at begin=01:01:05.480
 
 #### div XML
 
@@ -584,7 +576,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3665.48.png" width="600"/>
 
 
-### subtitle at begin=01:01:09.640
+### subtitle 16 at begin=01:01:09.640
 
 #### div XML
 
@@ -598,7 +590,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3669.64.png" width="600"/>
 
 
-### subtitle at begin=01:01:13.760
+### subtitle 17 at begin=01:01:13.760
 
 #### div XML
 
@@ -612,7 +604,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3673.76.png" width="600"/>
 
 
-### subtitle at begin=01:01:17.880
+### subtitle 18 at begin=01:01:17.880
 
 #### div XML
 
@@ -626,7 +618,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3677.88.png" width="600"/>
 
 
-### subtitle at begin=01:01:22.000
+### subtitle 19 at begin=01:01:22.000
 
 #### div XML
 
@@ -640,7 +632,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3682.png" width="600"/>
 
 
-### subtitle at begin=01:01:26.120
+### subtitle 20 at begin=01:01:26.120
 
 #### div XML
 
@@ -654,7 +646,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3686.12.png" width="600"/>
 
 
-### subtitle at begin=01:01:30.240
+### subtitle 21 at begin=01:01:30.240
 
 #### div XML
 
@@ -668,7 +660,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3690.24.png" width="600"/>
 
 
-### subtitle at begin=01:01:34.360
+### subtitle 22 at begin=01:01:34.360
 
 #### div XML
 
@@ -684,7 +676,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3694.36.png" width="600"/>
 
 
-### subtitle at begin=01:01:38.520
+### subtitle 23 at begin=01:01:38.520
 
 #### div XML
 
@@ -699,7 +691,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3698.52.png" width="600"/>
 
 
-### subtitle at begin=01:01:42.640
+### subtitle 24 at begin=01:01:42.640
 
 #### div XML
 
@@ -713,7 +705,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3702.64.png" width="600"/>
 
 
-### subtitle at begin=01:01:46.760
+### subtitle 25 at begin=01:01:46.760
 
 #### div XML
 
@@ -728,7 +720,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3706.76.png" width="600"/>
 
 
-### subtitle at begin=01:01:50.880
+### subtitle 26 at begin=01:01:50.880
 
 #### div XML
 
@@ -743,7 +735,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3710.88.png" width="600"/>
 
 
-### subtitle at begin=01:01:54.000
+### subtitle 27 at begin=01:01:54.000
 
 #### div XML
 
@@ -758,7 +750,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3714.png" width="600"/>
 
 
-### subtitle at begin=01:01:57.120
+### subtitle 28 at begin=01:01:57.120
 
 #### div XML
 
@@ -773,7 +765,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3717.12.png" width="600"/>
 
 
-### subtitle at begin=01:02:00.240
+### subtitle 29 at begin=01:02:00.240
 
 #### div XML
 
@@ -788,7 +780,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3720.24.png" width="600"/>
 
 
-### subtitle at begin=01:02:03.359
+### subtitle 30 at begin=01:02:03.359
 
 #### div XML
 
@@ -802,7 +794,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3723.359.png" width="600"/>
 
 
-### subtitle at begin=01:02:07.359
+### subtitle 31 at begin=01:02:07.359
 
 #### div XML
 
@@ -816,7 +808,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3727.359.png" width="600"/>
 
 
-### subtitle at begin=01:02:10.359
+### subtitle 32 at begin=01:02:10.359
 
 #### div XML
 
@@ -830,7 +822,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3730.359.png" width="600"/>
 
 
-### subtitle at begin=01:02:13.359
+### subtitle 33 at begin=01:02:13.359
 
 #### div XML
 
@@ -845,7 +837,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3733.359.png" width="600"/>
 
 
-### subtitle at begin=01:02:17.359
+### subtitle 34 at begin=01:02:17.359
 
 #### div XML
 
@@ -860,7 +852,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3737.359.png" width="600"/>
 
 
-### subtitle at begin=01:02:21.359
+### subtitle 35 at begin=01:02:21.359
 
 #### div XML
 
@@ -875,7 +867,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3741.359.png" width="600"/>
 
 
-### subtitle at begin=01:02:25.359
+### subtitle 36 at begin=01:02:25.359
 
 #### div XML
 
@@ -890,7 +882,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3745.359.png" width="600"/>
 
 
-### subtitle at begin=01:02:30.359
+### subtitle 37 at begin=01:02:30.359
 
 #### div XML
 
@@ -905,7 +897,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3750.359.png" width="600"/>
 
 
-### subtitle at begin=01:02:35.120
+### subtitle 38 at begin=01:02:35.120
 
 #### div XML
 
@@ -919,7 +911,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3755.12.png" width="600"/>
 
 
-### subtitle at begin=01:02:41.120
+### subtitle 39 at begin=01:02:41.120
 
 #### div XML
 
@@ -933,7 +925,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3761.12.png" width="600"/>
 
 
-### subtitle at begin=01:02:45.120
+### subtitle 40 at begin=01:02:45.120
 
 #### div XML
 
@@ -947,7 +939,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3765.12.png" width="600"/>
 
 
-### subtitle at begin=01:02:46.359
+### subtitle 41 at begin=01:02:46.359
 
 #### div XML
 
@@ -962,7 +954,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3766.359.png" width="600"/>
 
 
-### subtitle at begin=01:02:50.120
+### subtitle 42 at begin=01:02:50.120
 
 #### div XML
 
@@ -976,7 +968,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3770.12.png" width="600"/>
 
 
-### subtitle at begin=01:02:55.120
+### subtitle 43 at begin=01:02:55.120
 
 #### div XML
 
@@ -990,7 +982,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3775.12.png" width="600"/>
 
 
-### subtitle at begin=01:03:00.120
+### subtitle 44 at begin=01:03:00.120
 
 #### div XML
 
@@ -1004,7 +996,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3780.12.png" width="600"/>
 
 
-### subtitle at begin=01:03:05.120
+### subtitle 45 at begin=01:03:05.120
 
 #### div XML
 
@@ -1018,7 +1010,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3785.12.png" width="600"/>
 
 
-### subtitle at begin=01:03:05.220
+### subtitle 45.2 at begin=01:03:05.220
 
 #### div XML
 
@@ -1032,7 +1024,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3785.22.png" width="600"/>
 
 
-### subtitle at begin=01:03:06.120
+### subtitle 45.5 at begin=01:03:06.120
 
 #### div XML
 
@@ -1046,7 +1038,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3786.12.png" width="600"/>
 
 
-### subtitle at begin=01:03:10.359
+### subtitle 46 at begin=01:03:10.359
 
 #### div XML
 
@@ -1060,7 +1052,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3790.359.png" width="600"/>
 
 
-### subtitle at begin=01:03:14.359
+### subtitle 47 at begin=01:03:14.359
 
 #### div XML
 
@@ -1074,7 +1066,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3794.359.png" width="600"/>
 
 
-### subtitle at begin=01:03:20.359
+### subtitle 48 at begin=01:03:20.359
 
 #### div XML
 
@@ -1088,7 +1080,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3800.359.png" width="600"/>
 
 
-### subtitle at begin=01:03:25.359
+### subtitle 49 at begin=01:03:25.359
 
 #### div XML
 
@@ -1102,7 +1094,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3805.359.png" width="600"/>
 
 
-### subtitle at begin=01:03:30.120
+### subtitle 50 at begin=01:03:30.120
 
 #### div XML
 
@@ -1117,7 +1109,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3810.12.png" width="600"/>
 
 
-### subtitle at begin=01:03:30.420
+### subtitle 50 at begin=01:03:30.420
 
 #### div XML
 
@@ -1132,7 +1124,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3810.42.png" width="600"/>
 
 
-### subtitle at begin=01:03:34.359
+### subtitle 53 at begin=01:03:34.359
 
 #### div XML
 
@@ -1146,7 +1138,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3814.359.png" width="600"/>
 
 
-### subtitle at begin=01:03:37.359
+### subtitle 54 at begin=01:03:37.359
 
 #### div XML
 
@@ -1160,7 +1152,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3817.359.png" width="600"/>
 
 
-### subtitle at begin=01:03:40.359
+### subtitle 55 at begin=01:03:40.359
 
 #### div XML
 
