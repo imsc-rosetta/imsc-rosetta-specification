@@ -2,7 +2,7 @@
 
 Style names are fixed in imsc-rosetta for simplicity of use and understanding.
 
-Some styles are fixed in terms of content,. and others are adjustable, either to represent file defaults, or to represent specific requirments.
+Some styles are fixed in terms of content,. and others are adjustable, either to represent file defaults, or to represent specific requirements.
 
 ## All styles
 
@@ -151,7 +151,7 @@ All styles must contain only the attributes as above. (i.e. only the attribute v
 
 _r_default should be set such that the origin and extent represent the active subtitle area, and fontSize set such that extent(y) / fontSize x lineHeight is close to a round number.
 
-This resulting number is the etherial 'number of lines on a screen', and should be used to position region edges.
+This resulting number is the ethereal 'number of lines on a screen', and should be used to position region edges.
 
 ### fontSize
 
@@ -171,7 +171,7 @@ styles defining colors may be modified in the even that a specific color is requ
 
 For example, if a specific regional norm is to use a pale yellow foreground (not uncommon in the far east), the ds_fg_yellow style may be modified to reflect the different shade of yellow.
 
-i.e. in specific circumstances stytles starting with ds_fg_, ps_bg_, ds_outline, ds_drop may be modified.
+i.e. in specific circumstances styles starting with ds_fg_, ps_bg_, ds_outline, ds_drop may be modified.
 
 It is NOT intended that this should provide a way to change yellow to blue, for example, only to adjust a shade.
 
@@ -213,7 +213,7 @@ Note that p_al_center and p_al_center_center are equivlent, as are p_al_start, p
 
 ### outline/dropshadow
 
-Imsc does not support dropshadow, but you may use d_drop in place od d_outline, and s_dropxxx in place of s_outlinexxx to signify that the text is desired outlined.  This feature is to enable the dropshadow to be reproduced if the rosetta file is converted back to an extant format by a processor which fully understands the style name usage.
+Imsc does not support dropshadow, but you may use d_drop in place of d_outline, and s_dropxxx in place of s_outlinexxx to signify that the text is desired outlined.  This feature is to enable the dropshadow to be reproduced if the rosetta file is converted back to an extant format by a processor which fully understands the style name usage.
 
 d_outline or d_drop may be specified as a style of _d_default to apply it to the whole file.
 
@@ -229,7 +229,7 @@ Note: it is normal for translation subtitles to be outlined.
 
 To box only the line areas, please specify ps_bg_boxedxxx or ps_bg_ghostboxedxxx on every base level span in every `<p>`.
 
-If a subtitle contains multiple `<p>`, all base level `<span>` elements in all `<p>` for that subtitle must have the the same type (but not necessarily color) of boxing style applied.
+If a subtitle contains multiple `<p>`, all base level `<span>` elements in all `<p>` for that subtitle must have the same type (but not necessarily color) of boxing style applied.
 
 To change the background color of a single `<span>`, apply a different ps_bg_ style to it.
 
@@ -239,7 +239,7 @@ Do not box subtitles containing Ruby text (Japanese) unless you have fully check
 
 ### stripe
 
-To box lines so that the boxing reachs the edges of the region, please specify ps_bg_boxedxxx or ps_bg_ghostboxedxxx on *every* `<p>` in the subtitle.
+To box lines so that the boxing reaches the edges of the region, please specify ps_bg_boxedxxx or ps_bg_ghostboxedxxx on *every* `<p>` in the subtitle.
 
 To change the background color of a single `<span>`, apply a different ps_bg_ style to it - but bear in mind that in TTML, for ghost box, this will double the opacity of that span.
 
