@@ -2,7 +2,7 @@
 
 Style names are fixed in imsc-rosetta for simplicity of use and understanding.
 
-Some styles are fixed in terms of content,. and others are adjustable, either to represent file defaults, or to represent specific requirements.
+Some styles are fixed in terms of content and others are adjustable, either to represent file defaults, or to represent specific requirements.
 
 ## All styles
 
