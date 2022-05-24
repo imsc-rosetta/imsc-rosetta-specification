@@ -18,7 +18,7 @@ When using vertical subtitles, the regions should be full height, with variable 
 
 ## Rubies
 
-Rubies for japanese are supported through the use of nested spans with ruby specific styles attached.
+Rubies for Japanese are supported through the use of nested spans with ruby specific styles attached.
 
 ### Ruby Specific Styles:
 
@@ -94,13 +94,13 @@ Example (where region R12 has been had style r_vertical added to it):
 
 *note the use of tts:shear, not tts:fontShear*
 
-*note: this should ONLY be used for Japanese of other ideographic langages.  For other languages, you may use `s_italic`*
+*note: this should ONLY be used for Japanese of other ideographic languages.  For other languages, you may use `s_italic`*
 
 ### text emphasis (Bouten)
 
 This places emphasis on characters.
 
-The following defined ephasis styles may be used.
+The following defined emphasis styles may be used.
 
 Emphasis color is not supported.
 
