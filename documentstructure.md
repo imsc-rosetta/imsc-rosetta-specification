@@ -13,7 +13,7 @@ Exactly one `<head>` followed by exactly one `<body>`.
 Exactly one `<metadata>` followed by exactly one `<styling>` followed by exactly one `<layout>`.
 
 ### `<metadata>` - as used in `<head>`
-`<metadata>` must have no attributes. `<metadata>` must the following elements:
+`<metadata>` must have no attributes. `<metadata>` must contain the following elements:
 
 `<rosetta:format>rosetta-imsc</rosetta:format>`
 
