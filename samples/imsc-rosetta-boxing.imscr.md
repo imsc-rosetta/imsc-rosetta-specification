@@ -170,7 +170,7 @@ The background color of text can be changed if boxed
   <div xml:id="11" region="R0" begin="01:00:45.760" end="01:00:48.760" style="_d_default d_fillgap">
    <p style="p_font2"><span style="ps_bg_boxedblack">Solid Boxed - fillgap</span><span><br/></span><span style="ps_bg_boxedblack">line 2 descender:y ascender:Á</span></p>
   </div>
-  <div xml:id="3" region="R0" begin="01:00:49.880" end="01:00:54.880" style="_d_default d_fillgap">
+  <div xml:id="12" region="R0" begin="01:00:49.880" end="01:00:54.880" style="_d_default d_fillgap">
    <p style="p_font2"><span style="ps_bg_ghostboxedblack">Ghost Boxed - fillgap</span><span><br/></span><span><br/></span><span style="ps_bg_ghostboxedblack">line 2</span></p>
   </div>
  </body>
@@ -224,10 +224,9 @@ Sometimes used as a channel style.  Other times used to make text readable when 
 ### subtitle 3 at begin=01:00:11.880
 
 
-Ghost box with d_fillgap specified on `<div>`, but with a blank line in between the lines.
+Ghost box
 
-***The result is probably not desirable.***
-
+Sometimes used as a channel style.  Other times used to make text readable when on top of a bright or contrasty background.
 
 
 #### div XML
@@ -416,7 +415,7 @@ Ghost box with d_fillgap specified on `<div>`, but with a blank line in between 
 #### div XML
 
 ```
-<div xml:id="3" region="R0" begin="01:00:49.880" end="01:00:54.880" style="_d_default d_fillgap">
+<div xml:id="12" region="R0" begin="01:00:49.880" end="01:00:54.880" style="_d_default d_fillgap">
  <p style="p_font2"><span style="ps_bg_ghostboxedblack">Ghost Boxed - fillgap</span><span><br/></span><span><br/></span><span style="ps_bg_ghostboxedblack">line 2</span></p>
 </div>
 ```

@@ -81,7 +81,7 @@ Note that black outline is retained.  Comments?
 
 Solid black box with d_fillgap specified on `<div>`.
 
-# div 3
+# div 12
 
 Ghost box with d_fillgap specified on `<div>`, but with a blank line in between the lines.
 
