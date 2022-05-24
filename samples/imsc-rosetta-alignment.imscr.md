@@ -6,7 +6,7 @@
 
 This file is a sample which demonstrates the alignment features of imsc-rosetta.
 
-imsc-rosetta has 7 alignment style names which can be applied to `<p>`:
+imsc-rosetta has 8 alignment style names which can be applied to `<p>`:
 
 - p_al_start
 - p_al_end
@@ -34,6 +34,8 @@ subtitle vertical area = 80/100
 postion count = subtitle vertical area/row height = 0.8/0.06666 = ~12
 
 Therefore region edges are quantised to n * 80%/12
+
+*note that file contains ALL imsc-rosetta defined styles as an example - this is not necessary, only the used styles are required*
 
 
 <details><summary>imsc-rosetta-alignment.imscr</summary>
@@ -103,7 +105,6 @@ Therefore region edges are quantised to n * 80%/12
    <style xml:id="s_nonewhite"/>
    <style xml:id="p_al_start" tts:textAlign="start"/>
    <style xml:id="p_al_end" tts:textAlign="end"/>
-   <style xml:id="p_al_center" tts:textAlign="center"/>
    <style xml:id="p_al_start_center" ebutts:multiRowAlign="center" tts:textAlign="start"/>
    <style xml:id="p_al_start_end" ebutts:multiRowAlign="end" tts:textAlign="start"/>
    <style xml:id="p_al_end_start" ebutts:multiRowAlign="start" tts:textAlign="end"/>
@@ -153,17 +154,9 @@ Therefore region edges are quantised to n * 80%/12
   <layout>
    <region xml:id="R0" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" style="r_region"/>
    <region xml:id="R1" tts:origin="10% 10%" tts:extent="80% 73.3%" tts:displayAlign="after" style="r_region"/>
-   <region xml:id="R2" tts:origin="10% 10%" tts:extent="80% 66.7%" tts:displayAlign="after" style="r_region"/>
-   <region xml:id="R3" tts:origin="10% 10%" tts:extent="80% 60%" tts:displayAlign="after" style="r_region"/>
-   <region xml:id="R4" tts:origin="10% 10%" tts:extent="80% 53.3%" tts:displayAlign="after" style="r_region"/>
-   <region xml:id="R5" tts:origin="10% 10%" tts:extent="80% 46.7%" tts:displayAlign="after" style="r_region"/>
-   <region xml:id="R6" tts:origin="10% 43.3%" tts:extent="80% 46.7%" tts:displayAlign="before" style="r_region"/>
-   <region xml:id="R7" tts:origin="10% 36.7%" tts:extent="80% 53.3%" tts:displayAlign="before" style="r_region"/>
-   <region xml:id="R8" tts:origin="10% 30%" tts:extent="80% 60%" tts:displayAlign="before" style="r_region"/>
    <region xml:id="R9" tts:origin="10% 23.3%" tts:extent="80% 66.7%" tts:displayAlign="before" style="r_region"/>
    <region xml:id="R10" tts:origin="10% 16.7%" tts:extent="80% 73.3%" tts:displayAlign="before" style="r_region"/>
    <region xml:id="R11" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="before" style="r_region"/>
-   <region xml:id="R12" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="before" style="r_region r_vertical"/>
   </layout>
  </head>
  <body>

@@ -3,7 +3,7 @@
 
 This file is a sample which demonstrates the alignment features of imsc-rosetta.
 
-imsc-rosetta has 7 alignment style names which can be applied to `<p>`:
+imsc-rosetta has 8 alignment style names which can be applied to `<p>`:
 
 - p_al_start
 - p_al_end
@@ -31,6 +31,8 @@ subtitle vertical area = 80/100
 postion count = subtitle vertical area/row height = 0.8/0.06666 = ~12
 
 Therefore region edges are quantised to n * 80%/12
+
+*note that file contains ALL imsc-rosetta defined styles as an example - this is not necessary, only the used styles are required*
 
 # div 1
 
