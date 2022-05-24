@@ -44,7 +44,7 @@ Spacing before and after p elements will not compromise presentation.
   
 <details><summary>Use of namespace prefixes</summary>
     
-Namespace prefix processing is a large and unneccessary overhead when using common simple XML parsers.  By enforcing namespace prefixes, and a fixed set of namespaces, we simplify the parsing significantly.
+Namespace prefix processing is a large and unnecessary overhead when using common simple XML parsers.  By enforcing namespace prefixes, and a fixed set of namespaces, we simplify the parsing significantly.
 
 If you have an XML processor which does not retain the define XML Namespace prefixes, please normalise the file afterwards to restore them.
     
@@ -60,7 +60,7 @@ If you have an XML processor which does not retain the define XML Namespace pref
   
   This CAN be done by using a single `<p>` per subtitle, but that removes the ability to use both left and right alignment in a subtitle, which is a feature of existing line based subtitle formats. 
   
-  We are not trying to be compatible with multiple forms of imsc - we are specifically making a version which has a very restricted form, but is fully IMSC complient. 
+  We are not trying to be compatible with multiple forms of imsc - we are specifically making a version which has a very restricted form, but is fully IMSC compliant. 
     
 </details>
 
@@ -68,7 +68,7 @@ If you have an XML processor which does not retain the define XML Namespace pref
 
 <details><summary>File features/intent which cannot be transmitted via TTML easily</summary>
 
-  The use of TTML makes the representaiton of some features of existing files difficult.
+  The use of TTML makes the representation of some features of existing files difficult.
   
   One example of this is background color, and it's use to color outlines.
   
@@ -88,13 +88,13 @@ If you have an XML processor which does not retain the define XML Namespace pref
 
 <details><summary>'defaults'</summary>
 
-  Certian of the styles in Imsc-Rosetta are defined to be always present.
+  Certain of the styles in Imsc-Rosetta are defined to be always present.
   
   These include _r_default, _p_default, _s_default and _d_default
   
   Specifically these can carry some information about how the file is intended to be manipulated.  _r_default carries the origin and extent of a 'default' region, as well as fontSize (in rh) and lineHeight.  These values are specifically to help any processor calculate line quantization (i.e. know WHERE lines are intended to be positioned on the screen).  Specifically, round(regionHeight/fontSize*lineHeight) should be used as a count of viable positions, and this value used to generate viable regions if moving subtitles vertically.  Quantization of line positions is used to keep the number of regions in control.  Rounding of region extent and origin to 0.1% should be enough to avoid ending up with too many regions.
   
-  Note that line quntization does NOT mean that you must use the default fontSize, it meerly means that we can know where regions should be put.  The actual fontSize can be modified by use of p_font1 and p_font2, where an Imsc-Rosetta writer can change the fontSize (as a percentage of the default).
+  Note that line quantization does NOT mean that you must use the default fontSize, it merely means that we can know where regions should be put.  The actual fontSize can be modified by use of p_font1 and p_font2, where an Imsc-Rosetta writer can change the fontSize (as a percentage of the default).
       
 </details>
 
@@ -117,9 +117,9 @@ If you have an XML processor which does not retain the define XML Namespace pref
   
   p_font1 and p_font2 can be used to select a font family, size, and lineHeight, for use with up to two fonts on a line by line basis.
   
-  Styles which include color may be changed to remap color only.  However, be aware that many parsers will ignore the content, and rely solely on the name.  (i.e. don't remap red to blue, and expect the mapping to occur on a teletext output.).  Remapping of colors is intended for subtle changes where the Imsc-Rosetta file may be parsed directly by a fully IMSC complient parser - e.g. to reduce full white intensity, or use a slightly different shade of yellow.
+  Styles which include color may be changed to remap color only.  However, be aware that many parsers will ignore the content, and rely solely on the name.  (i.e. don't remap red to blue, and expect the mapping to occur on a teletext output.).  Remapping of colors is intended for subtle changes where the Imsc-Rosetta file may be parsed directly by a fully IMSC compliant parser - e.g. to reduce full white intensity, or use a slightly different shade of yellow.
    
-  The intent here is, as always, to simplify parsing, and remove abiguity, whilst maintaining full IMSC compatibility.
+  The intent here is, as always, to simplify parsing, and remove ambiguity, whilst maintaining full IMSC compatibility.
   
   Some style is still complex (mainly around background color, because of the way it is specified in TTML), but most style is simple.
 
