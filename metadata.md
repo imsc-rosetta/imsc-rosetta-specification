@@ -6,7 +6,7 @@ The language for a file is defines in the xml:lang attribute of the tt element.
 Exact Language coding to be defined by customer.  e.g. bcp47/MESA.
 
 ## Information about subtitle type/categorisation
-Optional.  The opurpose of this classuification is as confirmation of external classification.
+Optional.  The purpose of this classification is as confirmation of external classification.
 
 `<rosetta:role>SDH|translationonly|translationwithforced|forcedonly</rosetta:role>`
 
@@ -22,11 +22,11 @@ startOfMedia: Optional. If present, should correspond to the time in HH:MM:SS.TT
 
 Note: for 23.976 media, a Timecode of 10:00:00:00 is represented as a Time of 10:00:36.000 - and TC of 01:00:00:00 is 01:00:03.600
 
-This is because in 23.976, there is no dropframe timecode.
+This is because in 23.976, there is no drop frame timecode.
 
 
 ## dates and times
-In the below, 'ISO Date' refers to the full UTC date and time YYYY-MM-DDTHH:MM:SS.SSSZ, e.g 2019-11-14T00:55:31.820Z
+In the below, 'ISO Date' refers to the full UTC date and time YYYY-MM-DDTHH:MM:SS.SSSZ, e.g. 2019-11-14T00:55:31.820Z
 
 ###created date: Optional.  This is intended to preserve the original time of creation of the subtitle data (e.g. the date of the translation).  In a conversion scenario, this could be the creation date of the original file.
 
