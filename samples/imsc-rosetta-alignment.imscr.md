@@ -21,7 +21,7 @@ imsc-rosetta has 8 alignment style names which can be applied to `<p>`:
 
 *note: there are no styles p_al_start_start, p_al_center_center, p_al_end_end - use p_al_start, and p_al_end*
 
-Vertical placement (in horiozontal subtitling) is determined by region edge placement.
+Vertical placement (in horizontal subtitling) is determined by region edge placement.
 
 The region edge against which the subtitle rests is placed according to the quantisation calculated from the extent, fontSize and lineHeight specified in _r_region.
 
@@ -31,7 +31,7 @@ row height = 5.333/100 x 125/100 = 6.666/100 or 6.666% of screen height
 
 subtitle vertical area = 80/100
 
-postion count = subtitle vertical area/row height = 0.8/0.06666 = ~12
+position count = subtitle vertical area/row height = 0.8/0.06666 = ~12
 
 Therefore region edges are quantised to n * 80%/12
 
@@ -243,7 +243,7 @@ Therefore region edges are quantised to n * 80%/12
 ### subtitle 1 at begin=01:00:07.760
 
 
-This div represents a single line centered at the bottom of the screen.  Note the absence of a p_al_ style - here we are using the default positon which is fixed as center in imsc-rosetta.
+This div represents a single line centered at the bottom of the screen.  Note the absence of a p_al_ style - here we are using the default position which is fixed as center in imsc-rosetta.
 
 
 #### div XML
@@ -297,7 +297,7 @@ This div represents a single line on the right using p_al_end in left to right t
 ### subtitle 4 at begin=01:00:20.120
 
 
-This div represents two lines centered at the bottom.  Note the absence of a p_al_ style - here we are using the default positon which is fixed as center in imsc-rosetta.
+This div represents two lines centered at the bottom.  Note the absence of a p_al_ style - here we are using the default position which is fixed as center in imsc-rosetta.
 
 
 #### div XML
@@ -351,7 +351,7 @@ This div represents two lines on the right bottom using p_al_end in left to righ
 ### subtitle 7 at begin=01:00:32.480
 
 
-This div represents two lines, where the longest line is centered, and the shorter line left aligned to the longer line (commonly know and center left align) using p_al_center_start in left to right text.
+This div represents two lines, where the longest line is centered, and the shorter line left aligned to the longer line (commonly know as center left align) using p_al_center_start in left to right text.
 
 
 #### div XML
@@ -479,7 +479,7 @@ This div represents three lines, where the first is left aligned, the second is 
 ### subtitle 14 at begin=01:01:01.360
 
 
-Subtitles 14-22 demonstrate vertical positioing using regions.
+Subtitles 14-22 demonstrate vertical positioning using regions.
 
 
 
