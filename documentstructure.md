@@ -121,7 +121,7 @@ Parsers and renderers expected to process or display imsc-rosetta must be capabl
 
 For horizontal non- pictographic text, `<span>` ***will contain ONLY text***. (i.e. no nested spans - all spans will be descendants of `<p>`)
 
-Nested `<span>` may ***only*** be used in subtitles requiring Rubies (i.e. Japanese), and be as above.  Spans contained within a base ruby span will only contain text, no further nexting is allowed.
+Nested `<span>` may ***only*** be used in subtitles requiring Rubies (i.e. Japanese), and be as above.  Spans contained within a base ruby span will only contain text, no further nesting is allowed.
 
 ## Example document structure
 
