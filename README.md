@@ -68,7 +68,7 @@ It also defines regions in such a way that a change of font size does not requir
 
 imsc-rosetta is specified in such a way to make it easy to develop against.  For example, by defining that `<br/>` must be wrapped in `<span>`, the most commonly used Javascript XML parser can both parse and then serialise an imsc-rosetta document in a few lines of code.  This ability is contrary to trying to parse any generic TTML file, where it is almost impossible to round-trip a file (parse it, process it, write it) in commonly used simple parsers.
 
-The use of defined style names, and being explicit about how certain visual styling is achieved makes the learning curve for developing with imsc-rosetta much shorter than learning how to use raw ISMC or TTML.
+The use of defined style names, and being explicit about how certain visual styling is achieved makes the learning curve for developing with imsc-rosetta much shorter than learning how to use raw IMSC or TTML.
 
 The definition of namespaces used and specification of namespace prefixes also simplifies and shortens the learning period for those less familiar with the real details of XML.
 
