@@ -155,7 +155,7 @@
   </div>
   <div xml:id="13" region="R0" begin="01:00:57.240" end="01:01:01.240" style="_d_default">
    <p style="p_font2 p_al_start"><span>left</span></p>
-   <p style="p_font2 p_al_center"><span>center</span></p>
+   <p style="p_font2"><span>center</span></p>
    <p style="p_font2 p_al_end"><span>right</span></p>
   </div>
   <div xml:id="14" region="R1" begin="01:01:01.360" end="01:01:05.360" style="_d_default">
@@ -184,7 +184,7 @@
   </div>
   <div xml:id="22" region="R11" begin="01:01:34.360" end="01:01:38.360" style="_d_default">
    <p style="p_font2 p_al_start"><span>top left</span></p>
-   <p style="p_font2 p_al_center"><span>center</span></p>
+   <p style="p_font2"><span>center</span></p>
    <p style="p_font2 p_al_end"><span>right</span></p>
   </div>
 </body>
