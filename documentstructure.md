@@ -1,11 +1,48 @@
 # Document Structure
 
+The file must start with the XML header containing the following attributes
+
+xml version="1.0"
+
+encoding="UTF-8"
+
+standalone="yes"
+
 ## Allowed elements
 
 ### `<tt>`
 `<tt>` contains only the specified attributes. `<tt>` contains the following elements:
 
 Exactly one `<head>` followed by exactly one `<body>`.
+
+#### tt must conform to ‘normal’ namespacing conventions. I.e. we will not insist on specific namespace prefixes, but suggest the below example where the default namespace is "http://www.w3.org/ns/ttml", and other used namespaces are prefixed with commonly used prefixes, only to foster familiarity for instance 
+
+"http://www.w3.org/ns/ttml#metadata"
+
+"http://www.w3.org/ns/ttml#styling"
+
+"http://www.w3.org/ns/ttml#parameter"
+
+"http://www.w3.org/XML/1998/namespace"
+
+"urn:ebu:tt:style"
+
+"http://www.w3.org/ns/ttml/profile/imsc1#styling"
+
+"https://github.com/imsc-rosetta/specification"
+
+#### Note IMSC only allows for ttp:timeBase="media"
+
+#### The Cell Resolution must be expliclity delcared ttp:cellResolution="30 15"
+
+#### The space must be xml:space="preserve"
+
+#### The frame rate must be set for instance, 23.98, 25 or 29.997 eg ttp:frameRate="25"
+
+#### The frame rate multiplier shall  be set eg ttp:frameRateMultiplier="1 1"
+
+#### The use of language codes is dependant on the broadcaster and could include bcp47 or ISO-639 or propriatary the actual code should be specified in xml:lang="en-US">
+ <head>
 
 ### `<head>`
 `<head>` must have no attributes. `<head>` contains the following elements:
