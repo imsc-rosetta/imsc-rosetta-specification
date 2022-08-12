@@ -11,38 +11,78 @@ standalone="yes"
 ## Allowed elements
 
 ### `<tt>`
-`<tt>` contains only the specified attributes. `<tt>` contains the following elements:
 
-Exactly one `<head>` followed by exactly one `<body>`.
+`<tt>` contains only the specified attributes. 
 
-#### tt must conform to ‘normal’ namespacing conventions. I.e. we will not insist on specific namespace prefixes, but suggest the below example where the default namespace is "http://www.w3.org/ns/ttml", and other used namespaces are prefixed with commonly used prefixes, only to foster familiarity for instance 
+<details><summary>expand for attibutes of tt</summary>
 
-"http://www.w3.org/ns/ttml#metadata"
+#### namespacing conventions:
 
-"http://www.w3.org/ns/ttml#styling"
+The `tt` element will contain the following explicit namespace defintions as attributes:
 
-"http://www.w3.org/ns/ttml#parameter"
+```
+ xmlns="http://www.w3.org/ns/ttml"
+ xmlns:ttm="http://www.w3.org/ns/ttml#metadata"
+ xmlns:tts="http://www.w3.org/ns/ttml#styling"
+ xmlns:ttp="http://www.w3.org/ns/ttml#parameter"
+ xmlns:xml="http://www.w3.org/XML/1998/namespace"
+ xmlns:ebutts="urn:ebu:tt:style"
+ xmlns:itts="http://www.w3.org/ns/ttml/profile/imsc1#styling"
+ xmlns:rosetta="https://github.com/imsc-rosetta/specification"
+```
 
-"http://www.w3.org/XML/1998/namespace"
+Namespace prefixes shall be as above.
+ 
+Additional namespaces may be used, but may not be recognised by parsers.
 
-"urn:ebu:tt:style"
+#### required attributes:
 
-"http://www.w3.org/ns/ttml/profile/imsc1#styling"
-
-"https://github.com/imsc-rosetta/specification"
+```
+ttp:timeBase="media"
+ttp:cellResolution="30 15"
+xml:space="preserve"
+xml:lang="(see below)"
+```
 
 #### Note IMSC only allows for ttp:timeBase="media"
 
-#### The Cell Resolution must be expliclity delcared ttp:cellResolution="30 15"
+#### The Cell Resolution must be expliclity delcared (as the default for ttml) ttp:cellResolution="30 15"
 
-#### The space must be xml:space="preserve"
+#### xml:space="preserve" is required for correct text presentation
 
-#### The frame rate must be set for instance, 23.98, 25 or 29.997 eg ttp:frameRate="25"
+#### Frame Rate:
 
-#### The frame rate multiplier shall  be set eg ttp:frameRateMultiplier="1 1"
+`ttp:framerate` and `ttp:frameRateMultiplier` must be set.  
+ 
+Note that these values are not required to parse the file, but shall set indicative of the framerate of the media file used to prepare the subtitles.
 
-#### The use of language codes is dependant on the broadcaster and could include bcp47 or ISO-639 or propriatary the actual code should be specified in xml:lang="en-US">
- <head>
+For 25 FPS:
+```
+ttp:frameRate="25"
+ttp:frameRateMultiplier="1 1"
+```
+
+For 29.97:
+```
+ttp:frameRate="30"
+ttp:frameRateMultiplier="1000 1001"
+```
+
+For 23.976:
+```
+ttp:frameRate="24"
+ttp:frameRateMultiplier="1000 1001"
+```
+
+other framerates are allowed.
+ 
+#### The use of language codes is dependant on the broadcaster and could include bcp47, ISO-639 or propriatary codes.  The code shall be specified in `xml:lang` in `tt`
+ 
+</details>
+
+`<tt>` contains the following elements:
+
+Exactly one `<head>` followed by exactly one `<body>`.
 
 ### `<head>`
 `<head>` must have no attributes. `<head>` contains the following elements:
@@ -99,9 +139,23 @@ e.g. Japanese vertical region:
 One or more `<div>`.
 
 ### `<div>`
-`<div>` elements must contain the following attributes:
+`<div>` elements shall contain the following attributes:
 
 `xml:id` `region` `begin` `end` `style`
+
+<details><summary>expand for attibutes of div</summary>
+ 
+ `xml:id` shall be unique in the file.  e.g. `xml:id="SUB1"`
+ 
+ `region` shall reference the xml:id of a `region` element.  e.g. `region="R1"`
+ 
+ `style` shall reference zero or more xml:id of `style` elements.  e.g. `style="_d_default dps_shear"`.  The referenced styles shall conform to the rules in [styles.md](styles.md) - i.e. be appropriate for inclusion in `div`.
+ 
+ `begin` shall be a time in HH:MM:SS.TTT where HH, MM, SS contain 2 digits, TTT contains three digits.  The time represented will be the real-time equivalent of the timecode of the time the subtitle should appear on the screen, relative to the timecode of the original media.
+
+ `end` shall be a time in HH:MM:SS.TTT where HH, MM, SS contain 2 digits, TTT contains three digits.  The time represented will be the real-time equivalent of the timecode of the time the subtitle should dissapear from the screen (i.e. the subtitle will NOT be visible at this time), relative to the timecode of the original media.
+
+</details>
 
 `<div>` contains the following elements:
 
@@ -121,7 +175,7 @@ The order of `<metadata rosetta:comment="comment text"/>` vs `<p>` is not import
 
 `style`
 
-The `style` attribute on `<p>` must contain either `p_font1` or `p_font2`.  The `style` attribute may contain additional styles relevant to `<p>`
+`style` shall reference zero or more xml:id of `style` elements.  e.g. `style="p_font2 p_rb_res_after"`.  The referenced styles shall conform to the rules in [styles.md](styles.md) - i.e. be appropriate for inclusion in `p`. The `style` attribute on `<p>` must contain either `p_font1` or `p_font2`
 
 `<p>` contains the following elements:
 
