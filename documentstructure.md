@@ -18,7 +18,7 @@ standalone="yes"
 
 #### namespacing conventions:
 
-The `tt` element will contain the following explicit namespace defintions as attributes:
+The `tt` element will contain the following explicit namespace definitions as attributes:
 
 ```
  xmlns="http://www.w3.org/ns/ttml"
