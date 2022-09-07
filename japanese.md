@@ -81,17 +81,17 @@ Example (where region R12 has been had style r_vertical added to it):
 
 ### text shear
 
-text shear of 16.67% may be applied using `dps_shear` on div, p or span
+text shear of 16.67% may be applied using `ps_shear` on p or span
 
-`dps_shear` equates to `tts:shear="16.67%"`
+`ps_shear` equates to `tts:shear="16.67%"`
 
 Example (where region R12 has been had style r_vertical added to it):
 ```
   <region xml:id="R12" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="before" style="r_region r_vertical"/>
 ....
 
-  <div xml:id="53" region="R12" begin="01:03:34.359" end="01:03:36.359" style="_d_default dps_shear">
-   <p style="p_font2 p_rb_res_outside"><span style="s_combine">84</span><span>1984</span></p>
+  <div xml:id="53" region="R12" begin="01:03:34.359" end="01:03:36.359" style="_d_default">
+   <p style="p_font2 p_rb_res_outside ps_shear"><span style="s_combine">84</span><span>1984</span></p>
   </div>
 ```
 

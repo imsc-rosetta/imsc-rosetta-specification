@@ -49,7 +49,7 @@ Therefore region edges are quantised to n * 80%/12
    <rosetta:version>0.0.0</rosetta:version>
   </metadata>
   <styling>
-   <style xml:id="r_region" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:fontStyle="normal" tts:fontWeight="normal" tts:color="white" tts:fontFamily="proportionalSansSerif" tts:textAlign="center" itts:fillLineGap="false" style="_r_default"/>
+   <style xml:id="r_region" tts:wrapOption="noWrap" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:fontStyle="normal" tts:fontWeight="normal" tts:color="white" tts:fontFamily="proportionalSansSerif" tts:textAlign="center" style="_r_default" itts:fillLineGap="false"/>
    <style xml:id="s_italic" tts:fontStyle="italic"/>
    <style xml:id="s_bold" tts:fontWeight="bold"/>
    <style xml:id="s_underline" tts:textDecoration="underline"/>
@@ -116,31 +116,13 @@ Therefore region edges are quantised to n * 80%/12
    <style xml:id="p_font2" tts:fontFamily="proportionalSansSerif" tts:lineHeight="125%" tts:fontSize="100%"/>
    <style xml:id="s_rb_b" tts:ruby="base"/>
    <style xml:id="s_rb_t" tts:ruby="text"/>
-   <style xml:id="p_rb_res_before" tts:rubyReserve="before"/>
-   <style xml:id="p_rb_res_after" tts:rubyReserve="after"/>
-   <style xml:id="p_rb_res_both" tts:rubyReserve="both"/>
    <style xml:id="p_rb_res_outside" tts:rubyReserve="outside"/>
    <style xml:id="s_rb_algn_center" tts:ruby="container" tts:rubyAlign="center"/>
    <style xml:id="s_rb_algn_around" tts:ruby="container" tts:rubyAlign="spaceAround"/>
-   <style xml:id="s_rb_posn_before" tts:ruby="container" tts:rubyPosition="before"/>
-   <style xml:id="s_rb_posn_after" tts:ruby="container" tts:rubyPosition="after"/>
    <style xml:id="s_rb_posn_outside" tts:ruby="container" tts:rubyPosition="outside"/>
    <style xml:id="s_combine" tts:textCombine="all"/>
-   <style xml:id="dps_shear" tts:shear="16.67%"/>
+   <style xml:id="ps_shear" tts:shear="16.67%"/>
    <style xml:id="p_rtl" tts:direction="rtl"/>
-   <style xml:id="p_ltr" tts:direction="ltr"/>
-   <style xml:id="s_emf_fcb" tts:textEmphasis="filled circle before"/>
-   <style xml:id="s_emf_fdb" tts:textEmphasis="filled dot before"/>
-   <style xml:id="s_emf_fsb" tts:textEmphasis="filled sesame before"/>
-   <style xml:id="s_emf_ocb" tts:textEmphasis="open circle before"/>
-   <style xml:id="s_emf_odb" tts:textEmphasis="open dot before"/>
-   <style xml:id="s_emf_osb" tts:textEmphasis="open sesame before"/>
-   <style xml:id="s_emf_fca" tts:textEmphasis="filled circle after"/>
-   <style xml:id="s_emf_fda" tts:textEmphasis="filled dot after"/>
-   <style xml:id="s_emf_fsa" tts:textEmphasis="filled sesame after"/>
-   <style xml:id="s_emf_oca" tts:textEmphasis="open circle after"/>
-   <style xml:id="s_emf_oda" tts:textEmphasis="open dot after"/>
-   <style xml:id="s_emf_osa" tts:textEmphasis="open sesame after"/>
    <style xml:id="s_emf_fco" tts:textEmphasis="filled circle outside"/>
    <style xml:id="s_emf_fdo" tts:textEmphasis="filled dot outside"/>
    <style xml:id="s_emf_fso" tts:textEmphasis="filled sesame outside"/>
@@ -149,7 +131,7 @@ Therefore region edges are quantised to n * 80%/12
    <style xml:id="s_emf_oso" tts:textEmphasis="open sesame outside"/>
    <style xml:id="r_vertical" tts:writingMode="tbrl"/>
    <style xml:id="_d_default" style="d_outline"/>
-   <style xml:id="_r_default" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" tts:wrapOption="noWrap" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c"/>
+   <style xml:id="_r_default" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c"/>
   </styling>
   <layout>
    <region xml:id="R0" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" style="r_region"/>
@@ -198,7 +180,7 @@ Therefore region edges are quantised to n * 80%/12
   </div>
   <div xml:id="13" region="R0" begin="01:00:57.240" end="01:01:01.240" style="_d_default">
    <p style="p_font2 p_al_start"><span>left</span></p>
-   <p style="p_font2 p_al_center"><span>center</span></p>
+   <p style="p_font2"><span>center</span></p>
    <p style="p_font2 p_al_end"><span>right</span></p>
   </div>
   <div xml:id="14" region="R1" begin="01:01:01.360" end="01:01:05.360" style="_d_default">
@@ -227,7 +209,7 @@ Therefore region edges are quantised to n * 80%/12
   </div>
   <div xml:id="22" region="R11" begin="01:01:34.360" end="01:01:38.360" style="_d_default">
    <p style="p_font2 p_al_start"><span>top left</span></p>
-   <p style="p_font2 p_al_center"><span>center</span></p>
+   <p style="p_font2"><span>center</span></p>
    <p style="p_font2 p_al_end"><span>right</span></p>
   </div>
  </body>
@@ -467,7 +449,7 @@ This div represents three lines, where the first is left aligned, the second is 
 ```
 <div xml:id="13" region="R0" begin="01:00:57.240" end="01:01:01.240" style="_d_default">
  <p style="p_font2 p_al_start"><span>left</span></p>
- <p style="p_font2 p_al_center"><span>center</span></p>
+ <p style="p_font2"><span>center</span></p>
  <p style="p_font2 p_al_end"><span>right</span></p>
 </div>
 ```
@@ -601,7 +583,7 @@ Subtitles 14-22 demonstrate vertical positioning using regions.
 ```
 <div xml:id="22" region="R11" begin="01:01:34.360" end="01:01:38.360" style="_d_default">
  <p style="p_font2 p_al_start"><span>top left</span></p>
- <p style="p_font2 p_al_center"><span>center</span></p>
+ <p style="p_font2"><span>center</span></p>
  <p style="p_font2 p_al_end"><span>right</span></p>
 </div>
 ```
