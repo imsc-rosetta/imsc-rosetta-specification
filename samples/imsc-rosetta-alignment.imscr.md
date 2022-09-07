@@ -38,7 +38,7 @@ Therefore region edges are quantised to n * 80%/12
 *note that file contains ALL imsc-rosetta defined styles as an example - this is not necessary, only the used styles are required*
 
 
-<details><summary>imsc-rosetta-alignment.imscr</summary>
+<details><summary>Expand: imsc-rosetta-alignment.imscr</summary>
 
 ```
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
