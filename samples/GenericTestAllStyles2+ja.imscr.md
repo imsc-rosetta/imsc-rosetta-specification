@@ -9,7 +9,7 @@ This sample is very preliminary, and may not be accurate.  Please refer to the a
 This file is an overall sample which demonstrates all the features of imsc-rosetta
 
 
-<details><summary>GenericTestAllStyles2+ja.imscr</summary>
+<details><summary>Expand: GenericTestAllStyles2+ja.imscr</summary>
 
 ```
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -20,7 +20,7 @@ This file is an overall sample which demonstrates all the features of imsc-roset
    <rosetta:version>0.0.0</rosetta:version>
   </metadata>
   <styling>
-   <style xml:id="r_region" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:fontStyle="normal" tts:fontWeight="normal" tts:color="white" tts:fontFamily="proportionalSansSerif" tts:textAlign="center" itts:fillLineGap="false" style="_r_default"/>
+   <style xml:id="r_region" tts:wrapOption="noWrap" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:fontStyle="normal" tts:fontWeight="normal" tts:color="white" tts:fontFamily="proportionalSansSerif" tts:textAlign="center" style="_r_default" itts:fillLineGap="false"/>
    <style xml:id="s_italic" tts:fontStyle="italic"/>
    <style xml:id="s_bold" tts:fontWeight="bold"/>
    <style xml:id="s_underline" tts:textDecoration="underline"/>
@@ -87,31 +87,13 @@ This file is an overall sample which demonstrates all the features of imsc-roset
    <style xml:id="p_font2" tts:fontFamily="proportionalSansSerif" tts:lineHeight="125%" tts:fontSize="100%"/>
    <style xml:id="s_rb_b" tts:ruby="base"/>
    <style xml:id="s_rb_t" tts:ruby="text"/>
-   <style xml:id="p_rb_res_before" tts:rubyReserve="before"/>
-   <style xml:id="p_rb_res_after" tts:rubyReserve="after"/>
-   <style xml:id="p_rb_res_both" tts:rubyReserve="both"/>
    <style xml:id="p_rb_res_outside" tts:rubyReserve="outside"/>
    <style xml:id="s_rb_algn_center" tts:ruby="container" tts:rubyAlign="center"/>
    <style xml:id="s_rb_algn_around" tts:ruby="container" tts:rubyAlign="spaceAround"/>
-   <style xml:id="s_rb_posn_before" tts:ruby="container" tts:rubyPosition="before"/>
-   <style xml:id="s_rb_posn_after" tts:ruby="container" tts:rubyPosition="after"/>
    <style xml:id="s_rb_posn_outside" tts:ruby="container" tts:rubyPosition="outside"/>
    <style xml:id="s_combine" tts:textCombine="all"/>
-   <style xml:id="dps_shear" tts:shear="16.67%"/>
+   <style xml:id="ps_shear" tts:shear="16.67%"/>
    <style xml:id="p_rtl" tts:direction="rtl"/>
-   <style xml:id="p_ltr" tts:direction="ltr"/>
-   <style xml:id="s_emf_fcb" tts:textEmphasis="filled circle before"/>
-   <style xml:id="s_emf_fdb" tts:textEmphasis="filled dot before"/>
-   <style xml:id="s_emf_fsb" tts:textEmphasis="filled sesame before"/>
-   <style xml:id="s_emf_ocb" tts:textEmphasis="open circle before"/>
-   <style xml:id="s_emf_odb" tts:textEmphasis="open dot before"/>
-   <style xml:id="s_emf_osb" tts:textEmphasis="open sesame before"/>
-   <style xml:id="s_emf_fca" tts:textEmphasis="filled circle after"/>
-   <style xml:id="s_emf_fda" tts:textEmphasis="filled dot after"/>
-   <style xml:id="s_emf_fsa" tts:textEmphasis="filled sesame after"/>
-   <style xml:id="s_emf_oca" tts:textEmphasis="open circle after"/>
-   <style xml:id="s_emf_oda" tts:textEmphasis="open dot after"/>
-   <style xml:id="s_emf_osa" tts:textEmphasis="open sesame after"/>
    <style xml:id="s_emf_fco" tts:textEmphasis="filled circle outside"/>
    <style xml:id="s_emf_fdo" tts:textEmphasis="filled dot outside"/>
    <style xml:id="s_emf_fso" tts:textEmphasis="filled sesame outside"/>
@@ -120,7 +102,7 @@ This file is an overall sample which demonstrates all the features of imsc-roset
    <style xml:id="s_emf_oso" tts:textEmphasis="open sesame outside"/>
    <style xml:id="r_vertical" tts:writingMode="tbrl"/>
    <style xml:id="_d_default" style="d_outline"/>
-   <style xml:id="_r_default" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" tts:wrapOption="noWrap" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c"/>
+   <style xml:id="_r_default" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c"/>
   </styling>
   <layout>
    <region xml:id="R0" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" style="r_region"/>
@@ -245,30 +227,30 @@ This file is an overall sample which demonstrates all the features of imsc-roset
    <p style="p_font2"><span style="ps_bg_ghostboxedblack">Ghost box change to </span><span style="ps_bg_ghostboxedred s_nonered">red</span></p>
   </div>
   <div xml:id="31" region="R0" begin="01:02:07.359" end="01:02:09.359" style="_d_default">
-   <p style="p_font2 p_rb_res_before"><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">Ruby Above </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
+   <p style="p_font2 p_rb_res_outside"><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Above </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
   </div>
   <div xml:id="32" region="R0" begin="01:02:10.359" end="01:02:12.359" style="_d_default">
-   <p style="p_font2 p_rb_res_after"><span style="s_rb_algn_center s_rb_posn_after"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
+   <p style="p_font2 p_rb_res_outside"><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
   </div>
   <div xml:id="33" region="R0" begin="01:02:13.359" end="01:02:16.359" style="_d_default">
-   <p style="p_font2 p_rb_res_after"><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">Ruby Above </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
-   <p style="p_font2 p_rb_res_after"><span style="s_rb_algn_center s_rb_posn_after"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_after"><span style="s_rb_b">Ruby Below 2</span><span style="s_rb_t">ruby2</span></span></p>
+   <p style="p_font2 p_rb_res_outside"><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Above </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
+   <p style="p_font2 p_rb_res_outside"><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Below 2</span><span style="s_rb_t">ruby2</span></span></p>
   </div>
   <div xml:id="34" region="R0" begin="01:02:17.359" end="01:02:20.359" style="_d_default">
-   <p style="p_font2 p_rb_res_after"><span>No Ruby </span><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
-   <p style="p_font2 p_rb_res_after"><span style="s_rb_algn_center s_rb_posn_after"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span>No Ruby</span></p>
+   <p style="p_font2 p_rb_res_outside"><span>No Ruby </span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
+   <p style="p_font2 p_rb_res_outside"><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span>No Ruby</span></p>
   </div>
   <div xml:id="35" region="R12" begin="01:02:21.359" end="01:02:24.359" style="_d_default">
-   <p style="p_font2 p_rb_res_after"><span>Vert No Ruby </span><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
-   <p style="p_font2 p_rb_res_after"><span style="s_rb_algn_center s_rb_posn_after"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span>No Ruby</span></p>
+   <p style="p_font2 p_rb_res_outside"><span>Vert No Ruby </span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
+   <p style="p_font2 p_rb_res_outside"><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span>No Ruby</span></p>
   </div>
   <div xml:id="36" region="R12" begin="01:02:25.359" end="01:02:29.359" style="_d_default">
-   <p style="p_font2 p_rb_res_after">東南<span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">東南</span><span style="s_rb_t">とうなん</span></span></p>
-   <p style="p_font2 p_rb_res_after"><span style="s_rb_algn_center s_rb_posn_after"><span style="s_rb_b">東南</span><span style="s_rb_t">たつみ</span></span><span>No Ruby</span></p>
+   <p style="p_font2 p_rb_res_outside"><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">東南</span><span style="s_rb_t">とうなん</span></span></p>
+   <p style="p_font2 p_rb_res_outside"><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">東南</span><span style="s_rb_t">たつみ</span></span><span>No Ruby</span></p>
   </div>
-  <div xml:id="37" region="R12" begin="01:02:30.359" end="01:02:34.359" style="_d_default dps_shear">
-   <p style="p_font2 p_rb_res_after"><span style="s_combine">1984</span><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b s_emf_fca">東南</span><span style="s_rb_t">とうなん</span></span></p>
-   <p style="p_font2 p_rb_res_after"><span style="s_rb_algn_center s_rb_posn_after"><span style="s_rb_b s_emf_fca">東南</span><span style="s_rb_t">たつみ</span></span><span style="s_emf_fca">No Ruby</span></p>
+  <div xml:id="37" region="R12" begin="01:02:30.359" end="01:02:34.359" style="_d_default ps_shear">
+   <p style="p_font2 p_rb_res_outside"><span style="s_combine">1984</span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">とうなん</span></span></p>
+   <p style="p_font2 p_rb_res_outside"><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">たつみ</span></span><span style="s_emf_fco">No Ruby</span></p>
   </div>
   <div xml:id="38" region="R0" begin="01:02:35.120" end="01:02:40.120" style="_d_default">
    <p style="p_font2 p_al_center_start"><span>two line</span><span><br/></span><span>center start bottom</span></p>
@@ -280,14 +262,14 @@ This file is an overall sample which demonstrates all the features of imsc-roset
    <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack"><span style="ps_bg_ghostboxedblack">two line</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
   </div>
   <div xml:id="41" region="R12" begin="01:02:46.359" end="01:02:49.359" style="_d_default">
-   <p style="p_font2 p_rb_res_after"><span>Vert No Ruby </span><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
-   <p style="p_font2 p_rb_res_after"><span style="s_rb_algn_center s_rb_posn_after"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span>No Ruby</span></p>
+   <p style="p_font2 p_rb_res_outside"><span>Vert No Ruby </span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
+   <p style="p_font2 p_rb_res_outside"><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span>No Ruby</span></p>
   </div>
   <div xml:id="42" region="R0" begin="01:02:50.120" end="01:02:54.120" style="_d_default">
    <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"><span style="ps_bg_ghostboxedblack">abc אותיות </span><span style="ps_bg_ghostboxedblack s_fg_red">bcd השימו 1983 ש</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
   </div>
   <div xml:id="43" region="R0" begin="01:02:55.120" end="01:02:59.120" style="_d_default">
-   <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_ltr"><span style="ps_bg_ghostboxedblack">abc אותיות </span><span style="ps_bg_ghostboxedblack s_fg_red">bcd השימו 1983 ש</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
+   <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"><span style="ps_bg_ghostboxedblack">abc אותיות </span><span style="ps_bg_ghostboxedblack s_fg_red">bcd השימו 1983 ש</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
   </div>
   <div xml:id="44" region="R0" begin="01:03:00.120" end="01:03:04.120" style="_d_default">
    <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"><span style="ps_bg_ghostboxedblack">من البيان والتبيين الى</span><span style="ps_bg_ghostboxedblack s_fg_red"> البتاع والتبتيع</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
@@ -307,25 +289,21 @@ This file is an overall sample which demonstrates all the features of imsc-roset
   <div xml:id="47" region="R0" begin="01:03:14.359" end="01:03:18.359" style="_d_default">
    <p style="p_font2 p_rb_res_outside"><span>No Ruby Above No Ruby Above 2</span><span><br/></span><span>No Ruby Below No Ruby Below 2</span></p>
   </div>
-  <div xml:id="48" region="R12" begin="01:03:20.359" end="01:03:24.359" style="_d_default dps_shear">
+  <div xml:id="48" region="R12" begin="01:03:20.359" end="01:03:24.359" style="_d_default ps_shear">
    <p style="p_font2 p_rb_res_outside"><span style="s_combine">84</span><span style="s_combine">1984</span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">とうなん</span></span><span><br/></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">たつみ</span></span><span style="s_emf_fco">No Ruby</span></p>
   </div>
-  <div xml:id="49" region="R12" begin="01:03:25.359" end="01:03:29.359" style="_d_default dps_shear">
+  <div xml:id="49" region="R12" begin="01:03:25.359" end="01:03:29.359" style="_d_default ps_shear">
    <p style="p_font2 p_rb_res_outside"><span style="s_combine ps_bg_ghostboxedblack">1984</span><span style="s_rb_algn_center s_rb_posn_outside ps_bg_ghostboxedblack"><span style="s_rb_b s_emf_fco ps_bg_ghostboxedblack">東南</span><span style="s_rb_t ps_bg_ghostboxedblack">とうなん</span></span><span><br/></span><span style="s_rb_algn_center s_rb_posn_outside ps_bg_ghostboxedblack"><span style="s_rb_b s_emf_fco ps_bg_ghostboxedblack"> 東南</span><span style="s_rb_t ps_bg_ghostboxedblack">たつみ</span></span><span style="s_emf_fco ps_bg_ghostboxedblack">No Ruby Boxed</span></p>
-  </div>
-  <div xml:id="50" region="R0" begin="01:03:30.120" end="01:03:30.420" style="_d_default">
-   <p style="p_font2 p_al_center_start p_rtl"><span style="ps_bg_ghostboxedblack">من البيان والتبيين الى</span><span style="ps_bg_ghostboxedblack s_fg_red"> البتاع والتبتيع</span></p>
-   <p style="p_font2 p_al_center_start p_ltr"><span style="ps_bg_ghostboxedblack">pretty normal</span><span><span><br/></span></span><span style="ps_bg_ghostboxedblack">1      </span><span style="ps_bg_ghostboxedblack">2</span><span style="ps_bg_ghostboxedblack">3</span></p>
   </div>
   <div xml:id="50" region="R0" begin="01:03:30.420" end="01:03:31.420" style="_d_default">
    <p style="p_font2 p_al_center_start p_rtl"><span style="ps_bg_ghostboxedblack">من البيان والتبيين الى</span><span style="ps_bg_ghostboxedblack s_fg_red"> البتاع والتبتيع</span></p>
-   <p style="p_font2 p_al_center_start p_ltr"><span style="ps_bg_ghostboxedblack">pretty preserve</span><span><br/></span><span style="ps_bg_ghostboxedblack">1      </span><span style="ps_bg_ghostboxedblack">2</span><span style="ps_bg_ghostboxedblack">3</span></p>
+   <p style="p_font2 p_al_center_start"><span style="ps_bg_ghostboxedblack">pretty preserve</span><span><br/></span><span style="ps_bg_ghostboxedblack">1      </span><span style="ps_bg_ghostboxedblack">2</span><span style="ps_bg_ghostboxedblack">3</span></p>
   </div>
-  <div xml:id="53" region="R0" begin="01:03:34.359" end="01:03:36.359" style="_d_default dps_shear">
+  <div xml:id="53" region="R0" begin="01:03:34.359" end="01:03:36.359" style="_d_default ps_shear">
    <p style="p_font2 p_rb_res_outside"><span style="s_combine">84</span><span>1984</span></p>
   </div>
   <div xml:id="54" region="R12" begin="01:03:37.359" end="01:03:39.359" style="_d_default">
-   <p style="p_font2 p_rb_res_after"><span style="s_emf_fco">東南</span><span><br/></span><span style="s_emf_fso">Emph Outside</span></p>
+   <p style="p_font2 p_rb_res_outside"><span style="s_emf_fco">東南</span><span><br/></span><span style="s_emf_fso">Emph Outside</span></p>
   </div>
   <div xml:id="55" region="R12" begin="01:03:40.359" end="01:03:41.359" style="_d_default">
    <p style="p_font2 p_rb_res_outside"><span style="s_combine">1984</span><span style="s_rb_algn_center"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">とうなん</span></span><span><br/></span><span style="s_rb_algn_center s_emf_fco"><span style="s_rb_b">東南</span><span style="s_rb_t">たつみ</span></span><span style="s_emf_fco">No Ruby</span></p>
@@ -802,7 +780,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 
 ```
 <div xml:id="31" region="R0" begin="01:02:07.359" end="01:02:09.359" style="_d_default">
- <p style="p_font2 p_rb_res_before"><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">Ruby Above </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
+ <p style="p_font2 p_rb_res_outside"><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Above </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
 </div>
 ```
 #### Resulting Image
@@ -816,7 +794,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 
 ```
 <div xml:id="32" region="R0" begin="01:02:10.359" end="01:02:12.359" style="_d_default">
- <p style="p_font2 p_rb_res_after"><span style="s_rb_algn_center s_rb_posn_after"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
+ <p style="p_font2 p_rb_res_outside"><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
 </div>
 ```
 #### Resulting Image
@@ -830,8 +808,8 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 
 ```
 <div xml:id="33" region="R0" begin="01:02:13.359" end="01:02:16.359" style="_d_default">
- <p style="p_font2 p_rb_res_after"><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">Ruby Above </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
- <p style="p_font2 p_rb_res_after"><span style="s_rb_algn_center s_rb_posn_after"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_after"><span style="s_rb_b">Ruby Below 2</span><span style="s_rb_t">ruby2</span></span></p>
+ <p style="p_font2 p_rb_res_outside"><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Above </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
+ <p style="p_font2 p_rb_res_outside"><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Below 2</span><span style="s_rb_t">ruby2</span></span></p>
 </div>
 ```
 #### Resulting Image
@@ -845,8 +823,8 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 
 ```
 <div xml:id="34" region="R0" begin="01:02:17.359" end="01:02:20.359" style="_d_default">
- <p style="p_font2 p_rb_res_after"><span>No Ruby </span><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
- <p style="p_font2 p_rb_res_after"><span style="s_rb_algn_center s_rb_posn_after"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span>No Ruby</span></p>
+ <p style="p_font2 p_rb_res_outside"><span>No Ruby </span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
+ <p style="p_font2 p_rb_res_outside"><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span>No Ruby</span></p>
 </div>
 ```
 #### Resulting Image
@@ -860,8 +838,8 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 
 ```
 <div xml:id="35" region="R12" begin="01:02:21.359" end="01:02:24.359" style="_d_default">
- <p style="p_font2 p_rb_res_after"><span>Vert No Ruby </span><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
- <p style="p_font2 p_rb_res_after"><span style="s_rb_algn_center s_rb_posn_after"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span>No Ruby</span></p>
+ <p style="p_font2 p_rb_res_outside"><span>Vert No Ruby </span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
+ <p style="p_font2 p_rb_res_outside"><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span>No Ruby</span></p>
 </div>
 ```
 #### Resulting Image
@@ -875,8 +853,8 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 
 ```
 <div xml:id="36" region="R12" begin="01:02:25.359" end="01:02:29.359" style="_d_default">
- <p style="p_font2 p_rb_res_after">東南<span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">東南</span><span style="s_rb_t">とうなん</span></span></p>
- <p style="p_font2 p_rb_res_after"><span style="s_rb_algn_center s_rb_posn_after"><span style="s_rb_b">東南</span><span style="s_rb_t">たつみ</span></span><span>No Ruby</span></p>
+ <p style="p_font2 p_rb_res_outside"><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">東南</span><span style="s_rb_t">とうなん</span></span></p>
+ <p style="p_font2 p_rb_res_outside"><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">東南</span><span style="s_rb_t">たつみ</span></span><span>No Ruby</span></p>
 </div>
 ```
 #### Resulting Image
@@ -889,9 +867,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="37" region="R12" begin="01:02:30.359" end="01:02:34.359" style="_d_default dps_shear">
- <p style="p_font2 p_rb_res_after"><span style="s_combine">1984</span><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b s_emf_fca">東南</span><span style="s_rb_t">とうなん</span></span></p>
- <p style="p_font2 p_rb_res_after"><span style="s_rb_algn_center s_rb_posn_after"><span style="s_rb_b s_emf_fca">東南</span><span style="s_rb_t">たつみ</span></span><span style="s_emf_fca">No Ruby</span></p>
+<div xml:id="37" region="R12" begin="01:02:30.359" end="01:02:34.359" style="_d_default ps_shear">
+ <p style="p_font2 p_rb_res_outside"><span style="s_combine">1984</span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">とうなん</span></span></p>
+ <p style="p_font2 p_rb_res_outside"><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">たつみ</span></span><span style="s_emf_fco">No Ruby</span></p>
 </div>
 ```
 #### Resulting Image
@@ -947,8 +925,8 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 
 ```
 <div xml:id="41" region="R12" begin="01:02:46.359" end="01:02:49.359" style="_d_default">
- <p style="p_font2 p_rb_res_after"><span>Vert No Ruby </span><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
- <p style="p_font2 p_rb_res_after"><span style="s_rb_algn_center s_rb_posn_after"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span>No Ruby</span></p>
+ <p style="p_font2 p_rb_res_outside"><span>Vert No Ruby </span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
+ <p style="p_font2 p_rb_res_outside"><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span>No Ruby</span></p>
 </div>
 ```
 #### Resulting Image
@@ -976,7 +954,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 
 ```
 <div xml:id="43" region="R0" begin="01:02:55.120" end="01:02:59.120" style="_d_default">
- <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_ltr"><span style="ps_bg_ghostboxedblack">abc אותיות </span><span style="ps_bg_ghostboxedblack s_fg_red">bcd השימו 1983 ש</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
+ <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"><span style="ps_bg_ghostboxedblack">abc אותיות </span><span style="ps_bg_ghostboxedblack s_fg_red">bcd השימו 1983 ש</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
 </div>
 ```
 #### Resulting Image
@@ -1073,7 +1051,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="48" region="R12" begin="01:03:20.359" end="01:03:24.359" style="_d_default dps_shear">
+<div xml:id="48" region="R12" begin="01:03:20.359" end="01:03:24.359" style="_d_default ps_shear">
  <p style="p_font2 p_rb_res_outside"><span style="s_combine">84</span><span style="s_combine">1984</span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">とうなん</span></span><span><br/></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">たつみ</span></span><span style="s_emf_fco">No Ruby</span></p>
 </div>
 ```
@@ -1087,28 +1065,13 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="49" region="R12" begin="01:03:25.359" end="01:03:29.359" style="_d_default dps_shear">
+<div xml:id="49" region="R12" begin="01:03:25.359" end="01:03:29.359" style="_d_default ps_shear">
  <p style="p_font2 p_rb_res_outside"><span style="s_combine ps_bg_ghostboxedblack">1984</span><span style="s_rb_algn_center s_rb_posn_outside ps_bg_ghostboxedblack"><span style="s_rb_b s_emf_fco ps_bg_ghostboxedblack">東南</span><span style="s_rb_t ps_bg_ghostboxedblack">とうなん</span></span><span><br/></span><span style="s_rb_algn_center s_rb_posn_outside ps_bg_ghostboxedblack"><span style="s_rb_b s_emf_fco ps_bg_ghostboxedblack"> 東南</span><span style="s_rb_t ps_bg_ghostboxedblack">たつみ</span></span><span style="s_emf_fco ps_bg_ghostboxedblack">No Ruby Boxed</span></p>
 </div>
 ```
 #### Resulting Image
 
 <img src="./images/GenericTestAllStyles2+ja.imscr/3805.359.png" width="600"/>
-
-
-### subtitle 50 at begin=01:03:30.120
-
-#### div XML
-
-```
-<div xml:id="50" region="R0" begin="01:03:30.120" end="01:03:30.420" style="_d_default">
- <p style="p_font2 p_al_center_start p_rtl"><span style="ps_bg_ghostboxedblack">من البيان والتبيين الى</span><span style="ps_bg_ghostboxedblack s_fg_red"> البتاع والتبتيع</span></p>
- <p style="p_font2 p_al_center_start p_ltr"><span style="ps_bg_ghostboxedblack">pretty normal</span><span><span><br/></span></span><span style="ps_bg_ghostboxedblack">1      </span><span style="ps_bg_ghostboxedblack">2</span><span style="ps_bg_ghostboxedblack">3</span></p>
-</div>
-```
-#### Resulting Image
-
-<img src="./images/GenericTestAllStyles2+ja.imscr/3810.12.png" width="600"/>
 
 
 ### subtitle 50 at begin=01:03:30.420
@@ -1118,7 +1081,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 ```
 <div xml:id="50" region="R0" begin="01:03:30.420" end="01:03:31.420" style="_d_default">
  <p style="p_font2 p_al_center_start p_rtl"><span style="ps_bg_ghostboxedblack">من البيان والتبيين الى</span><span style="ps_bg_ghostboxedblack s_fg_red"> البتاع والتبتيع</span></p>
- <p style="p_font2 p_al_center_start p_ltr"><span style="ps_bg_ghostboxedblack">pretty preserve</span><span><br/></span><span style="ps_bg_ghostboxedblack">1      </span><span style="ps_bg_ghostboxedblack">2</span><span style="ps_bg_ghostboxedblack">3</span></p>
+ <p style="p_font2 p_al_center_start"><span style="ps_bg_ghostboxedblack">pretty preserve</span><span><br/></span><span style="ps_bg_ghostboxedblack">1      </span><span style="ps_bg_ghostboxedblack">2</span><span style="ps_bg_ghostboxedblack">3</span></p>
 </div>
 ```
 #### Resulting Image
@@ -1131,7 +1094,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="53" region="R0" begin="01:03:34.359" end="01:03:36.359" style="_d_default dps_shear">
+<div xml:id="53" region="R0" begin="01:03:34.359" end="01:03:36.359" style="_d_default ps_shear">
  <p style="p_font2 p_rb_res_outside"><span style="s_combine">84</span><span>1984</span></p>
 </div>
 ```
@@ -1146,7 +1109,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 
 ```
 <div xml:id="54" region="R12" begin="01:03:37.359" end="01:03:39.359" style="_d_default">
- <p style="p_font2 p_rb_res_after"><span style="s_emf_fco">東南</span><span><br/></span><span style="s_emf_fso">Emph Outside</span></p>
+ <p style="p_font2 p_rb_res_outside"><span style="s_emf_fco">東南</span><span><br/></span><span style="s_emf_fso">Emph Outside</span></p>
 </div>
 ```
 #### Resulting Image
