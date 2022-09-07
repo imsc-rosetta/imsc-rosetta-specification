@@ -5,6 +5,8 @@ The language for a file is defines in the xml:lang attribute of the tt element.
 
 Exact Language coding to be defined by customer.  e.g. bcp47/MESA.
 
+*Note that the attribute `xml:lang` is used.  Be3 aware that this may be constrained in terms of content, and if checked by an 'official' XML checker, unknown language codes may be flagged as errors.*
+
 ## Information about subtitle type/categorisation
 Optional.  The purpose of this classification is as confirmation of external classification.
 
@@ -22,17 +24,21 @@ startOfMedia: Optional. If present, should correspond to the time in HH:MM:SS.TT
 
 Note: for 23.976 media, a Timecode of 10:00:00:00 is represented as a Time of 10:00:36.000 - and TC of 01:00:00:00 is 01:00:03.600
 
-This is because in 23.976, there is no drop frame timecode.
+This is because in 23.976, there is no drop frame timecode, and each frame of video is (1001/1000 x 1/24) seconds long
 
 
 ## dates and times
 In the below, 'ISO Date' refers to the full UTC date and time YYYY-MM-DDTHH:MM:SS.SSSZ, e.g. 2019-11-14T00:55:31.820Z
 
-###created date: Optional.  This is intended to preserve the original time of creation of the subtitle data (e.g. the date of the translation).  In a conversion scenario, this could be the creation date of the original file.
+### created date: Optional.  
+
+This is intended to preserve the original time of creation of the subtitle data (e.g. the date of the translation).  In a conversion scenario, this could be the creation date of the original file.
 
 `<rosetta:created>ISO date</rosetta:created>`
 
-###modified date: Optional.  This is intended to preserve the last modification time the subtitle data (e.g. the date of the last edit or conversion).  In a conversion scenario, this could be the date of the conversion.
+### modified date: Optional.  
+
+This is intended to preserve the last modification time the subtitle data (e.g. the date of the last edit or conversion).  In a conversion scenario, this could be the date of the conversion.
 
 `<rosetta:modified>ISO date</rosetta:modified>`
 
@@ -57,7 +63,7 @@ Within the `<metadata>` element within `<head>`, any other metadata may be inclu
 
 Bear in mind that some processors will ignore/remove this metadata.  
 
-Bear in mind that some simpler XML parsers may not preserve element order.
+Bear in mind that some simpler XML parsers may not preserve element order, and so element order should not be a requirment of metadata used.
 
 Because we have fixed namespace declarations in the `<tt>` element for simplicity, please use local namespacing (see example of use of ebu-tt metadata below).
 
@@ -65,7 +71,7 @@ Example:
 
 ```
 		<metadata>
-      <ebuttm:documentMetadata xmlns:ebuttm="urn:ebu:tt:metadata">
+		         <ebuttm:documentMetadata xmlns:ebuttm="urn:ebu:tt:metadata">
 				<ebuttm:documentEbuttVersion>v1.0</ebuttm:documentEbuttVersion>
 				<ebuttm:documentIdentifier>ABCD123A02-1</ebuttm:documentIdentifier>
 				<ebuttm:documentOriginatingSystem>TTProducer 1.7.0.0</ebuttm:documentOriginatingSystem>
