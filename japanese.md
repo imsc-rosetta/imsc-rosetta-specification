@@ -6,7 +6,7 @@ imsc-rosetta supports both single `<p>` with `<br/>` and multiple `<p>` presenta
 
 Because of the possible use of Rubies, and to simplify this, when using imsc-rosetta for Japanese, use the single `<p>` with `<span><br/></span>` for multi line subtitles.  This simplifies the use of rubies by making available the TTML styles specifying 'outside' for the simplification of ruby and emphasis position.
 
-***Note that <br/> MUST be wrapped in `<span>` and that `<span>` MUST be a child of `<p>`***
+***Note that `<br/>` MUST be wrapped in `<span>` and that `<span>` MUST be a child of `<p>`***
 
 ## Vertical subtitles
 
@@ -24,7 +24,7 @@ Rubies for Japanese are supported through the use of nested spans with ruby spec
 
 For subtitles, generally ruby presentation is accepted as preferred above text for a single line, or above the top line, and below the bottom line for two line subtitles.
 
-When Rubies are in use in a file, it is preferred that the main text of the subtitle does not move when rubies are present compared to when they are not present.
+When Rubies are in used in subtitles, it is preferred that the main text of the subtitle does not move when rubies are present compared to when they are not present.
 
 With the above two observations in mind, imsc-rosetta implements the following style names which should be used:
 
@@ -36,11 +36,13 @@ The default position of Rubies is tts:rubyAlign="center", the only other permitt
 
 To enhance text with a Ruby, you must construct three spans.  The outer `<span>` must reference either `s_rb_algn_center` or `s_rb_algn_around`, as this enables the span as the ruby container.  The container span must contain two further spans, the first referencing the style `s_rb_b` and containing the base text, and the subsequent span referencing `s_rb_t` and containing the actual text of the ruby.  The container span must NOT contain any text itself.
 
-`s_rb_algn_center` (equates to tts:ruby="container" to tts:rubyAlign="center" tts:rubyPosition="outside")
-`s_rb_algn_around` (equates to tts:ruby="container" to tts:rubyAlign="spaceAround" tts:rubyPosition="outside")
+`s_rb_algn_center` (equates to `tts:ruby="container" to tts:rubyAlign="center" tts:rubyPosition="outside"`)
 
-`s_rb_b` (equates to tts:ruby="base")
-`s_rb_t` (equates to tts:ruby="text")
+`s_rb_algn_around` (equates to `tts:ruby="container" to tts:rubyAlign="spaceAround" tts:rubyPosition="outside"`)
+
+`s_rb_b` (equates to `tts:ruby="base"`)
+
+`s_rb_t` (equates to `tts:ruby="text"`)
 
 Ruby position is always 'outside'
 
@@ -51,6 +53,7 @@ Example:
   </div>
 ```
 
+Note the general constraint for IMSC-Roestta that `<p>` must be on one line with no extraneous spaces.  i.e. as all text present in `<p>` will be presented, you must not prettify `<p>` in XML.
 
 
 ## other ideographic specific styles:
@@ -63,7 +66,7 @@ This feature is generally used to make short numbers appear horizontally within 
 
 Many Japanese style specifications quote use this for numbers of 2 digits or less only.
 
-s_combine (equates to tts:textCombine="all")
+`s_combine` (equates to `tts:textCombine="all"`)
 
 Example (where region R12 has been had style r_vertical added to it):
 ```
@@ -80,7 +83,7 @@ Example (where region R12 has been had style r_vertical added to it):
 
 text shear of 16.67% may be applied using `dps_shear` on div, p or span
 
-dps_shear tts:shear="16.67%"
+`dps_shear` equates to `tts:shear="16.67%"`
 
 Example (where region R12 has been had style r_vertical added to it):
 ```
@@ -99,6 +102,8 @@ Example (where region R12 has been had style r_vertical added to it):
 ### text emphasis (Bouten)
 
 This places emphasis on characters.
+
+In IMSC-rosetta, all empohasis is specified as 'outside'.
 
 The following defined emphasis styles may be used.
 
@@ -124,6 +129,3 @@ Example:
    <p style="p_font2 p_rb_res_after"><span style="s_emf_fco">東南</span><span><br/></span><span style="s_emf_fso">Emph Outside</span></p>
   </div>
 ```
-
-
-
