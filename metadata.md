@@ -66,6 +66,7 @@ Optional. Indicates the orginal format the subtitles were converted from.
 Optional.  Indicates the product and version used to convert the subtitles.
 
 `<rosetta:transformationProduct>{Transformation Product}</rosetta:transformationProduct>`
+
 `<rosetta:transformationProductVersion>{Transformation Engine Version}</rosetta:transformationProductVersion>`
 
 ## Custom Document Metadata
