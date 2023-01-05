@@ -57,6 +57,17 @@ Optional.  Indicates the organisation which originated the subtitles.
 
 `<rosetta:originator>{origination company}</rosetta:originator>`
 
+## Information about the original subtitle format
+Optional. Indicates the orginal format the subtitles were converted from.
+
+`<rosetta:originalFormat>EBUSTL|OpenSTL|SRT|FPC|PAC|890|CAP|SMPTE2052|EBUTT|IMSC1.0</rosetta:originalFormat>`
+
+## Information about the transformation product
+Optional.  Indicates the product and version used to convert the subtitles.
+
+`<rosetta:transformationProduct>{Transformation Product}</rosetta:transformationProduct>`
+`<rosetta:transformationProductVersion>{Transformation Engine Version}</rosetta:transformationProductVersion>`
+
 ## Custom Document Metadata
 
 Within the `<metadata>` element within `<head>`, any other metadata may be included.
