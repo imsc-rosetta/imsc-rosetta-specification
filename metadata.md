@@ -8,7 +8,7 @@ Exact Language coding to be defined by customer.  e.g. bcp47/MESA.
 *Note that the attribute `xml:lang` is used.  Be3 aware that this may be constrained in terms of content, and if checked by an 'official' XML checker, unknown language codes may be flagged as errors.*
 
 ## Information about subtitle type/categorisation
-Optional.  The purpose of this classification is as confirmation of external classification.
+Optional.  The purpose of this classification is as confirmation of external classification. *Requires further investigation on how to deal with the "English template or timed word list" these are non emission formats but useful in the creation process.*
 
 `<rosetta:role>SDH|translationonly|translationwithforced|forcedonly</rosetta:role>`
 
@@ -58,7 +58,7 @@ Optional.  Indicates the organisation which originated the subtitles.
 `<rosetta:originator>{origination company}</rosetta:originator>`
 
 ## Information about the original subtitle format
-Optional. Indicates the orginal format the subtitles were converted from.
+Optional. Indicates the orginal format the subtitles were converted from. *consider how to define teletext compatable true false?*
 
 `<rosetta:originalFormat>EBUSTL|OpenSTL|SRT|FPC|PAC|890|CAP|SMPTE2052|EBUTT|IMSC1.0</rosetta:originalFormat>`
 
