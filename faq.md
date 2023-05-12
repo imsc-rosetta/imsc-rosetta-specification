@@ -90,7 +90,7 @@ If you have an XML processor which does not retain the define XML Namespace pref
 
   Certain of the styles in Imsc-Rosetta are defined to be always present.
   
-  These include _r_default, _p_default, _s_default and _d_default
+  These include _r_default, _d_default
   
   Specifically these can carry some information about how the file is intended to be manipulated.  _r_default carries the origin and extent of a 'default' region, as well as fontSize (in rh) and lineHeight.  These values are specifically to help any processor calculate line quantization (i.e. know WHERE lines are intended to be positioned on the screen).  Specifically, round(regionHeight/fontSize*lineHeight) should be used as a count of viable positions, and this value used to generate viable regions if moving subtitles vertically.  Quantization of line positions is used to keep the number of regions in control.  Rounding of region extent and origin to 0.1% should be enough to avoid ending up with too many regions.
   

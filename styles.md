@@ -11,7 +11,7 @@ It is expected that only the used set of styles be present in a file, but it is 
 The following is the maximal style name set, and thier default values:
 
 ```
- <style xml:id="r_region" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:fontStyle="normal" tts:fontWeight="normal" tts:color="white" tts:fontFamily="proportionalSansSerif" tts:textAlign="center" itts:fillLineGap="false" style="_r_default"/>
+ <style xml:id="r_region" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:fontStyle="normal" tts:fontWeight="normal" tts:fontFamily="proportionalSansSerif" tts:textAlign="center" itts:fillLineGap="false" tts:wrapOption="noWrap" style="_r_default" />
  <style xml:id="r_vertical" tts:writingMode="tbrl"/>
 
  
@@ -65,6 +65,7 @@ The following is the maximal style name set, and thier default values:
  <style xml:id="s_fg_cyan" tts:color="#00FFFF"/>
  <style xml:id="s_fg_blue" tts:color="#0000FF"/>
  <style xml:id="s_fg_magenta" tts:color="#FF00FF"/>
+ <style xml:id="s_fg_white" tts:color="#FFFFFF"/>
 
  <style xml:id="s_outlineblack" tts:textOutline="#000000 0.05em"/>
  <style xml:id="s_outlinered" tts:textOutline="#FF0000 0.05em"/>
@@ -116,7 +117,7 @@ The following is the maximal style name set, and thier default values:
  <style xml:id="s_emf_oso" tts:textEmphasis="open sesame outside"/>
  
  <style xml:id="_d_default" style="d_outline"/>
- <style xml:id="_r_default" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" tts:wrapOption="noWrap" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c"/>
+ <style xml:id="_r_default" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c" style="s_fg_white"/>
 ```
 
 ## styles which may be modified
@@ -145,13 +146,17 @@ fontFamily should be set to "proportionalSansSerif" unless specific requirements
 
 ### colors
 
-styles defining colors may be modified in the even that a specific color is required.
+styles defining colors may be modified in the event that a specific color is required.
 
-For example, if a specific regional norm is to use a pale yellow foreground (not uncommon in the far east), the ds_fg_yellow style may be modified to reflect the different shade of yellow.
+For example, if a specific regional norm is to use a pale yellow foreground (not uncommon in the far east), the s_fg_yellow style may be modified to reflect the different shade of yellow.
 
-i.e. in specific circumstances styles starting with ds_fg_, ps_bg_, ds_outline, ds_drop may be modified.
+i.e. in specific circumstances styles starting with s_fg_, ps_bg_, ds_outline, ds_drop may be modified.
 
 It is NOT intended that this should provide a way to change yellow to blue, for example, only to adjust a shade.
+
+(note: when converting to formats like PAC, STL, etc, exact colours cannot be carried over, hence why we use fixed names for the 'normal' 8 teletext colours.  These MAY be re-defined by the transmission system on playout.)
+
+The `style` attibute in _r_default must be present, but may only be one of the 8 foreground colour style names (those that start `s_fg_`) - this may be used to change the overall default colour for the subtitles.
 
 ## Style use
 
@@ -189,7 +194,7 @@ Note that p_al_center and p_al_center_center are equivlent, as are p_al_start, p
 
 ### outline/dropshadow
 
-Imsc does not support dropshadow, but you may use d_drop in place of d_outline, and s_dropxxx in place of s_outlinexxx to signify that the text is desired outlined.  This feature is to enable the dropshadow to be reproduced if the rosetta file is converted back to an extant format by a processor which fully understands the style name usage.
+Imsc does not support dropshadow, but you may use d_drop in place of d_outline, and s_dropxxx in place of s_outlinexxx to signify that the text is desired dropshadow.  This feature is to enable the dropshadow to be reproduced if the rosetta file is converted back to an extant format by a processor which fully understands the style name usage.
 
 d_outline or d_drop may be specified as a style of _d_default to apply it to the whole file.
 
@@ -197,7 +202,7 @@ It may also be specified individually on `<div>` elements using d_outline or d_d
 
 Should a `<span>` need a different 'background' color when outlined, then s_outlinexxx or s_dropxxx may be specified on `<span>`.  
 
-***However, s_outlinexxx or s_dropxxx may not be used on `<span>` unless d_outline or d_drop (respectively) has been speified in _d_default or on `<div>`***.
+***However, s_outlinexxx or s_dropxxx may not be used on `<span>` unless d_outline or d_drop (respectively) has been specified in _d_default or on `<div>`***.
 
 Note: it is normal for translation subtitles to be outlined.
 
