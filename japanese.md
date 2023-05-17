@@ -53,7 +53,7 @@ Example:
   </div>
 ```
 
-Note the general constraint for IMSC-Roestta that `<p>` must be on one line with no extraneous spaces.  i.e. as all text present in `<p>` will be presented, you must not prettify `<p>` in XML.
+Note the general constraint for IMSC-Rosetta that `<p>` must be on one line with no extraneous spaces.  i.e. as all text present in `<p>` will be presented, you must not prettify `<p>` in the XML.
 
 
 ## other ideographic specific styles:
@@ -81,9 +81,9 @@ Example (where region R12 has been had style r_vertical added to it):
 
 ### text shear
 
-text shear of 16.67% may be applied using `ps_shear` on p or span
+text shear of 16.67% may be applied using `p_shear` on p
 
-`ps_shear` equates to `tts:shear="16.67%"`
+`p_shear` equates to `tts:shear="16.67%"`
 
 Example (where region R12 has been had style r_vertical added to it):
 ```
@@ -91,7 +91,7 @@ Example (where region R12 has been had style r_vertical added to it):
 ....
 
   <div xml:id="53" region="R12" begin="01:03:34.359" end="01:03:36.359" style="_d_default">
-   <p style="p_font2 p_rb_res_outside ps_shear"><span style="s_combine">84</span><span>1984</span></p>
+   <p style="p_font2 p_rb_res_outside p_shear"><span style="s_combine">84</span><span>1984</span></p>
   </div>
 ```
 

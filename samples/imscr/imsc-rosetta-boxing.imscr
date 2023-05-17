@@ -62,6 +62,7 @@
    <style xml:id="s_nonemagenta"/>
    <style xml:id="s_nonewhite"/>
    <style xml:id="p_al_start" tts:textAlign="start"/>
+   <style xml:id="p_al_center" tts:textAlign="center"/>
    <style xml:id="p_al_end" tts:textAlign="end"/>
    <style xml:id="p_al_start_center" ebutts:multiRowAlign="center" tts:textAlign="start"/>
    <style xml:id="p_al_start_end" ebutts:multiRowAlign="end" tts:textAlign="start"/>
@@ -79,7 +80,7 @@
    <style xml:id="s_rb_algn_around" tts:ruby="container" tts:rubyAlign="spaceAround"/>
    <style xml:id="s_rb_posn_outside" tts:ruby="container" tts:rubyPosition="outside"/>
    <style xml:id="s_combine" tts:textCombine="all"/>
-   <style xml:id="ps_shear" tts:shear="16.67%"/>
+   <style xml:id="p_shear" tts:shear="16.67%"/>
    <style xml:id="p_rtl" tts:direction="rtl"/>
    <style xml:id="s_emf_fco" tts:textEmphasis="filled circle outside"/>
    <style xml:id="s_emf_fdo" tts:textEmphasis="filled dot outside"/>

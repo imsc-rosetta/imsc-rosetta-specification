@@ -6,7 +6,7 @@ This folder contains descriptive markdown files describing the samples found in 
 
 ### [imsc-rosetta-alignment.imscr](./imsc-rosetta-alignment.imscr.md)
 
-This file demonstrates the alignment features of imsc-rosetta, primarily the use of the 8 alignment style names which can be applied to `<p>`.  
+This file demonstrates the alignment features of imsc-rosetta, primarily the use of the 9 alignment style names which can be applied to `<p>`.  
 Note also the use of multiple `<p>` elements when the desired alignment cannot be achieved in a single `<p>` (e.g. to present lines both left aligned and right aligned in the same subtitle).
 
 ### [imsc-rosetta-boxing.imscr](./imsc-rosetta-boxing.imscr.md)

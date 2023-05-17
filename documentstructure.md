@@ -149,7 +149,7 @@ One or more `<div>`.
  
  `region` shall reference the xml:id of a `region` element.  e.g. `region="R1"`
  
- `style` shall reference zero or more xml:id of `style` elements.  e.g. `style="_d_default dps_shear"`.  The referenced styles shall conform to the rules in [styles.md](styles.md) - i.e. be appropriate for inclusion in `div`.
+ `style` shall reference zero or more xml:id of `style` elements.  e.g. `style="_d_default"`.  The referenced styles shall conform to the rules in [styles.md](styles.md) - i.e. be appropriate for inclusion in `div`.
  
  `begin` shall be a time in HH:MM:SS.TTT where HH, MM, SS contain 2 digits, TTT contains three digits.  The time represented will be the real-time equivalent of the timecode of the time the subtitle should appear on the screen, relative to the timecode of the original media.
 
@@ -220,14 +220,14 @@ Nested `<span>` may ***only*** be used in subtitles requiring Rubies (i.e. Japan
 
 ```
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<tt xmlns="http://www.w3.org/ns/ttml" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:ebutts="urn:ebu:tt:style" xmlns:itts="http://www.w3.org/ns/ttml/profile/imsc1#styling" xmlns:rosetta="https://github.com/imsc-rosetta/specification" ttp:timeBase="media" ttp:cellResolution="30 15" xml:space="preserve" ttp:frameRate="25" ttp:frameRateMultiplier="1 1" xml:lang="en">
+<tt xmlns="http://www.w3.org/ns/ttml" xmlns:ttm="http://www.w3.org/ns/ttml#metadata" xmlns:tts="http://www.w3.org/ns/ttml#styling" xmlns:ttp="http://www.w3.org/ns/ttml#parameter" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:ebutts="urn:ebu:tt:style" xmlns:itts="http://www.w3.org/ns/ttml/profile/imsc1#styling" xmlns:rosetta="https://github.com/imsc-rosetta/specification" ttp:timeBase="media" ttp:cellResolution="30 15" xml:space="preserve" ttp:frameRate="25" ttp:frameRateMultiplier="1 1" xml:lang="el-GR">
  <head>
   <metadata>
    <rosetta:format>imsc-rosetta</rosetta:format>
    <rosetta:version>0.0.0</rosetta:version>
   </metadata>
   <styling>
-   <style xml:id="r_region" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:fontStyle="normal" tts:fontWeight="normal" tts:color="white" tts:fontFamily="proportionalSansSerif" tts:textAlign="center" itts:fillLineGap="false" style="_r_default"/>
+   <style xml:id="r_region" tts:wrapOption="noWrap" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:fontStyle="normal" tts:fontWeight="normal" tts:fontFamily="proportionalSansSerif" tts:textAlign="center" itts:fillLineGap="false" style="_r_default"/>
    <style xml:id="s_italic" tts:fontStyle="italic"/>
    <style xml:id="s_bold" tts:fontWeight="bold"/>
    <style xml:id="s_underline" tts:textDecoration="underline"/>
@@ -239,6 +239,7 @@ Nested `<span>` may ***only*** be used in subtitles requiring Rubies (i.e. Japan
    <style xml:id="s_fg_cyan" tts:color="#00FFFF"/>
    <style xml:id="s_fg_blue" tts:color="#0000FF"/>
    <style xml:id="s_fg_magenta" tts:color="#FF00FF"/>
+   <style xml:id="s_fg_white" tts:color="#FFFFFF"/>
    <style xml:id="ps_bg_boxedblack" tts:backgroundColor="#000000"/>
    <style xml:id="ps_bg_boxedred" tts:backgroundColor="#FF0000"/>
    <style xml:id="ps_bg_boxedyellow" tts:backgroundColor="#FF0000"/>
@@ -283,46 +284,24 @@ Nested `<span>` may ***only*** be used in subtitles requiring Rubies (i.e. Japan
    <style xml:id="s_nonewhite"/>
    <style xml:id="p_al_start" tts:textAlign="start"/>
    <style xml:id="p_al_end" tts:textAlign="end"/>
-   <style xml:id="p_al_center" tts:textAlign="center"/>
-   <style xml:id="p_al_start_start" ebutts:multiRowAlign="start" tts:textAlign="start"/>
    <style xml:id="p_al_start_center" ebutts:multiRowAlign="center" tts:textAlign="start"/>
    <style xml:id="p_al_start_end" ebutts:multiRowAlign="end" tts:textAlign="start"/>
    <style xml:id="p_al_end_start" ebutts:multiRowAlign="start" tts:textAlign="end"/>
    <style xml:id="p_al_end_center" ebutts:multiRowAlign="center" tts:textAlign="end"/>
-   <style xml:id="p_al_end_end" ebutts:multiRowAlign="end" tts:textAlign="end"/>
    <style xml:id="p_al_center_start" ebutts:multiRowAlign="start" tts:textAlign="center"/>
-   <style xml:id="p_al_start_center" ebutts:multiRowAlign="center" tts:textAlign="center"/>
    <style xml:id="p_al_center_end" ebutts:multiRowAlign="end" tts:textAlign="center"/>
    <style xml:id="d_forced" itts:forcedDisplay="true"/>
    <style xml:id="p_font1" tts:fontFamily="proportionalSansSerif" tts:lineHeight="125%" tts:fontSize="100%"/>
    <style xml:id="p_font2" tts:fontFamily="proportionalSansSerif" tts:lineHeight="125%" tts:fontSize="100%"/>
    <style xml:id="s_rb_b" tts:ruby="base"/>
    <style xml:id="s_rb_t" tts:ruby="text"/>
-   <style xml:id="p_rb_res_before" tts:rubyReserve="before"/>
-   <style xml:id="p_rb_res_after" tts:rubyReserve="after"/>
-   <style xml:id="p_rb_res_both" tts:rubyReserve="both"/>
    <style xml:id="p_rb_res_outside" tts:rubyReserve="outside"/>
    <style xml:id="s_rb_algn_center" tts:ruby="container" tts:rubyAlign="center"/>
    <style xml:id="s_rb_algn_around" tts:ruby="container" tts:rubyAlign="spaceAround"/>
-   <style xml:id="s_rb_posn_before" tts:ruby="container" tts:rubyPosition="before"/>
-   <style xml:id="s_rb_posn_after" tts:ruby="container" tts:rubyPosition="after"/>
    <style xml:id="s_rb_posn_outside" tts:ruby="container" tts:rubyPosition="outside"/>
    <style xml:id="s_combine" tts:textCombine="all"/>
-   <style xml:id="dps_shear" tts:shear="16.67%"/>
+   <style xml:id="p_shear" tts:shear="16.67%"/>
    <style xml:id="p_rtl" tts:direction="rtl"/>
-   <style xml:id="p_ltr" tts:direction="ltr"/>
-   <style xml:id="s_emf_fcb" tts:textEmphasis="filled circle before"/>
-   <style xml:id="s_emf_fdb" tts:textEmphasis="filled dot before"/>
-   <style xml:id="s_emf_fsb" tts:textEmphasis="filled sesame before"/>
-   <style xml:id="s_emf_ocb" tts:textEmphasis="open circle before"/>
-   <style xml:id="s_emf_odb" tts:textEmphasis="open dot before"/>
-   <style xml:id="s_emf_osb" tts:textEmphasis="open sesame before"/>
-   <style xml:id="s_emf_fca" tts:textEmphasis="filled circle after"/>
-   <style xml:id="s_emf_fda" tts:textEmphasis="filled dot after"/>
-   <style xml:id="s_emf_fsa" tts:textEmphasis="filled sesame after"/>
-   <style xml:id="s_emf_oca" tts:textEmphasis="open circle after"/>
-   <style xml:id="s_emf_oda" tts:textEmphasis="open dot after"/>
-   <style xml:id="s_emf_osa" tts:textEmphasis="open sesame after"/>
    <style xml:id="s_emf_fco" tts:textEmphasis="filled circle outside"/>
    <style xml:id="s_emf_fdo" tts:textEmphasis="filled dot outside"/>
    <style xml:id="s_emf_fso" tts:textEmphasis="filled sesame outside"/>
@@ -331,7 +310,7 @@ Nested `<span>` may ***only*** be used in subtitles requiring Rubies (i.e. Japan
    <style xml:id="s_emf_oso" tts:textEmphasis="open sesame outside"/>
    <style xml:id="r_vertical" tts:writingMode="tbrl"/>
    <style xml:id="_d_default" style="d_outline"/>
-   <style xml:id="_r_default" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" tts:wrapOption="noWrap" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c"/>
+   <style xml:id="_r_default" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c" style="s_fg_white"/>
   </styling>
   <layout>
    <region xml:id="R0" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" style="r_region"/>
@@ -350,18 +329,18 @@ Nested `<span>` may ***only*** be used in subtitles requiring Rubies (i.e. Japan
   </layout>
  </head>
  <body>
-  <div xml:id="sub0" region="R0" begin="01:00:03.600" end="01:00:07.640" style="s_outlineblack">
+  <div xml:id="sub0" region="R0" begin="01:00:03.600" end="01:00:07.640" style="_d_default">
    <metadata rosetta:comment="this is a comment test a cr"/>
    <p style="p_font2"><span style="ps_bg_boxedblack">First Frame of active video </span></p>
   </div>
   <div xml:id="1" region="R0" begin="01:00:07.760" end="01:00:11.760" style="_d_default">
    <p style="p_font2"><span>1 line</span><span style="s_nonered"> Center</span><span> Bottom</span></p>
   </div>
-  <div xml:id="2" region="R0" begin="01:00:11.880" end="01:00:15.880" style="_d_default p_al_start">
-   <p style="p_font2"><span>1 line left  bottom</span></p>
+  <div xml:id="2" region="R0" begin="01:00:11.880" end="01:00:15.880" style="_d_default">
+   <p style="p_font2 p_al_start"><span>1 line left  bottom</span></p>
   </div>
-  <div xml:id="3" region="R0" begin="01:00:16.000" end="01:00:20.000" style="_d_default p_al_end">
-   <p style="p_font2"><span>1 line right bottom</span></p>
+  <div xml:id="3" region="R0" begin="01:00:16.000" end="01:00:20.000" style="_d_default">
+   <p style="p_font2 p_al_end"><span>1 line right bottom</span></p>
   </div>
   <div xml:id="4" region="R0" begin="01:00:20.120" end="01:00:24.120" style="_d_default">
    <p style="p_font2"><span>two line </span></p>
@@ -455,32 +434,6 @@ Nested `<span>` may ***only*** be used in subtitles requiring Rubies (i.e. Japan
   <div xml:id="30" region="R0" begin="01:02:03.359" end="01:02:06.359" style="_d_default">
    <p style="p_font2"><span style="ps_bg_ghostboxedblack">Ghost box change to </span><span style="ps_bg_ghostboxedred s_nonered">red</span></p>
   </div>
-  <div xml:id="31" region="R0" begin="01:02:07.359" end="01:02:09.359" style="_d_default">
-   <p style="p_font2 p_rb_res_before"><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">Ruby Above </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
-  </div>
-  <div xml:id="32" region="R0" begin="01:02:10.359" end="01:02:12.359" style="_d_default">
-   <p style="p_font2 p_rb_res_after"><span style="s_rb_algn_center s_rb_posn_after"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
-  </div>
-  <div xml:id="33" region="R0" begin="01:02:13.359" end="01:02:16.359" style="_d_default">
-   <p style="p_font2 p_rb_res_after"><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">Ruby Above </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
-   <p style="p_font2 p_rb_res_after"><span style="s_rb_algn_center s_rb_posn_after"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_after"><span style="s_rb_b">Ruby Below 2</span><span style="s_rb_t">ruby2</span></span></p>
-  </div>
-  <div xml:id="34" region="R0" begin="01:02:17.359" end="01:02:20.359" style="_d_default">
-   <p style="p_font2 p_rb_res_after"><span>No Ruby </span><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
-   <p style="p_font2 p_rb_res_after"><span style="s_rb_algn_center s_rb_posn_after"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span>No Ruby</span></p>
-  </div>
-  <div xml:id="35" region="R12" begin="01:02:21.359" end="01:02:24.359" style="_d_default">
-   <p style="p_font2 p_rb_res_after"><span>Vert No Ruby </span><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
-   <p style="p_font2 p_rb_res_after"><span style="s_rb_algn_center s_rb_posn_after"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span>No Ruby</span></p>
-  </div>
-  <div xml:id="36" region="R12" begin="01:02:25.359" end="01:02:29.359" style="_d_default">
-   <p style="p_font2 p_rb_res_after">東南<span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">東南</span><span style="s_rb_t">とうなん</span></span></p>
-   <p style="p_font2 p_rb_res_after"><span style="s_rb_algn_center s_rb_posn_after"><span style="s_rb_b">東南</span><span style="s_rb_t">たつみ</span></span><span>No Ruby</span></p>
-  </div>
-  <div xml:id="37" region="R12" begin="01:02:30.359" end="01:02:34.359" style="_d_default dps_shear">
-   <p style="p_font2 p_rb_res_after"><span style="s_combine">1984</span><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b s_emf_fca">東南</span><span style="s_rb_t">とうなん</span></span></p>
-   <p style="p_font2 p_rb_res_after"><span style="s_rb_algn_center s_rb_posn_after"><span style="s_rb_b s_emf_fca">東南</span><span style="s_rb_t">たつみ</span></span><span style="s_emf_fca">No Ruby</span></p>
-  </div>
   <div xml:id="38" region="R0" begin="01:02:35.120" end="01:02:40.120" style="_d_default">
    <p style="p_font2 p_al_center_start"><span>two line</span><span><br/></span><span>center start bottom</span></p>
   </div>
@@ -490,15 +443,11 @@ Nested `<span>` may ***only*** be used in subtitles requiring Rubies (i.e. Japan
   <div xml:id="40" region="R0" begin="01:02:45.120" end="01:02:48.120" style="_d_default">
    <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack"><span style="ps_bg_ghostboxedblack">two line</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
   </div>
-  <div xml:id="41" region="R12" begin="01:02:46.359" end="01:02:49.359" style="_d_default">
-   <p style="p_font2 p_rb_res_after"><span>Vert No Ruby </span><span style="s_rb_algn_center s_rb_posn_before"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span></p>
-   <p style="p_font2 p_rb_res_after"><span style="s_rb_algn_center s_rb_posn_after"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span>No Ruby</span></p>
-  </div>
   <div xml:id="42" region="R0" begin="01:02:50.120" end="01:02:54.120" style="_d_default">
    <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"><span style="ps_bg_ghostboxedblack">abc אותיות </span><span style="ps_bg_ghostboxedblack s_fg_red">bcd השימו 1983 ש</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
   </div>
   <div xml:id="43" region="R0" begin="01:02:55.120" end="01:02:59.120" style="_d_default">
-   <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_ltr"><span style="ps_bg_ghostboxedblack">abc אותיות </span><span style="ps_bg_ghostboxedblack s_fg_red">bcd השימו 1983 ש</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
+   <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"><span style="ps_bg_ghostboxedblack">abc אותיות </span><span style="ps_bg_ghostboxedblack s_fg_red">bcd השימו 1983 ש</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
   </div>
   <div xml:id="44" region="R0" begin="01:03:00.120" end="01:03:04.120" style="_d_default">
    <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"><span style="ps_bg_ghostboxedblack">من البيان والتبيين الى</span><span style="ps_bg_ghostboxedblack s_fg_red"> البتاع والتبتيع</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
@@ -518,33 +467,21 @@ Nested `<span>` may ***only*** be used in subtitles requiring Rubies (i.e. Japan
   <div xml:id="47" region="R0" begin="01:03:14.359" end="01:03:18.359" style="_d_default">
    <p style="p_font2 p_rb_res_outside"><span>No Ruby Above No Ruby Above 2</span><span><br/></span><span>No Ruby Below No Ruby Below 2</span></p>
   </div>
-  <div xml:id="48" region="R12" begin="01:03:20.359" end="01:03:24.359" style="_d_default dps_shear">
-   <p style="p_font2 p_rb_res_outside"><span style="s_combine">84</span><span style="s_combine">1984</span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">とうなん</span></span><span><br/></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">たつみ</span></span><span style="s_emf_fco">No Ruby</span></p>
+  <div xml:id="48" region="R12" begin="01:03:20.359" end="01:03:24.359" style="_d_default">
+   <p style="p_font2 p_rb_res_outside p_shear"><span style="s_combine">84</span><span style="s_combine">1984</span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">とうなん</span></span><span><br/></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">たつみ</span></span><span style="s_emf_fco">No Ruby</span></p>
   </div>
-  <div xml:id="49" region="R12" begin="01:03:25.359" end="01:03:29.359" style="_d_default dps_shear">
-   <p style="p_font2 p_rb_res_outside"><span style="s_combine ps_bg_ghostboxedblack">1984</span><span style="s_rb_algn_center s_rb_posn_outside ps_bg_ghostboxedblack"><span style="s_rb_b s_emf_fco ps_bg_ghostboxedblack">東南</span><span style="s_rb_t ps_bg_ghostboxedblack">とうなん</span></span><span><br/></span><span style="s_rb_algn_center s_rb_posn_outside ps_bg_ghostboxedblack"><span style="s_rb_b s_emf_fco ps_bg_ghostboxedblack"> 東南</span><span style="s_rb_t ps_bg_ghostboxedblack">たつみ</span></span><span style="s_emf_fco ps_bg_ghostboxedblack">No Ruby Boxed</span></p>
-  </div>
-  <div xml:id="50" region="R0" begin="01:03:30.120" end="01:03:30.420" style="_d_default">
-   <p style="p_font2 p_al_center_start p_rtl"><span style="ps_bg_ghostboxedblack">من البيان والتبيين الى</span><span style="ps_bg_ghostboxedblack s_fg_red"> البتاع والتبتيع</span></p>
-   <p style="p_font2 p_al_center_start p_ltr"><span style="ps_bg_ghostboxedblack">pretty normal</span><span><span><br/></span></span><span style="ps_bg_ghostboxedblack">1      </span><span style="ps_bg_ghostboxedblack">2</span><span style="ps_bg_ghostboxedblack">3</span></p>
+  <div xml:id="49" region="R12" begin="01:03:25.359" end="01:03:29.359" style="_d_default">
+   <p style="p_font2 p_rb_res_outside p_shear"><span style="s_combine ps_bg_ghostboxedblack">1984</span><span style="s_rb_algn_center s_rb_posn_outside ps_bg_ghostboxedblack"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">とうなん</span></span><span><br/></span><span style="s_rb_algn_center s_rb_posn_outside ps_bg_ghostboxedblack"><span style="s_rb_b s_emf_fco"> 東南</span><span style="s_rb_t">たつみ</span></span><span style="s_emf_fco ps_bg_ghostboxedblack">No Ruby Boxed</span></p>
   </div>
   <div xml:id="50" region="R0" begin="01:03:30.420" end="01:03:31.420" style="_d_default">
    <p style="p_font2 p_al_center_start p_rtl"><span style="ps_bg_ghostboxedblack">من البيان والتبيين الى</span><span style="ps_bg_ghostboxedblack s_fg_red"> البتاع والتبتيع</span></p>
-   <p style="p_font2 p_al_center_start p_ltr"><span style="ps_bg_ghostboxedblack">pretty preserve</span><span><br/></span><span style="ps_bg_ghostboxedblack">1      </span><span style="ps_bg_ghostboxedblack">2</span><span style="ps_bg_ghostboxedblack">3</span></p>
+   <p style="p_font2 p_al_center_start"><span style="ps_bg_ghostboxedblack">left to right.</span><span><br/></span><span style="ps_bg_ghostboxedblack">1      </span><span style="ps_bg_ghostboxedblack">2</span><span style="ps_bg_ghostboxedblack">3</span></p>
   </div>
-  <div style="_d_default">
-   <p xml:id="51" region="R0" begin="01:03:31.420" end="01:03:32.120" style="p_font2 p_al_center_start p_rtl"><span style="ps_bg_ghostboxedblack">من البيان والتبيين الى</span><span style="ps_bg_ghostboxedblack s_fg_red"> البتاع والتبتيع</span></p>
-   <p xml:id="51.1" region="R0" begin="01:03:31.420" end="01:03:32.120" style="p_font2 p_al_center_start p_ltr"><span style="ps_bg_ghostboxedblack">1 line p normal</span><span><br/></span><span style="ps_bg_ghostboxedblack">1      </span><span style="ps_bg_ghostboxedblack">2</span><span style="ps_bg_ghostboxedblack">3</span></p>
-  </div>
-  <div style="_d_default">
-   <p xml:id="52" region="R0" begin="01:03:32.220" end="01:03:33.120" style="p_font2 p_al_center_start p_rtl"><span style="ps_bg_ghostboxedblack">من البيان والتبيين الى</span><span style="ps_bg_ghostboxedblack s_fg_red"> البتاع والتبتيع</span></p>
-   <p xml:id="52.1" region="R0" begin="01:03:32.220" end="01:03:33.120" style="p_font2 p_al_center_start p_ltr"><span style="ps_bg_ghostboxedblack">1 line p preserve</span><span><span><br/></span></span><span style="ps_bg_ghostboxedblack">1      </span><span style="ps_bg_ghostboxedblack">2</span><span style="ps_bg_ghostboxedblack">3</span></p>
-  </div>
-  <div xml:id="53" region="R0" begin="01:03:34.359" end="01:03:36.359" style="_d_default dps_shear">
-   <p style="p_font2 p_rb_res_outside"><span style="s_combine">84</span><span>1984</span></p>
+  <div xml:id="53" region="R0" begin="01:03:34.359" end="01:03:36.359" style="_d_default">
+   <p style="p_font2 p_rb_res_outside p_shear"><span style="s_combine">84</span><span>1984</span></p>
   </div>
   <div xml:id="54" region="R12" begin="01:03:37.359" end="01:03:39.359" style="_d_default">
-   <p style="p_font2 p_rb_res_after"><span style="s_emf_fco">東南</span><span><br/></span><span style="s_emf_fso">Emph Outside</span></p>
+   <p style="p_font2 p_rb_res_outside"><span style="s_emf_fco">東南</span><span><br/></span><span style="s_emf_fso">Emph Outside</span></p>
   </div>
   <div xml:id="55" region="R12" begin="01:03:40.359" end="01:03:41.359" style="_d_default">
    <p style="p_font2 p_rb_res_outside"><span style="s_combine">1984</span><span style="s_rb_algn_center"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">とうなん</span></span><span><br/></span><span style="s_rb_algn_center s_emf_fco"><span style="s_rb_b">東南</span><span style="s_rb_t">たつみ</span></span><span style="s_emf_fco">No Ruby</span></p>

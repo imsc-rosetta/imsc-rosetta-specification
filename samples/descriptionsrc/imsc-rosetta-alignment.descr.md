@@ -7,6 +7,7 @@ imsc-rosetta has 8 alignment style names which can be applied to `<p>`:
 
 - p_al_start
 - p_al_end
+- p_al_center
 - p_al_start_center
 - p_al_start_end
 - p_al_end_start
@@ -14,9 +15,7 @@ imsc-rosetta has 8 alignment style names which can be applied to `<p>`:
 - p_al_center_start
 - p_al_center_end
 
-*note: there is no style p_al_center, as this is the fixed default*
-
-*note: there are no styles p_al_start_start, p_al_center_center, p_al_end_end - use p_al_start, and p_al_end*
+*note: there are no styles p_al_start_start, p_al_center_center, p_al_end_end - use p_al_start, p_al_center, and p_al_end*
 
 Vertical placement (in horizontal subtitling) is determined by region edge placement.
 

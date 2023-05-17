@@ -12,8 +12,7 @@ The following is the maximal style name set, and thier default values:
 
 ```
  <style xml:id="r_region" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:fontStyle="normal" tts:fontWeight="normal" tts:fontFamily="proportionalSansSerif" tts:textAlign="center" itts:fillLineGap="false" tts:wrapOption="noWrap" style="_r_default" />
- <style xml:id="r_vertical" tts:writingMode="tbrl"/>
-
+ <style xml:id="r_vertical" tts:writingMode="tbrl" style="_r_vertical"/>
  
  <style xml:id="d_fillgap" itts:fillLineGap="true" />
  <style xml:id="d_forced" itts:forcedDisplay="true"/>
@@ -25,6 +24,7 @@ The following is the maximal style name set, and thier default values:
  
  <style xml:id="p_al_start" tts:textAlign="start"/>
  <style xml:id="p_al_end" tts:textAlign="end"/>
+ <style xml:id="p_al_center" tts:textAlign="center"/>
  <style xml:id="p_al_start_center" ebutts:multiRowAlign="center" tts:textAlign="start"/>
  <style xml:id="p_al_start_end" ebutts:multiRowAlign="end" tts:textAlign="start"/>
  <style xml:id="p_al_end_start" ebutts:multiRowAlign="start" tts:textAlign="end"/>
@@ -97,7 +97,7 @@ The following is the maximal style name set, and thier default values:
  
  <style xml:id="p_rb_res_outside" tts:rubyReserve="outside"/>
 
- <style xml:id="ps_shear" tts:shear="16.67%"/>
+ <style xml:id="p_shear" tts:shear="16.67%"/>
  
  <style xml:id="s_rb_b" tts:ruby="base"/>
  <style xml:id="s_rb_t" tts:ruby="text"/>
@@ -118,9 +118,33 @@ The following is the maximal style name set, and thier default values:
  
  <style xml:id="_d_default" style="d_outline"/>
  <style xml:id="_r_default" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c" style="s_fg_white"/>
+ <style xml:id="_r_vertical"/>
+
 ```
 
 ## styles which may be modified
+
+### _d_default
+you may modify the style attribute of _d_default to contain one or more styles from the d_xxx range.
+
+### _r_default
+you may modify tts:origin, tts:extent, tts:fontSize, tts:lineHeight.  These control line quantisation.
+
+you may modify ebutts:linePadding (suggest you don't)
+
+you may modify the style attribute. It MUST contain a colour from s_fg_xxx, and MAY contain an alignment from p_al_xxxx
+
+### _r_vertical
+you may modify the style attribute. It MAY contain an alignment from p_al_xxxx only
+
+### s_fg_xxx
+you may modify the tts:color attribute
+
+### s_outlinexxx
+you may modify the tts:textOutline attribute
+
+### s_dropxxx
+you may modify the tts:textOutline attribute
 
 Any styles not mentioned below are fixed, and may not be modified.
 
@@ -162,13 +186,13 @@ The `style` attibute in _r_default must be present, but may only be one of the 8
 
 general:
 
-styles prefixed with r_, _r may be applied to `<region>`.
+styles prefixed with r_ may be applied to `<region>`.
 
-styles prefixed with d_, _d may be applied to `<div>`.
+styles prefixed with d_ may be applied to `<div>`.
 
-styles prefixed with p_, ps_, _p may be applied to `<p>`.
+styles prefixed with p_, ps_ may be applied to `<p>`.
 
-styles prefixed with s_, ps_, _s may be applied to `<span>`.
+styles prefixed with s_, ps_ may be applied to `<span>`.
 
 if the style attribute in _d_default is modified, only styles applicable to div may be referenced.
 
@@ -184,13 +208,20 @@ e.g. in vertical Japanese, start means top, end means bottom.
 
 p_al_start, p_al_end - these align a single line or multi-line `<p>` element against the region edge.
 
+p_al_center - this align a single line or multi-line `<p>` element to the center.
+
 p_al_start_center, p_al_start_end - these align the the `<p>` element against the 'start' region edge, but justify the content start/center/end
 
 p_al_end_start, p_al_end_center - these align the the `<p>` element against the 'end' region edge, but justify the content start/center/end
 
 p_al_center_start, p_al_center_end  - these align the the `<p>` element to the center of the region, but justify the content start/center/end
 
-Note that p_al_center and p_al_center_center are equivlent, as are p_al_start, p_al_start_start and p_al_end, p_al_end_end.
+the _r_default style attribute MAY contain an alignment style from the set p_al_start, p_al_end, p_al_center, p_al_start_center, p_al_start_end, p_al_end_start, p_al_end_center, p_al_center_start, p_al_center_end.
+This would set the default alignment for all regions.
+
+the _r_vertical style MAY contain a style attribute containing an alignment style from the set p_al_start, p_al_end, p_al_center, p_al_start_center, p_al_start_end, p_al_end_start, p_al_end_center, p_al_center_start, p_al_center_end.
+This would set the default alignment for vertical regions
+
 
 ### outline/dropshadow
 

@@ -6,10 +6,11 @@
 
 This file is a sample which demonstrates the alignment features of imsc-rosetta.
 
-imsc-rosetta has 8 alignment style names which can be applied to `<p>`:
+imsc-rosetta has 9 alignment style names which can be applied to `<p>`:
 
 - p_al_start
 - p_al_end
+- p_al_center
 - p_al_start_center
 - p_al_start_end
 - p_al_end_start
@@ -17,9 +18,7 @@ imsc-rosetta has 8 alignment style names which can be applied to `<p>`:
 - p_al_center_start
 - p_al_center_end
 
-*note: there is no style p_al_center, as this is the fixed default*
-
-*note: there are no styles p_al_start_start, p_al_center_center, p_al_end_end - use p_al_start, and p_al_end*
+*note: there are no styles p_al_start_start, p_al_center_center, p_al_end_end - use p_al_start, p_al_center, and p_al_end*
 
 Vertical placement (in horizontal subtitling) is determined by region edge placement.
 
@@ -49,7 +48,7 @@ Therefore region edges are quantised to n * 80%/12
    <rosetta:version>0.0.0</rosetta:version>
   </metadata>
   <styling>
-   <style xml:id="r_region" tts:wrapOption="noWrap" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:fontStyle="normal" tts:fontWeight="normal" tts:color="white" tts:fontFamily="proportionalSansSerif" tts:textAlign="center" style="_r_default" itts:fillLineGap="false"/>
+   <style xml:id="r_region" tts:wrapOption="noWrap" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:fontStyle="normal" tts:fontWeight="normal" tts:fontFamily="proportionalSansSerif" tts:textAlign="center" itts:fillLineGap="false" style="_r_default"/>
    <style xml:id="s_italic" tts:fontStyle="italic"/>
    <style xml:id="s_bold" tts:fontWeight="bold"/>
    <style xml:id="s_underline" tts:textDecoration="underline"/>
@@ -61,6 +60,7 @@ Therefore region edges are quantised to n * 80%/12
    <style xml:id="s_fg_cyan" tts:color="#00FFFF"/>
    <style xml:id="s_fg_blue" tts:color="#0000FF"/>
    <style xml:id="s_fg_magenta" tts:color="#FF00FF"/>
+   <style xml:id="s_fg_white" tts:color="#FFFFFF"/>
    <style xml:id="ps_bg_boxedblack" tts:backgroundColor="#000000"/>
    <style xml:id="ps_bg_boxedred" tts:backgroundColor="#FF0000"/>
    <style xml:id="ps_bg_boxedyellow" tts:backgroundColor="#FF0000"/>
@@ -104,6 +104,7 @@ Therefore region edges are quantised to n * 80%/12
    <style xml:id="s_nonemagenta"/>
    <style xml:id="s_nonewhite"/>
    <style xml:id="p_al_start" tts:textAlign="start"/>
+   <style xml:id="p_al_center" tts:textAlign="center"/>
    <style xml:id="p_al_end" tts:textAlign="end"/>
    <style xml:id="p_al_start_center" ebutts:multiRowAlign="center" tts:textAlign="start"/>
    <style xml:id="p_al_start_end" ebutts:multiRowAlign="end" tts:textAlign="start"/>
@@ -121,7 +122,7 @@ Therefore region edges are quantised to n * 80%/12
    <style xml:id="s_rb_algn_around" tts:ruby="container" tts:rubyAlign="spaceAround"/>
    <style xml:id="s_rb_posn_outside" tts:ruby="container" tts:rubyPosition="outside"/>
    <style xml:id="s_combine" tts:textCombine="all"/>
-   <style xml:id="ps_shear" tts:shear="16.67%"/>
+   <style xml:id="p_shear" tts:shear="16.67%"/>
    <style xml:id="p_rtl" tts:direction="rtl"/>
    <style xml:id="s_emf_fco" tts:textEmphasis="filled circle outside"/>
    <style xml:id="s_emf_fdo" tts:textEmphasis="filled dot outside"/>
@@ -131,7 +132,7 @@ Therefore region edges are quantised to n * 80%/12
    <style xml:id="s_emf_oso" tts:textEmphasis="open sesame outside"/>
    <style xml:id="r_vertical" tts:writingMode="tbrl"/>
    <style xml:id="_d_default" style="d_outline"/>
-   <style xml:id="_r_default" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c"/>
+   <style xml:id="_r_default" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c" style="s_fg_white"/>
   </styling>
   <layout>
    <region xml:id="R0" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" style="r_region"/>
