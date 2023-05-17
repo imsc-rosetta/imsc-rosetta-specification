@@ -6,6 +6,10 @@
 
 Updated samples and documentaiton to reflect the change.
 
+re-introduce p_al_center, and allow p_al_xxx to be set in style on _r_default and _r_vertical to set default alignment/justification on horizontal and vertical regions.
+
+Be more explicit about what you may modify.
+
 ## 2023-05-12 - default foreground colour
 
 Added s_fg_white as defaulting to full-white (#FFFFFF) and use in _r_default

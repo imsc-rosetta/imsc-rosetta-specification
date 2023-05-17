@@ -196,6 +196,8 @@ styles prefixed with s_, ps_ may be applied to `<span>`.
 
 if the style attribute in _d_default is modified, only styles applicable to div may be referenced.
 
+_r_default and _r_vertical MAY contain style references to p_al_xxx as a way to set the default alignment/justification for the whole file.
+
 ### alignment/justification.
 
 Note that start means side (including top/bottom) where the first character will be closest to.
@@ -208,7 +210,7 @@ e.g. in vertical Japanese, start means top, end means bottom.
 
 p_al_start, p_al_end - these align a single line or multi-line `<p>` element against the region edge.
 
-p_al_center - this align a single line or multi-line `<p>` element to the center.
+p_al_center - this aligns a single line or multi-line `<p>` element to the center.
 
 p_al_start_center, p_al_start_end - these align the the `<p>` element against the 'start' region edge, but justify the content start/center/end
 
