@@ -1,5 +1,26 @@
 # Changes based on feedback.
 
+## 2023-05-23
+
+Somewhere in the introduction of default colours, we lost one premise of IMSC.
+
+To address this, we've modified the use of some default styles.
+
+Therefore ALL regions must have r_default, ALL divs must have d_default, and these in turn reference _r_default and _d_default.  And _r_default and _d_default must not be referenced by regions or styles.
+
+Also, _r_quantisationregion is introduced, as we need some way to store the quantisation intent more explicitly, and outside of thing we may consider to be for a different reason.
+
+These changes will require code changes to existing implemetations, but we're getting close now with good feedback from one company.
+
+Please use [the updated imsc-rosetta-qualify](https://github.com/imsc-rosetta/imsc-rosetta-qualify) to help you get the files correct, and visit styles.md
+
+Added tts:luminanceGain in _r_default
+
+Added more explanation of line quantisation in style.md
+
+
+
+
 ## 2023-05-17 - ps_shear
 
 `ps_shear` renamed to `p_shear`, as tts:shear cannot be applied to `span`

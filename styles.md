@@ -145,7 +145,7 @@ you may modify tts:origin, tts:extent, tts:fontSize, tts:lineHeight.
 See below 'region size and position quantisation' for more explaination
 
 ### _r_vertical
-you may modify the style attribute. It MUST be empty, contain an alignment from p_al_xxxx only
+you may modify the style attribute. It MUST be empty, or contain an alignment from p_al_xxxx only
 
 ### s_fg_xxx
 you may modify the tts:color attribute
