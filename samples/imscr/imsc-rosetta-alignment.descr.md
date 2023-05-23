@@ -3,7 +3,7 @@
 
 This file is a sample which demonstrates the alignment features of imsc-rosetta.
 
-imsc-rosetta has 8 alignment style names which can be applied to `<p>`:
+imsc-rosetta has 9 alignment style names which can be applied to `<p>`:
 
 - p_al_start
 - p_al_end
@@ -19,7 +19,7 @@ imsc-rosetta has 8 alignment style names which can be applied to `<p>`:
 
 Vertical placement (in horizontal subtitling) is determined by region edge placement.
 
-The region edge against which the subtitle rests is placed according to the quantisation calculated from the extent, fontSize and lineHeight specified in _r_region.
+The region edge against which the subtitle rests is placed according to the quantisation calculated from the extent, fontSize and lineHeight specified in `_r_quantisationregion`.
 
 For this file, the region edge position is based on 12 row positions, determined by
 
@@ -31,7 +31,7 @@ position count = subtitle vertical area/row height = 0.8/0.06666 = ~12
 
 Therefore region edges are quantised to n * 80%/12
 
-*note that file contains ALL imsc-rosetta defined styles as an example - this is not necessary, only the used styles are required*
+*note that file contains ALL imsc-rosetta defined styles as an example - this is not necessary, only the used styles are required except for _r_quantisationregion which must always be included*
 
 # div 1
 
