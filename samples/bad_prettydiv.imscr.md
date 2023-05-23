@@ -1,6 +1,6 @@
 # Sample file bad_prettydiv.imscr
 
-## Complete file (click expand to see all) (download)[./imscr/bad_prettydiv.imscr]
+## Complete file (click expand to see all) [download](./imscr/bad_prettydiv.imscr)
 
 <details><summary>Expand: bad_prettydiv.imscr</summary>
 

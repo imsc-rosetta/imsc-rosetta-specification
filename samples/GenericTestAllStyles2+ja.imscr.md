@@ -7,7 +7,7 @@ This sample is very preliminary, and may not be accurate.  Please refer to the a
 This file is an overall sample which demonstrates all the features of imsc-rosetta
 
 
-## Complete file (click expand to see all) (download)[./imscr/GenericTestAllStyles2+ja.imscr]
+## Complete file (click expand to see all) [download](./imscr/GenericTestAllStyles2+ja.imscr)
 
 <details><summary>Expand: GenericTestAllStyles2+ja.imscr</summary>
 

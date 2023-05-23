@@ -17,7 +17,7 @@ The background color of text can be changed if boxed
 *note that file contains ALL imsc-rosetta defined styles as an example - this is not necessary, only the used styles are required*
 
 
-## Complete file (click expand to see all) (download)[./imscr/imsc-rosetta-boxing.imscr]
+## Complete file (click expand to see all) [download](./imscr/imsc-rosetta-boxing.imscr)
 
 <details><summary>Expand: imsc-rosetta-boxing.imscr</summary>
 
