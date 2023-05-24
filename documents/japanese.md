@@ -8,6 +8,12 @@ Because of the possible use of Rubies, and to simplify this, when using imsc-ros
 
 ***Note that `<br/>` MUST be wrapped in `<span>` and that `<span>` MUST be a child of `<p>`***
 
+Note that as IMSC only supports `tts:shear`, and not tts:lineShear, if you wish to present Japanese text with shear, the preferred presentation style is that the lines are sheared separately, ann so two `<p>` elements are required for two line or two column text.
+
+This presents a further issue with the restriction to ruby postions to be `outside`, as this does not then work for dual row.
+
+We are looking for feedback on these issues.
+
 ## Vertical subtitles
 
 `r_vertical` (This equates to writingMode="tbrl")
@@ -19,6 +25,10 @@ When using vertical subtitles, the regions should be full height, with variable 
 ## Rubies
 
 Rubies for Japanese are supported through the use of nested spans with ruby specific styles attached.
+
+### Ruby rendering note
+
+It has been noticed that some IMSC renderers including in Chrome and Safari ignore the rubyReserve setting.  When rubies are present, there is a vertical shift in the placement of horizontal subtitles (or horizontal shift for vertical subtitles).  This is not an issue with IMSC Rosetta, but IMSCJS.  As IMSC Rosetta is primarily designed for the creation and transcode of subtitles, not emission this is not seen as an issue.  However, it is recommended that through testing is undertaken when converting to and from Rosetta for Japanese to ensure rubies are correctly positioned in the final player/renderer.
 
 ### Ruby Specific Styles:
 
@@ -95,7 +105,7 @@ Example (where region R12 has been had style r_vertical added to it):
   </div>
 ```
 
-*note the use of tts:shear, not tts:fontShear*
+*note the use of tts:shear, not tts:fontShear or tts:lineShear, which are not allowed in IMSC 1.2*
 
 *note: this should ONLY be used for Japanese of other ideographic languages.  For other languages, you may use `s_italic`*
 
