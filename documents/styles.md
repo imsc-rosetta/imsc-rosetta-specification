@@ -150,13 +150,32 @@ you may modify the style attribute. It MUST be empty, or contain an alignment fr
 ### s_fg_xxx
 you may modify the tts:color attribute
 
+Foreground colours must be specified in `#xxxxxx` notation using only 6 digits from upper case hex set `0123456789ABCDEF`
+
 ### s_outlinexxx
-you may modify the tts:textOutline attribute
+you may modify the tts:textOutline attribute's color value.
+
+Colours in tts:textOutline must be specified in `#xxxxxx` notation using 6 digits from upper case hex set `0123456789ABCDEF`
 
 ### s_dropxxx
-you may modify the tts:textOutline attribute
+you may modify the tts:textOutline attribute's color value.
 
-Any styles not mentioned below are fixed, and may not be modified.
+Colours in tts:textOutline must be specified in `#xxxxxx` notation using only 6 digits from upper case hex set `0123456789ABCDEF`
+
+### ps_bg_boxedxxx
+you may modify the tts:backgroundColor attribute
+
+as this is a solid box, colours must be specified in `#xxxxxx` notation using only 6 digits from upper case hex set `0123456789ABCDEF`
+
+### ps_bg_ghostboxedxxx
+you may modify the tts:backgroundColor attribute
+
+as this is a transparent box, colours must be specified in `#xxxxxxxx` notation using 8 digits from upper case hex set `0123456789ABCDEF`
+
+
+## general
+
+Any styles not mentioned above are fixed, and may not be modified.
 
 All styles must contain only the attributes as above. (i.e. only the attribute value may be changed)
 
@@ -230,9 +249,12 @@ i.e. in specific circumstances styles starting with s_fg_, ps_bg_, ds_outline, d
 
 It is NOT intended that this should provide a way to change yellow to blue, for example, only to adjust a shade.
 
+If modifying colouring style attributes, solid colours (s_fg_xxx, s_outlinexxx, s_dropxxx) must be specified in `#xxxxxx` notation using only 6 digits from upper case hex set `0123456789ABCDEF`, and transparent colours (ps_bg_ghostboxedxxx) must be specified in `#xxxxxxxx` notation using 8 digits from upper case hex set `0123456789ABCDEF`.
+
 (note: when converting to formats like PAC, STL, etc, exact colours cannot be carried over, hence why we use fixed names for the 'normal' 8 teletext colours.  These MAY be re-defined by the transmission system on playout.)
 
-The `style` attibute in _r_default must be present, but may only be one of the 8 foreground colour style names (those that start `s_fg_`) - this may be used to change the overall default colour for the subtitles.
+The `style` attibute in _r_default must be present, and must only be one of the 8 foreground colour style names (those that start `s_fg_`) - this may be used to change the overall default colour for the subtitles.
+
 
 ## Style use
 
