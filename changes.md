@@ -12,7 +12,7 @@ Also, _r_quantisationregion is introduced, as we need some way to store the quan
 
 These changes will require code changes to existing implementations, but we're getting close now with good feedback from implementors.
 
-Please use [the updated imsc-rosetta-qualify](https://github.com/imsc-rosetta/imsc-rosetta-qualify) to help you get the files correct, and visit styles.md
+Please use [the updated imsc-rosetta-qualify](https://imsc-rosetta.github.io/imsc-rosetta-qualify/) to help you get the files correct, and visit styles.md
 
 Added tts:luminanceGain in _r_default
 
