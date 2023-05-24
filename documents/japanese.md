@@ -8,9 +8,9 @@ Because of the possible use of Rubies, and to simplify this, when using imsc-ros
 
 ***Note that `<br/>` MUST be wrapped in `<span>` and that `<span>` MUST be a child of `<p>`***
 
-Note that as IMSC only supports `tts:shear`, and not tts:lineShear, if you wish to present Japanese text with shear, the preferred presentation style is that the lines are sheared separately, ann so two `<p>` elements are required for two line or two column text.
+Note that as IMSC only supports `tts:shear`, and not tts:lineShear, if you wish to present Japanese text with shear, the preferred presentation style is that the lines are sheared separately, and so two `<p>` elements are required for two line or two column text.
 
-This presents a further issue with the restriction to ruby postions to be `outside`, as this does not then work for dual row.
+This presents a further issue with the restriction to ruby positions to be `outside`, as this does not then work for dual row.
 
 We are looking for feedback on these issues.
 
@@ -21,6 +21,20 @@ We are looking for feedback on these issues.
 Vertical subtitles are represented by applying the style r_vertical to the region into which the subtitle is rendered.
 
 When using vertical subtitles, the regions should be full height, with variable left or right edges (either right or left or both will be against the maximal region extent horizontally).
+
+## Multiple subtitles on the screen at the same time.
+
+Currently, IMSC Rosetta disallows overlapping cues.  I.e. there is only one `<div>` on screen at a time.
+
+For Japanese, the use of both horizontal and vertical subtitles with overlapping cues is not uncommon in real use.
+
+The combination of a vertical subtitle with a horizontal subtitle in IMSC Rosetta is problematic because IMSC specifically restricts regions to not be overlapping.  Although both the vertical and horizontal subtitles could in theory share the same region, from a practical subtitle file perspective, this is also problematic.
+
+Several subtitle vendors have highlighted that their customers have specified that files with overlapping regions are OK for them, so one suggestion is that specifically, for this use case, we relax the non-overlapping regions IMSC rule.
+
+As IMSC-Rosetta is not intended for final delivery to players/renderers without transformation (i.e. it is not an emission format), we believe that relaxing this constraint should not be an issue, especially if only in these specific circumstances (i.e. Japanese use case).
+
+Feedback is requested.
 
 ## Rubies
 
