@@ -44,7 +44,9 @@ All styling is referential, and style ids used are fixed.  Many styles are *cons
 
 Many TTML implementations do not implement features of subtitles which have been supported by extant proprietary formats for many years.  TTML itself is capable of supporting these features, but in order to do so, a full understanding of TTML and it's associated standards is required.  Gaining an understanding of TTML and the associated specifications is both difficult, and fraught with the probability of misinterpretation.
 
-imsc-rosetta addresses this by specifically supporting various features not commonly used in TTML, and explicitly documenting how they are represented in imsc-rosetta in an IMSC compatible way.
+Imsc-rosetta addresses this by specifically supporting various features not commonly used in TTML, and explicitly documenting how they are represented in imsc-rosetta in an IMSC compatible way.
+
+Imsc-rosetta was designed from a general translation subtitling perspective.  For example, we have avoided such aspects as RollUp and PaintOn, which are specific to CEA-608, and we do not expect to support these styles.  US Closed captions could be created and stored in Rosetta, but only in pop-on style.
 
 ### alignment/justification
 
