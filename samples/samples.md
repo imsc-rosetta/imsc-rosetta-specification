@@ -13,3 +13,9 @@ Note also the use of multiple `<p>` elements when the desired alignment cannot b
 
 This file demonstrates the boxing features of imsc-rosetta, including background color changes.
 
+### [GenericTestAllStyles2+ja.imscr](./GenericTestAllStyles2+ja.imscr.md)
+
+This file demonstrates a random variety of IMSC-Rosetta features.
+
+
+

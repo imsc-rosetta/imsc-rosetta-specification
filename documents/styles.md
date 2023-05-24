@@ -11,7 +11,7 @@ It is expected that only the used set of styles be present in a file, but it is 
 The following is the maximal style name set, and thier default values:
 
 ```
- <style xml:id="r_region" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:fontStyle="normal" tts:fontWeight="normal" tts:fontFamily="proportionalSansSerif" tts:textAlign="center" itts:fillLineGap="false" tts:wrapOption="noWrap" style="_r_default" />
+ <style xml:id="r_region" tts:overflow="visible" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:fontStyle="normal" tts:fontWeight="normal" tts:fontFamily="proportionalSansSerif" tts:textAlign="center" itts:fillLineGap="false" tts:wrapOption="noWrap" style="_r_default" />
  <style xml:id="r_vertical" tts:writingMode="tbrl" style="_r_vertical"/>
  
  <style xml:id="d_default" style="_d_default"/>
