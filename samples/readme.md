@@ -13,3 +13,16 @@ Note also the use of multiple `<p>` elements when the desired alignment cannot b
 
 This file demonstrates the boxing features of imsc-rosetta, including background color changes.
 
+### [GenericTestAllStyles2+ja.imscr](./GenericTestAllStyles2+ja.imscr.md)
+
+This file demonstrates a random variety of IMSC-Rosetta features.
+
+
+## the sample files
+
+The actual sample files are in the [imscr subfolder](./imscr)
+
+The [html folder](./html) is useful if viewing locally.
+
+The [images](./images) folder contains rendered images from the sample files.
+

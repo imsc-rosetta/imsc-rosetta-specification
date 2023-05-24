@@ -1,7 +1,5 @@
 # Sample file imsc-rosetta-boxing.imscr
 
-## Complete file (expand to see all):
-
 
 
 This file is a sample which demonstrates the boxing features of imsc-rosetta.
@@ -19,6 +17,8 @@ The background color of text can be changed if boxed
 *note that file contains ALL imsc-rosetta defined styles as an example - this is not necessary, only the used styles are required*
 
 
+## Complete file (click expand to see all) [download](./imscr/imsc-rosetta-boxing.imscr)
+
 <details><summary>Expand: imsc-rosetta-boxing.imscr</summary>
 
 ```
@@ -34,6 +34,7 @@ The background color of text can be changed if boxed
    <style xml:id="s_italic" tts:fontStyle="italic"/>
    <style xml:id="s_bold" tts:fontWeight="bold"/>
    <style xml:id="s_underline" tts:textDecoration="underline"/>
+   <style xml:id="d_default" style="_d_default"/>
    <style xml:id="d_fillgap" itts:fillLineGap="true"/>
    <style xml:id="s_fg_black" tts:color="#000000"/>
    <style xml:id="s_fg_red" tts:color="#FF0000"/>
@@ -112,52 +113,54 @@ The background color of text can be changed if boxed
    <style xml:id="s_emf_oco" tts:textEmphasis="open circle outside"/>
    <style xml:id="s_emf_odo" tts:textEmphasis="open dot outside"/>
    <style xml:id="s_emf_oso" tts:textEmphasis="open sesame outside"/>
-   <style xml:id="r_vertical" tts:writingMode="tbrl"/>
+   <style xml:id="r_vertical" tts:writingMode="tbrl" style="_r_vertical"/>
    <style xml:id="_d_default" style="d_outline"/>
-   <style xml:id="_r_default" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c" style="s_fg_white"/>
+   <style xml:id="_r_default" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c" style="s_fg_white"/>
+   <style xml:id="_r_vertical" style=""/>
+   <style xml:id="_r_quantisationregion" tts:origin="10% 10%" tts:extent="80% 80%" tts:fontSize="5.333rh" tts:lineHeight="125%"/>
   </styling>
   <layout>
    <region xml:id="R0" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" style="r_region"/>
   </layout>
  </head>
  <body>
-  <div xml:id="1" region="R0" begin="01:00:03.600" end="01:00:07.640" style="_d_default">
+  <div xml:id="1" region="R0" begin="01:00:03.600" end="01:00:07.640" style="d_default">
    <p style="p_font2"><span>Unboxed</span><span><br/></span><span>line 2</span></p>
   </div>
-  <div xml:id="2" region="R0" begin="01:00:07.760" end="01:00:11.760" style="_d_default">
+  <div xml:id="2" region="R0" begin="01:00:07.760" end="01:00:11.760" style="d_default">
    <p style="p_font2"><span style="ps_bg_boxedblack">Solid Boxed</span><span><br/></span><span style="ps_bg_boxedblack">line 2 descender:y ascender:Á</span></p>
   </div>
-  <div xml:id="3" region="R0" begin="01:00:11.880" end="01:00:15.880" style="_d_default">
+  <div xml:id="3" region="R0" begin="01:00:11.880" end="01:00:15.880" style="d_default">
    <p style="p_font2"><span style="ps_bg_ghostboxedblack">Ghost Boxed</span><span><br/></span><span style="ps_bg_ghostboxedblack">line 2</span></p>
   </div>
-  <div xml:id="4" region="R0" begin="01:00:16.000" end="01:00:20.000" style="_d_default">
+  <div xml:id="4" region="R0" begin="01:00:16.000" end="01:00:20.000" style="d_default">
    <p style="p_font2 ps_bg_boxedblack"><span>Solid Stripe</span><span><br/></span><span>line 2</span></p>
   </div>
-  <div xml:id="5" region="R0" begin="01:00:20.120" end="01:00:24.120" style="_d_default">
+  <div xml:id="5" region="R0" begin="01:00:20.120" end="01:00:24.120" style="d_default">
    <p style="p_font2 ps_bg_ghostboxedblack"><span>Ghost Stripe</span><span><br/></span><span>line 2</span></p>
   </div>
-  <div xml:id="6" region="R0" begin="01:00:24.240" end="01:00:28.240" style="_d_default">
+  <div xml:id="6" region="R0" begin="01:00:24.240" end="01:00:28.240" style="d_default">
    <p style="p_font2"><span>Unboxed change to </span><span style="s_outlinered">red </span><span>then </span><span style="s_outlineblue">blue</span><span><br/></span><span>line 2</span></p>
   </div>
-  <div xml:id="7" region="R0" begin="01:00:28.360" end="01:00:32.360" style="_d_default">
+  <div xml:id="7" region="R0" begin="01:00:28.360" end="01:00:32.360" style="d_default">
    <p style="p_font2"><span style="ps_bg_boxedblack">Solid boxed change to </span><span style="ps_bg_boxedred">red </span><span style="ps_bg_boxedblack">then </span><span style="ps_bg_boxedblue">blue</span><span><br/></span><span style="ps_bg_boxedblack">line 2</span></p>
   </div>
-  <div xml:id="8" region="R0" begin="01:00:32.480" end="01:00:36.480" style="_d_default">
+  <div xml:id="8" region="R0" begin="01:00:32.480" end="01:00:36.480" style="d_default">
    <p style="p_font2"><span style="ps_bg_ghostboxedblack">Ghost boxed change to </span><span style="ps_bg_ghostboxedred">red </span><span style="ps_bg_ghostboxedblack">then </span><span style="ps_bg_ghostboxedblue">blue</span><span><br/></span><span style="ps_bg_ghostboxedblack">line 2</span></p>
   </div>
-  <div xml:id="9" region="R0" begin="01:00:36.640" end="01:00:40.640" style="_d_default">
+  <div xml:id="9" region="R0" begin="01:00:36.640" end="01:00:40.640" style="d_default">
    <p style="p_font2 ps_bg_boxedblack"><span>Solid Stripe change to </span><span style="ps_bg_boxedred">red </span><span>then </span><span style="ps_bg_boxedblue">blue</span><span><br/></span><span>line 2</span></p>
   </div>
-  <div xml:id="10" region="R0" begin="01:00:40.760" end="01:00:44.760" style="_d_default">
+  <div xml:id="10" region="R0" begin="01:00:40.760" end="01:00:44.760" style="d_default">
    <p style="p_font2 ps_bg_ghostboxedblack"><span>Ghost Stripe change to </span><span style="ps_bg_ghostboxedred">red </span><span>then </span><span style="ps_bg_ghostboxedblue">blue</span><span><br/></span><span>line 2</span></p>
   </div>
-  <div xml:id="11" region="R0" begin="01:00:45.760" end="01:00:48.760" style="_d_default d_fillgap">
+  <div xml:id="11" region="R0" begin="01:00:45.760" end="01:00:48.760" style="d_default d_fillgap">
    <p style="p_font2"><span style="ps_bg_boxedblack">Solid Boxed - fillgap</span><span><br/></span><span style="ps_bg_boxedblack">line 2 descender:y ascender:Á</span></p>
   </div>
-  <div xml:id="12" region="R0" begin="01:00:49.880" end="01:00:54.880" style="_d_default d_fillgap">
+  <div xml:id="12" region="R0" begin="01:00:49.880" end="01:00:54.880" style="d_default d_fillgap">
    <p style="p_font2"><span style="ps_bg_ghostboxedblack">Ghost Boxed - fillgap</span><span><br/></span><span><br/></span><span style="ps_bg_ghostboxedblack">line 2</span></p>
   </div>
- </body>
+</body>
 </tt>
 ```
 
@@ -176,9 +179,9 @@ Unboxed.  Note that this file has black outline (d_outline) in _d_default.
 #### div XML
 
 ```
-<div xml:id="1" region="R0" begin="01:00:03.600" end="01:00:07.640" style="_d_default">
- <p style="p_font2"><span>Unboxed</span><span><br/></span><span>line 2</span></p>
-</div>
+<div xml:id="1" region="R0" begin="01:00:03.600" end="01:00:07.640" style="d_default">
+   <p style="p_font2"><span>Unboxed</span><span><br/></span><span>line 2</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -196,9 +199,9 @@ Sometimes used as a channel style.  Other times used to make text readable when 
 #### div XML
 
 ```
-<div xml:id="2" region="R0" begin="01:00:07.760" end="01:00:11.760" style="_d_default">
- <p style="p_font2"><span style="ps_bg_boxedblack">Solid Boxed</span><span><br/></span><span style="ps_bg_boxedblack">line 2 descender:y ascender:Á</span></p>
-</div>
+<div xml:id="2" region="R0" begin="01:00:07.760" end="01:00:11.760" style="d_default">
+   <p style="p_font2"><span style="ps_bg_boxedblack">Solid Boxed</span><span><br/></span><span style="ps_bg_boxedblack">line 2 descender:y ascender:Á</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -216,9 +219,9 @@ Sometimes used as a channel style.  Other times used to make text readable when 
 #### div XML
 
 ```
-<div xml:id="3" region="R0" begin="01:00:11.880" end="01:00:15.880" style="_d_default">
- <p style="p_font2"><span style="ps_bg_ghostboxedblack">Ghost Boxed</span><span><br/></span><span style="ps_bg_ghostboxedblack">line 2</span></p>
-</div>
+<div xml:id="3" region="R0" begin="01:00:11.880" end="01:00:15.880" style="d_default">
+   <p style="p_font2"><span style="ps_bg_ghostboxedblack">Ghost Boxed</span><span><br/></span><span style="ps_bg_ghostboxedblack">line 2</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -236,9 +239,9 @@ Generally used to cover existing text more fully that a box around the text only
 #### div XML
 
 ```
-<div xml:id="4" region="R0" begin="01:00:16.000" end="01:00:20.000" style="_d_default">
- <p style="p_font2 ps_bg_boxedblack"><span>Solid Stripe</span><span><br/></span><span>line 2</span></p>
-</div>
+<div xml:id="4" region="R0" begin="01:00:16.000" end="01:00:20.000" style="d_default">
+   <p style="p_font2 ps_bg_boxedblack"><span>Solid Stripe</span><span><br/></span><span>line 2</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -256,9 +259,9 @@ Generally used to cover existing text more fully that a box around the text only
 #### div XML
 
 ```
-<div xml:id="5" region="R0" begin="01:00:20.120" end="01:00:24.120" style="_d_default">
- <p style="p_font2 ps_bg_ghostboxedblack"><span>Ghost Stripe</span><span><br/></span><span>line 2</span></p>
-</div>
+<div xml:id="5" region="R0" begin="01:00:20.120" end="01:00:24.120" style="d_default">
+   <p style="p_font2 ps_bg_ghostboxedblack"><span>Ghost Stripe</span><span><br/></span><span>line 2</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -276,9 +279,9 @@ Retention of background colour may be important if the file is to be exported to
 #### div XML
 
 ```
-<div xml:id="6" region="R0" begin="01:00:24.240" end="01:00:28.240" style="_d_default">
- <p style="p_font2"><span>Unboxed change to </span><span style="s_outlinered">red </span><span>then </span><span style="s_outlineblue">blue</span><span><br/></span><span>line 2</span></p>
-</div>
+<div xml:id="6" region="R0" begin="01:00:24.240" end="01:00:28.240" style="d_default">
+   <p style="p_font2"><span>Unboxed change to </span><span style="s_outlinered">red </span><span>then </span><span style="s_outlineblue">blue</span><span><br/></span><span>line 2</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -296,9 +299,9 @@ Note that black outline is retained.  Comments?
 #### div XML
 
 ```
-<div xml:id="7" region="R0" begin="01:00:28.360" end="01:00:32.360" style="_d_default">
- <p style="p_font2"><span style="ps_bg_boxedblack">Solid boxed change to </span><span style="ps_bg_boxedred">red </span><span style="ps_bg_boxedblack">then </span><span style="ps_bg_boxedblue">blue</span><span><br/></span><span style="ps_bg_boxedblack">line 2</span></p>
-</div>
+<div xml:id="7" region="R0" begin="01:00:28.360" end="01:00:32.360" style="d_default">
+   <p style="p_font2"><span style="ps_bg_boxedblack">Solid boxed change to </span><span style="ps_bg_boxedred">red </span><span style="ps_bg_boxedblack">then </span><span style="ps_bg_boxedblue">blue</span><span><br/></span><span style="ps_bg_boxedblack">line 2</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -316,9 +319,9 @@ Note that black outline is retained.  Comments?
 #### div XML
 
 ```
-<div xml:id="8" region="R0" begin="01:00:32.480" end="01:00:36.480" style="_d_default">
- <p style="p_font2"><span style="ps_bg_ghostboxedblack">Ghost boxed change to </span><span style="ps_bg_ghostboxedred">red </span><span style="ps_bg_ghostboxedblack">then </span><span style="ps_bg_ghostboxedblue">blue</span><span><br/></span><span style="ps_bg_ghostboxedblack">line 2</span></p>
-</div>
+<div xml:id="8" region="R0" begin="01:00:32.480" end="01:00:36.480" style="d_default">
+   <p style="p_font2"><span style="ps_bg_ghostboxedblack">Ghost boxed change to </span><span style="ps_bg_ghostboxedred">red </span><span style="ps_bg_ghostboxedblack">then </span><span style="ps_bg_ghostboxedblue">blue</span><span><br/></span><span style="ps_bg_ghostboxedblack">line 2</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -336,9 +339,9 @@ Note that black outline is retained.  Comments?
 #### div XML
 
 ```
-<div xml:id="9" region="R0" begin="01:00:36.640" end="01:00:40.640" style="_d_default">
- <p style="p_font2 ps_bg_boxedblack"><span>Solid Stripe change to </span><span style="ps_bg_boxedred">red </span><span>then </span><span style="ps_bg_boxedblue">blue</span><span><br/></span><span>line 2</span></p>
-</div>
+<div xml:id="9" region="R0" begin="01:00:36.640" end="01:00:40.640" style="d_default">
+   <p style="p_font2 ps_bg_boxedblack"><span>Solid Stripe change to </span><span style="ps_bg_boxedred">red </span><span>then </span><span style="ps_bg_boxedblue">blue</span><span><br/></span><span>line 2</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -360,9 +363,9 @@ Note that black outline is retained.  Comments?
 #### div XML
 
 ```
-<div xml:id="10" region="R0" begin="01:00:40.760" end="01:00:44.760" style="_d_default">
- <p style="p_font2 ps_bg_ghostboxedblack"><span>Ghost Stripe change to </span><span style="ps_bg_ghostboxedred">red </span><span>then </span><span style="ps_bg_ghostboxedblue">blue</span><span><br/></span><span>line 2</span></p>
-</div>
+<div xml:id="10" region="R0" begin="01:00:40.760" end="01:00:44.760" style="d_default">
+   <p style="p_font2 ps_bg_ghostboxedblack"><span>Ghost Stripe change to </span><span style="ps_bg_ghostboxedred">red </span><span>then </span><span style="ps_bg_ghostboxedblue">blue</span><span><br/></span><span>line 2</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -378,9 +381,9 @@ Solid black box with d_fillgap specified on `<div>`.
 #### div XML
 
 ```
-<div xml:id="11" region="R0" begin="01:00:45.760" end="01:00:48.760" style="_d_default d_fillgap">
- <p style="p_font2"><span style="ps_bg_boxedblack">Solid Boxed - fillgap</span><span><br/></span><span style="ps_bg_boxedblack">line 2 descender:y ascender:Á</span></p>
-</div>
+<div xml:id="11" region="R0" begin="01:00:45.760" end="01:00:48.760" style="d_default d_fillgap">
+   <p style="p_font2"><span style="ps_bg_boxedblack">Solid Boxed - fillgap</span><span><br/></span><span style="ps_bg_boxedblack">line 2 descender:y ascender:Á</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -399,9 +402,9 @@ Ghost box with d_fillgap specified on `<div>`, but with a blank line in between 
 #### div XML
 
 ```
-<div xml:id="12" region="R0" begin="01:00:49.880" end="01:00:54.880" style="_d_default d_fillgap">
- <p style="p_font2"><span style="ps_bg_ghostboxedblack">Ghost Boxed - fillgap</span><span><br/></span><span><br/></span><span style="ps_bg_ghostboxedblack">line 2</span></p>
-</div>
+<div xml:id="12" region="R0" begin="01:00:49.880" end="01:00:54.880" style="d_default d_fillgap">
+   <p style="p_font2"><span style="ps_bg_ghostboxedblack">Ghost Boxed - fillgap</span><span><br/></span><span><br/></span><span style="ps_bg_ghostboxedblack">line 2</span></p>
+  </div>
 ```
 #### Resulting Image
 

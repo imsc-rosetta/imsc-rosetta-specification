@@ -1,13 +1,13 @@
 # Sample file GenericTestAllStyles2+ja.imscr
 
-## Complete file (expand to see all):
-
 
 
 This sample is very preliminary, and may not be accurate.  Please refer to the alignment and boxing samples for accurate samples.
 
 This file is an overall sample which demonstrates all the features of imsc-rosetta
 
+
+## Complete file (click expand to see all) [download](./imscr/GenericTestAllStyles2+ja.imscr)
 
 <details><summary>Expand: GenericTestAllStyles2+ja.imscr</summary>
 
@@ -24,7 +24,8 @@ This file is an overall sample which demonstrates all the features of imsc-roset
    <style xml:id="s_italic" tts:fontStyle="italic"/>
    <style xml:id="s_bold" tts:fontWeight="bold"/>
    <style xml:id="s_underline" tts:textDecoration="underline"/>
-   <style xml:id="d_fillgap" itts:fillLineGap="true"/>
+   <style xml:id="d_default" style="_d_default"/>
+   <style xml:id="d_fillgap" itts:fillLineGap="true" />
    <style xml:id="s_fg_black" tts:color="#000000"/>
    <style xml:id="s_fg_red" tts:color="#FF0000"/>
    <style xml:id="s_fg_yellow" tts:color="#FFFF00"/>
@@ -102,9 +103,11 @@ This file is an overall sample which demonstrates all the features of imsc-roset
    <style xml:id="s_emf_oco" tts:textEmphasis="open circle outside"/>
    <style xml:id="s_emf_odo" tts:textEmphasis="open dot outside"/>
    <style xml:id="s_emf_oso" tts:textEmphasis="open sesame outside"/>
-   <style xml:id="r_vertical" tts:writingMode="tbrl"/>
+   <style xml:id="r_vertical" tts:writingMode="tbrl" style="_r_vertical"/>
    <style xml:id="_d_default" style="d_outline"/>
-   <style xml:id="_r_default" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c" style="s_fg_white"/>
+   <style xml:id="_r_default" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c" style="s_fg_white"/>
+   <style xml:id="_r_vertical" style="p_al_start"/>
+   <style xml:id="_r_quantisationregion" tts:origin="10% 10%" tts:extent="80% 80%" tts:fontSize="5.333rh" tts:lineHeight="125%"/>
   </styling>
   <layout>
    <region xml:id="R0" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" style="r_region"/>
@@ -123,164 +126,164 @@ This file is an overall sample which demonstrates all the features of imsc-roset
   </layout>
  </head>
  <body>
-  <div xml:id="sub0" region="R0" begin="01:00:03.600" end="01:00:07.640" style="_d_default">
+  <div xml:id="sub0" region="R0" begin="01:00:03.600" end="01:00:07.640" style="d_default">
    <metadata rosetta:comment="this is a comment test a cr"/>
    <p style="p_font2"><span style="ps_bg_boxedblack">First Frame of active video </span></p>
   </div>
-  <div xml:id="1" region="R0" begin="01:00:07.760" end="01:00:11.760" style="_d_default">
+  <div xml:id="1" region="R0" begin="01:00:07.760" end="01:00:11.760" style="d_default">
    <p style="p_font2"><span>1 line</span><span style="s_nonered"> Center</span><span> Bottom</span></p>
   </div>
-  <div xml:id="2" region="R0" begin="01:00:11.880" end="01:00:15.880" style="_d_default">
+  <div xml:id="2" region="R0" begin="01:00:11.880" end="01:00:15.880" style="d_default">
    <p style="p_font2 p_al_start"><span>1 line left  bottom</span></p>
   </div>
-  <div xml:id="3" region="R0" begin="01:00:16.000" end="01:00:20.000" style="_d_default">
+  <div xml:id="3" region="R0" begin="01:00:16.000" end="01:00:20.000" style="d_default">
    <p style="p_font2 p_al_end"><span>1 line right bottom</span></p>
   </div>
-  <div xml:id="4" region="R0" begin="01:00:20.120" end="01:00:24.120" style="_d_default">
+  <div xml:id="4" region="R0" begin="01:00:20.120" end="01:00:24.120" style="d_default">
    <p style="p_font2"><span>two line </span></p>
    <p style="p_font2"><span>center bottom</span></p>
   </div>
-  <div xml:id="5" region="R0" begin="01:00:24.240" end="01:00:28.240" style="_d_default">
+  <div xml:id="5" region="R0" begin="01:00:24.240" end="01:00:28.240" style="d_default">
    <p style="p_font2"><span>two lines</span></p>
    <p style="p_font2"><span>left bottom</span></p>
   </div>
-  <div xml:id="6" region="R0" begin="01:00:28.360" end="01:00:32.360" style="_d_default">
+  <div xml:id="6" region="R0" begin="01:00:28.360" end="01:00:32.360" style="d_default">
    <p style="p_font2"><span>two lines</span></p>
    <p style="p_font2"><span>right bottom</span></p>
   </div>
-  <div xml:id="7" region="R0" begin="01:00:32.480" end="01:00:36.480" style="_d_default">
+  <div xml:id="7" region="R0" begin="01:00:32.480" end="01:00:36.480" style="d_default">
    <p style="p_font2"><span>row 11</span></p>
   </div>
-  <div xml:id="8" region="R1" begin="01:00:36.640" end="01:00:40.640" style="_d_default">
+  <div xml:id="8" region="R1" begin="01:00:36.640" end="01:00:40.640" style="d_default">
    <p style="p_font2"><span>row 10</span></p>
   </div>
-  <div xml:id="9" region="R2" begin="01:00:40.760" end="01:00:44.760" style="_d_default">
+  <div xml:id="9" region="R2" begin="01:00:40.760" end="01:00:44.760" style="d_default">
    <p style="p_font2"><span>row 9</span></p>
   </div>
-  <div xml:id="10" region="R3" begin="01:00:44.880" end="01:00:48.880" style="_d_default">
+  <div xml:id="10" region="R3" begin="01:00:44.880" end="01:00:48.880" style="d_default">
    <p style="p_font2"><span>row 8</span></p>
   </div>
-  <div xml:id="11" region="R4" begin="01:00:49.000" end="01:00:53.000" style="_d_default">
+  <div xml:id="11" region="R4" begin="01:00:49.000" end="01:00:53.000" style="d_default">
    <p style="p_font2"><span>row 7</span></p>
   </div>
-  <div xml:id="12" region="R5" begin="01:00:53.120" end="01:00:57.120" style="_d_default">
+  <div xml:id="12" region="R5" begin="01:00:53.120" end="01:00:57.120" style="d_default">
    <p style="p_font2"><span>row 6</span></p>
   </div>
-  <div xml:id="13" region="R6" begin="01:00:57.240" end="01:01:01.240" style="_d_default">
+  <div xml:id="13" region="R6" begin="01:00:57.240" end="01:01:01.240" style="d_default">
    <p style="p_font2"><span>row 5</span></p>
   </div>
-  <div xml:id="14" region="R7" begin="01:01:01.360" end="01:01:05.360" style="_d_default">
+  <div xml:id="14" region="R7" begin="01:01:01.360" end="01:01:05.360" style="d_default">
    <p style="p_font2"><span>row 4</span></p>
   </div>
-  <div xml:id="15" region="R8" begin="01:01:05.480" end="01:01:09.480" style="_d_default">
+  <div xml:id="15" region="R8" begin="01:01:05.480" end="01:01:09.480" style="d_default">
    <p style="p_font2"><span>row 3</span></p>
   </div>
-  <div xml:id="16" region="R9" begin="01:01:09.640" end="01:01:13.640" style="_d_default">
+  <div xml:id="16" region="R9" begin="01:01:09.640" end="01:01:13.640" style="d_default">
    <p style="p_font2"><span>row 2</span></p>
   </div>
-  <div xml:id="17" region="R10" begin="01:01:13.760" end="01:01:17.760" style="_d_default">
+  <div xml:id="17" region="R10" begin="01:01:13.760" end="01:01:17.760" style="d_default">
    <p style="p_font2"><span>row 1</span></p>
   </div>
-  <div xml:id="18" region="R11" begin="01:01:17.880" end="01:01:21.880" style="_d_default">
+  <div xml:id="18" region="R11" begin="01:01:17.880" end="01:01:21.880" style="d_default">
    <p style="p_font2"><span>row 0</span></p>
   </div>
-  <div xml:id="19" region="R11" begin="01:01:22.000" end="01:01:26.000" style="_d_default">
+  <div xml:id="19" region="R11" begin="01:01:22.000" end="01:01:26.000" style="d_default">
    <p style="p_font2"><span>top center</span></p>
   </div>
-  <div xml:id="20" region="R11" begin="01:01:26.120" end="01:01:30.120" style="_d_default p_al_start">
-   <p style="p_font2"><span>top left</span></p>
+  <div xml:id="20" region="R11" begin="01:01:26.120" end="01:01:30.120" style="d_default">
+   <p style="p_font2 p_al_start"><span>top left</span></p>
   </div>
-  <div xml:id="21" region="R11" begin="01:01:30.240" end="01:01:34.240" style="_d_default p_al_end">
-   <p style="p_font2"><span>top right</span></p>
+  <div xml:id="21" region="R11" begin="01:01:30.240" end="01:01:34.240" style="d_default">
+   <p style="p_font2 p_al_end"><span>top right</span></p>
   </div>
-  <div xml:id="22" region="R0" begin="01:01:34.360" end="01:01:38.360" style="_d_default">
+  <div xml:id="22" region="R0" begin="01:01:34.360" end="01:01:38.360" style="d_default">
    <p style="p_al_start p_font2"><span>left</span></p>
    <p style="p_font2"><span>center</span></p>
    <p style="p_al_end p_font2"><span>right</span></p>
   </div>
-  <div xml:id="23" region="R0" begin="01:01:38.520" end="01:01:42.520" style="_d_default">
+  <div xml:id="23" region="R0" begin="01:01:38.520" end="01:01:42.520" style="d_default">
    <p style="p_font2"><span>normal</span><span style="s_italic"> italic</span><span style="s_bold"> bold </span><span style="s_underline">underline</span><span> normal</span></p>
    <p style="p_font2"><span style="s_underline">underlined</span><span style="s_italic s_underline"> italic</span><span style="s_bold s_underline"> bold</span><span style="s_underline"> normal</span></p>
   </div>
-  <div xml:id="24" region="R0" begin="01:01:42.640" end="01:01:46.640" style="_d_default">
+  <div xml:id="24" region="R0" begin="01:01:42.640" end="01:01:46.640" style="d_default">
    <p style="p_font2"><span style="s_fg_red">red </span><span style="s_fg_yellow">yellow </span><span style="s_fg_green">green </span><span style="s_fg_cyan">cyan </span><span style="s_fg_blue">blue </span><span style="s_fg_magenta">magenta</span></p>
   </div>
-  <div xml:id="25" region="R11" begin="01:01:46.760" end="01:01:50.760" style="_d_default">
+  <div xml:id="25" region="R11" begin="01:01:46.760" end="01:01:50.760" style="d_default">
    <p style="p_font2"><span>Two lines </span></p>
    <p style="p_font2"><span>top center</span></p>
   </div>
-  <div xml:id="26" region="R0" begin="01:01:50.880" end="01:01:53.880" style="_d_default s_noneblack">
-   <p style="p_font2 ps_bg_boxedblack"><span>Background stripe</span></p>
-   <p style="p_font2 ps_bg_boxedblack"><span>black</span></p>
+  <div xml:id="26" region="R0" begin="01:01:50.880" end="01:01:53.880" style="d_default">
+   <p style="p_font2 ps_bg_boxedblack"><span style="s_noneblack">Background stripe</span></p>
+   <p style="p_font2 ps_bg_boxedblack"><span style="s_noneblack">black</span></p>
   </div>
-  <div xml:id="27" region="R0" begin="01:01:54.000" end="01:01:57.000" style="_d_default">
+  <div xml:id="27" region="R0" begin="01:01:54.000" end="01:01:57.000" style="d_default">
    <p style="p_font2"><span style="ps_bg_boxedblack">black</span></p>
    <p style="p_font2"><span style="ps_bg_boxedblack">box</span></p>
   </div>
-  <div xml:id="28" region="R0" begin="01:01:57.120" end="01:02:00.120" style="_d_default">
+  <div xml:id="28" region="R0" begin="01:01:57.120" end="01:02:00.120" style="d_default">
    <p style="p_font2"><span style="ps_bg_ghostboxedblack">ghost</span></p>
    <p style="p_font2"><span style="ps_bg_ghostboxedblack">box</span></p>
   </div>
-  <div xml:id="29" region="R0" begin="01:02:00.240" end="01:02:03.240" style="_d_default s_noneblack">
-   <p style="p_font2 ps_bg_ghostboxedblack"><span>Ghost stripe</span></p>
-   <p style="p_font2 ps_bg_ghostboxedblack"><span>black</span></p>
+  <div xml:id="29" region="R0" begin="01:02:00.240" end="01:02:03.240" style="d_default">
+   <p style="p_font2 ps_bg_ghostboxedblack"><span style="s_noneblack">Ghost stripe</span></p>
+   <p style="p_font2 ps_bg_ghostboxedblack"><span style="s_noneblack">black</span></p>
   </div>
-  <div xml:id="30" region="R0" begin="01:02:03.359" end="01:02:06.359" style="_d_default">
+  <div xml:id="30" region="R0" begin="01:02:03.359" end="01:02:06.359" style="d_default">
    <p style="p_font2"><span style="ps_bg_ghostboxedblack">Ghost box change to </span><span style="ps_bg_ghostboxedred s_nonered">red</span></p>
   </div>
-  <div xml:id="38" region="R0" begin="01:02:35.120" end="01:02:40.120" style="_d_default">
+  <div xml:id="38" region="R0" begin="01:02:35.120" end="01:02:40.120" style="d_default">
    <p style="p_font2 p_al_center_start"><span>two line</span><span><br/></span><span>center start bottom</span></p>
   </div>
-  <div xml:id="39" region="R0" begin="01:02:41.120" end="01:02:44.120" style="_d_default">
+  <div xml:id="39" region="R0" begin="01:02:41.120" end="01:02:44.120" style="d_default">
    <p style="p_font2 p_al_center_start"><span style="ps_bg_ghostboxedblack">two line</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
   </div>
-  <div xml:id="40" region="R0" begin="01:02:45.120" end="01:02:48.120" style="_d_default">
+  <div xml:id="40" region="R0" begin="01:02:45.120" end="01:02:48.120" style="d_default">
    <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack"><span style="ps_bg_ghostboxedblack">two line</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
   </div>
-  <div xml:id="42" region="R0" begin="01:02:50.120" end="01:02:54.120" style="_d_default">
+  <div xml:id="42" region="R0" begin="01:02:50.120" end="01:02:54.120" style="d_default">
    <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"><span style="ps_bg_ghostboxedblack">abc אותיות </span><span style="ps_bg_ghostboxedblack s_fg_red">bcd השימו 1983 ש</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
   </div>
-  <div xml:id="43" region="R0" begin="01:02:55.120" end="01:02:59.120" style="_d_default">
+  <div xml:id="43" region="R0" begin="01:02:55.120" end="01:02:59.120" style="d_default">
    <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"><span style="ps_bg_ghostboxedblack">abc אותיות </span><span style="ps_bg_ghostboxedblack s_fg_red">bcd השימו 1983 ש</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
   </div>
-  <div xml:id="44" region="R0" begin="01:03:00.120" end="01:03:04.120" style="_d_default">
+  <div xml:id="44" region="R0" begin="01:03:00.120" end="01:03:04.120" style="d_default">
    <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"><span style="ps_bg_ghostboxedblack">من البيان والتبيين الى</span><span style="ps_bg_ghostboxedblack s_fg_red"> البتاع والتبتيع</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
   </div>
-  <div xml:id="45" region="R0" begin="01:03:05.120" end="01:03:05.220" style="_d_default">
+  <div xml:id="45" region="R0" begin="01:03:05.120" end="01:03:05.220" style="d_default">
    <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"><span style="ps_bg_ghostboxedblack">من البيان والتبيين الى</span><span style="ps_bg_ghostboxedblack s_fg_red"> البتاع والتبتيع</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span><span><br/></span><span style="ps_bg_ghostboxedblack">1  </span><span style="ps_bg_ghostboxedblack">2</span><span style="ps_bg_ghostboxedblack">3</span></p>
   </div>
-  <div xml:id="45.2" region="R0" begin="01:03:05.220" end="01:03:06.120" style="_d_default">
+  <div xml:id="45.2" region="R0" begin="01:03:05.220" end="01:03:06.120" style="d_default">
    <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"><span style="ps_bg_ghostboxedblack">من البيان والتبيين الى</span><span style="ps_bg_ghostboxedblack s_fg_red"> البتاع والتبتيع</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span><span><br/></span><span style="ps_bg_ghostboxedblack">1  </span><span style="ps_bg_ghostboxedblack">2</span><span style="ps_bg_ghostboxedblack">3</span></p>
   </div>
-  <div xml:id="45.5" region="R0" begin="01:03:06.120" end="01:03:08.120" style="_d_default">
+  <div xml:id="45.5" region="R0" begin="01:03:06.120" end="01:03:08.120" style="d_default">
    <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"><span style="ps_bg_ghostboxedblack">من البيان والتبيين الى</span><span style="ps_bg_ghostboxedblack s_fg_red"> البتاع والتبتيع</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span><span><br/></span><span style="ps_bg_ghostboxedblack">1  </span><span style="ps_bg_ghostboxedblack">2</span><span style="ps_bg_ghostboxedblack">3</span></p>
   </div>
-  <div xml:id="46" region="R0" begin="01:03:10.359" end="01:03:13.359" style="_d_default">
+  <div xml:id="46" region="R0" begin="01:03:10.359" end="01:03:13.359" style="d_default">
    <p style="p_font2 p_rb_res_outside"><span>No Ruby </span><span style="s_rb_algn_center"><span style="s_rb_b">Ruby Above </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span><span><br/></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Below 2</span><span style="s_rb_t">ruby2</span></span></p>
   </div>
-  <div xml:id="47" region="R0" begin="01:03:14.359" end="01:03:18.359" style="_d_default">
+  <div xml:id="47" region="R0" begin="01:03:14.359" end="01:03:18.359" style="d_default">
    <p style="p_font2 p_rb_res_outside"><span>No Ruby Above No Ruby Above 2</span><span><br/></span><span>No Ruby Below No Ruby Below 2</span></p>
   </div>
-  <div xml:id="48" region="R12" begin="01:03:20.359" end="01:03:24.359" style="_d_default">
+  <div xml:id="48" region="R12" begin="01:03:20.359" end="01:03:24.359" style="d_default">
    <p style="p_font2 p_rb_res_outside p_shear"><span style="s_combine">84</span><span style="s_combine">1984</span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">とうなん</span></span><span><br/></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">たつみ</span></span><span style="s_emf_fco">No Ruby</span></p>
   </div>
-  <div xml:id="49" region="R12" begin="01:03:25.359" end="01:03:29.359" style="_d_default">
+  <div xml:id="49" region="R12" begin="01:03:25.359" end="01:03:29.359" style="d_default">
    <p style="p_font2 p_rb_res_outside p_shear"><span style="s_combine ps_bg_ghostboxedblack">1984</span><span style="s_rb_algn_center s_rb_posn_outside ps_bg_ghostboxedblack"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">とうなん</span></span><span><br/></span><span style="s_rb_algn_center s_rb_posn_outside ps_bg_ghostboxedblack"><span style="s_rb_b s_emf_fco"> 東南</span><span style="s_rb_t">たつみ</span></span><span style="s_emf_fco ps_bg_ghostboxedblack">No Ruby Boxed</span></p>
   </div>
-  <div xml:id="50" region="R0" begin="01:03:30.420" end="01:03:31.420" style="_d_default">
+  <div xml:id="50" region="R0" begin="01:03:30.420" end="01:03:31.420" style="d_default">
    <p style="p_font2 p_al_center_start p_rtl"><span style="ps_bg_ghostboxedblack">من البيان والتبيين الى</span><span style="ps_bg_ghostboxedblack s_fg_red"> البتاع والتبتيع</span></p>
    <p style="p_font2 p_al_center_start"><span style="ps_bg_ghostboxedblack">left to right.</span><span><br/></span><span style="ps_bg_ghostboxedblack">1      </span><span style="ps_bg_ghostboxedblack">2</span><span style="ps_bg_ghostboxedblack">3</span></p>
   </div>
-  <div xml:id="53" region="R0" begin="01:03:34.359" end="01:03:36.359" style="_d_default">
+  <div xml:id="53" region="R0" begin="01:03:34.359" end="01:03:36.359" style="d_default">
    <p style="p_font2 p_rb_res_outside p_shear"><span style="s_combine">84</span><span>1984</span></p>
   </div>
-  <div xml:id="54" region="R12" begin="01:03:37.359" end="01:03:39.359" style="_d_default">
+  <div xml:id="54" region="R12" begin="01:03:37.359" end="01:03:39.359" style="d_default">
    <p style="p_font2 p_rb_res_outside"><span style="s_emf_fco">東南</span><span><br/></span><span style="s_emf_fso">Emph Outside</span></p>
   </div>
-  <div xml:id="55" region="R12" begin="01:03:40.359" end="01:03:41.359" style="_d_default">
+  <div xml:id="55" region="R12" begin="01:03:40.359" end="01:03:41.359" style="d_default">
    <p style="p_font2 p_rb_res_outside"><span style="s_combine">1984</span><span style="s_rb_algn_center"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">とうなん</span></span><span><br/></span><span style="s_rb_algn_center s_emf_fco"><span style="s_rb_b">東南</span><span style="s_rb_t">たつみ</span></span><span style="s_emf_fco">No Ruby</span></p>
   </div>
- </body>
+</body>
 </tt>
 ```
 
@@ -301,10 +304,10 @@ It's white text on black box, with black outline.
 #### div XML
 
 ```
-<div xml:id="sub0" region="R0" begin="01:00:03.600" end="01:00:07.640" style="_d_default">
- <metadata rosetta:comment="this is a comment test a cr"/>
- <p style="p_font2"><span style="ps_bg_boxedblack">First Frame of active video </span></p>
-</div>
+<div xml:id="sub0" region="R0" begin="01:00:03.600" end="01:00:07.640" style="d_default">
+   <metadata rosetta:comment="this is a comment test a cr"/>
+   <p style="p_font2"><span style="ps_bg_boxedblack">First Frame of active video </span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -316,9 +319,9 @@ It's white text on black box, with black outline.
 #### div XML
 
 ```
-<div xml:id="1" region="R0" begin="01:00:07.760" end="01:00:11.760" style="_d_default">
- <p style="p_font2"><span>1 line</span><span style="s_nonered"> Center</span><span> Bottom</span></p>
-</div>
+<div xml:id="1" region="R0" begin="01:00:07.760" end="01:00:11.760" style="d_default">
+   <p style="p_font2"><span>1 line</span><span style="s_nonered"> Center</span><span> Bottom</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -330,9 +333,9 @@ It's white text on black box, with black outline.
 #### div XML
 
 ```
-<div xml:id="2" region="R0" begin="01:00:11.880" end="01:00:15.880" style="_d_default">
- <p style="p_font2 p_al_start"><span>1 line left  bottom</span></p>
-</div>
+<div xml:id="2" region="R0" begin="01:00:11.880" end="01:00:15.880" style="d_default">
+   <p style="p_font2 p_al_start"><span>1 line left  bottom</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -344,9 +347,9 @@ It's white text on black box, with black outline.
 #### div XML
 
 ```
-<div xml:id="3" region="R0" begin="01:00:16.000" end="01:00:20.000" style="_d_default">
- <p style="p_font2 p_al_end"><span>1 line right bottom</span></p>
-</div>
+<div xml:id="3" region="R0" begin="01:00:16.000" end="01:00:20.000" style="d_default">
+   <p style="p_font2 p_al_end"><span>1 line right bottom</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -362,10 +365,10 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="4" region="R0" begin="01:00:20.120" end="01:00:24.120" style="_d_default">
- <p style="p_font2"><span>two line </span></p>
- <p style="p_font2"><span>center bottom</span></p>
-</div>
+<div xml:id="4" region="R0" begin="01:00:20.120" end="01:00:24.120" style="d_default">
+   <p style="p_font2"><span>two line </span></p>
+   <p style="p_font2"><span>center bottom</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -377,10 +380,10 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="5" region="R0" begin="01:00:24.240" end="01:00:28.240" style="_d_default">
- <p style="p_font2"><span>two lines</span></p>
- <p style="p_font2"><span>left bottom</span></p>
-</div>
+<div xml:id="5" region="R0" begin="01:00:24.240" end="01:00:28.240" style="d_default">
+   <p style="p_font2"><span>two lines</span></p>
+   <p style="p_font2"><span>left bottom</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -392,10 +395,10 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="6" region="R0" begin="01:00:28.360" end="01:00:32.360" style="_d_default">
- <p style="p_font2"><span>two lines</span></p>
- <p style="p_font2"><span>right bottom</span></p>
-</div>
+<div xml:id="6" region="R0" begin="01:00:28.360" end="01:00:32.360" style="d_default">
+   <p style="p_font2"><span>two lines</span></p>
+   <p style="p_font2"><span>right bottom</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -407,9 +410,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="7" region="R0" begin="01:00:32.480" end="01:00:36.480" style="_d_default">
- <p style="p_font2"><span>row 11</span></p>
-</div>
+<div xml:id="7" region="R0" begin="01:00:32.480" end="01:00:36.480" style="d_default">
+   <p style="p_font2"><span>row 11</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -421,9 +424,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="8" region="R1" begin="01:00:36.640" end="01:00:40.640" style="_d_default">
- <p style="p_font2"><span>row 10</span></p>
-</div>
+<div xml:id="8" region="R1" begin="01:00:36.640" end="01:00:40.640" style="d_default">
+   <p style="p_font2"><span>row 10</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -435,9 +438,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="9" region="R2" begin="01:00:40.760" end="01:00:44.760" style="_d_default">
- <p style="p_font2"><span>row 9</span></p>
-</div>
+<div xml:id="9" region="R2" begin="01:00:40.760" end="01:00:44.760" style="d_default">
+   <p style="p_font2"><span>row 9</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -449,9 +452,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="10" region="R3" begin="01:00:44.880" end="01:00:48.880" style="_d_default">
- <p style="p_font2"><span>row 8</span></p>
-</div>
+<div xml:id="10" region="R3" begin="01:00:44.880" end="01:00:48.880" style="d_default">
+   <p style="p_font2"><span>row 8</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -463,9 +466,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="11" region="R4" begin="01:00:49.000" end="01:00:53.000" style="_d_default">
- <p style="p_font2"><span>row 7</span></p>
-</div>
+<div xml:id="11" region="R4" begin="01:00:49.000" end="01:00:53.000" style="d_default">
+   <p style="p_font2"><span>row 7</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -477,9 +480,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="12" region="R5" begin="01:00:53.120" end="01:00:57.120" style="_d_default">
- <p style="p_font2"><span>row 6</span></p>
-</div>
+<div xml:id="12" region="R5" begin="01:00:53.120" end="01:00:57.120" style="d_default">
+   <p style="p_font2"><span>row 6</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -491,9 +494,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="13" region="R6" begin="01:00:57.240" end="01:01:01.240" style="_d_default">
- <p style="p_font2"><span>row 5</span></p>
-</div>
+<div xml:id="13" region="R6" begin="01:00:57.240" end="01:01:01.240" style="d_default">
+   <p style="p_font2"><span>row 5</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -505,9 +508,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="14" region="R7" begin="01:01:01.360" end="01:01:05.360" style="_d_default">
- <p style="p_font2"><span>row 4</span></p>
-</div>
+<div xml:id="14" region="R7" begin="01:01:01.360" end="01:01:05.360" style="d_default">
+   <p style="p_font2"><span>row 4</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -519,9 +522,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="15" region="R8" begin="01:01:05.480" end="01:01:09.480" style="_d_default">
- <p style="p_font2"><span>row 3</span></p>
-</div>
+<div xml:id="15" region="R8" begin="01:01:05.480" end="01:01:09.480" style="d_default">
+   <p style="p_font2"><span>row 3</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -533,9 +536,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="16" region="R9" begin="01:01:09.640" end="01:01:13.640" style="_d_default">
- <p style="p_font2"><span>row 2</span></p>
-</div>
+<div xml:id="16" region="R9" begin="01:01:09.640" end="01:01:13.640" style="d_default">
+   <p style="p_font2"><span>row 2</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -547,9 +550,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="17" region="R10" begin="01:01:13.760" end="01:01:17.760" style="_d_default">
- <p style="p_font2"><span>row 1</span></p>
-</div>
+<div xml:id="17" region="R10" begin="01:01:13.760" end="01:01:17.760" style="d_default">
+   <p style="p_font2"><span>row 1</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -561,9 +564,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="18" region="R11" begin="01:01:17.880" end="01:01:21.880" style="_d_default">
- <p style="p_font2"><span>row 0</span></p>
-</div>
+<div xml:id="18" region="R11" begin="01:01:17.880" end="01:01:21.880" style="d_default">
+   <p style="p_font2"><span>row 0</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -575,9 +578,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="19" region="R11" begin="01:01:22.000" end="01:01:26.000" style="_d_default">
- <p style="p_font2"><span>top center</span></p>
-</div>
+<div xml:id="19" region="R11" begin="01:01:22.000" end="01:01:26.000" style="d_default">
+   <p style="p_font2"><span>top center</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -589,9 +592,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="20" region="R11" begin="01:01:26.120" end="01:01:30.120" style="_d_default p_al_start">
- <p style="p_font2"><span>top left</span></p>
-</div>
+<div xml:id="20" region="R11" begin="01:01:26.120" end="01:01:30.120" style="d_default">
+   <p style="p_font2 p_al_start"><span>top left</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -603,9 +606,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="21" region="R11" begin="01:01:30.240" end="01:01:34.240" style="_d_default p_al_end">
- <p style="p_font2"><span>top right</span></p>
-</div>
+<div xml:id="21" region="R11" begin="01:01:30.240" end="01:01:34.240" style="d_default">
+   <p style="p_font2 p_al_end"><span>top right</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -617,11 +620,11 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="22" region="R0" begin="01:01:34.360" end="01:01:38.360" style="_d_default">
- <p style="p_al_start p_font2"><span>left</span></p>
- <p style="p_font2"><span>center</span></p>
- <p style="p_al_end p_font2"><span>right</span></p>
-</div>
+<div xml:id="22" region="R0" begin="01:01:34.360" end="01:01:38.360" style="d_default">
+   <p style="p_al_start p_font2"><span>left</span></p>
+   <p style="p_font2"><span>center</span></p>
+   <p style="p_al_end p_font2"><span>right</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -633,10 +636,10 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="23" region="R0" begin="01:01:38.520" end="01:01:42.520" style="_d_default">
- <p style="p_font2"><span>normal</span><span style="s_italic"> italic</span><span style="s_bold"> bold </span><span style="s_underline">underline</span><span> normal</span></p>
- <p style="p_font2"><span style="s_underline">underlined</span><span style="s_italic s_underline"> italic</span><span style="s_bold s_underline"> bold</span><span style="s_underline"> normal</span></p>
-</div>
+<div xml:id="23" region="R0" begin="01:01:38.520" end="01:01:42.520" style="d_default">
+   <p style="p_font2"><span>normal</span><span style="s_italic"> italic</span><span style="s_bold"> bold </span><span style="s_underline">underline</span><span> normal</span></p>
+   <p style="p_font2"><span style="s_underline">underlined</span><span style="s_italic s_underline"> italic</span><span style="s_bold s_underline"> bold</span><span style="s_underline"> normal</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -648,9 +651,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="24" region="R0" begin="01:01:42.640" end="01:01:46.640" style="_d_default">
- <p style="p_font2"><span style="s_fg_red">red </span><span style="s_fg_yellow">yellow </span><span style="s_fg_green">green </span><span style="s_fg_cyan">cyan </span><span style="s_fg_blue">blue </span><span style="s_fg_magenta">magenta</span></p>
-</div>
+<div xml:id="24" region="R0" begin="01:01:42.640" end="01:01:46.640" style="d_default">
+   <p style="p_font2"><span style="s_fg_red">red </span><span style="s_fg_yellow">yellow </span><span style="s_fg_green">green </span><span style="s_fg_cyan">cyan </span><span style="s_fg_blue">blue </span><span style="s_fg_magenta">magenta</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -662,10 +665,10 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="25" region="R11" begin="01:01:46.760" end="01:01:50.760" style="_d_default">
- <p style="p_font2"><span>Two lines </span></p>
- <p style="p_font2"><span>top center</span></p>
-</div>
+<div xml:id="25" region="R11" begin="01:01:46.760" end="01:01:50.760" style="d_default">
+   <p style="p_font2"><span>Two lines </span></p>
+   <p style="p_font2"><span>top center</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -677,10 +680,10 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="26" region="R0" begin="01:01:50.880" end="01:01:53.880" style="_d_default s_noneblack">
- <p style="p_font2 ps_bg_boxedblack"><span>Background stripe</span></p>
- <p style="p_font2 ps_bg_boxedblack"><span>black</span></p>
-</div>
+<div xml:id="26" region="R0" begin="01:01:50.880" end="01:01:53.880" style="d_default">
+   <p style="p_font2 ps_bg_boxedblack"><span style="s_noneblack">Background stripe</span></p>
+   <p style="p_font2 ps_bg_boxedblack"><span style="s_noneblack">black</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -692,10 +695,10 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="27" region="R0" begin="01:01:54.000" end="01:01:57.000" style="_d_default">
- <p style="p_font2"><span style="ps_bg_boxedblack">black</span></p>
- <p style="p_font2"><span style="ps_bg_boxedblack">box</span></p>
-</div>
+<div xml:id="27" region="R0" begin="01:01:54.000" end="01:01:57.000" style="d_default">
+   <p style="p_font2"><span style="ps_bg_boxedblack">black</span></p>
+   <p style="p_font2"><span style="ps_bg_boxedblack">box</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -707,10 +710,10 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="28" region="R0" begin="01:01:57.120" end="01:02:00.120" style="_d_default">
- <p style="p_font2"><span style="ps_bg_ghostboxedblack">ghost</span></p>
- <p style="p_font2"><span style="ps_bg_ghostboxedblack">box</span></p>
-</div>
+<div xml:id="28" region="R0" begin="01:01:57.120" end="01:02:00.120" style="d_default">
+   <p style="p_font2"><span style="ps_bg_ghostboxedblack">ghost</span></p>
+   <p style="p_font2"><span style="ps_bg_ghostboxedblack">box</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -722,10 +725,10 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="29" region="R0" begin="01:02:00.240" end="01:02:03.240" style="_d_default s_noneblack">
- <p style="p_font2 ps_bg_ghostboxedblack"><span>Ghost stripe</span></p>
- <p style="p_font2 ps_bg_ghostboxedblack"><span>black</span></p>
-</div>
+<div xml:id="29" region="R0" begin="01:02:00.240" end="01:02:03.240" style="d_default">
+   <p style="p_font2 ps_bg_ghostboxedblack"><span style="s_noneblack">Ghost stripe</span></p>
+   <p style="p_font2 ps_bg_ghostboxedblack"><span style="s_noneblack">black</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -737,9 +740,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="30" region="R0" begin="01:02:03.359" end="01:02:06.359" style="_d_default">
- <p style="p_font2"><span style="ps_bg_ghostboxedblack">Ghost box change to </span><span style="ps_bg_ghostboxedred s_nonered">red</span></p>
-</div>
+<div xml:id="30" region="R0" begin="01:02:03.359" end="01:02:06.359" style="d_default">
+   <p style="p_font2"><span style="ps_bg_ghostboxedblack">Ghost box change to </span><span style="ps_bg_ghostboxedred s_nonered">red</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -751,9 +754,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="38" region="R0" begin="01:02:35.120" end="01:02:40.120" style="_d_default">
- <p style="p_font2 p_al_center_start"><span>two line</span><span><br/></span><span>center start bottom</span></p>
-</div>
+<div xml:id="38" region="R0" begin="01:02:35.120" end="01:02:40.120" style="d_default">
+   <p style="p_font2 p_al_center_start"><span>two line</span><span><br/></span><span>center start bottom</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -765,9 +768,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="39" region="R0" begin="01:02:41.120" end="01:02:44.120" style="_d_default">
- <p style="p_font2 p_al_center_start"><span style="ps_bg_ghostboxedblack">two line</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
-</div>
+<div xml:id="39" region="R0" begin="01:02:41.120" end="01:02:44.120" style="d_default">
+   <p style="p_font2 p_al_center_start"><span style="ps_bg_ghostboxedblack">two line</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -779,9 +782,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="40" region="R0" begin="01:02:45.120" end="01:02:48.120" style="_d_default">
- <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack"><span style="ps_bg_ghostboxedblack">two line</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
-</div>
+<div xml:id="40" region="R0" begin="01:02:45.120" end="01:02:48.120" style="d_default">
+   <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack"><span style="ps_bg_ghostboxedblack">two line</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -793,9 +796,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="42" region="R0" begin="01:02:50.120" end="01:02:54.120" style="_d_default">
- <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"><span style="ps_bg_ghostboxedblack">abc אותיות </span><span style="ps_bg_ghostboxedblack s_fg_red">bcd השימו 1983 ש</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
-</div>
+<div xml:id="42" region="R0" begin="01:02:50.120" end="01:02:54.120" style="d_default">
+   <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"><span style="ps_bg_ghostboxedblack">abc אותיות </span><span style="ps_bg_ghostboxedblack s_fg_red">bcd השימו 1983 ש</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -807,9 +810,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="43" region="R0" begin="01:02:55.120" end="01:02:59.120" style="_d_default">
- <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"><span style="ps_bg_ghostboxedblack">abc אותיות </span><span style="ps_bg_ghostboxedblack s_fg_red">bcd השימו 1983 ש</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
-</div>
+<div xml:id="43" region="R0" begin="01:02:55.120" end="01:02:59.120" style="d_default">
+   <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"><span style="ps_bg_ghostboxedblack">abc אותיות </span><span style="ps_bg_ghostboxedblack s_fg_red">bcd השימו 1983 ש</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -821,9 +824,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="44" region="R0" begin="01:03:00.120" end="01:03:04.120" style="_d_default">
- <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"><span style="ps_bg_ghostboxedblack">من البيان والتبيين الى</span><span style="ps_bg_ghostboxedblack s_fg_red"> البتاع والتبتيع</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
-</div>
+<div xml:id="44" region="R0" begin="01:03:00.120" end="01:03:04.120" style="d_default">
+   <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"><span style="ps_bg_ghostboxedblack">من البيان والتبيين الى</span><span style="ps_bg_ghostboxedblack s_fg_red"> البتاع والتبتيع</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -835,9 +838,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="45" region="R0" begin="01:03:05.120" end="01:03:05.220" style="_d_default">
- <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"><span style="ps_bg_ghostboxedblack">من البيان والتبيين الى</span><span style="ps_bg_ghostboxedblack s_fg_red"> البتاع والتبتيع</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span><span><br/></span><span style="ps_bg_ghostboxedblack">1  </span><span style="ps_bg_ghostboxedblack">2</span><span style="ps_bg_ghostboxedblack">3</span></p>
-</div>
+<div xml:id="45" region="R0" begin="01:03:05.120" end="01:03:05.220" style="d_default">
+   <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"><span style="ps_bg_ghostboxedblack">من البيان والتبيين الى</span><span style="ps_bg_ghostboxedblack s_fg_red"> البتاع والتبتيع</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span><span><br/></span><span style="ps_bg_ghostboxedblack">1  </span><span style="ps_bg_ghostboxedblack">2</span><span style="ps_bg_ghostboxedblack">3</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -849,9 +852,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="45.2" region="R0" begin="01:03:05.220" end="01:03:06.120" style="_d_default">
- <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"><span style="ps_bg_ghostboxedblack">من البيان والتبيين الى</span><span style="ps_bg_ghostboxedblack s_fg_red"> البتاع والتبتيع</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span><span><br/></span><span style="ps_bg_ghostboxedblack">1  </span><span style="ps_bg_ghostboxedblack">2</span><span style="ps_bg_ghostboxedblack">3</span></p>
-</div>
+<div xml:id="45.2" region="R0" begin="01:03:05.220" end="01:03:06.120" style="d_default">
+   <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"><span style="ps_bg_ghostboxedblack">من البيان والتبيين الى</span><span style="ps_bg_ghostboxedblack s_fg_red"> البتاع والتبتيع</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span><span><br/></span><span style="ps_bg_ghostboxedblack">1  </span><span style="ps_bg_ghostboxedblack">2</span><span style="ps_bg_ghostboxedblack">3</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -863,9 +866,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="45.5" region="R0" begin="01:03:06.120" end="01:03:08.120" style="_d_default">
- <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"><span style="ps_bg_ghostboxedblack">من البيان والتبيين الى</span><span style="ps_bg_ghostboxedblack s_fg_red"> البتاع والتبتيع</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span><span><br/></span><span style="ps_bg_ghostboxedblack">1  </span><span style="ps_bg_ghostboxedblack">2</span><span style="ps_bg_ghostboxedblack">3</span></p>
-</div>
+<div xml:id="45.5" region="R0" begin="01:03:06.120" end="01:03:08.120" style="d_default">
+   <p style="p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"><span style="ps_bg_ghostboxedblack">من البيان والتبيين الى</span><span style="ps_bg_ghostboxedblack s_fg_red"> البتاع والتبتيع</span><span><br/></span><span style="ps_bg_ghostboxedblack">center start bottom</span><span><br/></span><span style="ps_bg_ghostboxedblack">1  </span><span style="ps_bg_ghostboxedblack">2</span><span style="ps_bg_ghostboxedblack">3</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -877,9 +880,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="46" region="R0" begin="01:03:10.359" end="01:03:13.359" style="_d_default">
- <p style="p_font2 p_rb_res_outside"><span>No Ruby </span><span style="s_rb_algn_center"><span style="s_rb_b">Ruby Above </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span><span><br/></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Below 2</span><span style="s_rb_t">ruby2</span></span></p>
-</div>
+<div xml:id="46" region="R0" begin="01:03:10.359" end="01:03:13.359" style="d_default">
+   <p style="p_font2 p_rb_res_outside"><span>No Ruby </span><span style="s_rb_algn_center"><span style="s_rb_b">Ruby Above </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span><span><br/></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Below 2</span><span style="s_rb_t">ruby2</span></span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -891,9 +894,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="47" region="R0" begin="01:03:14.359" end="01:03:18.359" style="_d_default">
- <p style="p_font2 p_rb_res_outside"><span>No Ruby Above No Ruby Above 2</span><span><br/></span><span>No Ruby Below No Ruby Below 2</span></p>
-</div>
+<div xml:id="47" region="R0" begin="01:03:14.359" end="01:03:18.359" style="d_default">
+   <p style="p_font2 p_rb_res_outside"><span>No Ruby Above No Ruby Above 2</span><span><br/></span><span>No Ruby Below No Ruby Below 2</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -905,9 +908,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="48" region="R12" begin="01:03:20.359" end="01:03:24.359" style="_d_default ps_shear">
- <p style="p_font2 p_rb_res_outside"><span style="s_combine">84</span><span style="s_combine">1984</span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">とうなん</span></span><span><br/></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">たつみ</span></span><span style="s_emf_fco">No Ruby</span></p>
-</div>
+<div xml:id="48" region="R12" begin="01:03:20.359" end="01:03:24.359" style="d_default">
+   <p style="p_font2 p_rb_res_outside p_shear"><span style="s_combine">84</span><span style="s_combine">1984</span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">とうなん</span></span><span><br/></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">たつみ</span></span><span style="s_emf_fco">No Ruby</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -919,9 +922,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="49" region="R12" begin="01:03:25.359" end="01:03:29.359" style="_d_default ps_shear">
- <p style="p_font2 p_rb_res_outside"><span style="s_combine ps_bg_ghostboxedblack">1984</span><span style="s_rb_algn_center s_rb_posn_outside ps_bg_ghostboxedblack"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">とうなん</span></span><span><br/></span><span style="s_rb_algn_center s_rb_posn_outside ps_bg_ghostboxedblack"><span style="s_rb_b s_emf_fco"> 東南</span><span style="s_rb_t">たつみ</span></span><span style="s_emf_fco ps_bg_ghostboxedblack">No Ruby Boxed</span></p>
-</div>
+<div xml:id="49" region="R12" begin="01:03:25.359" end="01:03:29.359" style="d_default">
+   <p style="p_font2 p_rb_res_outside p_shear"><span style="s_combine ps_bg_ghostboxedblack">1984</span><span style="s_rb_algn_center s_rb_posn_outside ps_bg_ghostboxedblack"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">とうなん</span></span><span><br/></span><span style="s_rb_algn_center s_rb_posn_outside ps_bg_ghostboxedblack"><span style="s_rb_b s_emf_fco"> 東南</span><span style="s_rb_t">たつみ</span></span><span style="s_emf_fco ps_bg_ghostboxedblack">No Ruby Boxed</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -933,10 +936,10 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="50" region="R0" begin="01:03:30.420" end="01:03:31.420" style="_d_default">
- <p style="p_font2 p_al_center_start p_rtl"><span style="ps_bg_ghostboxedblack">من البيان والتبيين الى</span><span style="ps_bg_ghostboxedblack s_fg_red"> البتاع والتبتيع</span></p>
- <p style="p_font2 p_al_center_start"><span style="ps_bg_ghostboxedblack">left to right.</span><span><br/></span><span style="ps_bg_ghostboxedblack">1      </span><span style="ps_bg_ghostboxedblack">2</span><span style="ps_bg_ghostboxedblack">3</span></p>
-</div>
+<div xml:id="50" region="R0" begin="01:03:30.420" end="01:03:31.420" style="d_default">
+   <p style="p_font2 p_al_center_start p_rtl"><span style="ps_bg_ghostboxedblack">من البيان والتبيين الى</span><span style="ps_bg_ghostboxedblack s_fg_red"> البتاع والتبتيع</span></p>
+   <p style="p_font2 p_al_center_start"><span style="ps_bg_ghostboxedblack">left to right.</span><span><br/></span><span style="ps_bg_ghostboxedblack">1      </span><span style="ps_bg_ghostboxedblack">2</span><span style="ps_bg_ghostboxedblack">3</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -948,9 +951,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="53" region="R0" begin="01:03:34.359" end="01:03:36.359" style="_d_default ps_shear">
- <p style="p_font2 p_rb_res_outside"><span style="s_combine">84</span><span>1984</span></p>
-</div>
+<div xml:id="53" region="R0" begin="01:03:34.359" end="01:03:36.359" style="d_default">
+   <p style="p_font2 p_rb_res_outside p_shear"><span style="s_combine">84</span><span>1984</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -962,9 +965,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="54" region="R12" begin="01:03:37.359" end="01:03:39.359" style="_d_default">
- <p style="p_font2 p_rb_res_outside"><span style="s_emf_fco">東南</span><span><br/></span><span style="s_emf_fso">Emph Outside</span></p>
-</div>
+<div xml:id="54" region="R12" begin="01:03:37.359" end="01:03:39.359" style="d_default">
+   <p style="p_font2 p_rb_res_outside"><span style="s_emf_fco">東南</span><span><br/></span><span style="s_emf_fso">Emph Outside</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -976,9 +979,9 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="55" region="R12" begin="01:03:40.359" end="01:03:41.359" style="_d_default">
- <p style="p_font2 p_rb_res_outside"><span style="s_combine">1984</span><span style="s_rb_algn_center"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">とうなん</span></span><span><br/></span><span style="s_rb_algn_center s_emf_fco"><span style="s_rb_b">東南</span><span style="s_rb_t">たつみ</span></span><span style="s_emf_fco">No Ruby</span></p>
-</div>
+<div xml:id="55" region="R12" begin="01:03:40.359" end="01:03:41.359" style="d_default">
+   <p style="p_font2 p_rb_res_outside"><span style="s_combine">1984</span><span style="s_rb_algn_center"><span style="s_rb_b s_emf_fco">東南</span><span style="s_rb_t">とうなん</span></span><span><br/></span><span style="s_rb_algn_center s_emf_fco"><span style="s_rb_b">東南</span><span style="s_rb_t">たつみ</span></span><span style="s_emf_fco">No Ruby</span></p>
+  </div>
 ```
 #### Resulting Image
 

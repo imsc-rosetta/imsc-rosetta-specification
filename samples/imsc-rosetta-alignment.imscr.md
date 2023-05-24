@@ -1,7 +1,5 @@
 # Sample file imsc-rosetta-alignment.imscr
 
-## Complete file (expand to see all):
-
 
 
 This file is a sample which demonstrates the alignment features of imsc-rosetta.
@@ -22,7 +20,7 @@ imsc-rosetta has 9 alignment style names which can be applied to `<p>`:
 
 Vertical placement (in horizontal subtitling) is determined by region edge placement.
 
-The region edge against which the subtitle rests is placed according to the quantisation calculated from the extent, fontSize and lineHeight specified in _r_region.
+The region edge against which the subtitle rests is placed according to the quantisation calculated from the extent, fontSize and lineHeight specified in `_r_quantisationregion`.
 
 For this file, the region edge position is based on 12 row positions, determined by
 
@@ -34,8 +32,10 @@ position count = subtitle vertical area/row height = 0.8/0.06666 = ~12
 
 Therefore region edges are quantised to n * 80%/12
 
-*note that file contains ALL imsc-rosetta defined styles as an example - this is not necessary, only the used styles are required*
+*note that file contains ALL imsc-rosetta defined styles as an example - this is not necessary, only the used styles are required except for _r_quantisationregion which must always be included*
 
+
+## Complete file (click expand to see all) [download](./imscr/imsc-rosetta-alignment.imscr)
 
 <details><summary>Expand: imsc-rosetta-alignment.imscr</summary>
 
@@ -52,6 +52,7 @@ Therefore region edges are quantised to n * 80%/12
    <style xml:id="s_italic" tts:fontStyle="italic"/>
    <style xml:id="s_bold" tts:fontWeight="bold"/>
    <style xml:id="s_underline" tts:textDecoration="underline"/>
+   <style xml:id="d_default" style="_d_default"/>
    <style xml:id="d_fillgap" itts:fillLineGap="true"/>
    <style xml:id="s_fg_black" tts:color="#000000"/>
    <style xml:id="s_fg_red" tts:color="#FF0000"/>
@@ -130,9 +131,11 @@ Therefore region edges are quantised to n * 80%/12
    <style xml:id="s_emf_oco" tts:textEmphasis="open circle outside"/>
    <style xml:id="s_emf_odo" tts:textEmphasis="open dot outside"/>
    <style xml:id="s_emf_oso" tts:textEmphasis="open sesame outside"/>
-   <style xml:id="r_vertical" tts:writingMode="tbrl"/>
+   <style xml:id="r_vertical" tts:writingMode="tbrl" style="_r_vertical"/>
    <style xml:id="_d_default" style="d_outline"/>
-   <style xml:id="_r_default" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c" style="s_fg_white"/>
+   <style xml:id="_r_default" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c" style="s_fg_white"/>
+   <style xml:id="_r_vertical" style=""/>
+   <style xml:id="_r_quantisationregion" tts:origin="10% 10%" tts:extent="80% 80%" tts:fontSize="5.333rh" tts:lineHeight="125%"/>
   </styling>
   <layout>
    <region xml:id="R0" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" style="r_region"/>
@@ -143,78 +146,79 @@ Therefore region edges are quantised to n * 80%/12
   </layout>
  </head>
  <body>
-  <div xml:id="1" region="R0" begin="01:00:07.760" end="01:00:11.760" style="_d_default">
+  <div xml:id="1" region="R0" begin="01:00:07.760" end="01:00:11.760" style="d_default">
    <p style="p_font2"><span>1 line Center Bottom</span></p>
   </div>
-  <div xml:id="2" region="R0" begin="01:00:11.880" end="01:00:15.880" style="_d_default">
+  <div xml:id="2" region="R0" begin="01:00:11.880" end="01:00:15.880" style="d_default">
    <p style="p_font2 p_al_start"><span>1 line start bottom</span></p>
   </div>
-  <div xml:id="3" region="R0" begin="01:00:16.000" end="01:00:20.000" style="_d_default">
+  <div xml:id="3" region="R0" begin="01:00:16.000" end="01:00:20.000" style="d_default">
    <p style="p_font2 p_al_end"><span>1 line end bottom</span></p>
   </div>
-  <div xml:id="4" region="R0" begin="01:00:20.120" end="01:00:24.120" style="_d_default">
+  <div xml:id="4" region="R0" begin="01:00:20.120" end="01:00:24.120" style="d_default">
    <p style="p_font2"><span>two lines</span><span><br/></span><span>center bottom</span></p>
   </div>
-  <div xml:id="5" region="R0" begin="01:00:24.240" end="01:00:28.240" style="_d_default">
+  <div xml:id="5" region="R0" begin="01:00:24.240" end="01:00:28.240" style="d_default">
    <p style="p_font2 p_al_start"><span>two lines</span><span><br/></span><span>start bottom</span></p>
   </div>
-  <div xml:id="6" region="R0" begin="01:00:28.360" end="01:00:32.360" style="_d_default">
+  <div xml:id="6" region="R0" begin="01:00:28.360" end="01:00:32.360" style="d_default">
    <p style="p_font2 p_al_end"><span>two lines</span><span><br/></span><span>end bottom</span></p>
   </div>
-  <div xml:id="7" region="R0" begin="01:00:32.480" end="01:00:36.480" style="_d_default">
+  <div xml:id="7" region="R0" begin="01:00:32.480" end="01:00:36.480" style="d_default">
    <p style="p_font2 p_al_center_start"><span>two lines</span><span><br/></span><span>center start bottom</span></p>
   </div>
-  <div xml:id="8" region="R0" begin="01:00:36.640" end="01:00:40.640" style="_d_default">
+  <div xml:id="8" region="R0" begin="01:00:36.640" end="01:00:40.640" style="d_default">
    <p style="p_font2 p_al_center_end"><span>two lines</span><span><br/></span><span>center end bottom</span></p>
   </div>
-  <div xml:id="9" region="R0" begin="01:00:40.760" end="01:00:44.760" style="_d_default">
+  <div xml:id="9" region="R0" begin="01:00:40.760" end="01:00:44.760" style="d_default">
    <p style="p_font2 p_al_start_center"><span>two lines</span><span><br/></span><span>start center bottom</span></p>
   </div>
-  <div xml:id="10" region="R0" begin="01:00:44.880" end="01:00:48.880" style="_d_default">
+  <div xml:id="10" region="R0" begin="01:00:44.880" end="01:00:48.880" style="d_default">
    <p style="p_font2 p_al_start_end"><span>two lines</span><span><br/></span><span>start end bottom</span></p>
   </div>
-  <div xml:id="11" region="R0" begin="01:00:49.000" end="01:00:53.000" style="_d_default">
+  <div xml:id="11" region="R0" begin="01:00:49.000" end="01:00:53.000" style="d_default">
    <p style="p_font2 p_al_end_start"><span>two lines</span><span><br/></span><span>end start bottom</span></p>
   </div>
-  <div xml:id="12" region="R0" begin="01:00:53.120" end="01:00:57.120" style="_d_default">
+  <div xml:id="12" region="R0" begin="01:00:53.120" end="01:00:57.120" style="d_default">
    <p style="p_font2 p_al_end_center"><span>two lines</span><span><br/></span><span>end center bottom</span></p>
   </div>
-  <div xml:id="13" region="R0" begin="01:00:57.240" end="01:01:01.240" style="_d_default">
+  <div xml:id="13" region="R0" begin="01:00:57.240" end="01:01:01.240" style="d_default">
    <p style="p_font2 p_al_start"><span>left</span></p>
    <p style="p_font2"><span>center</span></p>
    <p style="p_font2 p_al_end"><span>right</span></p>
   </div>
-  <div xml:id="14" region="R1" begin="01:01:01.360" end="01:01:05.360" style="_d_default">
+  <div xml:id="14" region="R1" begin="01:01:01.360" end="01:01:05.360" style="d_default">
    <p style="p_font2"><span>row 11/12 (about one line from bottom)</span></p>
   </div>
-  <div xml:id="15" region="R11" begin="01:01:05.480" end="01:01:09.480" style="_d_default">
+  <div xml:id="15" region="R11" begin="01:01:05.480" end="01:01:09.480" style="d_default">
    <p style="p_font2"><span>row 1/12 (top)</span></p>
   </div>
-  <div xml:id="16" region="R9" begin="01:01:09.640" end="01:01:13.640" style="_d_default">
+  <div xml:id="16" region="R9" begin="01:01:09.640" end="01:01:13.640" style="d_default">
    <p style="p_font2"><span>row 3/12</span></p>
   </div>
-  <div xml:id="17" region="R10" begin="01:01:13.760" end="01:01:17.760" style="_d_default">
+  <div xml:id="17" region="R10" begin="01:01:13.760" end="01:01:17.760" style="d_default">
    <p style="p_font2"><span>row 2/12</span></p>
   </div>
-  <div xml:id="18" region="R11" begin="01:01:17.880" end="01:01:21.880" style="_d_default">
+  <div xml:id="18" region="R11" begin="01:01:17.880" end="01:01:21.880" style="d_default">
    <p style="p_font2"><span>row 1/12</span></p>
   </div>
-  <div xml:id="19" region="R11" begin="01:01:22.000" end="01:01:26.000" style="_d_default">
+  <div xml:id="19" region="R11" begin="01:01:22.000" end="01:01:26.000" style="d_default">
    <p style="p_font2"><span>top center</span></p>
   </div>
-  <div xml:id="20" region="R11" begin="01:01:26.120" end="01:01:30.120" style="_d_default p_al_start">
-   <p style="p_font2"><span>top left</span></p>
+  <div xml:id="20" region="R11" begin="01:01:26.120" end="01:01:30.120" style="d_default">
+   <p style="p_font2 p_al_start"><span>top left</span></p>
   </div>
-  <div xml:id="21" region="R11" begin="01:01:30.240" end="01:01:34.240" style="_d_default p_al_end">
-   <p style="p_font2"><span>top right</span></p>
+  <div xml:id="21" region="R11" begin="01:01:30.240" end="01:01:34.240" style="d_default">
+   <p style="p_font2 p_al_end"><span>top right</span></p>
   </div>
-  <div xml:id="22" region="R11" begin="01:01:34.360" end="01:01:38.360" style="_d_default">
+  <div xml:id="22" region="R11" begin="01:01:34.360" end="01:01:38.360" style="d_default">
    <p style="p_font2 p_al_start"><span>top left</span></p>
    <p style="p_font2"><span>center</span></p>
    <p style="p_font2 p_al_end"><span>right</span></p>
   </div>
- </body>
+</body>
 </tt>
+
 ```
 
 </details>
@@ -232,9 +236,9 @@ This div represents a single line centered at the bottom of the screen.  Note th
 #### div XML
 
 ```
-<div xml:id="1" region="R0" begin="01:00:07.760" end="01:00:11.760" style="_d_default">
- <p style="p_font2"><span>1 line Center Bottom</span></p>
-</div>
+<div xml:id="1" region="R0" begin="01:00:07.760" end="01:00:11.760" style="d_default">
+   <p style="p_font2"><span>1 line Center Bottom</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -250,9 +254,9 @@ This div represents a single line on the left using p_al_start in left to right 
 #### div XML
 
 ```
-<div xml:id="2" region="R0" begin="01:00:11.880" end="01:00:15.880" style="_d_default">
- <p style="p_font2 p_al_start"><span>1 line start bottom</span></p>
-</div>
+<div xml:id="2" region="R0" begin="01:00:11.880" end="01:00:15.880" style="d_default">
+   <p style="p_font2 p_al_start"><span>1 line start bottom</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -268,9 +272,9 @@ This div represents a single line on the right using p_al_end in left to right t
 #### div XML
 
 ```
-<div xml:id="3" region="R0" begin="01:00:16.000" end="01:00:20.000" style="_d_default">
- <p style="p_font2 p_al_end"><span>1 line end bottom</span></p>
-</div>
+<div xml:id="3" region="R0" begin="01:00:16.000" end="01:00:20.000" style="d_default">
+   <p style="p_font2 p_al_end"><span>1 line end bottom</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -286,9 +290,9 @@ This div represents two lines centered at the bottom.  Note the absence of a p_a
 #### div XML
 
 ```
-<div xml:id="4" region="R0" begin="01:00:20.120" end="01:00:24.120" style="_d_default">
- <p style="p_font2"><span>two lines</span><span><br/></span><span>center bottom</span></p>
-</div>
+<div xml:id="4" region="R0" begin="01:00:20.120" end="01:00:24.120" style="d_default">
+   <p style="p_font2"><span>two lines</span><span><br/></span><span>center bottom</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -304,9 +308,9 @@ This div represents two lines on the left bottom using p_al_start in left to rig
 #### div XML
 
 ```
-<div xml:id="5" region="R0" begin="01:00:24.240" end="01:00:28.240" style="_d_default">
- <p style="p_font2 p_al_start"><span>two lines</span><span><br/></span><span>start bottom</span></p>
-</div>
+<div xml:id="5" region="R0" begin="01:00:24.240" end="01:00:28.240" style="d_default">
+   <p style="p_font2 p_al_start"><span>two lines</span><span><br/></span><span>start bottom</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -322,9 +326,9 @@ This div represents two lines on the right bottom using p_al_end in left to righ
 #### div XML
 
 ```
-<div xml:id="6" region="R0" begin="01:00:28.360" end="01:00:32.360" style="_d_default">
- <p style="p_font2 p_al_end"><span>two lines</span><span><br/></span><span>end bottom</span></p>
-</div>
+<div xml:id="6" region="R0" begin="01:00:28.360" end="01:00:32.360" style="d_default">
+   <p style="p_font2 p_al_end"><span>two lines</span><span><br/></span><span>end bottom</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -340,9 +344,9 @@ This div represents two lines, where the longest line is centered, and the short
 #### div XML
 
 ```
-<div xml:id="7" region="R0" begin="01:00:32.480" end="01:00:36.480" style="_d_default">
- <p style="p_font2 p_al_center_start"><span>two lines</span><span><br/></span><span>center start bottom</span></p>
-</div>
+<div xml:id="7" region="R0" begin="01:00:32.480" end="01:00:36.480" style="d_default">
+   <p style="p_font2 p_al_center_start"><span>two lines</span><span><br/></span><span>center start bottom</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -358,9 +362,9 @@ This div represents two lines, where the longest line is centered, and the short
 #### div XML
 
 ```
-<div xml:id="8" region="R0" begin="01:00:36.640" end="01:00:40.640" style="_d_default">
- <p style="p_font2 p_al_center_end"><span>two lines</span><span><br/></span><span>center end bottom</span></p>
-</div>
+<div xml:id="8" region="R0" begin="01:00:36.640" end="01:00:40.640" style="d_default">
+   <p style="p_font2 p_al_center_end"><span>two lines</span><span><br/></span><span>center end bottom</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -376,9 +380,9 @@ This div represents two lines, where the longest line is left aligned, and the s
 #### div XML
 
 ```
-<div xml:id="9" region="R0" begin="01:00:40.760" end="01:00:44.760" style="_d_default">
- <p style="p_font2 p_al_start_center"><span>two lines</span><span><br/></span><span>start center bottom</span></p>
-</div>
+<div xml:id="9" region="R0" begin="01:00:40.760" end="01:00:44.760" style="d_default">
+   <p style="p_font2 p_al_start_center"><span>two lines</span><span><br/></span><span>start center bottom</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -394,9 +398,9 @@ This div represents two lines, where the longest line is left aligned, and the s
 #### div XML
 
 ```
-<div xml:id="10" region="R0" begin="01:00:44.880" end="01:00:48.880" style="_d_default">
- <p style="p_font2 p_al_start_end"><span>two lines</span><span><br/></span><span>start end bottom</span></p>
-</div>
+<div xml:id="10" region="R0" begin="01:00:44.880" end="01:00:48.880" style="d_default">
+   <p style="p_font2 p_al_start_end"><span>two lines</span><span><br/></span><span>start end bottom</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -412,9 +416,9 @@ This div represents two lines, where the longest line is right aligned, and the 
 #### div XML
 
 ```
-<div xml:id="11" region="R0" begin="01:00:49.000" end="01:00:53.000" style="_d_default">
- <p style="p_font2 p_al_end_start"><span>two lines</span><span><br/></span><span>end start bottom</span></p>
-</div>
+<div xml:id="11" region="R0" begin="01:00:49.000" end="01:00:53.000" style="d_default">
+   <p style="p_font2 p_al_end_start"><span>two lines</span><span><br/></span><span>end start bottom</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -430,9 +434,9 @@ This div represents two lines, where the longest line is right aligned, and the 
 #### div XML
 
 ```
-<div xml:id="12" region="R0" begin="01:00:53.120" end="01:00:57.120" style="_d_default">
- <p style="p_font2 p_al_end_center"><span>two lines</span><span><br/></span><span>end center bottom</span></p>
-</div>
+<div xml:id="12" region="R0" begin="01:00:53.120" end="01:00:57.120" style="d_default">
+   <p style="p_font2 p_al_end_center"><span>two lines</span><span><br/></span><span>end center bottom</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -448,11 +452,11 @@ This div represents three lines, where the first is left aligned, the second is 
 #### div XML
 
 ```
-<div xml:id="13" region="R0" begin="01:00:57.240" end="01:01:01.240" style="_d_default">
- <p style="p_font2 p_al_start"><span>left</span></p>
- <p style="p_font2"><span>center</span></p>
- <p style="p_font2 p_al_end"><span>right</span></p>
-</div>
+<div xml:id="13" region="R0" begin="01:00:57.240" end="01:01:01.240" style="d_default">
+   <p style="p_font2 p_al_start"><span>left</span></p>
+   <p style="p_font2"><span>center</span></p>
+   <p style="p_font2 p_al_end"><span>right</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -470,9 +474,9 @@ Subtitles 14-22 demonstrate vertical positioning using regions.
 #### div XML
 
 ```
-<div xml:id="14" region="R1" begin="01:01:01.360" end="01:01:05.360" style="_d_default">
- <p style="p_font2"><span>row 11/12 (about one line from bottom)</span></p>
-</div>
+<div xml:id="14" region="R1" begin="01:01:01.360" end="01:01:05.360" style="d_default">
+   <p style="p_font2"><span>row 11/12 (about one line from bottom)</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -484,9 +488,9 @@ Subtitles 14-22 demonstrate vertical positioning using regions.
 #### div XML
 
 ```
-<div xml:id="15" region="R11" begin="01:01:05.480" end="01:01:09.480" style="_d_default">
- <p style="p_font2"><span>row 1/12 (top)</span></p>
-</div>
+<div xml:id="15" region="R11" begin="01:01:05.480" end="01:01:09.480" style="d_default">
+   <p style="p_font2"><span>row 1/12 (top)</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -498,9 +502,9 @@ Subtitles 14-22 demonstrate vertical positioning using regions.
 #### div XML
 
 ```
-<div xml:id="16" region="R9" begin="01:01:09.640" end="01:01:13.640" style="_d_default">
- <p style="p_font2"><span>row 3/12</span></p>
-</div>
+<div xml:id="16" region="R9" begin="01:01:09.640" end="01:01:13.640" style="d_default">
+   <p style="p_font2"><span>row 3/12</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -512,9 +516,9 @@ Subtitles 14-22 demonstrate vertical positioning using regions.
 #### div XML
 
 ```
-<div xml:id="17" region="R10" begin="01:01:13.760" end="01:01:17.760" style="_d_default">
- <p style="p_font2"><span>row 2/12</span></p>
-</div>
+<div xml:id="17" region="R10" begin="01:01:13.760" end="01:01:17.760" style="d_default">
+   <p style="p_font2"><span>row 2/12</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -526,9 +530,9 @@ Subtitles 14-22 demonstrate vertical positioning using regions.
 #### div XML
 
 ```
-<div xml:id="18" region="R11" begin="01:01:17.880" end="01:01:21.880" style="_d_default">
- <p style="p_font2"><span>row 1/12</span></p>
-</div>
+<div xml:id="18" region="R11" begin="01:01:17.880" end="01:01:21.880" style="d_default">
+   <p style="p_font2"><span>row 1/12</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -540,9 +544,9 @@ Subtitles 14-22 demonstrate vertical positioning using regions.
 #### div XML
 
 ```
-<div xml:id="19" region="R11" begin="01:01:22.000" end="01:01:26.000" style="_d_default">
- <p style="p_font2"><span>top center</span></p>
-</div>
+<div xml:id="19" region="R11" begin="01:01:22.000" end="01:01:26.000" style="d_default">
+   <p style="p_font2"><span>top center</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -554,9 +558,9 @@ Subtitles 14-22 demonstrate vertical positioning using regions.
 #### div XML
 
 ```
-<div xml:id="20" region="R11" begin="01:01:26.120" end="01:01:30.120" style="_d_default p_al_start">
- <p style="p_font2"><span>top left</span></p>
-</div>
+<div xml:id="20" region="R11" begin="01:01:26.120" end="01:01:30.120" style="d_default">
+   <p style="p_font2 p_al_start"><span>top left</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -568,9 +572,9 @@ Subtitles 14-22 demonstrate vertical positioning using regions.
 #### div XML
 
 ```
-<div xml:id="21" region="R11" begin="01:01:30.240" end="01:01:34.240" style="_d_default p_al_end">
- <p style="p_font2"><span>top right</span></p>
-</div>
+<div xml:id="21" region="R11" begin="01:01:30.240" end="01:01:34.240" style="d_default">
+   <p style="p_font2 p_al_end"><span>top right</span></p>
+  </div>
 ```
 #### Resulting Image
 
@@ -582,11 +586,11 @@ Subtitles 14-22 demonstrate vertical positioning using regions.
 #### div XML
 
 ```
-<div xml:id="22" region="R11" begin="01:01:34.360" end="01:01:38.360" style="_d_default">
- <p style="p_font2 p_al_start"><span>top left</span></p>
- <p style="p_font2"><span>center</span></p>
- <p style="p_font2 p_al_end"><span>right</span></p>
-</div>
+<div xml:id="22" region="R11" begin="01:01:34.360" end="01:01:38.360" style="d_default">
+   <p style="p_font2 p_al_start"><span>top left</span></p>
+   <p style="p_font2"><span>center</span></p>
+   <p style="p_font2 p_al_end"><span>right</span></p>
+  </div>
 ```
 #### Resulting Image
 

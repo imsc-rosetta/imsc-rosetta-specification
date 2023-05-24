@@ -8,6 +8,12 @@ Because of the possible use of Rubies, and to simplify this, when using imsc-ros
 
 ***Note that `<br/>` MUST be wrapped in `<span>` and that `<span>` MUST be a child of `<p>`***
 
+Note that as IMSC only supports `tts:shear`, and not tts:lineShear, if you wish to present Japanese text with shear, the preferred presentation style is that the lines are sheared separately, and so two `<p>` elements are required for two line or two column text.
+
+This presents a further issue with the restriction to ruby positions to be `outside`, as this does not then work for dual row.
+
+We are looking for feedback on these issues.
+
 ## Vertical subtitles
 
 `r_vertical` (This equates to writingMode="tbrl")
@@ -16,9 +22,27 @@ Vertical subtitles are represented by applying the style r_vertical to the regio
 
 When using vertical subtitles, the regions should be full height, with variable left or right edges (either right or left or both will be against the maximal region extent horizontally).
 
+## Multiple subtitles on the screen at the same time.
+
+Currently, IMSC Rosetta disallows overlapping cues.  I.e. there is only one `<div>` on screen at a time.
+
+For Japanese, the use of both horizontal and vertical subtitles with overlapping cues is not uncommon in real use.
+
+The combination of a vertical subtitle with a horizontal subtitle in IMSC Rosetta is problematic because IMSC specifically restricts regions to not be overlapping.  Although both the vertical and horizontal subtitles could in theory share the same region, from a practical subtitle file perspective, this is also problematic.
+
+Several subtitle vendors have highlighted that their customers have specified that files with overlapping regions are OK for them, so one suggestion is that specifically, for this use case, we relax the non-overlapping regions IMSC rule.
+
+As IMSC-Rosetta is not intended for final delivery to players/renderers without transformation (i.e. it is not an emission format), we believe that relaxing this constraint should not be an issue, especially if only in these specific circumstances (i.e. Japanese use case).
+
+Feedback is requested.
+
 ## Rubies
 
 Rubies for Japanese are supported through the use of nested spans with ruby specific styles attached.
+
+### Ruby rendering note
+
+It has been noticed that some IMSC renderers including in Chrome and Safari ignore the rubyReserve setting.  When rubies are present, there is a vertical shift in the placement of horizontal subtitles (or horizontal shift for vertical subtitles).  This is not an issue with IMSC Rosetta, but IMSCJS.  As IMSC Rosetta is primarily designed for the creation and transcode of subtitles, not emission this is not seen as an issue.  However, it is recommended that through testing is undertaken when converting to and from Rosetta for Japanese to ensure rubies are correctly positioned in the final player/renderer.
 
 ### Ruby Specific Styles:
 
@@ -95,7 +119,7 @@ Example (where region R12 has been had style r_vertical added to it):
   </div>
 ```
 
-*note the use of tts:shear, not tts:fontShear*
+*note the use of tts:shear, not tts:fontShear or tts:lineShear, which are not allowed in IMSC 1.2*
 
 *note: this should ONLY be used for Japanese of other ideographic languages.  For other languages, you may use `s_italic`*
 

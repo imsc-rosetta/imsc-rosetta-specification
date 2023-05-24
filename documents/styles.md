@@ -11,14 +11,14 @@ It is expected that only the used set of styles be present in a file, but it is 
 The following is the maximal style name set, and thier default values:
 
 ```
- <style xml:id="r_region" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:fontStyle="normal" tts:fontWeight="normal" tts:fontFamily="proportionalSansSerif" tts:textAlign="center" itts:fillLineGap="false" tts:wrapOption="noWrap" style="_r_default" />
+ <style xml:id="r_region" tts:overflow="visible" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:fontStyle="normal" tts:fontWeight="normal" tts:fontFamily="proportionalSansSerif" tts:textAlign="center" itts:fillLineGap="false" tts:wrapOption="noWrap" style="_r_default" />
  <style xml:id="r_vertical" tts:writingMode="tbrl" style="_r_vertical"/>
  
+ <style xml:id="d_default" style="_d_default"/>
  <style xml:id="d_fillgap" itts:fillLineGap="true" />
  <style xml:id="d_forced" itts:forcedDisplay="true"/>
  <style xml:id="d_outline" tts:textOutline="#000000 0.05em"/>
  <style xml:id="d_drop" tts:textOutline="#000000 0.05em"/>
-
  
  <style xml:id="p_rtl" tts:direction="rtl"/>
  
@@ -117,44 +117,115 @@ The following is the maximal style name set, and thier default values:
  <style xml:id="s_emf_oso" tts:textEmphasis="open sesame outside"/>
  
  <style xml:id="_d_default" style="d_outline"/>
- <style xml:id="_r_default" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c" style="s_fg_white"/>
- <style xml:id="_r_vertical"/>
+ <style xml:id="_r_default" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c" tts:luminanceGain="1.0" style="s_fg_white"/>
+ <style xml:id="_r_vertical" style=""/>
+
+ <style xml:id="_r_quantisationregion" tts:origin="10% 10%" tts:extent="80% 80%" tts:fontSize="5.333rh" tts:lineHeight="125%"/>
+
 
 ```
 
 ## styles which may be modified
 
 ### _d_default
-you may modify the style attribute of _d_default to contain one or more styles from the d_xxx range.
+you may modify the style attribute of _d_default to contain zero or more styles from the d_xxx range.
 
 ### _r_default
-you may modify tts:origin, tts:extent, tts:fontSize, tts:lineHeight.  These control line quantisation.
+you may modify tts:fontSize, tts:lineHeight.
 
 you may modify ebutts:linePadding (suggest you don't)
 
-you may modify the style attribute. It MUST contain a colour from s_fg_xxx, and MAY contain an alignment from p_al_xxxx
+you may modify the style attribute. It MUST contain a colour from s_fg_xxx, and MAY contain an alignment from p_al_xxxx.  e.g. style:"s_fg_yellow p_al_center"
+
+you may modify tts:luminanceGain
+
+### _r_quantisationregion
+you may modify tts:origin, tts:extent, tts:fontSize, tts:lineHeight.
+
+See below 'region size and position quantisation' for more explaination
 
 ### _r_vertical
-you may modify the style attribute. It MAY contain an alignment from p_al_xxxx only
+you may modify the style attribute. It MUST be empty, or contain an alignment from p_al_xxxx only
 
 ### s_fg_xxx
 you may modify the tts:color attribute
 
+Foreground colours must be specified in `#xxxxxx` notation using only 6 digits from upper case hex set `0123456789ABCDEF`
+
 ### s_outlinexxx
-you may modify the tts:textOutline attribute
+you may modify the tts:textOutline attribute's color value.
+
+Colours in tts:textOutline must be specified in `#xxxxxx` notation using 6 digits from upper case hex set `0123456789ABCDEF`
 
 ### s_dropxxx
-you may modify the tts:textOutline attribute
+you may modify the tts:textOutline attribute's color value.
 
-Any styles not mentioned below are fixed, and may not be modified.
+Colours in tts:textOutline must be specified in `#xxxxxx` notation using only 6 digits from upper case hex set `0123456789ABCDEF`
+
+### ps_bg_boxedxxx
+you may modify the tts:backgroundColor attribute
+
+as this is a solid box, colours must be specified in `#xxxxxx` notation using only 6 digits from upper case hex set `0123456789ABCDEF`
+
+### ps_bg_ghostboxedxxx
+you may modify the tts:backgroundColor attribute
+
+as this is a transparent box, colours must be specified in `#xxxxxxxx` notation using 8 digits from upper case hex set `0123456789ABCDEF`
+
+
+## general
+
+Any styles not mentioned above are fixed, and may not be modified.
 
 All styles must contain only the attributes as above. (i.e. only the attribute value may be changed)
 
-### region size and position quantisation
+Unused styles MAY be omitted, except for `_r_quantisationregion` which must never be used, but must always be present.
 
-_r_default should be set such that the origin and extent represent the active subtitle area, and fontSize set such that extent(y) / fontSize x lineHeight is close to a round number.
+## region size and position quantisation
 
-This resulting number is the ethereal 'number of lines on a screen', and should be used to position region edges.
+`_r_quantisationregion` should be set such that the origin and extent represent the active subtitle area, and fontSize/lineHeight set such that extent(y) / fontSize x lineHeight is close to a round number.
+
+This style is NEVER used.  Actual fontsize is set by combination of fontsize in `rh` from _r_default and fontsize in `%` from p_font1/p_font2
+
+It MUST be present, and MUST contain tts:origin as a pair of `%` values, tts:extent as a pair of `%` values, tts:fontSize in `rh` units, and tts:lineHeight in `%` units.
+
+This resulting number is the ethereal 'number of lines on a screen', and should be used to position region edges when one edge of a region is not against the edge of active subtitle area.
+
+Subsequent calculated `tts:origin` and `tts:extent` values should be rounded to 1 decimal place.
+
+Example for horizontal:
+
+tts:origin="10% 10%" tts:extent="80% 80%" tts:fontSize="5.333rh" tts:lineHeight="125%"
+
+number of ethereal lines = 0.80/(0.0533x1.25) = 12.0008 = ~12
+
+Percent of screen per line = 80/12 = 6.667%
+
+Therefore, raising a region off the bottom of the subtitle active area by 1 line would mean the region would be:
+
+`<region xml:id="R1" tts:origin="10% 10%" tts:extent="80% 73.3%" tts:displayAlign="after" style="r_region">`
+
+Conversely, Placing a subtitle one line down from the top would mean the region would be:
+
+`<region xml:id="R1" tts:origin="10% 16.7%" tts:extent="80% 73.3%" tts:displayAlign="before" style="r_region">`
+
+The puropose of introducing formal quantisation is to minimise the number of regions created.  Theoretically, with the above definitions, there would be a maximum of 12 regions for a file containing horizontal only text.
+
+For vertical, please assume square characters and 16:9 aspect ratio.  
+
+Example for vertical:
+
+number of ethereal columns = 0.80/(0.0533x1.25)x(16/9) = 21.33 = ~21
+
+Percent of screen per column = 80/21 = 3.81%
+
+Therefore, moving a region one column to the left from the subtitle active area would mean the region would be:
+
+`<region xml:id="R1" tts:origin="10% 10%" tts:extent="76.2% 80%" tts:displayAlign="after" style="r_default r_vertical">`
+
+Conversely, Placing a subtitle one column in from the left would mean the region would be:
+
+`<region xml:id="R1" tts:origin="13.8% 10%" tts:extent="76.2% 80%" tts:displayAlign="before" style="r_default r_vertical">`
 
 ### fontSize
 
@@ -178,9 +249,12 @@ i.e. in specific circumstances styles starting with s_fg_, ps_bg_, ds_outline, d
 
 It is NOT intended that this should provide a way to change yellow to blue, for example, only to adjust a shade.
 
+If modifying colouring style attributes, solid colours (s_fg_xxx, s_outlinexxx, s_dropxxx) must be specified in `#xxxxxx` notation using only 6 digits from upper case hex set `0123456789ABCDEF`, and transparent colours (ps_bg_ghostboxedxxx) must be specified in `#xxxxxxxx` notation using 8 digits from upper case hex set `0123456789ABCDEF`.
+
 (note: when converting to formats like PAC, STL, etc, exact colours cannot be carried over, hence why we use fixed names for the 'normal' 8 teletext colours.  These MAY be re-defined by the transmission system on playout.)
 
-The `style` attibute in _r_default must be present, but may only be one of the 8 foreground colour style names (those that start `s_fg_`) - this may be used to change the overall default colour for the subtitles.
+The `style` attibute in _r_default must be present, and must only be one of the 8 foreground colour style names (those that start `s_fg_`) - this may be used to change the overall default colour for the subtitles.
+
 
 ## Style use
 
@@ -198,11 +272,18 @@ if the style attribute in _d_default is modified, only styles applicable to div 
 
 _r_default and _r_vertical MAY contain style references to p_al_xxx as a way to set the default alignment/justification for the whole file.
 
+_r_quantisationregion must never be used, but must always be present.
+
+Every `div` must reference `d_default`
+
+Every `region` must reference `r_default`
+
+
 ### alignment/justification.
 
-Note that start means side (including top/bottom) where the first character will be closest to.
+Note that start means the side (including top/bottom for vertical) where the first character will be closest to.
 
-Note that end means side (including top/bottom) where the first character will be furthest from.
+Note that end means the side (including top/bottom for vertical) where the first character will be furthest from.
 
 e.g. in Arabic/Hebrew correctly marked up as p_rtl, start means right, and end means left.
 
@@ -219,10 +300,10 @@ p_al_end_start, p_al_end_center - these align the the `<p>` element against the 
 p_al_center_start, p_al_center_end  - these align the the `<p>` element to the center of the region, but justify the content start/center/end
 
 the _r_default style attribute MAY contain an alignment style from the set p_al_start, p_al_end, p_al_center, p_al_start_center, p_al_start_end, p_al_end_start, p_al_end_center, p_al_center_start, p_al_center_end.
-This would set the default alignment for all regions.
+This would set the default text alignment for all regions.
 
 the _r_vertical style MAY contain a style attribute containing an alignment style from the set p_al_start, p_al_end, p_al_center, p_al_start_center, p_al_start_end, p_al_end_start, p_al_end_center, p_al_center_start, p_al_center_end.
-This would set the default alignment for vertical regions
+This would set the default text alignment for vertical regions
 
 
 ### outline/dropshadow
