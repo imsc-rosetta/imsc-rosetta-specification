@@ -58,7 +58,7 @@ Optional.  Indicates the organisation which originated the subtitles.
 `<rosetta:originator>{origination company}</rosetta:originator>`
 
 ## Information about the original subtitle format
-Optional. Indicates the orginal format the subtitles were converted from.
+Optional. Indicates the original format the subtitles were converted from.
 
 `<rosetta:originalFormat>EBUSTL|OpenSTL|SRT|FPC|PAC|890|CAP|SMPTE2052|EBUTT|IMSC1.0</rosetta:originalFormat>`
 
@@ -75,7 +75,7 @@ Within the `<metadata>` element within `<head>`, any other metadata may be inclu
 
 Bear in mind that some processors will ignore/remove this metadata.  
 
-Bear in mind that some simpler XML parsers may not preserve element order, and so element order should not be a requirment of metadata used.
+Bear in mind that some simpler XML parsers may not preserve element order, and so element order should not be a requirement of metadata used.
 
 Because we have fixed namespace declarations in the `<tt>` element for simplicity, please use local namespacing (see example of use of ebu-tt metadata below).
 
