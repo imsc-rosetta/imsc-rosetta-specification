@@ -20,10 +20,10 @@ This covers the use of IMSC-Rosetta for right-to-left languages
 This covers metadata usage within IMSC-Rosetta.  Further review is required.
 
 ## [faq.md](afq.md)
-This may answer questions which arise from readint he other documents
+This may answer questions which arise from reading the other documents
 
 ## [samplespreparation.md](samplespreparation.md)
-A semi-technical document outlining how to create a deascriptive sample file from an IMSC-Rosetta file, as we did for the samples in this repository.
+A semi-technical document outlining how to create a descriptive sample file from an IMSC-Rosetta file, as we did for the samples in this repository.
 
 ## [sample IMSC Rosetta file descriptions](../samples)
 Link to the samples folder, containing descriptions of the samples.
