@@ -127,7 +127,7 @@ Example (where region R12 has been had style r_vertical added to it):
 
 This places emphasis on characters.
 
-In IMSC-rosetta, all empohasis is specified as 'outside'.
+In IMSC-rosetta, all emphasis is specified as 'outside'.
 
 The following defined emphasis styles may be used.
 
