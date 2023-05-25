@@ -16,7 +16,7 @@ standalone="yes"
 
 `<tt>` contains only the specified attributes. 
 
-<details><summary>expand for attibutes of tt</summary>
+<details><summary>expand for attributes of tt</summary>
 
 #### namespacing conventions:
 
