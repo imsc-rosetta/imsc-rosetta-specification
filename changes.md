@@ -12,7 +12,7 @@ To address this, we've modified the use of some default styles.
 
 Therefore ALL regions must have r_default, ALL divs must have d_default, and these in turn reference _r_default and _d_default.  And _r_default and _d_default must not be referenced by regions or styles.
 
-Also, _r_quantisationregion is introduced, as we need some way to store the quantisation intent more explicitly, and outside of things we may consider to be for a different reason.  _r_quantisationregion must never be referenced, but always be present.  tts:extent and tts:origin have been removed from r_default as they msut always be present on each region.
+Also, _r_quantisationregion is introduced, as we need some way to store the quantisation intent more explicitly, and outside of things we may consider to be for a different reason.  _r_quantisationregion must never be referenced, but always be present.  tts:extent and tts:origin have been removed from r_default as they must always be present on each region.
 
 These changes will require code changes to existing implementations, but we're getting close now with good feedback from implementors.
 
@@ -22,7 +22,7 @@ Added tts:luminanceGain in _r_default
 
 Added more explanation of line quantisation in styles.md
 
-Added `tts:overflow="visible"` to `r_region`.  Note that subtitles should not generally exceed region sizes, but it is noted that when using p_shear, it may cause a p to extend beyond the region bounds.  Players/renderes may not honour drawing outside fo the region bounds.
+Added `tts:overflow="visible"` to `r_region`.  Note that subtitles should not generally exceed region sizes, but it is noted that when using p_shear, it may cause a p to extend beyond the region bounds.  Players/renderers may not honour drawing outside fo the region bounds.
 
 Update samples and rebuilt sample descriptive files, including image re-render.
 
@@ -31,7 +31,7 @@ Update samples and rebuilt sample descriptive files, including image re-render.
 
 `ps_shear` renamed to `p_shear`, as tts:shear cannot be applied to `span`
 
-Updated samples and documentaiton to reflect the change.
+Updated samples and documentation to reflect the change.
 
 re-introduce p_al_center, and allow p_al_xxx to be set in style on _r_default and _r_vertical to set default alignment/justification on horizontal and vertical regions.
 
@@ -59,4 +59,4 @@ Add p_al_center back in to the style names set.
 
 Allow style in _r_region to contain an alignment p_al_xxxx as a default alignment.
 
-Add _r_vertical as a holder for (changeable) default vertical styles.  The style attirbute may contain an alignment p_al_xxxx as a default alignment for vertical text.
+Add _r_vertical as a holder for (changeable) default vertical styles.  The style attribute may contain an alignment p_al_xxxx as a default alignment for vertical text.
