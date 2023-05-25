@@ -11,7 +11,7 @@ It is expected that only the used set of styles be present in a file, but it is 
 The following is the maximal style name set, and thier default values:
 
 ```
- <style xml:id="r_default" tts:overflow="visible" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:fontStyle="normal" tts:fontWeight="normal" tts:fontFamily="proportionalSansSerif" tts:textAlign="center" itts:fillLineGap="false" tts:wrapOption="noWrap" style="_r_default" />
+ <style xml:id="r_default" tts:overflow="visible" tts:backgroundColor="#00000000" tts:showBackground="whenActive" tts:fontStyle="normal" tts:fontWeight="normal" tts:fontFamily="proportionalSansSerif" tts:textAlign="center" tts:wrapOption="noWrap" style="_r_default" />
  <style xml:id="r_vertical" tts:writingMode="tbrl" style="_r_vertical"/>
  
  <style xml:id="d_default" style="_d_default"/>
@@ -22,9 +22,9 @@ The following is the maximal style name set, and thier default values:
  
  <style xml:id="p_rtl" tts:direction="rtl"/>
  
- <style xml:id="p_al_start" tts:textAlign="start"/>
- <style xml:id="p_al_end" tts:textAlign="end"/>
- <style xml:id="p_al_center" tts:textAlign="center"/>
+ <style xml:id="p_al_start" ebutts:multiRowAlign="start" tts:textAlign="start"/>
+ <style xml:id="p_al_end" ebutts:multiRowAlign="end" tts:textAlign="end"/>
+ <style xml:id="p_al_center" ebutts:multiRowAlign="center" tts:textAlign="center"/>
  <style xml:id="p_al_start_center" ebutts:multiRowAlign="center" tts:textAlign="start"/>
  <style xml:id="p_al_start_end" ebutts:multiRowAlign="end" tts:textAlign="start"/>
  <style xml:id="p_al_end_start" ebutts:multiRowAlign="start" tts:textAlign="end"/>
@@ -117,7 +117,7 @@ The following is the maximal style name set, and thier default values:
  <style xml:id="s_emf_oso" tts:textEmphasis="open sesame outside"/>
  
  <style xml:id="_d_default" style="d_outline"/>
- <style xml:id="_r_default" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c" tts:luminanceGain="1.0" style="s_fg_white"/>
+ <style xml:id="_r_default" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c" tts:luminanceGain="1.0" itts:fillLineGap="false" style="s_fg_white"/>
  <style xml:id="_r_vertical" style=""/>
 
  <style xml:id="_r_quantisationregion" tts:origin="10% 10%" tts:extent="80% 80%" tts:fontSize="5.333rh" tts:lineHeight="125%"/>
@@ -131,13 +131,15 @@ The following is the maximal style name set, and thier default values:
 you may modify the style attribute of _d_default to contain zero or more styles from the d_xxx range.
 
 ### _r_default
-you may modify tts:fontSize, tts:lineHeight.
+you may modify tts:fontSize (in `rh` units only), tts:lineHeight (in `%` units).
 
-you may modify ebutts:linePadding (suggest you don't)
+you may modify ebutts:linePadding (suggest you don't).  It MUST be specified in `c` units.
 
 you may modify the style attribute. It MUST contain a colour from s_fg_xxx, and MAY contain an alignment from p_al_xxxx.  e.g. style:"s_fg_yellow p_al_center"
 
-you may modify tts:luminanceGain
+you may modify tts:luminanceGain (float value)
+
+you may modify itts:fillLineGap ("true" or "false")
 
 ### _r_quantisationregion
 you may modify tts:origin, tts:extent, tts:fontSize, tts:lineHeight.

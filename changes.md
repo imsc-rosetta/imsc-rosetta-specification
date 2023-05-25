@@ -4,6 +4,13 @@
 
 change all references to r_region to r_default to ensure clarity and consistency with d_default
 
+change any ref to `transparent` as a color to `#00000000` to be explicit and consistent
+
+change p_al_start/center/end to include ebutts:multiRowAlign.
+
+move itts:fillLineGap from r_default to _r_default, and make it manditory.
+
+
 ## 2023-05-23
 
 Somewhere in the introduction of default colours, we lost one premise of IMSC, and got confused over defaults.
