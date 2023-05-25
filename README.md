@@ -82,7 +82,7 @@ The definition of namespaces used and specification of namespace prefixes also s
 
 ### The documents:
 
-Al the related documentation is in the [documents folder](documents)
+All the related documentation is in the [documents folder](documents)
 
 information on [styles and their use](documents/styles.md)
 
