@@ -1,6 +1,6 @@
 # How to prepare a sample document for inclusion in the repository
 
-The [/samples](../samples) folder constains descriptive documents about the samples presented as part of the IMSC-Rosetta specification repository.
+The [/samples](../samples) folder contains descriptive documents about the samples presented as part of the IMSC-Rosetta specification repository.
 
 To create a descriptive file from an `(name).imsrc` file, do the following:
 
@@ -8,7 +8,7 @@ To create a descriptive file from an `(name).imsrc` file, do the following:
 
 e.g. if preparing `myimscrosettasample.imscr` create file called `myimscrosettasample.descr.md`
 
-The descr.md file is parsed automatically by a very simple parser, so take care to keep to the below.  The simple parser soplit the file on `\n# `, and then expects each part to begin with either `Outline` or `div`.  You MUST use one space after the `#` character, else it will not be considered the start of a description.
+The descr.md file is parsed automatically by a very simple parser, so take care to keep to the below.  The simple parser spoilt the file on `\n# `, and then expects each part to begin with either `Outline` or `div`.  You MUST use one space after the `#` character, else it will not be considered the start of a description.
 
 The first line should be 
 
@@ -62,7 +62,7 @@ The created zip will contain what would be required to add to the [samples](http
 
 i.e.
 
-`(name).imsrc.md` desciptive file, referencing the images.
+`(name).imsrc.md` descriptive file, referencing the images.
 
 `imscr/(name).imsrc` - your original file.
 
@@ -70,6 +70,6 @@ i.e.
 
 `images/(name).imscr/*.png` - images generated.
 
-`html/(name).imscr.html` - an html rendition of the desciptive file (markdown specifics are NOT converted to html, except for `\n` being replaced with `<br \>`).  This is useful for local viewing, and references the images via `../images/(name).imscr/`.
+`html/(name).imscr.html` - an html rendition of the descriptive file (markdown specifics are NOT converted to html, except for `\n` being replaced with `<br \>`).  This is useful for local viewing, and references the images via `../images/(name).imscr/`.
 
 Images are named by the `begin` value of their `div` converted to fractional seconds.
