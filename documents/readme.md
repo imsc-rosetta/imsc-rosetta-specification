@@ -19,7 +19,7 @@ This covers the use of IMSC-Rosetta for right-to-left languages
 ## [metadata.md](metadata.md)
 This covers metadata usage within IMSC-Rosetta.  Further review is required.
 
-## [faq.md](afq.md)
+## [faq.md](faq.md)
 This may answer questions which arise from reading the other documents
 
 ## [samplespreparation.md](samplespreparation.md)
