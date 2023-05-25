@@ -11,7 +11,7 @@ It is expected that only the used set of styles be present in a file, but it is 
 The following is the maximal style name set, and thier default values:
 
 ```
- <style xml:id="r_region" tts:overflow="visible" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:fontStyle="normal" tts:fontWeight="normal" tts:fontFamily="proportionalSansSerif" tts:textAlign="center" itts:fillLineGap="false" tts:wrapOption="noWrap" style="_r_default" />
+ <style xml:id="r_default" tts:overflow="visible" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:fontStyle="normal" tts:fontWeight="normal" tts:fontFamily="proportionalSansSerif" tts:textAlign="center" itts:fillLineGap="false" tts:wrapOption="noWrap" style="_r_default" />
  <style xml:id="r_vertical" tts:writingMode="tbrl" style="_r_vertical"/>
  
  <style xml:id="d_default" style="_d_default"/>
@@ -203,11 +203,11 @@ Percent of screen per line = 80/12 = 6.667%
 
 Therefore, raising a region off the bottom of the subtitle active area by 1 line would mean the region would be:
 
-`<region xml:id="R1" tts:origin="10% 10%" tts:extent="80% 73.3%" tts:displayAlign="after" style="r_region">`
+`<region xml:id="R1" tts:origin="10% 10%" tts:extent="80% 73.3%" tts:displayAlign="after" style="r_default">`
 
 Conversely, Placing a subtitle one line down from the top would mean the region would be:
 
-`<region xml:id="R1" tts:origin="10% 16.7%" tts:extent="80% 73.3%" tts:displayAlign="before" style="r_region">`
+`<region xml:id="R1" tts:origin="10% 16.7%" tts:extent="80% 73.3%" tts:displayAlign="before" style="r_default">`
 
 The puropose of introducing formal quantisation is to minimise the number of regions created.  Theoretically, with the above definitions, there would be a maximum of 12 regions for a file containing horizontal only text.
 
@@ -233,7 +233,7 @@ p_font1 and p_font2 are used to control actual font dimensions.
 
 fontSize must be set as a percentage (of the size specified in _r_default), e.g. "100%".
 
-*note: this will set the actual size of text on the screen, and is not necessarily related to the fontSize used to set the line quantisation in _r_region*
+*note: this will set the actual size of text on the screen, and is not necessarily related to the fontSize used to set the line quantisation in _r_quantisationregion*
 
 Since lineHeight can be a problematic variable, it MUST be set every time fontSize is set.  It is probably best to set it to "125%".
 

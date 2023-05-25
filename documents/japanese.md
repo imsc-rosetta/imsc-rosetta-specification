@@ -94,7 +94,7 @@ Many Japanese style specifications quote use this for numbers of 2 digits or les
 
 Example (where region R12 has been had style r_vertical added to it):
 ```
-  <region xml:id="R12" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="before" style="r_region r_vertical"/>
+  <region xml:id="R12" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="before" style="r_default r_vertical"/>
 ....
 
   <div xml:id="53" region="R12" begin="01:03:34.359" end="01:03:36.359" style="_d_default">
@@ -111,7 +111,7 @@ text shear of 16.67% may be applied using `p_shear` on p
 
 Example (where region R12 has been had style r_vertical added to it):
 ```
-  <region xml:id="R12" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="before" style="r_region r_vertical"/>
+  <region xml:id="R12" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="before" style="r_default r_vertical"/>
 ....
 
   <div xml:id="53" region="R12" begin="01:03:34.359" end="01:03:36.359" style="_d_default">
@@ -146,7 +146,7 @@ s_emf_oso tts:textEmphasis="open sesame outside"
 
 Example:
 ```
-  <region xml:id="R12" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="before" style="r_region r_vertical"/>
+  <region xml:id="R12" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="before" style="r_default r_vertical"/>
 ....
 
   <div xml:id="54" region="R12" begin="01:03:37.359" end="01:03:39.359" style="_d_default">

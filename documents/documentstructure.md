@@ -121,19 +121,19 @@ one or more `<region>` elements only.
 ### `<region>`
 `<region>` elements must contain the following attributes:
 
-`xml:id` `tts:origin` `tts:extent` `tts:displayAlign` `style="r_region"`
+`xml:id` `tts:origin` `tts:extent` `tts:displayAlign` `style="r_default"`
 
-For Japanese Vertical text, the additional style r_vertical will be added.  i.e. the region will contain `style="r_region r_vertical"`
+For Japanese Vertical text, the additional style r_vertical will be added.  i.e. the region will contain `style="r_default r_vertical"`
 
 `<region>` elements will not have any content, and should be represented as closed elements, 
 
 e.g. 
 
-`<region xml:id="R0" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" style="r_region"/>`
+`<region xml:id="R0" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" style="r_default"/>`
 
 e.g. Japanese vertical region:
 
-`<region xml:id="R0" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" style="r_region r_vertical"/>`
+`<region xml:id="R0" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="after" style="r_default r_vertical"/>`
 
 ### `<body>`
 `<body>` must have no attributes. `<body>` contains the following elements:

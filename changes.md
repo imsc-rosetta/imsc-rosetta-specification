@@ -1,5 +1,9 @@
 # Changes based on feedback.
 
+## 2023-05-25
+
+change all references to r_region to r_default to ensure clarity and consistency with d_default
+
 ## 2023-05-23
 
 Somewhere in the introduction of default colours, we lost one premise of IMSC, and got confused over defaults.

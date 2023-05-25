@@ -107,14 +107,16 @@ If you have an XML processor which does not retain the define XML Namespace pref
   
   In Imsc-Rosetta, certain named style content is constant - i.e. you may not change it.
   
-  These include r_region, s_italic, s_bold, s_underline, ds_al_start, ds_al_end, d_forced
+  These include d_default, r_default, s_italic, s_bold, s_underline, ds_al_start, ds_al_end, d_forced
   
   Other named styles may be changed by the file writer.
   
-  These include _r_default, p_font1, p_font2, ds_fg_xxxx, dp_boxedxxxx, dp_ghostboxedxxxx, dp_outlinexxxx, dp_dropxxxx
+  These include _d_default _r_default, p_font1, p_font2, s_fg_xxxx, dp_boxedxxxx, dp_ghostboxedxxxx, dp_outlinexxxx, dp_dropxxxx
   
-  _r_default is used to define the default subtitle area, and line quantisation, plus the initial font size.  (e.g. a height of 80%, fontSize of 0.5666rh, lineHeight of 125%, when combined hints to 12 'rows', or 11 positions which a region edge could adopt).
+  _r_quantisationregion is used to define the default subtitle area, and line quantisation.  (e.g. a height of 80%, fontSize of 0.5666rh, lineHeight of 125%, when combined hints to 12 'rows', or 11 positions which a region edge could adopt).
   
+  _r_default is used to define the actual base font size.
+
   p_font1 and p_font2 can be used to select a font family, size, and lineHeight, for use with up to two fonts on a line by line basis.
   
   Styles which include color may be changed to remap color only.  However, be aware that many parsers will ignore the content, and rely solely on the name.  (i.e. don't remap red to blue, and expect the mapping to occur on a teletext output.).  Remapping of colors is intended for subtle changes where the Imsc-Rosetta file may be parsed directly by a fully IMSC compliant parser - e.g. to reduce full white intensity, or use a slightly different shade of yellow.
