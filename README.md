@@ -16,7 +16,7 @@ The [Rosetta Stone](https://en.wikipedia.org/wiki/Rosetta_Stone) was the key to 
 
 ## Changes
 
-(May 2023 - IMSC-Rosetta is in active implementation b multiple organisations, and as a result of valuable feedback, there have been a few changes.  It's now stable apart from a few minor questions about Japanese).
+(May 2023 - IMSC-Rosetta is in active implementation by multiple organisations, and as a result of valuable feedback, there have been a few changes.  It's now stable apart from a few minor questions about Japanese).
 
 see changes [here](changes.md) or inspect the commits.
 
