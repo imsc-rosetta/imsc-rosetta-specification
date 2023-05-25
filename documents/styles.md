@@ -8,7 +8,7 @@ Some styles are fixed in terms of content and others are adjustable, either to r
 
 It is expected that only the used set of styles be present in a file, but it is not incorrect to include more than are used.
 
-The following is the maximal style name set, and thier default values:
+The following is the maximal style name set, and their default values:
 
 ```
  <style xml:id="r_default" tts:overflow="visible" tts:backgroundColor="transparent" tts:showBackground="whenActive" tts:fontStyle="normal" tts:fontWeight="normal" tts:fontFamily="proportionalSansSerif" tts:textAlign="center" itts:fillLineGap="false" tts:wrapOption="noWrap" style="_r_default" />
@@ -142,7 +142,7 @@ you may modify tts:luminanceGain
 ### _r_quantisationregion
 you may modify tts:origin, tts:extent, tts:fontSize, tts:lineHeight.
 
-See below 'region size and position quantisation' for more explaination
+See below 'region size and position quantisation' for more explanation
 
 ### _r_vertical
 you may modify the style attribute. It MUST be empty, or contain an alignment from p_al_xxxx only
@@ -209,7 +209,7 @@ Conversely, Placing a subtitle one line down from the top would mean the region 
 
 `<region xml:id="R1" tts:origin="10% 16.7%" tts:extent="80% 73.3%" tts:displayAlign="before" style="r_default">`
 
-The puropose of introducing formal quantisation is to minimise the number of regions created.  Theoretically, with the above definitions, there would be a maximum of 12 regions for a file containing horizontal only text.
+The purpose of introducing formal quantisation is to minimise the number of regions created.  Theoretically, with the above definitions, there would be a maximum of 12 regions for a file containing horizontal only text.
 
 For vertical, please assume square characters and 16:9 aspect ratio.  
 
@@ -253,7 +253,7 @@ If modifying colouring style attributes, solid colours (s_fg_xxx, s_outlinexxx, 
 
 (note: when converting to formats like PAC, STL, etc, exact colours cannot be carried over, hence why we use fixed names for the 'normal' 8 teletext colours.  These MAY be re-defined by the transmission system on playout.)
 
-The `style` attibute in _r_default must be present, and must only be one of the 8 foreground colour style names (those that start `s_fg_`) - this may be used to change the overall default colour for the subtitles.
+The `style` attribute in _r_default must be present, and must only be one of the 8 foreground colour style names (those that start `s_fg_`) - this may be used to change the overall default colour for the subtitles.
 
 
 ## Style use
