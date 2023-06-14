@@ -2,7 +2,7 @@
 
 The [/samples](../samples) folder contains descriptive documents about the samples presented as part of the IMSC-Rosetta specification repository.
 
-To create a descriptive file from an `(name).imsrc` file, do the following:
+To create a descriptive file from an `(name).imscr` file, do the following:
 
 ## Create a `(name).descr.md` file:
 
@@ -48,7 +48,7 @@ this is the fourth div - sorry I did not describe the third, and sorry the div `
 
 ## create images
 
-Open [imsc-rosetta-qualify](https://imsc-rosetta.github.io/imsc-rosetta-qualify/) and drop both `(name).imsrc` and `(name).descr.md` into it.  (You can drop them both at the same time).
+Open [imsc-rosetta-qualify](https://imsc-rosetta.github.io/imsc-rosetta-qualify/) and drop both `(name).imscr` and `(name).descr.md` into it.  (You can drop them both at the same time).
 
 Check you don't have any unexpected parse errors on the imscr file.
 
@@ -62,9 +62,9 @@ The created zip will contain what would be required to add to the [samples](http
 
 i.e.
 
-`(name).imsrc.md` descriptive file, referencing the images.
+`(name).imscr.md` descriptive file, referencing the images.
 
-`imscr/(name).imsrc` - your original file.
+`imscr/(name).imscr` - your original file.
 
 `imscr/(name).descr.md` - your original file descriptive file.
 
