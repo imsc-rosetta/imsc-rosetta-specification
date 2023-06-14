@@ -130,12 +130,12 @@
    <p style="p_font2"><span>center bottom</span></p>
   </div>
   <div xml:id="5" region="R0" begin="01:00:24.240" end="01:00:28.240" style="d_default">
-   <p style="p_font2"><span>two lines</span></p>
-   <p style="p_font2"><span>left bottom</span></p>
+   <p style="p_font2 p_al_start"><span>two lines</span></p>
+   <p style="p_font2 p_al_start"><span>left bottom</span></p>
   </div>
   <div xml:id="6" region="R0" begin="01:00:28.360" end="01:00:32.360" style="d_default">
-   <p style="p_font2"><span>two lines</span></p>
-   <p style="p_font2"><span>right bottom</span></p>
+   <p style="p_font2 p_al_end"><span>two lines</span></p>
+   <p style="p_font2 p_al_end"><span>right bottom</span></p>
   </div>
   <div xml:id="7" region="R0" begin="01:00:32.480" end="01:00:36.480" style="d_default">
    <p style="p_font2"><span>row 11</span></p>
