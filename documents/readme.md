@@ -11,7 +11,7 @@ All styling is referential, and the style names fixed.  Most styles specify whic
 ## [japanese.md](japanese.md)
 This covers the use of IMSC-Rosetta for Japanese applications in more detail.
 
-Some Japanese usage patterns are still in discussion, and so there may be some minor changes.
+Somn Japanese usage patterns are differnt to general usage - please review in detail.
 
 ## [righttoleft.md](righttoleft.md)
 This covers the use of IMSC-Rosetta for right-to-left languages
