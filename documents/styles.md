@@ -17,8 +17,8 @@ The following is the maximal style name set, and their default values:
  <style xml:id="d_default" style="_d_default"/>
  <style xml:id="d_fillgap" itts:fillLineGap="true" />
  <style xml:id="d_forced" itts:forcedDisplay="true"/>
- <style xml:id="d_outline" tts:textOutline="#000000 0.05em"/>
- <style xml:id="d_drop" tts:textOutline="#000000 0.05em"/>
+ <style xml:id="d_outline" style="s_outlineblack"/>
+ <style xml:id="d_drop" style="s_dropblack"/>
  
  <style xml:id="p_rtl" tts:direction="rtl"/>
  

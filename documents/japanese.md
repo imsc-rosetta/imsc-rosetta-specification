@@ -1,5 +1,13 @@
 # Japanese Support
 
+IMSC-Rosetta was specifically designed to allow interoperablity between a range of extant subtitle formats.
+
+For the majority of these, limiting to one DIV on screen at a time is a requirement, and indeed IMSC does not allow for regions which overlap on the screen to reduce the complexity of renderers.
+
+However, in Japan the use of more than one subtitle on screen at the same time is common practice, and existing TTML implementations implement this style of display.
+
+Hence for Japanese subtitles, IMSC-Rosetta explicitly relaxes the non-overlapping regions rules of IMSC, and allows overlapping time cues as well.  DIV elements must still be written in order of thier `begin` attribute.
+
 ## use of `<span><br/></span>`
 
 imsc-rosetta supports both single `<p>` with `<br/>` and multiple `<p>` presentations for multi-line subtitles.
@@ -12,7 +20,7 @@ Note that as IMSC only supports `tts:shear`, and not tts:lineShear, if you wish 
 
 This presents a further issue with the restriction to ruby positions to be `outside`, as this does not then work for dual row.
 
-We are looking for feedback on these issues.
+We are looking for feedback on these issues, but the assumption is that as a mezannine format, IMSC-Rosetta will be transformed into 'pretty' Japanese subtitles before emission, so marking a `p` with `p_shear` indicates that the intent is to present the p with pretty japanese shearing.
 
 ## Vertical subtitles
 
@@ -24,11 +32,13 @@ When using vertical subtitles, the regions should be full height, with variable 
 
 ## Multiple subtitles on the screen at the same time.
 
-Currently, IMSC Rosetta disallows overlapping cues.  I.e. there is only one `<div>` on screen at a time.
+Currently, IMSC Rosetta disallows overlapping cues.  I.e. there is only one `<div>` on screen at a time.  This restriction is relaxed for Japanese files.
 
 For Japanese, the use of both horizontal and vertical subtitles with overlapping cues is not uncommon in real use.
 
 The combination of a vertical subtitle with a horizontal subtitle in IMSC Rosetta is problematic because IMSC specifically restricts regions to not be overlapping.  Although both the vertical and horizontal subtitles could in theory share the same region, from a practical subtitle file perspective, this is also problematic.
+
+_So a Japanese IMSC-Rosetta with overlapping cues is not fully IMSC complient._
 
 Several subtitle vendors have highlighted that their customers have specified that files with overlapping regions are OK for them, so one suggestion is that specifically, for this use case, we relax the non-overlapping regions IMSC rule.
 
@@ -42,7 +52,7 @@ Rubies for Japanese are supported through the use of nested spans with ruby spec
 
 ### Ruby rendering note
 
-It has been noticed that some IMSC renderers including in Chrome and Safari ignore the rubyReserve setting.  When rubies are present, there is a vertical shift in the placement of horizontal subtitles (or horizontal shift for vertical subtitles).  This is not an issue with IMSC Rosetta, but IMSCJS.  As IMSC Rosetta is primarily designed for the creation and transcode of subtitles, not emission this is not seen as an issue.  However, it is recommended that through testing is undertaken when converting to and from Rosetta for Japanese to ensure rubies are correctly positioned in the final player/renderer.
+It has been noticed that some IMSC renderers including in Chrome and Safari ignore the rubyReserve setting.  When rubies are present, there is a vertical shift in the placement of horizontal subtitles (or horizontal shift for vertical subtitles).  This is not an issue with IMSC Rosetta, but IMSCJS.  As IMSC Rosetta is primarily designed for the creation and transcode of subtitles, not emission this is not seen as an issue.  However, it is recommended that through testing is undertaken when converting to and from Rosetta for Japanese to ensure rubies are correctly positioned in the final player/renderer, and that ruby reserve is correctly represented.
 
 ### Ruby Specific Styles:
 

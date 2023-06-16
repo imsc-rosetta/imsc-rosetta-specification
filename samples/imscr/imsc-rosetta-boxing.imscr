@@ -36,7 +36,7 @@
    <style xml:id="ps_bg_ghostboxedblue" tts:backgroundColor="#0000FF80"/>
    <style xml:id="ps_bg_ghostboxedmagenta" tts:backgroundColor="#FF00FF80"/>
    <style xml:id="ps_bg_ghostboxedwhite" tts:backgroundColor="#FFFFFF80"/>
-   <style xml:id="d_outline" tts:textOutline="#000000 0.05em"/>
+   <style xml:id="d_outline" style="s_outlineblack"/>
    <style xml:id="s_outlineblack" tts:textOutline="#000000 0.05em"/>
    <style xml:id="s_outlinered" tts:textOutline="#FF0000 0.05em"/>
    <style xml:id="s_outlineyellow" tts:textOutline="#FFFF00 0.05em"/>
@@ -45,7 +45,7 @@
    <style xml:id="s_outlineblue" tts:textOutline="#0000FF 0.05em"/>
    <style xml:id="s_outlinemagenta" tts:textOutline="#FF00FF 0.05em"/>
    <style xml:id="s_outlinewhite" tts:textOutline="#FFFFFF 0.05em"/>
-   <style xml:id="d_drop" tts:textOutline="#000000 0.05em"/>
+   <style xml:id="d_drop" style="s_dropblack"/>
    <style xml:id="s_dropblack" tts:textOutline="#000000 0.05em"/>
    <style xml:id="s_dropred" tts:textOutline="#FF0000 0.05em"/>
    <style xml:id="s_dropyellow" tts:textOutline="#FFFF00 0.05em"/>

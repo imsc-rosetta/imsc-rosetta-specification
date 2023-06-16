@@ -1,5 +1,20 @@
 # Changes based on feedback.
 
+## 2023-06-16
+
+To allow the default outline/dropshadow to reflect the change fo the colour black, change: 
+```
+   <style xml:id="d_outline" tts:textOutline="#000000 0.05em"/>
+   <style xml:id="d_drop" tts:textOutline="#000000 0.05em"/>
+```
+to
+```
+   <style xml:id="d_outline" style="s_outlineblack"/>
+   <style xml:id="d_drop" style="s_dropblack"/>
+```
+
+Updated README.md and japanese.md to be more explicit about overlapping cues and regions.
+
 ## 2023-05-25
 
 change all references to r_region to r_default to ensure clarity and consistency with d_default

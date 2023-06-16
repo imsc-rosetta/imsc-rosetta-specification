@@ -34,7 +34,7 @@ Each `<p>` may contain zero or more `<span>` elements and `<span><br/></span>` e
   
 `<span>` elements may only contain text (i.e. no nesting of spans), except in Japanese where nested spans are required to represent Rubies.  Where nested spans are used, no `<span>` may contain both text and other `<span>` elements.  Only one level of span nesting is allowed.
 
-For archival, Subtitle times (begin and end attributes on `<div>`) must be present, and must not overlap.  `<div>` must appear in presentation order (i.e. will appear in the file in the order of their `begin` attribute).
+For archival, Subtitle times (begin and end attributes on `<div>`) must be present, and must not overlap (unless japanese - see [docs/japanese.md](docs/japanese.md) ).  `<div>` must appear in presentation order (i.e. will appear in the file in the order of their `begin` attribute).
 
 *(note that the format may be used during subtitle editing, and in this case, begin and end may be absent or invalid whilst the file is being edited).*
 
@@ -56,7 +56,7 @@ The format supports both alignment inside a single `<p>`, using ebutts:multiRowA
 
 The format defines the ways to achieve boxed subtitles with a presentation consummate to a broadcast subtitle.  Specifically it uses ebutts:linePadding to ensure that boxed lines have some space on the end.
 
-Boxing forms supported include Ghost box (semi-transparent boxing of text only), Boxed (solid boxing of text only), Ghost Stripe (semi transparent boxing which occupies the full width of each line), Solid Stripe (solid boxing which occupies the full width of each line).
+Boxing forms supported include Ghost box (semi-transparent boxing of text only), Boxed (solid boxing of text only), Ghost Stripe (semi transparent boxing which occupies the full width of each line), Solid Stripe (solid boxing which occupies the full width of each line).  Stripe is represented as boxing to the width (or height for vertical) of the region.
 
 It also supports background colours on boxing.
 
