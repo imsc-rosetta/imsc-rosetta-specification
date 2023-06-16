@@ -2,6 +2,9 @@
 
 ## 2023-06-16
 
+Remove `tts:textAlign:"center"` from `r_default`, and REQUIRE an alignment in `_r_default`.
+(as noted in feedback received, the tts:textAlign overrode the alignment in _r_default, so this is a bugfix.)
+
 To allow the default outline/dropshadow to reflect the change fo the colour black, change: 
 ```
    <style xml:id="d_outline" tts:textOutline="#000000 0.05em"/>

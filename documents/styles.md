@@ -11,7 +11,7 @@ It is expected that only the used set of styles be present in a file, but it is 
 The following is the maximal style name set, and their default values:
 
 ```
- <style xml:id="r_default" tts:overflow="visible" tts:backgroundColor="#00000000" tts:showBackground="whenActive" tts:fontStyle="normal" tts:fontWeight="normal" tts:fontFamily="proportionalSansSerif" tts:textAlign="center" tts:wrapOption="noWrap" style="_r_default" />
+ <style xml:id="r_default" tts:overflow="visible" tts:backgroundColor="#00000000" tts:showBackground="whenActive" tts:fontStyle="normal" tts:fontWeight="normal" tts:fontFamily="proportionalSansSerif" tts:wrapOption="noWrap" style="_r_default" />
  <style xml:id="r_vertical" tts:writingMode="tbrl" style="_r_vertical"/>
  
  <style xml:id="d_default" style="_d_default"/>
@@ -117,7 +117,7 @@ The following is the maximal style name set, and their default values:
  <style xml:id="s_emf_oso" tts:textEmphasis="open sesame outside"/>
  
  <style xml:id="_d_default" style="d_outline"/>
- <style xml:id="_r_default" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c" tts:luminanceGain="1.0" itts:fillLineGap="false" style="s_fg_white"/>
+ <style xml:id="_r_default" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c" tts:luminanceGain="1.0" itts:fillLineGap="false" style="s_fg_white p_al_center"/>
  <style xml:id="_r_vertical" style=""/>
 
  <style xml:id="_r_quantisationregion" tts:origin="10% 10%" tts:extent="80% 80%" tts:fontSize="5.333rh" tts:lineHeight="125%"/>
@@ -135,7 +135,7 @@ you may modify tts:fontSize (in `rh` units only), tts:lineHeight (in `%` units).
 
 you may modify ebutts:linePadding (suggest you don't).  It MUST be specified in `c` units.
 
-you may modify the style attribute. It MUST contain a colour from s_fg_xxx, and MAY contain an alignment from p_al_xxxx.  e.g. style:"s_fg_yellow p_al_center"
+you may modify the style attribute. It MUST contain a colour from s_fg_xxx, and MUST contain an alignment from p_al_xxxx.  e.g. style:"s_fg_yellow p_al_center"
 
 you may modify tts:luminanceGain (float value)
 
