@@ -123,6 +123,8 @@ one or more `<region>` elements only.
 
 `xml:id` `tts:origin` `tts:extent` `tts:displayAlign` `style="r_default"`
 
+Note that `xml:id` must comply to XML constraints for `Name` - i.e. don't start with a number.  Suggest they start with `R` followed by a number.
+
 For Japanese Vertical text, the additional style r_vertical will be added.  i.e. the region will contain `style="r_default r_vertical"`
 
 `<region>` elements will not have any content, and should be represented as closed elements, 
@@ -147,7 +149,9 @@ One or more `<div>`.
 
 <details><summary>expand for attibutes of div</summary>
  
- `xml:id` shall be unique in the file.  e.g. `xml:id="SUB1"`
+ `xml:id` shall be unique in the file, and for `div` will ALWAYS start with 'e' and an underscore (`e_`) to comply to XML constraints for `Name`.  e.g. `xml:id="e_1"` . It is common for the character(s) after the underscore to be numeric.
+
+ The `xml:id` may or may not be preserved in a transform - generally it is used as a human reference to a specific title.
  
  `region` shall reference the xml:id of a `region` element.  e.g. `region="R1"`
  

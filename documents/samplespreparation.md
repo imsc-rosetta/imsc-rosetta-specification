@@ -36,13 +36,13 @@ you may now add subsequent sections for each div or for important divs.  Each di
 
 e.g.
 ```
-# div 1
+# div e_1
 A very expressive presentation.
 
-# div 2
+# div e_2
 With some italics
 
-# div 49
+# div e_49
 this is the fourth div - sorry I did not describe the third, and sorry the div `xml:id` jumped from 3 to 49
 ``` 
 

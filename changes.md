@@ -1,5 +1,14 @@
 # Changes based on feedback.
 
+## 2023-07-20
+
+Illustrating how difficult it is to navigate all the specs, one of the many reviewers has highlighted the following:
+
+In XML generally, `xml:id` must adhere to `Name` conventions, and so may not start with a number.
+
+Since the majority of subtitle identifiers start with a number, we've chosen to prefix all `xml:id` on `div` with `e_` ('event').
+
+
 ## 2023-06-16
 
 Remove `tts:textAlign:"center"` from `r_default`, and REQUIRE an alignment in `_r_default`.

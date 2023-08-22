@@ -82,7 +82,7 @@ Ruby position is always 'outside'
 
 Example:
 ```
-  <div xml:id="46" region="R0" begin="01:03:10.359" end="01:03:13.359" style="_d_default">
+  <div xml:id="e_46" region="R0" begin="01:03:10.359" end="01:03:13.359" style="_d_default">
    <p style="p_font2 p_rb_res_outside"><span>No Ruby </span><span style="s_rb_algn_center"><span style="s_rb_b">Ruby Above </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span><span><br/></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Below 2</span><span style="s_rb_t">ruby2</span></span></p>
   </div>
 ```
@@ -107,7 +107,7 @@ Example (where region R12 has been had style r_vertical added to it):
   <region xml:id="R12" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="before" style="r_default r_vertical"/>
 ....
 
-  <div xml:id="53" region="R12" begin="01:03:34.359" end="01:03:36.359" style="_d_default">
+  <div xml:id="e_53" region="R12" begin="01:03:34.359" end="01:03:36.359" style="_d_default">
    <p style="p_font2 p_rb_res_outside"><span style="s_combine">84</span><span>1984</span></p>
   </div>
 ```
@@ -124,7 +124,7 @@ Example (where region R12 has been had style r_vertical added to it):
   <region xml:id="R12" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="before" style="r_default r_vertical"/>
 ....
 
-  <div xml:id="53" region="R12" begin="01:03:34.359" end="01:03:36.359" style="_d_default">
+  <div xml:id="e_53" region="R12" begin="01:03:34.359" end="01:03:36.359" style="_d_default">
    <p style="p_font2 p_rb_res_outside p_shear"><span style="s_combine">84</span><span>1984</span></p>
   </div>
 ```
@@ -159,7 +159,7 @@ Example:
   <region xml:id="R12" tts:origin="10% 10%" tts:extent="80% 80%" tts:displayAlign="before" style="r_default r_vertical"/>
 ....
 
-  <div xml:id="54" region="R12" begin="01:03:37.359" end="01:03:39.359" style="_d_default">
+  <div xml:id="e_54" region="R12" begin="01:03:37.359" end="01:03:39.359" style="_d_default">
    <p style="p_font2 p_rb_res_after"><span style="s_emf_fco">東南</span><span><br/></span><span style="s_emf_fso">Emph Outside</span></p>
   </div>
 ```

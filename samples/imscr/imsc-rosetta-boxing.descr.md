@@ -15,59 +15,59 @@ The background color of text can be changed if boxed
 
 *note that file contains ALL imsc-rosetta defined styles as an example - this is not necessary, only the used styles are required*
 
-# div 1
+# div e_1
 
 Unboxed.  Note that this file has black outline (d_outline) in _d_default.
 
-# div 2
+# div e_2
 
 Solid black box.  Note if you look closely, parts of 'y' and 'Á' go outside of the box, and are outlined.
 
 Sometimes used as a channel style.  Other times used to make text readable when on top of a bright or contrasty background.
 
-# div 3
+# div e_3
 
 Ghost box
 
 Sometimes used as a channel style.  Other times used to make text readable when on top of a bright or contrasty background.
 
-# div 4
+# div e_4
 
 Solid Stripe
 
 Generally used to cover existing text more fully that a box around the text only would.
 
-# div 5
+# div e_5
 
 Ghost Stripe
 
 Generally used to cover existing text more fully that a box around the text only would.
 
-# div 6
+# div e_6
 
 Unboxed but demonstrating 'background' color change on outlined text.
 
 Retention of background colour may be important if the file is to be exported to teletext.
 
-# div 7
+# div e_7
 
 Solid box demonstrating change of background color.
 
 Note that black outline is retained.  Comments?
 
-# div 8
+# div e_8
 
 Ghost box demonstrating change of background color.
 
 Note that black outline is retained.  Comments?
 
-# div 9
+# div e_9
 
 Solid Stripe demonstrating change of background color.
 
 Note that black outline is retained.  Comments?
 
-# div 10
+# div e_10
 
 Ghost Stripe demonstrating change of background color.
 
@@ -77,11 +77,11 @@ This is unavoidable because of the way boxing on `<p>` and `<span>` work in TTML
 
 Note that black outline is retained.  Comments?
 
-# div 11
+# div e_11
 
 Solid black box with d_fillgap specified on `<div>`.
 
-# div 12
+# div e_12
 
 Ghost box with d_fillgap specified on `<div>`, but with a blank line in between the lines.
 

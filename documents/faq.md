@@ -16,7 +16,7 @@ examples:
 
 In order to display well, a p cannot contain any space outside of span elements, e.g.:
 ```
-<div xml:id="5" region="R0" begin="01:00:24.240" end="01:00:28.240" style="dp_al_start">
+<div xml:id="e_5" region="R0" begin="01:00:24.240" end="01:00:28.240" style="dp_al_start">
   <p style="p_font2"><span>two lines</span></p>
   <p style="p_font2"><span>left bottom</span></p>
 </div>
@@ -27,7 +27,7 @@ The below will display with all the extra spacing and CRs disturbing the line po
 *** NOTE: Bad Formatting example - do not copy! ***
 
 ```
-<div xml:id="5" region="R0" begin="01:00:24.240" end="01:00:28.240" style="dp_al_start">
+<div xml:id="e_5" region="R0" begin="01:00:24.240" end="01:00:28.240" style="dp_al_start">
   <p style="p_font2">
     <span>two lines</span>
   </p>

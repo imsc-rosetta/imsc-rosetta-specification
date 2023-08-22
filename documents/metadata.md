@@ -83,7 +83,7 @@ Example:
 
 ```
 		<metadata>
-		         <ebuttm:documentMetadata xmlns:ebuttm="urn:ebu:tt:metadata">
+		  <ebuttm:documentMetadata xmlns:ebuttm="urn:ebu:tt:metadata">
 				<ebuttm:documentEbuttVersion>v1.0</ebuttm:documentEbuttVersion>
 				<ebuttm:documentIdentifier>ABCD123A02-1</ebuttm:documentIdentifier>
 				<ebuttm:documentOriginatingSystem>TTProducer 1.7.0.0</ebuttm:documentOriginatingSystem>

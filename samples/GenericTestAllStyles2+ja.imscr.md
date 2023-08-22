@@ -14,7 +14,7 @@ This file is an overall sample which demonstrates all the features of imsc-roset
 
 
 
-### subtitle sub0 at begin=01:00:03.600
+### subtitle e_0 at begin=01:00:03.600
 
 
 This div represents a single line of boxed text at the bottom of the screen.
@@ -25,7 +25,7 @@ It's white text on black box, with black outline.
 #### div XML
 
 ```
-<div xml:id="sub0" region="R0" begin="01:00:03.600" end="01:00:07.640" style="d_default">
+<div xml:id="e_0" region="R0" begin="01:00:03.600" end="01:00:07.640" style="d_default">
    <metadata rosetta:comment="this is a comment test a cr"/>
    <p style="p_font2"><span style="ps_bg_boxedblack">First Frame of active video </span></p>
   </div>
@@ -35,12 +35,12 @@ It's white text on black box, with black outline.
 <img src="./images/GenericTestAllStyles2+ja.imscr/3603.6.png" width="600"/>
 
 
-### subtitle 1 at begin=01:00:07.760
+### subtitle e_1 at begin=01:00:07.760
 
 #### div XML
 
 ```
-<div xml:id="1" region="R0" begin="01:00:07.760" end="01:00:11.760" style="d_default">
+<div xml:id="e_1" region="R0" begin="01:00:07.760" end="01:00:11.760" style="d_default">
    <p style="p_font2"><span>1 line</span><span style="s_nonered"> Center</span><span> Bottom</span></p>
   </div>
 ```
@@ -49,12 +49,12 @@ It's white text on black box, with black outline.
 <img src="./images/GenericTestAllStyles2+ja.imscr/3607.76.png" width="600"/>
 
 
-### subtitle 2 at begin=01:00:11.880
+### subtitle e_2 at begin=01:00:11.880
 
 #### div XML
 
 ```
-<div xml:id="2" region="R0" begin="01:00:11.880" end="01:00:15.880" style="d_default">
+<div xml:id="e_2" region="R0" begin="01:00:11.880" end="01:00:15.880" style="d_default">
    <p style="p_font2 p_al_start"><span>1 line left  bottom</span></p>
   </div>
 ```
@@ -63,12 +63,12 @@ It's white text on black box, with black outline.
 <img src="./images/GenericTestAllStyles2+ja.imscr/3611.88.png" width="600"/>
 
 
-### subtitle 3 at begin=01:00:16.000
+### subtitle e_3 at begin=01:00:16.000
 
 #### div XML
 
 ```
-<div xml:id="3" region="R0" begin="01:00:16.000" end="01:00:20.000" style="d_default">
+<div xml:id="e_3" region="R0" begin="01:00:16.000" end="01:00:20.000" style="d_default">
    <p style="p_font2 p_al_end"><span>1 line right bottom</span></p>
   </div>
 ```
@@ -77,7 +77,7 @@ It's white text on black box, with black outline.
 <img src="./images/GenericTestAllStyles2+ja.imscr/3616.png" width="600"/>
 
 
-### subtitle 4 at begin=01:00:20.120
+### subtitle e_4 at begin=01:00:20.120
 
 
 This div represents a two line subtitle at the bottom of the screen.  The subtitle is centered and has black outline because d_outline is specified in _d_default.
@@ -86,7 +86,7 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 #### div XML
 
 ```
-<div xml:id="4" region="R0" begin="01:00:20.120" end="01:00:24.120" style="d_default">
+<div xml:id="e_4" region="R0" begin="01:00:20.120" end="01:00:24.120" style="d_default">
    <p style="p_font2"><span>two line </span></p>
    <p style="p_font2"><span>center bottom</span></p>
   </div>
@@ -96,12 +96,12 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3620.12.png" width="600"/>
 
 
-### subtitle 5 at begin=01:00:24.240
+### subtitle e_5 at begin=01:00:24.240
 
 #### div XML
 
 ```
-<div xml:id="5" region="R0" begin="01:00:24.240" end="01:00:28.240" style="d_default">
+<div xml:id="e_5" region="R0" begin="01:00:24.240" end="01:00:28.240" style="d_default">
    <p style="p_font2"><span>two lines</span></p>
    <p style="p_font2"><span>left bottom</span></p>
   </div>
@@ -111,12 +111,12 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3624.24.png" width="600"/>
 
 
-### subtitle 6 at begin=01:00:28.360
+### subtitle e_6 at begin=01:00:28.360
 
 #### div XML
 
 ```
-<div xml:id="6" region="R0" begin="01:00:28.360" end="01:00:32.360" style="d_default">
+<div xml:id="e_6" region="R0" begin="01:00:28.360" end="01:00:32.360" style="d_default">
    <p style="p_font2"><span>two lines</span></p>
    <p style="p_font2"><span>right bottom</span></p>
   </div>
@@ -126,12 +126,12 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3628.36.png" width="600"/>
 
 
-### subtitle 7 at begin=01:00:32.480
+### subtitle e_7 at begin=01:00:32.480
 
 #### div XML
 
 ```
-<div xml:id="7" region="R0" begin="01:00:32.480" end="01:00:36.480" style="d_default">
+<div xml:id="e_7" region="R0" begin="01:00:32.480" end="01:00:36.480" style="d_default">
    <p style="p_font2"><span>row 11</span></p>
   </div>
 ```
@@ -140,12 +140,12 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3632.48.png" width="600"/>
 
 
-### subtitle 8 at begin=01:00:36.640
+### subtitle e_8 at begin=01:00:36.640
 
 #### div XML
 
 ```
-<div xml:id="8" region="R1" begin="01:00:36.640" end="01:00:40.640" style="d_default">
+<div xml:id="e_8" region="R1" begin="01:00:36.640" end="01:00:40.640" style="d_default">
    <p style="p_font2"><span>row 10</span></p>
   </div>
 ```
@@ -154,12 +154,12 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3636.64.png" width="600"/>
 
 
-### subtitle 9 at begin=01:00:40.760
+### subtitle e_9 at begin=01:00:40.760
 
 #### div XML
 
 ```
-<div xml:id="9" region="R2" begin="01:00:40.760" end="01:00:44.760" style="d_default">
+<div xml:id="e_9" region="R2" begin="01:00:40.760" end="01:00:44.760" style="d_default">
    <p style="p_font2"><span>row 9</span></p>
   </div>
 ```
@@ -168,12 +168,12 @@ This div represents a two line subtitle at the bottom of the screen.  The subtit
 <img src="./images/GenericTestAllStyles2+ja.imscr/3640.76.png" width="600"/>
 
 
-### subtitle 10 at begin=01:00:44.880
+### subtitle e_10 at begin=01:00:44.880
 
 #### div XML
 
 ```
-<div xml:id="10" region="R3" begin="01:00:44.880" end="01:00:48.880" style="d_default">
+<div xml:id="e_10" region="R3" begin="01:00:44.880" end="01:00:48.880" style="d_default">
    <p style="p_font2"><span>row 8</span></p>
   </div>
 ```
