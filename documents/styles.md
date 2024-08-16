@@ -257,6 +257,7 @@ If modifying colouring style attributes, solid colours (s_fg_xxx, s_outlinexxx, 
 
 The `style` attribute in _r_default must be present, and must only be one of the 8 foreground colour style names (those that start `s_fg_`) - this may be used to change the overall default colour for the subtitles.
 
+The styles `s_nonexxx` are used when a background colour is specified, but the text is neither boxed nor outline or dropshadow.  These should be used to retain background colours (e.g. from teletext files), yet these colours cannot be represented otherwise in ttml.
 
 ## Style use
 
@@ -343,4 +344,10 @@ To change the background color of a single `<span>`, apply a different ps_bg_ st
 Do not mix ps_bg_boxedxxx and ps_bg_ghostboxedxxx in a single subtitle.
 
 Do not stripe subtitles containing Ruby text (Japanese) unless you have fully checked it all the way through to the player, and understand the result.
+
+### subtitles without outline/dropshadow or boxing
+
+If background colours are present, they should be retained using the `s_nonexxx` styles.
+
+Though these have no effect on display of IMSC, retaining such informaiton is important if the file is to be converted to teletext, for example.
 
