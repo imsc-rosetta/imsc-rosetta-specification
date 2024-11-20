@@ -1,11 +1,13 @@
-# Imsc-Rosetta Metadata
+# Imsc-Rosetta Metadata - overall file metadata
+
+Not to be confused with comments, which are metadata in `<div>` (see document structure).
 
 ## Language
 The language for a file is defines in the xml:lang attribute of the tt element.
 
-Exact Language coding to be defined by customer.  e.g. bcp47/MESA.
+Exact Language coding to be defined by customer.  e.g. bcp47/MESA/CDSA.
 
-*Note that the attribute `xml:lang` is used.  Be3 aware that this may be constrained in terms of content, and if checked by an 'official' XML checker, unknown language codes may be flagged as errors.*
+*Note that the attribute `xml:lang` is used.  Be aware that this may be constrained in terms of content, and if checked by an 'official' XML checker, unknown language codes may be flagged as errors.*
 
 ## Information about subtitle type/categorisation
 Optional.  The purpose of this classification is as confirmation of external classification. 
@@ -29,6 +31,8 @@ This is because in 23.976, there is no drop frame timecode, and each frame of vi
 
 ## dates and times
 In the below, 'ISO Date' refers to the full UTC date and time YYYY-MM-DDTHH:MM:SS.SSSZ, e.g. 2019-11-14T00:55:31.820Z
+
+For simplicity, use the 'Z' timezone (UTC).
 
 ### created date: Optional.  
 
@@ -71,7 +75,9 @@ Optional.  Indicates the product and version used to convert the subtitles.
 
 ## Custom Document Metadata
 
-Within the `<metadata>` element within `<head>`, any other metadata may be included.
+At times, there will be a need to carry customer specific metadata in IMSCR.  This could to be used to drive business logic in processes specific to a particular customer.
+
+Within the `<metadata>` element within `<tt>` `<head>`, other elements may be included.
 
 Bear in mind that some processors will ignore/remove this metadata.  
 
@@ -79,32 +85,44 @@ Bear in mind that some simpler XML parsers may not preserve element order, and s
 
 Because we have fixed namespace declarations in the `<tt>` element for simplicity, please use local namespacing (see example of use of ebu-tt metadata below).
 
-Example:
+### Examples of using foreign metadata.  These are not suggestions of metadata that should be included.
 
+With explicit namespace alias:
 ```
-		<metadata>
-		  <ebuttm:documentMetadata xmlns:ebuttm="urn:ebu:tt:metadata">
-				<ebuttm:documentEbuttVersion>v1.0</ebuttm:documentEbuttVersion>
-				<ebuttm:documentIdentifier>ABCD123A02-1</ebuttm:documentIdentifier>
-				<ebuttm:documentOriginatingSystem>TTProducer 1.7.0.0</ebuttm:documentOriginatingSystem>
-				<ebuttm:documentCopyright>BBC</ebuttm:documentCopyright>
-				<ebuttm:documentReadingSpeed>176</ebuttm:documentReadingSpeed>
-				<ebuttm:documentTargetAspectRatio>4:3</ebuttm:documentTargetAspectRatio>
-				<ebuttm:documentIntendedTargetFormat>WSTTeletextSubtitles</ebuttm:documentIntendedTargetFormat>
-				<ebuttm:documentOriginalProgrammeTitle>Snow White</ebuttm:documentOriginalProgrammeTitle>
-				<ebuttm:documentOriginalEpisodeTitle>Series 1, Episode 1</ebuttm:documentOriginalEpisodeTitle>
-				<ebuttm:documentSubtitleListReferenceCode>ABC D123A/02</ebuttm:documentSubtitleListReferenceCode>
-				<ebuttm:documentCreationDate>2015-01-20</ebuttm:documentCreationDate>
-				<ebuttm:documentRevisionDate>2015-01-20</ebuttm:documentRevisionDate>
-				<ebuttm:documentRevisionNumber>1</ebuttm:documentRevisionNumber>
-				<ebuttm:documentTotalNumberOfSubtitles>809</ebuttm:documentTotalNumberOfSubtitles>
-				<ebuttm:documentMaximumNumberOfDisplayableCharacterInAnyRow>37</ebuttm:documentMaximumNumberOfDisplayableCharacterInAnyRow>
-				<ebuttm:documentStartOfProgramme>10:00:00:00</ebuttm:documentStartOfProgramme>
-				<ebuttm:documentCountryOfOrigin>UK</ebuttm:documentCountryOfOrigin>
-				<ebuttm:documentPublisher>Company Name</ebuttm:documentPublisher>
-				<ebuttm:documentEditorsName>John Smith</ebuttm:documentEditorsName>
-			</ebuttm:documentMetadata>
-		</metadata>
+<metadata>
+	<ebuttm:documentMetadata xmlns:ebuttm="urn:ebu:tt:metadata">
+		<ebuttm:documentOriginalProgrammeTitle>Snow White</ebuttm:documentOriginalProgrammeTitle>
+		<ebuttm:documentOriginalEpisodeTitle>Series 1, Episode 1</ebuttm:documentOriginalEpisodeTitle>
+	</ebuttm:documentMetadata>
+</metadata>
+```
 
+Redefining the default namespace for this element and it's children.  This is equivalent to above:
 ```
+<metadata>
+	<documentMetadata xmlns="urn:ebu:tt:metadata">
+		<documentOriginalProgrammeTitle>Snow White</documentOriginalProgrammeTitle>
+		<documentOriginalEpisodeTitle>Series 1, Episode 1</documentOriginalEpisodeTitle>
+	</documentMetadata>
+</metadata>
+```
+
+example of preserving metadata from an original format:
+```
+<metadata>
+	<_890 xmlns="https://nebula.yella.tv/yella/imscr/filemeta/_890">
+		<headers>
+			<tapenumber>12345657</tapenumber>
+			<originaltitle>Snow White</originaltitle>
+			<SOM>10:00:00:00</SOM>
+			<languageid1>0x90</languageid1>
+			<languageid2>0x90</languageid2>
+			<primaryfont>CCKM44.V</primaryfont>
+			<secondaryfont>CCKM44.V</secondaryfont>
+			<softwareversion>TBX352</softwareversion>
+		</headers>
+	</_890>
+</metadata>
+```
+
 
