@@ -171,6 +171,16 @@ Zero or more `<p>` elements.
 
 The order of `<metadata rosetta:comment="comment text"/>` vs `<p>` is not important.
 
+Example `<div>`:
+```
+  <div xml:id="e_7" region="R2" begin="10:00:40.160" end="10:00:44.280" style="d_default">
+   <p style="p_font2"><span>我之所以追隨以利亞穆罕默德</span></p>
+   <p style="p_font2"><span>受到何種感召‥</span></p>
+  </div>
+```
+
+***Note: 'pretifying' `<div>` by having `<p>` elements on separate lines and `<metadata>` on a separate line makes sense from a human readability perspective***
+
 ### `<metadata>` - as used in `<div>`
 `<metadata>` used in `<div>` must have one attribute `rosetta:comment` used to carry comment text along with the subtitle.
 
@@ -223,4 +233,9 @@ Nested `<span>` may ***only*** be used in subtitles requiring Rubies (i.e. Japan
 ## Example document structure
 
 See the samples in [the samples folder](../samples)
+
+## XML style
+
+Closed elements should not introduce an additional space before `/>` - e.g. use `<br/>` rather than `<br />`.
+
 
