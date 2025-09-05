@@ -85,14 +85,14 @@ The following is the maximal style name set, and their default values:
  <style xml:id="s_dropmagenta" tts:textOutline="#FF00FF 0.05em"/>
  <style xml:id="s_dropwhite" tts:textOutline="#FFFFFF 0.05em"/>
 
- <style xml:id="s_noneblack"/>
- <style xml:id="s_nonered"/>
- <style xml:id="s_noneyellow"/>
- <style xml:id="s_nonegreen"/>
- <style xml:id="s_nonecyan"/>
- <style xml:id="s_noneblue"/>
- <style xml:id="s_nonemagenta"/>
- <style xml:id="s_nonewhite"/>
+ <style xml:id="s_noneblack" tts:textOutline="none"/>
+ <style xml:id="s_nonered" tts:textOutline="none"/>
+ <style xml:id="s_noneyellow" tts:textOutline="none"/>
+ <style xml:id="s_nonegreen" tts:textOutline="none"/>
+ <style xml:id="s_nonecyan" tts:textOutline="none"/>
+ <style xml:id="s_noneblue" tts:textOutline="none"/>
+ <style xml:id="s_nonemagenta" tts:textOutline="none"/>
+ <style xml:id="s_nonewhite" tts:textOutline="none"/>
  
  
  <style xml:id="p_rb_res_outside" tts:rubyReserve="outside"/>
@@ -177,9 +177,9 @@ as this is a transparent box, colours must be specified in `#xxxxxxxx` notation 
 
 ## general
 
-Any styles not mentioned above are fixed, and may not be modified.
+Any styles not mentioned in the section 'styles which may be modified' above are fixed, and may not be modified.
 
-All styles must contain only the attributes as above. (i.e. only the attribute value may be changed)
+All styles must contain only the attributes as above. (i.e. only the attribute value may be changed) (note spec additon 2025-09-05 which adds `tts:textOutline="none"` to `s_nonexxx` styles - without this, subtitles marked with s_nonexxx will retain whatever the default textOutline was).
 
 Unused styles MAY be omitted, except for `_r_quantisationregion` which must never be used, but must always be present.
 
@@ -265,7 +265,7 @@ general:
 
 styles prefixed with r_ may be applied to `<region>`.
 
-styles prefixed with d_ may be applied to `<div>`.
+styles prefixed with d_, s_none, s_outline, s_drop may be applied to `<div>`. (2025-09-05 modification).
 
 styles prefixed with p_, ps_ may be applied to `<p>`.
 
@@ -349,5 +349,7 @@ Do not stripe subtitles containing Ruby text (Japanese) unless you have fully ch
 
 If background colours are present, they should be retained using the `s_nonexxx` styles.
 
-Though these have no effect on display of IMSC, retaining such informaiton is important if the file is to be converted to teletext, for example.
+Note that if the default is outlined, s_nonexxx must contain `tts:textOutline="none"`, else the outline will not be removed.  A previous revision of the spec did NOT have this style present.
+
+Though these may have no effect on display of IMSC, retaining such informaiton is important if the file is to be converted to teletext, for example.
 
