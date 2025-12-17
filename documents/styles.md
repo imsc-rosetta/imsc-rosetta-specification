@@ -19,6 +19,7 @@ The following is the maximal style name set, and their default values:
  <style xml:id="d_forced" itts:forcedDisplay="true"/>
  <style xml:id="d_outline" style="s_outlineblack"/>
  <style xml:id="d_drop" style="s_dropblack"/>
+ <style xml:id="d_none" style="s_noneblack"/>
  
  <style xml:id="p_rtl" tts:direction="rtl"/>
  
@@ -247,15 +248,15 @@ styles defining colors may be modified in the event that a specific color is req
 
 For example, if a specific regional norm is to use a pale yellow foreground (not uncommon in the far east), the s_fg_yellow style may be modified to reflect the different shade of yellow.
 
-i.e. in specific circumstances styles starting with s_fg_, ps_bg_, ds_outline, ds_drop may be modified.
+i.e. in specific circumstances styles starting with s_fg_, ps_bg_, s_outline, s_drop may be modified.
 
 It is NOT intended that this should provide a way to change yellow to blue, for example, only to adjust a shade.
 
-If modifying colouring style attributes, solid colours (s_fg_xxx, s_outlinexxx, s_dropxxx) must be specified in `#xxxxxx` notation using only 6 digits from upper case hex set `0123456789ABCDEF`, and transparent colours (ps_bg_ghostboxedxxx) must be specified in `#xxxxxxxx` notation using 8 digits from upper case hex set `0123456789ABCDEF`.
+If modifying colouring style attributes, solid colours (s_fg_xxx, s_outlinexxx, s_dropxxx) must be specified in `#xxxxxx` notation using only 6 digits from upper case hex set `0123456789ABCDEF`, and transparent colours (*only* ps_bg_ghostboxedxxx) must be specified in `#xxxxxxxx` notation using 8 digits from upper case hex set `0123456789ABCDEF`.
 
 (note: when converting to formats like PAC, STL, etc, exact colours cannot be carried over, hence why we use fixed names for the 'normal' 8 teletext colours.  These MAY be re-defined by the transmission system on playout.)
 
-The `style` attribute in _r_default must be present, and must only be one of the 8 foreground colour style names (those that start `s_fg_`) - this may be used to change the overall default colour for the subtitles.
+The `style` attribute in _r_default must be present, and *must* contain one of the 8 foreground colour style names (those that start `s_fg_`) - this may be used to change the overall default colour for the subtitles.  (note that a `p_al_xxx` style may also be present in `_r_default`).
 
 The styles `s_nonexxx` are used when a background colour is specified, but the text is neither boxed nor outline or dropshadow.  These should be used to retain background colours (e.g. from teletext files), yet these colours cannot be represented otherwise in ttml.
 
@@ -265,7 +266,7 @@ general:
 
 styles prefixed with r_ may be applied to `<region>`.
 
-styles prefixed with d_, s_none, s_outline, s_drop may be applied to `<div>`. (2025-09-05 modification).
+styles prefixed with d_ may be applied to `<div>`.
 
 styles prefixed with p_, ps_ may be applied to `<p>`.
 
@@ -309,17 +310,19 @@ the _r_vertical style MAY contain a style attribute containing an alignment styl
 This would set the default text alignment for vertical regions
 
 
-### outline/dropshadow
+### outline/dropshadow/no outline
 
 Imsc does not support dropshadow, but you may use d_drop in place of d_outline, and s_dropxxx in place of s_outlinexxx to signify that the text is desired dropshadow.  This feature is to enable the dropshadow to be reproduced if the rosetta file is converted back to an extant format by a processor which fully understands the style name usage.
 
-d_outline or d_drop may be specified as a style of _d_default to apply it to the whole file.
+d_outline, d_drop or d_none may be specified as a style of _d_default to apply it to the whole file.
 
-It may also be specified individually on `<div>` elements using d_outline or d_drop.
+It may also be specified individually on `<div>` elements using d_outline, d_drop or d_none.
 
-Should a `<span>` need a different 'background' color when outlined, then s_outlinexxx or s_dropxxx may be specified on `<span>`.  
+Should a `<span>` need a different 'background' color, then s_outlinexxx, s_dropxxx, or s_nonexxx may be specified on `<span>`.
 
-***However, s_outlinexxx or s_dropxxx may not be used on `<span>` unless d_outline or d_drop (respectively) has been specified in _d_default or on `<div>`***.
+***However, s_outlinexxx, s_dropxxx and s_nonexxx may not be used on `<span>` unless d_outline, d_drop or d_none (respectively) has been specified in _d_default or on `<div>`***.
+
+i.e. Do not mix outline & dropshadow in a single div.  If you have d_outline in `_d_default`, and want a div to be dropshadow, be sure to add `d_drop` to the `div`, even if every `span` has `s_dropxxx`.
 
 Note: it is normal for translation subtitles to be outlined.
 
@@ -347,9 +350,9 @@ Do not stripe subtitles containing Ruby text (Japanese) unless you have fully ch
 
 ### subtitles without outline/dropshadow or boxing
 
-If background colours are present, they should be retained using the `s_nonexxx` styles.
+If background colours are present, they should be retained using the `d_none` and `s_nonexxx` styles.
 
 Note that if the default is outlined, s_nonexxx must contain `tts:textOutline="none"`, else the outline will not be removed.  A previous revision of the spec did NOT have this style present.
 
-Though these may have no effect on display of IMSC, retaining such informaiton is important if the file is to be converted to teletext, for example.
+Though these may have no effect on display of IMSC, retaining such information is important if the file is to be converted to teletext, for example.
 

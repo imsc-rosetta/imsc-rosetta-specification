@@ -1,10 +1,10 @@
 # Changes based on feedback.
 
-## 2025-09-05
+## 2025-09-05/2025-12-16
 
-In order to enable a single subtitle to become non-outline, `s_nonexxx` have had `tts:textOutline="none"` added.  This should be copnsidered optional for backward compatibility, and does not affect many if any users.
+In order to enable a single subtitle to become non-outline, `s_nonexxx` have had `tts:textOutline="none"` added.  This should be considered optional for backward compatibility, and does not affect many if any users.
 
-`s_nonexxx`, `s_outlinexxx`, `s_dropxxx` are now explicitly allowed on `div`.
+`d_none` has been added (equates to `s_noneblack`), and is required on div or an ancestor of div if `s_nonexxx` is used on span.  This brings the `none` text decoration into line with drop and outline.
 
 
 ## 2023-07-20
