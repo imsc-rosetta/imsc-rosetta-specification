@@ -10,6 +10,8 @@ To this end, the use of TTML constructs is highly restricted so that the exact f
 
 By convention, Imsc-Rosetta files will have an extension of `.imscr`
 
+This repository is maintained by Simon Hailes (simon at yellaumbrella dot tv, github:btsimonh).  If you have an outstanding issue that I have missed, either comment on it again, or email me directly.
+
 ## why Rosetta?
 
 The development of this file format is a collaboration between several broadcasters and suppliers; so the name is not intended to connect the specification with any specific organisation.
