@@ -94,7 +94,9 @@ Exactly one `<metadata>` followed by exactly one `<styling>` followed by exactly
 ### `<metadata>` - as used in `<head>`
 `<metadata>` must have no attributes. `<metadata>` must contain the following elements:
 
-`<rosetta:format>rosetta-imsc</rosetta:format>`
+`<rosetta:format>imsc-rosetta</rosetta:format>`
+
+Note: a prior version of ths spec stated `<rosetta:format>rosetta-imsc</rosetta:format>` - this is supported but depreciated.
 
 `<rosetta:version>0.0.0</rosetta:version>`
 
