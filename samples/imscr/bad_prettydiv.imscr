@@ -54,6 +54,7 @@
    <style xml:id="s_dropblue" tts:textOutline="#0000FF 0.05em"/>
    <style xml:id="s_dropmagenta" tts:textOutline="#FF00FF 0.05em"/>
    <style xml:id="s_dropwhite" tts:textOutline="#FFFFFF 0.05em"/>
+   <style xml:id="d_none" style="s_noneblack"/>
    <style xml:id="s_noneblack"/>
    <style xml:id="s_nonered"/>
    <style xml:id="s_noneyellow"/>

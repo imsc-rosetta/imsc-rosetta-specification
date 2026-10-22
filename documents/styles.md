@@ -320,7 +320,7 @@ It may also be specified individually on `<div>` elements using d_outline, d_dro
 
 Should a `<span>` need a different 'background' color, then s_outlinexxx, s_dropxxx, or s_nonexxx may be specified on `<span>`.
 
-***However, s_outlinexxx, s_dropxxx and s_nonexxx may not be used on `<span>` unless d_outline, d_drop or d_none (respectively) has been specified in _d_default or on `<div>`***.
+***However, s_outlinexxx, s_dropxxx and s_nonexxx may not be used on `<span>` unless d_outline, d_drop or d_none (respectively) has been specified in _d_default or on the containing `<div>`***.
 
 i.e. Do not mix outline & dropshadow in a single div.  If you have d_outline in `_d_default`, and want a div to be dropshadow, be sure to add `d_drop` to the `div`, even if every `span` has `s_dropxxx`.
 

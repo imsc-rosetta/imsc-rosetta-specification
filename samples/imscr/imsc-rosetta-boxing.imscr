@@ -54,6 +54,7 @@
    <style xml:id="s_dropblue" tts:textOutline="#0000FF 0.05em"/>
    <style xml:id="s_dropmagenta" tts:textOutline="#FF00FF 0.05em"/>
    <style xml:id="s_dropwhite" tts:textOutline="#FFFFFF 0.05em"/>
+   <style xml:id="d_none" style="s_noneblack"/>
    <style xml:id="s_noneblack" tts:textOutline="none"/>
    <style xml:id="s_nonered" tts:textOutline="none"/>
    <style xml:id="s_noneyellow" tts:textOutline="none"/>
@@ -136,7 +137,7 @@
   <div xml:id="e_12" region="R0" begin="01:00:49.880" end="01:00:54.880" style="d_default d_fillgap">
    <p style="p_font2"><span style="ps_bg_ghostboxedblack">Ghost Boxed - fillgap</span><span><br/></span><span><br/></span><span style="ps_bg_ghostboxedblack">line 2</span></p>
   </div>
-  <div xml:id="e_13" region="R0" begin="01:00:55.000" end="01:00:59.880" style="d_default s_noneblack">
+  <div xml:id="e_13" region="R0" begin="01:00:55.000" end="01:00:59.880" style="d_default d_none">
    <p style="p_font2"><span>No Outline</span></p>
   </div>
 </body>

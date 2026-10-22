@@ -54,6 +54,7 @@
    <style xml:id="s_dropblue" tts:textOutline="#0000FF 0.05em"/>
    <style xml:id="s_dropmagenta" tts:textOutline="#FF00FF 0.05em"/>
    <style xml:id="s_dropwhite" tts:textOutline="#FFFFFF 0.05em"/>
+   <style xml:id="d_none" style="s_noneblack"/>
    <style xml:id="s_noneblack" tts:textOutline="none"/>
    <style xml:id="s_nonered" tts:textOutline="none"/>
    <style xml:id="s_noneyellow" tts:textOutline="none"/>
@@ -116,7 +117,7 @@
    <metadata rosetta:comment="this is a comment test a cr"/>
    <p style="p_font2"><span style="ps_bg_boxedblack">First Frame of active video </span></p>
   </div>
-  <div xml:id="e_1" region="R0" begin="01:00:07.760" end="01:00:11.760" style="d_default">
+  <div xml:id="e_1" region="R0" begin="01:00:07.760" end="01:00:11.760" style="d_default d_none">
    <p style="p_font2"><span>1 line</span><span style="s_nonered"> Center</span><span> Bottom</span></p>
   </div>
   <div xml:id="e_2" region="R0" begin="01:00:11.880" end="01:00:15.880" style="d_default">
@@ -198,7 +199,7 @@
    <p style="p_font2"><span>Two lines </span></p>
    <p style="p_font2"><span>top center</span></p>
   </div>
-  <div xml:id="e_26" region="R0" begin="01:01:50.880" end="01:01:53.880" style="d_default">
+  <div xml:id="e_26" region="R0" begin="01:01:50.880" end="01:01:53.880" style="d_default d_none">
    <p style="p_font2 ps_bg_boxedblack"><span style="s_noneblack">Background stripe</span></p>
    <p style="p_font2 ps_bg_boxedblack"><span style="s_noneblack">black</span></p>
   </div>
@@ -210,11 +211,11 @@
    <p style="p_font2"><span style="ps_bg_ghostboxedblack">ghost</span></p>
    <p style="p_font2"><span style="ps_bg_ghostboxedblack">box</span></p>
   </div>
-  <div xml:id="e_29" region="R0" begin="01:02:00.240" end="01:02:03.240" style="d_default">
+  <div xml:id="e_29" region="R0" begin="01:02:00.240" end="01:02:03.240" style="d_default d_none">
    <p style="p_font2 ps_bg_ghostboxedblack"><span style="s_noneblack">Ghost stripe</span></p>
    <p style="p_font2 ps_bg_ghostboxedblack"><span style="s_noneblack">black</span></p>
   </div>
-  <div xml:id="e_30" region="R0" begin="01:02:03.359" end="01:02:06.359" style="d_default">
+  <div xml:id="e_30" region="R0" begin="01:02:03.359" end="01:02:06.359" style="d_default d_none">
    <p style="p_font2"><span style="ps_bg_ghostboxedblack">Ghost box change to </span><span style="ps_bg_ghostboxedred s_nonered">red</span></p>
   </div>
   <div xml:id="e_38" region="R0" begin="01:02:35.120" end="01:02:40.120" style="d_default">
