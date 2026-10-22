@@ -28,7 +28,7 @@ We are looking for feedback on these issues, but the assumption is that as a mez
 
 Vertical subtitles are represented by applying the style r_vertical to the region into which the subtitle is rendered.
 
-When using vertical subtitles, the regions should be full height, with variable left or right edges (either right or left or both will be against the maximal region extent horizontally).
+When using vertical subtitles, the regions should be full height (the same height as _r_quantisationregion), with variable left or right edges (either right or left or both will be against the maximal region extent horizontally as defined in _r_quantisationregion).
 
 ## Multiple subtitles on the screen at the same time.
 
@@ -50,9 +50,11 @@ Feedback is requested.
 
 Rubies for Japanese are supported through the use of nested spans with ruby specific styles attached.
 
+Only simple Ruby is supported - each text segment with ruby may only have one ruby
+
 ### Ruby rendering note
 
-It has been noticed that some IMSC renderers including in Chrome and Safari ignore the rubyReserve setting.  When rubies are present, there is a vertical shift in the placement of horizontal subtitles (or horizontal shift for vertical subtitles).  This is not an issue with IMSC Rosetta, but IMSCJS.  As IMSC Rosetta is primarily designed for the creation and transcode of subtitles, not emission this is not seen as an issue.  However, it is recommended that through testing is undertaken when converting to and from Rosetta for Japanese to ensure rubies are correctly positioned in the final player/renderer, and that ruby reserve is correctly represented.
+It has been noticed that some IMSC renderers including in Chrome and Safari ignore the rubyReserve setting.  When rubies are present, there is a vertical shift in the placement of horizontal subtitles (or horizontal shift for vertical subtitles).  This is not an issue with IMSC Rosetta.  As IMSC Rosetta is primarily designed for the creation and transcode of subtitles, not as an emission format, this is not seen as an issue.  However, it is recommended that testing is undertaken when converting to and from Rosetta for Japanese to ensure rubies are correctly positioned in the final player/renderer, and that ruby reserve is correctly represented.
 
 ### Ruby Specific Styles:
 
@@ -62,7 +64,7 @@ When Rubies are in used in subtitles, it is preferred that the main text of the 
 
 With the above two observations in mind, imsc-rosetta implements the following style names which should be used:
 
-For ensuring subtitles do not move when rubies are absent/present, use p_rb_res_outside on all `<p>` elements in a file which uses rubies.
+For ensuring subtitles do not move when rubies are absent/present, use p_rb_res_outside on ALL `<p>` elements in a file which uses rubies.
 
 `p_rb_res_outside` (equates to tts:rubyReserve="outside")
 
@@ -70,20 +72,22 @@ The default position of Rubies is tts:rubyAlign="center", the only other permitt
 
 To enhance text with a Ruby, you must construct three spans.  The outer `<span>` must reference either `s_rb_algn_center` or `s_rb_algn_around`, as this enables the span as the ruby container.  The container span must contain two further spans, the first referencing the style `s_rb_b` and containing the base text, and the subsequent span referencing `s_rb_t` and containing the actual text of the ruby.  The container span must NOT contain any text itself.
 
-`s_rb_algn_center` (equates to `tts:ruby="container" to tts:rubyAlign="center" tts:rubyPosition="outside"`)
+`s_rb_algn_center` (equates to `tts:ruby="container" to tts:rubyAlign="center"`)
 
-`s_rb_algn_around` (equates to `tts:ruby="container" to tts:rubyAlign="spaceAround" tts:rubyPosition="outside"`)
+`s_rb_algn_around` (equates to `tts:ruby="container" to tts:rubyAlign="spaceAround"`)
 
 `s_rb_b` (equates to `tts:ruby="base"`)
 
 `s_rb_t` (equates to `tts:ruby="text"`)
 
-Ruby position is always 'outside'
+Ruby position is always 'outside' (the default value for rubyPosition).  There is no need to use the style `s_rb_posn_outside`, but it's use is not disallowed.
+
+Note: `s_rb_algn_center`, `s_rb_algn_around`, `s_rb_posn_outside` may ONLY be specified as style on a `<span>` which is a direct descendant of `<p>` - i.e. the outer ruby container, as they define that span as a container.  That span MUST not contain any direct text, and MUST contain exactly one `<span style="s_rb_b">` and exactly one `<span style="s_rb_t">`.
 
 Example:
 ```
   <div xml:id="e_46" region="R0" begin="01:03:10.359" end="01:03:13.359" style="_d_default">
-   <p style="p_font2 p_rb_res_outside"><span>No Ruby </span><span style="s_rb_algn_center"><span style="s_rb_b">Ruby Above </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span><span><br/></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center s_rb_posn_outside"><span style="s_rb_b">Ruby Below 2</span><span style="s_rb_t">ruby2</span></span></p>
+   <p style="p_font2 p_rb_res_outside"><span>No Ruby </span><span style="s_rb_algn_center"><span style="s_rb_b">Ruby Above </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center"><span style="s_rb_b">Ruby Above 2</span><span style="s_rb_t">ruby2</span></span><span><br/></span><span style="s_rb_algn_center"><span style="s_rb_b">Ruby Below </span><span style="s_rb_t">ruby</span></span><span style="s_rb_algn_center"><span style="s_rb_b">Ruby Below 2</span><span style="s_rb_t">ruby2</span></span></p>
   </div>
 ```
 
