@@ -87,3 +87,6 @@ Ghost box with d_fillgap specified on `<div>`, but with a blank line in between 
 
 ***The result is probably not desirable.***
 
+# div e_13
+
+Demonstration of removing outline from a subtitle by using s_noneblack.  Not pretty?

@@ -54,14 +54,14 @@
    <style xml:id="s_dropblue" tts:textOutline="#0000FF 0.05em"/>
    <style xml:id="s_dropmagenta" tts:textOutline="#FF00FF 0.05em"/>
    <style xml:id="s_dropwhite" tts:textOutline="#FFFFFF 0.05em"/>
-   <style xml:id="s_noneblack"/>
-   <style xml:id="s_nonered"/>
-   <style xml:id="s_noneyellow"/>
-   <style xml:id="s_nonegreen"/>
-   <style xml:id="s_nonecyan"/>
-   <style xml:id="s_noneblue"/>
-   <style xml:id="s_nonemagenta"/>
-   <style xml:id="s_nonewhite"/>
+   <style xml:id="s_noneblack" tts:textOutline="none"/>
+   <style xml:id="s_nonered" tts:textOutline="none"/>
+   <style xml:id="s_noneyellow" tts:textOutline="none"/>
+   <style xml:id="s_nonegreen" tts:textOutline="none"/>
+   <style xml:id="s_nonecyan" tts:textOutline="none"/>
+   <style xml:id="s_noneblue" tts:textOutline="none"/>
+   <style xml:id="s_nonemagenta" tts:textOutline="none"/>
+   <style xml:id="s_nonewhite" tts:textOutline="none"/>
    <style xml:id="p_al_start" ebutts:multiRowAlign="start" tts:textAlign="start"/>
    <style xml:id="p_al_end" ebutts:multiRowAlign="end" tts:textAlign="end"/>
    <style xml:id="p_al_center" ebutts:multiRowAlign="center" tts:textAlign="center"/>
