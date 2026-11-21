@@ -282,6 +282,8 @@ Every `div` must reference `d_default`
 
 Every `region` must reference `r_default`
 
+`s_rb_posn_outside` is OPTIONAL: a ruby container `span` MAY reference it in addition to `s_rb_algn_center` or `s_rb_algn_around`, but need not, since `outside` is the initial value of `tts:rubyPosition` (see japanese.md)
+
 
 ### alignment/justification.
 

@@ -70,15 +70,17 @@ The default position of Rubies is tts:rubyAlign="center", the only other permitt
 
 To enhance text with a Ruby, you must construct three spans.  The outer `<span>` must reference either `s_rb_algn_center` or `s_rb_algn_around`, as this enables the span as the ruby container.  The container span must contain two further spans, the first referencing the style `s_rb_b` and containing the base text, and the subsequent span referencing `s_rb_t` and containing the actual text of the ruby.  The container span must NOT contain any text itself.
 
-`s_rb_algn_center` (equates to `tts:ruby="container" to tts:rubyAlign="center" tts:rubyPosition="outside"`)
+`s_rb_algn_center` (equates to `tts:ruby="container" tts:rubyAlign="center"`)
 
-`s_rb_algn_around` (equates to `tts:ruby="container" to tts:rubyAlign="spaceAround" tts:rubyPosition="outside"`)
+`s_rb_algn_around` (equates to `tts:ruby="container" tts:rubyAlign="spaceAround"`)
 
 `s_rb_b` (equates to `tts:ruby="base"`)
 
 `s_rb_t` (equates to `tts:ruby="text"`)
 
-Ruby position is always 'outside'
+Ruby position is always 'outside'.
+
+`s_rb_posn_outside` (equates to `tts:ruby="container" tts:rubyPosition="outside"`) is OPTIONAL, since `outside` is the initial value of `tts:rubyPosition`. `s_rb_posn_outside` MAY be referenced in addition to `s_rb_algn_center` or `s_rb_algn_around`. The example below shows both forms.
 
 Example:
 ```
