@@ -1,5 +1,9 @@
 # Changes based on feedback.
 
+## 2026-11-20
+
+`s_rb_posn_outside` is now OPTIONAL on ruby container spans. Since `outside` is the initial value of `tts:rubyPosition`, referencing `s_rb_algn_center` or `s_rb_algn_around` alone produces the same presentation. Also corrected the description of `s_rb_algn_center` and `s_rb_algn_around`, which do not themselves set `tts:rubyPosition`.
+
 ## 2025-09-05/2025-12-16
 
 In order to enable a single subtitle to become non-outline, `s_nonexxx` have had `tts:textOutline="none"` added.  This should be considered optional for backward compatibility, and does not affect many if any users.
