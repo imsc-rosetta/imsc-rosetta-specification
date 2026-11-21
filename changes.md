@@ -1,5 +1,9 @@
 # Changes based on feedback.
 
+## 2026-11-20
+
+The `style` attribute MUST NOT be an empty string. Where no style references are needed (e.g. `_r_vertical` by default), the `style` attribute is omitted: `<style xml:id="_r_vertical"/>` replaces `<style xml:id="_r_vertical" style=""/>`. Samples and documentation have been updated accordingly.
+
 ## 2025-09-05/2025-12-16
 
 In order to enable a single subtitle to become non-outline, `s_nonexxx` have had `tts:textOutline="none"` added.  This should be considered optional for backward compatibility, and does not affect many if any users.
