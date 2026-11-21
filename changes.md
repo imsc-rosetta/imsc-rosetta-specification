@@ -1,5 +1,11 @@
 # Changes based on feedback.
 
+## 2026-11-20
+
+Corrected examples and text that referenced undefined style names (`dp_al_start`, `ds_al_start`, `ds_al_end`, `ds_nonered`, `ds_fg_red`, `dp_boxedxxxx`, `dp_ghostboxedxxxx`, `dp_outlinexxxx`, `dp_dropxxxx`, `p_rb_res_after`, `s_red`), replacing them with the corresponding defined style names.
+
+Corrected examples where `<div>` referenced `_d_default` instead of `d_default`, as required.
+
 ## 2025-09-05/2025-12-16
 
 In order to enable a single subtitle to become non-outline, `s_nonexxx` have had `tts:textOutline="none"` added.  This should be considered optional for backward compatibility, and does not affect many if any users.

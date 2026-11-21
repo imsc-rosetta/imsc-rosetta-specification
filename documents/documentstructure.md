@@ -111,7 +111,7 @@ one or more `<style>` elements only.
 ### `<style>`
 `<style>` elements must be represented exactly as found in the style specification.
 
-`<style>` elements will not have any content, and should be represented as closed elements, e.g. `<style xml:id="s_red" tts:color="#FF0000"/>`
+`<style>` elements will not have any content, and should be represented as closed elements, e.g. `<style xml:id="s_fg_red" tts:color="#FF0000"/>`
 
 ### `<layout>`
 `<layout>` must have no attributes. `<layout>` contains the following elements:

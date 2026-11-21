@@ -16,9 +16,9 @@ examples:
 
 In order to display well, a p cannot contain any space outside of span elements, e.g.:
 ```
-<div xml:id="e_5" region="R0" begin="01:00:24.240" end="01:00:28.240" style="dp_al_start">
-  <p style="p_font2"><span>two lines</span></p>
-  <p style="p_font2"><span>left bottom</span></p>
+<div xml:id="e_5" region="R0" begin="01:00:24.240" end="01:00:28.240" style="d_default">
+  <p style="p_font2 p_al_start"><span>two lines</span></p>
+  <p style="p_font2 p_al_start"><span>left bottom</span></p>
 </div>
 ```
 
@@ -27,11 +27,11 @@ The below will display with all the extra spacing and CRs disturbing the line po
 *** NOTE: Bad Formatting example - do not copy! ***
 
 ```
-<div xml:id="e_5" region="R0" begin="01:00:24.240" end="01:00:28.240" style="dp_al_start">
-  <p style="p_font2">
+<div xml:id="e_5" region="R0" begin="01:00:24.240" end="01:00:28.240" style="d_default">
+  <p style="p_font2 p_al_start">
     <span>two lines</span>
   </p>
-  <p style="p_font2">
+  <p style="p_font2 p_al_start">
     <span>left bottom</span>
   </p>
 </div>
@@ -76,9 +76,9 @@ If you have an XML processor which does not retain the define XML Namespace pref
   
   Hence we end up with use of known style names which represent concepts rather than actual styles.  e.g.:
   
-  `<style xml:id="ds_nonered"/>`
+  `<style xml:id="s_nonered" tts:textOutline="none"/>`
   
-  has no style associated with it, and yet imparts meaning to the file.  (the meaning being that if a span with this style name attached was to be subsequently boxed, it should have a red background).
+  has no color associated with it, and yet imparts meaning to the file.  (the meaning being that if a span with this style name attached was to be subsequently boxed, it should have a red background).
   
   This concept is a major difference between Imsc-Rosetta and previous TTML profiles - we don't ONLY represent a file to produce a particular visual output, but rather attempt to retain the intent of the original file, or to capture intent when preparing a file, such that it could subsequently be used to convert TO an older existing form.
   
@@ -107,11 +107,11 @@ If you have an XML processor which does not retain the define XML Namespace pref
   
   In Imsc-Rosetta, certain named style content is constant - i.e. you may not change it.
   
-  These include d_default, r_default, s_italic, s_bold, s_underline, ds_al_start, ds_al_end, d_forced
+  These include d_default, r_default, s_italic, s_bold, s_underline, p_al_xxx, d_forced
   
   Other named styles may be changed by the file writer.
   
-  These include _d_default _r_default, p_font1, p_font2, s_fg_xxxx, dp_boxedxxxx, dp_ghostboxedxxxx, dp_outlinexxxx, dp_dropxxxx
+  These include _d_default _r_default, p_font1, p_font2, s_fg_xxx, ps_bg_boxedxxx, ps_bg_ghostboxedxxx, s_outlinexxx, s_dropxxx
   
   _r_quantisationregion is used to define the default subtitle area, and line quantisation.  (e.g. a height of 80%, fontSize of 0.5666rh, lineHeight of 125%, when combined hints to 12 'rows', or 11 positions which a region edge could adopt).
   
