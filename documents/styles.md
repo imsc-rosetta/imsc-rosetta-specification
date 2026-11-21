@@ -119,7 +119,7 @@ The following is the maximal style name set, and their default values:
  
  <style xml:id="_d_default" style="d_outline"/>
  <style xml:id="_r_default" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c" tts:luminanceGain="1.0" itts:fillLineGap="false" style="s_fg_white p_al_center"/>
- <style xml:id="_r_vertical" style=""/>
+ <style xml:id="_r_vertical"/>
 
  <style xml:id="_r_quantisationregion" tts:origin="10% 10%" tts:extent="80% 80%" tts:fontSize="5.333rh" tts:lineHeight="125%"/>
 
@@ -148,7 +148,7 @@ you may modify tts:origin, tts:extent, tts:fontSize, tts:lineHeight.
 See below 'region size and position quantisation' for more explanation
 
 ### _r_vertical
-you may modify the style attribute. It MUST be empty, or contain an alignment from p_al_xxxx only
+you may modify the style attribute. It MUST be either absent or contain an alignment from p_al_xxxx only
 
 ### s_fg_xxx
 you may modify the tts:color attribute
@@ -277,6 +277,8 @@ if the style attribute in _d_default is modified, only styles applicable to div 
 _r_default and _r_vertical MAY contain style references to p_al_xxx as a way to set the default alignment/justification for the whole file.
 
 _r_quantisationregion must never be used, but must always be present.
+
+The `style` attribute, when present on any element, MUST NOT be empty (i.e. `style=""` is not permitted); omit the attribute instead.
 
 Every `div` must reference `d_default`
 

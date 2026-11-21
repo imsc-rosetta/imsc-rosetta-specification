@@ -92,7 +92,7 @@
    <style xml:id="r_vertical" tts:writingMode="tbrl" style="_r_vertical"/>
    <style xml:id="_d_default" style="d_outline"/>
    <style xml:id="_r_default" tts:fontSize="5.333rh" tts:lineHeight="125%" ebutts:linePadding="0.25c" itts:fillLineGap="false" tts:luminanceGain="1.0" style="s_fg_white"/>
-   <style xml:id="_r_vertical" style=""/>
+   <style xml:id="_r_vertical"/>
    <style xml:id="_r_quantisationregion" tts:origin="10% 10%" tts:extent="80% 80%" tts:fontSize="5.333rh" tts:lineHeight="125%"/>
   </styling>
   <layout>
