@@ -62,7 +62,7 @@ When Rubies are in used in subtitles, it is preferred that the main text of the 
 
 With the above two observations in mind, imsc-rosetta implements the following style names which should be used:
 
-For ensuring subtitles do not move when rubies are absent/present, use p_rb_res_outside on all `<p>` elements in a file which uses rubies.
+To ensure subtitles do not move when rubies are absent/present, every `<p>` element in a file which uses rubies SHOULD reference `p_rb_res_outside`.
 
 `p_rb_res_outside` (equates to tts:rubyReserve="outside")
 

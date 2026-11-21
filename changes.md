@@ -1,5 +1,9 @@
 # Changes based on feedback.
 
+## 2026-11-20
+
+Clarified that `p_rb_res_outside` is recommended but not required on `<p>` elements in files that use rubies.
+
 ## 2025-09-05/2025-12-16
 
 In order to enable a single subtitle to become non-outline, `s_nonexxx` have had `tts:textOutline="none"` added.  This should be considered optional for backward compatibility, and does not affect many if any users.
