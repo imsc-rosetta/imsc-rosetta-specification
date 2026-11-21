@@ -1,5 +1,9 @@
 # Changes based on feedback.
 
+## 2026-11-20
+
+The value of `<rosetta:format>` is now `imsc-rosetta`, matching the name of the specification. The previous value `rosetta-imsc` is deprecated and SHOULD NOT be used, but remains permitted for compatibility with earlier versions of this specification.
+
 ## 2025-09-05/2025-12-16
 
 In order to enable a single subtitle to become non-outline, `s_nonexxx` have had `tts:textOutline="none"` added.  This should be considered optional for backward compatibility, and does not affect many if any users.
