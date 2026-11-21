@@ -261,7 +261,7 @@ This div represents two lines, where the longest line is right aligned, and the 
 ### subtitle 13 at begin=01:00:57.240
 
 
-This div represents three lines, where the first is left aligned, the second is centered, and the third is right aligned.  This uses three separate `<p>` elements, marked with p_al_start, p_al_center_ and p_al_end respectively.
+This div represents three lines, where the first is left aligned, the second is centered, and the third is right aligned.  This uses three separate `<p>` elements, marked with p_al_start, no alignment style (so the default p_al_center from _r_default applies) and p_al_end respectively.
 
 
 #### div XML

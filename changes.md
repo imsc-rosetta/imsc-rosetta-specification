@@ -6,6 +6,8 @@ Corrected examples and text that referenced undefined style names (`dp_al_start`
 
 Corrected examples where `<div>` referenced `_d_default` instead of `d_default`, as required.
 
+Corrected the description of `div e_13` in the `imsc-rosetta-alignment` sample, which referred to a non-existent `p_al_center_` style; the centered line uses the default alignment set in `_r_default`.
+
 ## 2025-09-05/2025-12-16
 
 In order to enable a single subtitle to become non-outline, `s_nonexxx` have had `tts:textOutline="none"` added.  This should be considered optional for backward compatibility, and does not affect many if any users.
