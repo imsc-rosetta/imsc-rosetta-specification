@@ -37,15 +37,14 @@
       "style": [
        {
         "$": {
-         "xml:id": "r_region",
-         "tts:backgroundColor": "transparent",
+         "xml:id": "r_default",
+         "tts:overflow": "visible",
+         "tts:wrapOption": "noWrap",
+         "tts:backgroundColor": "#00000000",
          "tts:showBackground": "whenActive",
          "tts:fontStyle": "normal",
          "tts:fontWeight": "normal",
-         "tts:color": "white",
          "tts:fontFamily": "proportionalSansSerif",
-         "tts:textAlign": "center",
-         "itts:fillLineGap": "false",
          "style": "_r_default"
         }
        },
@@ -65,6 +64,12 @@
         "$": {
          "xml:id": "s_underline",
          "tts:textDecoration": "underline"
+        }
+       },
+       {
+        "$": {
+         "xml:id": "d_default",
+         "style": "_d_default"
         }
        },
        {
@@ -113,6 +118,12 @@
         "$": {
          "xml:id": "s_fg_magenta",
          "tts:color": "#FF00FF"
+        }
+       },
+       {
+        "$": {
+         "xml:id": "s_fg_white",
+         "tts:color": "#FFFFFF"
         }
        },
        {
@@ -214,7 +225,7 @@
        {
         "$": {
          "xml:id": "d_outline",
-         "tts:textOutline": "#000000 0.05em"
+         "style": "s_outlineblack"
         }
        },
        {
@@ -268,7 +279,13 @@
        {
         "$": {
          "xml:id": "d_drop",
-         "tts:textOutline": "#000000 0.05em"
+         "style": "s_dropblack"
+        }
+       },
+       {
+        "$": {
+         "xml:id": "d_none",
+         "style": "s_noneblack"
         }
        },
        {
@@ -321,54 +338,71 @@
        },
        {
         "$": {
-         "xml:id": "s_noneblack"
+         "xml:id": "s_noneblack",
+         "tts:textOutline": "none"
         }
        },
        {
         "$": {
-         "xml:id": "s_nonered"
+         "xml:id": "s_nonered",
+         "tts:textOutline": "none"
         }
        },
        {
         "$": {
-         "xml:id": "s_noneyellow"
+         "xml:id": "s_noneyellow",
+         "tts:textOutline": "none"
         }
        },
        {
         "$": {
-         "xml:id": "s_nonegreen"
+         "xml:id": "s_nonegreen",
+         "tts:textOutline": "none"
         }
        },
        {
         "$": {
-         "xml:id": "s_nonecyan"
+         "xml:id": "s_nonecyan",
+         "tts:textOutline": "none"
         }
        },
        {
         "$": {
-         "xml:id": "s_noneblue"
+         "xml:id": "s_noneblue",
+         "tts:textOutline": "none"
         }
        },
        {
         "$": {
-         "xml:id": "s_nonemagenta"
+         "xml:id": "s_nonemagenta",
+         "tts:textOutline": "none"
         }
        },
        {
         "$": {
-         "xml:id": "s_nonewhite"
+         "xml:id": "s_nonewhite",
+         "tts:textOutline": "none"
         }
        },
        {
         "$": {
          "xml:id": "p_al_start",
+         "ebutts:multiRowAlign": "start",
          "tts:textAlign": "start"
         }
        },
        {
         "$": {
          "xml:id": "p_al_end",
+         "ebutts:multiRowAlign": "end",
          "tts:textAlign": "end"
+        }
+       },
+       {
+        "$": {
+         "xml:id": "p_al_center",
+         "ebutts:multiRowAlign": "center",
+         "tts:textAlign": "center"
         }
        },
        {
@@ -449,24 +483,6 @@
        },
        {
         "$": {
-         "xml:id": "p_rb_res_before",
-         "tts:rubyReserve": "before"
-        }
-       },
-       {
-        "$": {
-         "xml:id": "p_rb_res_after",
-         "tts:rubyReserve": "after"
-        }
-       },
-       {
-        "$": {
-         "xml:id": "p_rb_res_both",
-         "tts:rubyReserve": "both"
-        }
-       },
-       {
-        "$": {
          "xml:id": "p_rb_res_outside",
          "tts:rubyReserve": "outside"
         }
@@ -487,20 +503,6 @@
        },
        {
         "$": {
-         "xml:id": "s_rb_posn_before",
-         "tts:ruby": "container",
-         "tts:rubyPosition": "before"
-        }
-       },
-       {
-        "$": {
-         "xml:id": "s_rb_posn_after",
-         "tts:ruby": "container",
-         "tts:rubyPosition": "after"
-        }
-       },
-       {
-        "$": {
          "xml:id": "s_rb_posn_outside",
          "tts:ruby": "container",
          "tts:rubyPosition": "outside"
@@ -514,7 +516,7 @@
        },
        {
         "$": {
-         "xml:id": "dps_shear",
+         "xml:id": "p_shear",
          "tts:shear": "16.67%"
         }
        },
@@ -522,84 +524,6 @@
         "$": {
          "xml:id": "p_rtl",
          "tts:direction": "rtl"
-        }
-       },
-       {
-        "$": {
-         "xml:id": "p_ltr",
-         "tts:direction": "ltr"
-        }
-       },
-       {
-        "$": {
-         "xml:id": "s_emf_fcb",
-         "tts:textEmphasis": "filled circle before"
-        }
-       },
-       {
-        "$": {
-         "xml:id": "s_emf_fdb",
-         "tts:textEmphasis": "filled dot before"
-        }
-       },
-       {
-        "$": {
-         "xml:id": "s_emf_fsb",
-         "tts:textEmphasis": "filled sesame before"
-        }
-       },
-       {
-        "$": {
-         "xml:id": "s_emf_ocb",
-         "tts:textEmphasis": "open circle before"
-        }
-       },
-       {
-        "$": {
-         "xml:id": "s_emf_odb",
-         "tts:textEmphasis": "open dot before"
-        }
-       },
-       {
-        "$": {
-         "xml:id": "s_emf_osb",
-         "tts:textEmphasis": "open sesame before"
-        }
-       },
-       {
-        "$": {
-         "xml:id": "s_emf_fca",
-         "tts:textEmphasis": "filled circle after"
-        }
-       },
-       {
-        "$": {
-         "xml:id": "s_emf_fda",
-         "tts:textEmphasis": "filled dot after"
-        }
-       },
-       {
-        "$": {
-         "xml:id": "s_emf_fsa",
-         "tts:textEmphasis": "filled sesame after"
-        }
-       },
-       {
-        "$": {
-         "xml:id": "s_emf_oca",
-         "tts:textEmphasis": "open circle after"
-        }
-       },
-       {
-        "$": {
-         "xml:id": "s_emf_oda",
-         "tts:textEmphasis": "open dot after"
-        }
-       },
-       {
-        "$": {
-         "xml:id": "s_emf_osa",
-         "tts:textEmphasis": "open sesame after"
         }
        },
        {
@@ -641,7 +565,8 @@
        {
         "$": {
          "xml:id": "r_vertical",
-         "tts:writingMode": "tbrl"
+         "tts:writingMode": "tbrl",
+         "style": "_r_vertical"
         }
        },
        {
@@ -653,13 +578,27 @@
        {
         "$": {
          "xml:id": "_r_default",
-         "tts:origin": "10% 10%",
-         "tts:extent": "80% 80%",
-         "tts:displayAlign": "after",
-         "tts:wrapOption": "noWrap",
          "tts:fontSize": "5.333rh",
          "tts:lineHeight": "125%",
-         "ebutts:linePadding": "0.25c"
+         "ebutts:linePadding": "0.25c",
+         "itts:fillLineGap": "false",
+         "tts:luminanceGain": "1.0",
+         "style": "s_fg_white p_al_center"
+        }
+       },
+       {
+        "$": {
+         "xml:id": "_r_vertical",
+         "style": "p_al_start"
+        }
+       },
+       {
+        "$": {
+         "xml:id": "_r_quantisationregion",
+         "tts:origin": "10% 10%",
+         "tts:extent": "80% 80%",
+         "tts:fontSize": "5.333rh",
+         "tts:lineHeight": "125%"
         }
        }
       ]
@@ -674,7 +613,7 @@
          "tts:origin": "10% 10%",
          "tts:extent": "80% 80%",
          "tts:displayAlign": "after",
-         "style": "r_region"
+         "style": "r_default"
         }
        },
        {
@@ -683,7 +622,7 @@
          "tts:origin": "10% 10%",
          "tts:extent": "80% 73.3%",
          "tts:displayAlign": "after",
-         "style": "r_region"
+         "style": "r_default"
         }
        },
        {
@@ -692,7 +631,7 @@
          "tts:origin": "10% 10%",
          "tts:extent": "80% 66.7%",
          "tts:displayAlign": "after",
-         "style": "r_region"
+         "style": "r_default"
         }
        },
        {
@@ -701,7 +640,7 @@
          "tts:origin": "10% 10%",
          "tts:extent": "80% 60%",
          "tts:displayAlign": "after",
-         "style": "r_region"
+         "style": "r_default"
         }
        },
        {
@@ -710,7 +649,7 @@
          "tts:origin": "10% 10%",
          "tts:extent": "80% 53.3%",
          "tts:displayAlign": "after",
-         "style": "r_region"
+         "style": "r_default"
         }
        },
        {
@@ -719,7 +658,7 @@
          "tts:origin": "10% 10%",
          "tts:extent": "80% 46.7%",
          "tts:displayAlign": "after",
-         "style": "r_region"
+         "style": "r_default"
         }
        },
        {
@@ -728,7 +667,7 @@
          "tts:origin": "10% 43.3%",
          "tts:extent": "80% 46.7%",
          "tts:displayAlign": "before",
-         "style": "r_region"
+         "style": "r_default"
         }
        },
        {
@@ -737,7 +676,7 @@
          "tts:origin": "10% 36.7%",
          "tts:extent": "80% 53.3%",
          "tts:displayAlign": "before",
-         "style": "r_region"
+         "style": "r_default"
         }
        },
        {
@@ -746,7 +685,7 @@
          "tts:origin": "10% 30%",
          "tts:extent": "80% 60%",
          "tts:displayAlign": "before",
-         "style": "r_region"
+         "style": "r_default"
         }
        },
        {
@@ -755,7 +694,7 @@
          "tts:origin": "10% 23.3%",
          "tts:extent": "80% 66.7%",
          "tts:displayAlign": "before",
-         "style": "r_region"
+         "style": "r_default"
         }
        },
        {
@@ -764,7 +703,7 @@
          "tts:origin": "10% 16.7%",
          "tts:extent": "80% 73.3%",
          "tts:displayAlign": "before",
-         "style": "r_region"
+         "style": "r_default"
         }
        },
        {
@@ -773,7 +712,7 @@
          "tts:origin": "10% 10%",
          "tts:extent": "80% 80%",
          "tts:displayAlign": "before",
-         "style": "r_region"
+         "style": "r_default"
         }
        },
        {
@@ -782,7 +721,7 @@
          "tts:origin": "10% 10%",
          "tts:extent": "80% 80%",
          "tts:displayAlign": "before",
-         "style": "r_region r_vertical"
+         "style": "r_default r_vertical"
         }
        }
       ]
@@ -795,11 +734,11 @@
     "div": [
      {
       "$": {
-       "xml:id": "sub0",
+       "xml:id": "e_0",
        "region": "R0",
        "begin": "01:00:03.600",
        "end": "01:00:07.640",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "metadata": [
        {
@@ -811,7 +750,7 @@
       "p": [
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -826,16 +765,16 @@
      },
      {
       "$": {
-       "xml:id": "1",
+       "xml:id": "e_1",
        "region": "R0",
        "begin": "01:00:07.760",
        "end": "01:00:11.760",
-       "style": "_d_default"
+       "style": "d_default d_none"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -856,16 +795,16 @@
      },
      {
       "$": {
-       "xml:id": "2",
+       "xml:id": "e_2",
        "region": "R0",
        "begin": "01:00:11.880",
        "end": "01:00:15.880",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2 p_al_start"
+         "style": "p_font2 p_al_start p_rb_res_outside"
         },
         "span": [
          {
@@ -877,16 +816,16 @@
      },
      {
       "$": {
-       "xml:id": "3",
+       "xml:id": "e_3",
        "region": "R0",
        "begin": "01:00:16.000",
        "end": "01:00:20.000",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2 p_al_end"
+         "style": "p_font2 p_al_end p_rb_res_outside"
         },
         "span": [
          {
@@ -898,16 +837,16 @@
      },
      {
       "$": {
-       "xml:id": "4",
+       "xml:id": "e_4",
        "region": "R0",
        "begin": "01:00:20.120",
        "end": "01:00:24.120",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -917,7 +856,7 @@
        },
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -929,16 +868,16 @@
      },
      {
       "$": {
-       "xml:id": "5",
+       "xml:id": "e_5",
        "region": "R0",
        "begin": "01:00:24.240",
        "end": "01:00:28.240",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_al_start p_rb_res_outside"
         },
         "span": [
          {
@@ -948,7 +887,7 @@
        },
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_al_start p_rb_res_outside"
         },
         "span": [
          {
@@ -960,16 +899,16 @@
      },
      {
       "$": {
-       "xml:id": "6",
+       "xml:id": "e_6",
        "region": "R0",
        "begin": "01:00:28.360",
        "end": "01:00:32.360",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_al_end p_rb_res_outside"
         },
         "span": [
          {
@@ -979,7 +918,7 @@
        },
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_al_end p_rb_res_outside"
         },
         "span": [
          {
@@ -991,16 +930,16 @@
      },
      {
       "$": {
-       "xml:id": "7",
+       "xml:id": "e_7",
        "region": "R0",
        "begin": "01:00:32.480",
        "end": "01:00:36.480",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -1012,16 +951,16 @@
      },
      {
       "$": {
-       "xml:id": "8",
+       "xml:id": "e_8",
        "region": "R1",
        "begin": "01:00:36.640",
        "end": "01:00:40.640",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -1033,16 +972,16 @@
      },
      {
       "$": {
-       "xml:id": "9",
+       "xml:id": "e_9",
        "region": "R2",
        "begin": "01:00:40.760",
        "end": "01:00:44.760",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -1054,16 +993,16 @@
      },
      {
       "$": {
-       "xml:id": "10",
+       "xml:id": "e_10",
        "region": "R3",
        "begin": "01:00:44.880",
        "end": "01:00:48.880",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -1075,16 +1014,16 @@
      },
      {
       "$": {
-       "xml:id": "11",
+       "xml:id": "e_11",
        "region": "R4",
        "begin": "01:00:49.000",
        "end": "01:00:53.000",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -1096,16 +1035,16 @@
      },
      {
       "$": {
-       "xml:id": "12",
+       "xml:id": "e_12",
        "region": "R5",
        "begin": "01:00:53.120",
        "end": "01:00:57.120",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -1117,16 +1056,16 @@
      },
      {
       "$": {
-       "xml:id": "13",
+       "xml:id": "e_13",
        "region": "R6",
        "begin": "01:00:57.240",
        "end": "01:01:01.240",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -1138,16 +1077,16 @@
      },
      {
       "$": {
-       "xml:id": "14",
+       "xml:id": "e_14",
        "region": "R7",
        "begin": "01:01:01.360",
        "end": "01:01:05.360",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -1159,16 +1098,16 @@
      },
      {
       "$": {
-       "xml:id": "15",
+       "xml:id": "e_15",
        "region": "R8",
        "begin": "01:01:05.480",
        "end": "01:01:09.480",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -1180,16 +1119,16 @@
      },
      {
       "$": {
-       "xml:id": "16",
+       "xml:id": "e_16",
        "region": "R9",
        "begin": "01:01:09.640",
        "end": "01:01:13.640",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -1201,16 +1140,16 @@
      },
      {
       "$": {
-       "xml:id": "17",
+       "xml:id": "e_17",
        "region": "R10",
        "begin": "01:01:13.760",
        "end": "01:01:17.760",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -1222,16 +1161,16 @@
      },
      {
       "$": {
-       "xml:id": "18",
+       "xml:id": "e_18",
        "region": "R11",
        "begin": "01:01:17.880",
        "end": "01:01:21.880",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -1243,16 +1182,16 @@
      },
      {
       "$": {
-       "xml:id": "19",
+       "xml:id": "e_19",
        "region": "R11",
        "begin": "01:01:22.000",
        "end": "01:01:26.000",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -1264,16 +1203,16 @@
      },
      {
       "$": {
-       "xml:id": "20",
+       "xml:id": "e_20",
        "region": "R11",
        "begin": "01:01:26.120",
        "end": "01:01:30.120",
-       "style": "_d_default p_al_start"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_al_start p_rb_res_outside"
         },
         "span": [
          {
@@ -1285,16 +1224,16 @@
      },
      {
       "$": {
-       "xml:id": "21",
+       "xml:id": "e_21",
        "region": "R11",
        "begin": "01:01:30.240",
        "end": "01:01:34.240",
-       "style": "_d_default p_al_end"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_al_end p_rb_res_outside"
         },
         "span": [
          {
@@ -1306,16 +1245,16 @@
      },
      {
       "$": {
-       "xml:id": "22",
+       "xml:id": "e_22",
        "region": "R0",
        "begin": "01:01:34.360",
        "end": "01:01:38.360",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_al_start p_font2"
+         "style": "p_al_start p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -1325,7 +1264,7 @@
        },
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -1335,7 +1274,7 @@
        },
        {
         "$": {
-         "style": "p_al_end p_font2"
+         "style": "p_al_end p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -1347,16 +1286,16 @@
      },
      {
       "$": {
-       "xml:id": "23",
+       "xml:id": "e_23",
        "region": "R0",
        "begin": "01:01:38.520",
        "end": "01:01:42.520",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -1387,7 +1326,7 @@
        },
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -1420,16 +1359,16 @@
      },
      {
       "$": {
-       "xml:id": "24",
+       "xml:id": "e_24",
        "region": "R0",
        "begin": "01:01:42.640",
        "end": "01:01:46.640",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -1474,16 +1413,16 @@
      },
      {
       "$": {
-       "xml:id": "25",
+       "xml:id": "e_25",
        "region": "R11",
        "begin": "01:01:46.760",
        "end": "01:01:50.760",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -1493,7 +1432,7 @@
        },
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -1505,30 +1444,36 @@
      },
      {
       "$": {
-       "xml:id": "26",
+       "xml:id": "e_26",
        "region": "R0",
        "begin": "01:01:50.880",
        "end": "01:01:53.880",
-       "style": "_d_default s_noneblack"
+       "style": "d_default d_none"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2 ps_bg_boxedblack"
+         "style": "p_font2 ps_bg_boxedblack p_rb_res_outside"
         },
         "span": [
          {
-          "_": "Background stripe"
+          "_": "Background stripe",
+          "$": {
+           "style": "s_noneblack"
+          }
          }
         ]
        },
        {
         "$": {
-         "style": "p_font2 ps_bg_boxedblack"
+         "style": "p_font2 ps_bg_boxedblack p_rb_res_outside"
         },
         "span": [
          {
-          "_": "black"
+          "_": "black",
+          "$": {
+           "style": "s_noneblack"
+          }
          }
         ]
        }
@@ -1536,16 +1481,16 @@
      },
      {
       "$": {
-       "xml:id": "27",
+       "xml:id": "e_27",
        "region": "R0",
        "begin": "01:01:54.000",
        "end": "01:01:57.000",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -1558,7 +1503,7 @@
        },
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -1573,16 +1518,16 @@
      },
      {
       "$": {
-       "xml:id": "28",
+       "xml:id": "e_28",
        "region": "R0",
        "begin": "01:01:57.120",
        "end": "01:02:00.120",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -1595,7 +1540,7 @@
        },
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -1610,30 +1555,36 @@
      },
      {
       "$": {
-       "xml:id": "29",
+       "xml:id": "e_29",
        "region": "R0",
        "begin": "01:02:00.240",
        "end": "01:02:03.240",
-       "style": "_d_default s_noneblack"
+       "style": "d_default d_none"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2 ps_bg_ghostboxedblack"
+         "style": "p_font2 ps_bg_ghostboxedblack p_rb_res_outside"
         },
         "span": [
          {
-          "_": "Ghost stripe"
+          "_": "Ghost stripe",
+          "$": {
+           "style": "s_noneblack"
+          }
          }
         ]
        },
        {
         "$": {
-         "style": "p_font2 ps_bg_ghostboxedblack"
+         "style": "p_font2 ps_bg_ghostboxedblack p_rb_res_outside"
         },
         "span": [
          {
-          "_": "black"
+          "_": "black",
+          "$": {
+           "style": "s_noneblack"
+          }
          }
         ]
        }
@@ -1641,16 +1592,16 @@
      },
      {
       "$": {
-       "xml:id": "30",
+       "xml:id": "e_30",
        "region": "R0",
        "begin": "01:02:03.359",
        "end": "01:02:06.359",
-       "style": "_d_default"
+       "style": "d_default d_none"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -1671,509 +1622,16 @@
      },
      {
       "$": {
-       "xml:id": "31",
-       "region": "R0",
-       "begin": "01:02:07.359",
-       "end": "01:02:09.359",
-       "style": "_d_default"
-      },
-      "p": [
-       {
-        "$": {
-         "style": "p_font2 p_rb_res_before"
-        },
-        "span": [
-         {
-          "$": {
-           "style": "s_rb_algn_center s_rb_posn_before"
-          },
-          "span": [
-           {
-            "_": "Ruby Above ",
-            "$": {
-             "style": "s_rb_b"
-            }
-           },
-           {
-            "_": "ruby",
-            "$": {
-             "style": "s_rb_t"
-            }
-           }
-          ]
-         },
-         {
-          "$": {
-           "style": "s_rb_algn_center s_rb_posn_before"
-          },
-          "span": [
-           {
-            "_": "Ruby Above 2",
-            "$": {
-             "style": "s_rb_b"
-            }
-           },
-           {
-            "_": "ruby2",
-            "$": {
-             "style": "s_rb_t"
-            }
-           }
-          ]
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "$": {
-       "xml:id": "32",
-       "region": "R0",
-       "begin": "01:02:10.359",
-       "end": "01:02:12.359",
-       "style": "_d_default"
-      },
-      "p": [
-       {
-        "$": {
-         "style": "p_font2 p_rb_res_after"
-        },
-        "span": [
-         {
-          "$": {
-           "style": "s_rb_algn_center s_rb_posn_after"
-          },
-          "span": [
-           {
-            "_": "Ruby Below ",
-            "$": {
-             "style": "s_rb_b"
-            }
-           },
-           {
-            "_": "ruby",
-            "$": {
-             "style": "s_rb_t"
-            }
-           }
-          ]
-         },
-         {
-          "$": {
-           "style": "s_rb_algn_center s_rb_posn_before"
-          },
-          "span": [
-           {
-            "_": "Ruby Above 2",
-            "$": {
-             "style": "s_rb_b"
-            }
-           },
-           {
-            "_": "ruby2",
-            "$": {
-             "style": "s_rb_t"
-            }
-           }
-          ]
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "$": {
-       "xml:id": "33",
-       "region": "R0",
-       "begin": "01:02:13.359",
-       "end": "01:02:16.359",
-       "style": "_d_default"
-      },
-      "p": [
-       {
-        "$": {
-         "style": "p_font2 p_rb_res_after"
-        },
-        "span": [
-         {
-          "$": {
-           "style": "s_rb_algn_center s_rb_posn_before"
-          },
-          "span": [
-           {
-            "_": "Ruby Above ",
-            "$": {
-             "style": "s_rb_b"
-            }
-           },
-           {
-            "_": "ruby",
-            "$": {
-             "style": "s_rb_t"
-            }
-           }
-          ]
-         },
-         {
-          "$": {
-           "style": "s_rb_algn_center s_rb_posn_before"
-          },
-          "span": [
-           {
-            "_": "Ruby Above 2",
-            "$": {
-             "style": "s_rb_b"
-            }
-           },
-           {
-            "_": "ruby2",
-            "$": {
-             "style": "s_rb_t"
-            }
-           }
-          ]
-         }
-        ]
-       },
-       {
-        "$": {
-         "style": "p_font2 p_rb_res_after"
-        },
-        "span": [
-         {
-          "$": {
-           "style": "s_rb_algn_center s_rb_posn_after"
-          },
-          "span": [
-           {
-            "_": "Ruby Below ",
-            "$": {
-             "style": "s_rb_b"
-            }
-           },
-           {
-            "_": "ruby",
-            "$": {
-             "style": "s_rb_t"
-            }
-           }
-          ]
-         },
-         {
-          "$": {
-           "style": "s_rb_algn_center s_rb_posn_after"
-          },
-          "span": [
-           {
-            "_": "Ruby Below 2",
-            "$": {
-             "style": "s_rb_b"
-            }
-           },
-           {
-            "_": "ruby2",
-            "$": {
-             "style": "s_rb_t"
-            }
-           }
-          ]
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "$": {
-       "xml:id": "34",
-       "region": "R0",
-       "begin": "01:02:17.359",
-       "end": "01:02:20.359",
-       "style": "_d_default"
-      },
-      "p": [
-       {
-        "$": {
-         "style": "p_font2 p_rb_res_after"
-        },
-        "span": [
-         {
-          "_": "No Ruby "
-         },
-         {
-          "$": {
-           "style": "s_rb_algn_center s_rb_posn_before"
-          },
-          "span": [
-           {
-            "_": "Ruby Above 2",
-            "$": {
-             "style": "s_rb_b"
-            }
-           },
-           {
-            "_": "ruby2",
-            "$": {
-             "style": "s_rb_t"
-            }
-           }
-          ]
-         }
-        ]
-       },
-       {
-        "$": {
-         "style": "p_font2 p_rb_res_after"
-        },
-        "span": [
-         {
-          "$": {
-           "style": "s_rb_algn_center s_rb_posn_after"
-          },
-          "span": [
-           {
-            "_": "Ruby Below ",
-            "$": {
-             "style": "s_rb_b"
-            }
-           },
-           {
-            "_": "ruby",
-            "$": {
-             "style": "s_rb_t"
-            }
-           }
-          ]
-         },
-         {
-          "_": "No Ruby"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "$": {
-       "xml:id": "35",
-       "region": "R12",
-       "begin": "01:02:21.359",
-       "end": "01:02:24.359",
-       "style": "_d_default"
-      },
-      "p": [
-       {
-        "$": {
-         "style": "p_font2 p_rb_res_after"
-        },
-        "span": [
-         {
-          "_": "Vert No Ruby "
-         },
-         {
-          "$": {
-           "style": "s_rb_algn_center s_rb_posn_before"
-          },
-          "span": [
-           {
-            "_": "Ruby Above 2",
-            "$": {
-             "style": "s_rb_b"
-            }
-           },
-           {
-            "_": "ruby2",
-            "$": {
-             "style": "s_rb_t"
-            }
-           }
-          ]
-         }
-        ]
-       },
-       {
-        "$": {
-         "style": "p_font2 p_rb_res_after"
-        },
-        "span": [
-         {
-          "$": {
-           "style": "s_rb_algn_center s_rb_posn_after"
-          },
-          "span": [
-           {
-            "_": "Ruby Below ",
-            "$": {
-             "style": "s_rb_b"
-            }
-           },
-           {
-            "_": "ruby",
-            "$": {
-             "style": "s_rb_t"
-            }
-           }
-          ]
-         },
-         {
-          "_": "No Ruby"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "$": {
-       "xml:id": "36",
-       "region": "R12",
-       "begin": "01:02:25.359",
-       "end": "01:02:29.359",
-       "style": "_d_default"
-      },
-      "p": [
-       {
-        "_": "東南",
-        "$": {
-         "style": "p_font2 p_rb_res_after"
-        },
-        "span": [
-         {
-          "$": {
-           "style": "s_rb_algn_center s_rb_posn_before"
-          },
-          "span": [
-           {
-            "_": "東南",
-            "$": {
-             "style": "s_rb_b"
-            }
-           },
-           {
-            "_": "とうなん",
-            "$": {
-             "style": "s_rb_t"
-            }
-           }
-          ]
-         }
-        ]
-       },
-       {
-        "$": {
-         "style": "p_font2 p_rb_res_after"
-        },
-        "span": [
-         {
-          "$": {
-           "style": "s_rb_algn_center s_rb_posn_after"
-          },
-          "span": [
-           {
-            "_": "東南",
-            "$": {
-             "style": "s_rb_b"
-            }
-           },
-           {
-            "_": "たつみ",
-            "$": {
-             "style": "s_rb_t"
-            }
-           }
-          ]
-         },
-         {
-          "_": "No Ruby"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "$": {
-       "xml:id": "37",
-       "region": "R12",
-       "begin": "01:02:30.359",
-       "end": "01:02:34.359",
-       "style": "_d_default dps_shear"
-      },
-      "p": [
-       {
-        "$": {
-         "style": "p_font2 p_rb_res_after"
-        },
-        "span": [
-         {
-          "_": "1984",
-          "$": {
-           "style": "s_combine"
-          }
-         },
-         {
-          "$": {
-           "style": "s_rb_algn_center s_rb_posn_before"
-          },
-          "span": [
-           {
-            "_": "東南",
-            "$": {
-             "style": "s_rb_b s_emf_fca"
-            }
-           },
-           {
-            "_": "とうなん",
-            "$": {
-             "style": "s_rb_t"
-            }
-           }
-          ]
-         }
-        ]
-       },
-       {
-        "$": {
-         "style": "p_font2 p_rb_res_after"
-        },
-        "span": [
-         {
-          "$": {
-           "style": "s_rb_algn_center s_rb_posn_after"
-          },
-          "span": [
-           {
-            "_": "東南",
-            "$": {
-             "style": "s_rb_b s_emf_fca"
-            }
-           },
-           {
-            "_": "たつみ",
-            "$": {
-             "style": "s_rb_t"
-            }
-           }
-          ]
-         },
-         {
-          "_": "No Ruby",
-          "$": {
-           "style": "s_emf_fca"
-          }
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "$": {
-       "xml:id": "38",
+       "xml:id": "e_38",
        "region": "R0",
        "begin": "01:02:35.120",
        "end": "01:02:40.120",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2 p_al_center_start"
+         "style": "p_font2 p_al_center_start p_rb_res_outside"
         },
         "span": [
          {
@@ -2193,16 +1651,16 @@
      },
      {
       "$": {
-       "xml:id": "39",
+       "xml:id": "e_39",
        "region": "R0",
        "begin": "01:02:41.120",
        "end": "01:02:44.120",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2 p_al_center_start"
+         "style": "p_font2 p_al_center_start p_rb_res_outside"
         },
         "span": [
          {
@@ -2228,16 +1686,16 @@
      },
      {
       "$": {
-       "xml:id": "40",
+       "xml:id": "e_40",
        "region": "R0",
        "begin": "01:02:45.120",
        "end": "01:02:48.120",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2 p_al_center_start ps_bg_ghostboxedblack"
+         "style": "p_font2 p_al_center_start ps_bg_ghostboxedblack p_rb_res_outside"
         },
         "span": [
          {
@@ -2263,85 +1721,16 @@
      },
      {
       "$": {
-       "xml:id": "41",
-       "region": "R12",
-       "begin": "01:02:46.359",
-       "end": "01:02:49.359",
-       "style": "_d_default"
-      },
-      "p": [
-       {
-        "$": {
-         "style": "p_font2 p_rb_res_after"
-        },
-        "span": [
-         {
-          "_": "Vert No Ruby "
-         },
-         {
-          "$": {
-           "style": "s_rb_algn_center s_rb_posn_before"
-          },
-          "span": [
-           {
-            "_": "Ruby Above 2",
-            "$": {
-             "style": "s_rb_b"
-            }
-           },
-           {
-            "_": "ruby2",
-            "$": {
-             "style": "s_rb_t"
-            }
-           }
-          ]
-         }
-        ]
-       },
-       {
-        "$": {
-         "style": "p_font2 p_rb_res_after"
-        },
-        "span": [
-         {
-          "$": {
-           "style": "s_rb_algn_center s_rb_posn_after"
-          },
-          "span": [
-           {
-            "_": "Ruby Below ",
-            "$": {
-             "style": "s_rb_b"
-            }
-           },
-           {
-            "_": "ruby",
-            "$": {
-             "style": "s_rb_t"
-            }
-           }
-          ]
-         },
-         {
-          "_": "No Ruby"
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "$": {
-       "xml:id": "42",
+       "xml:id": "e_42",
        "region": "R0",
        "begin": "01:02:50.120",
        "end": "01:02:54.120",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"
+         "style": "p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl p_rb_res_outside"
         },
         "span": [
          {
@@ -2373,16 +1762,16 @@
      },
      {
       "$": {
-       "xml:id": "43",
+       "xml:id": "e_43",
        "region": "R0",
        "begin": "01:02:55.120",
        "end": "01:02:59.120",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2 p_al_center_start ps_bg_ghostboxedblack p_ltr"
+         "style": "p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl p_rb_res_outside"
         },
         "span": [
          {
@@ -2414,16 +1803,16 @@
      },
      {
       "$": {
-       "xml:id": "44",
+       "xml:id": "e_44",
        "region": "R0",
        "begin": "01:03:00.120",
        "end": "01:03:04.120",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"
+         "style": "p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl p_rb_res_outside"
         },
         "span": [
          {
@@ -2455,16 +1844,16 @@
      },
      {
       "$": {
-       "xml:id": "45",
+       "xml:id": "e_45",
        "region": "R0",
        "begin": "01:03:05.120",
        "end": "01:03:05.220",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"
+         "style": "p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl p_rb_res_outside"
         },
         "span": [
          {
@@ -2519,16 +1908,16 @@
      },
      {
       "$": {
-       "xml:id": "45.2",
+       "xml:id": "e_45.2",
        "region": "R0",
        "begin": "01:03:05.220",
        "end": "01:03:06.120",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"
+         "style": "p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl p_rb_res_outside"
         },
         "span": [
          {
@@ -2583,16 +1972,16 @@
      },
      {
       "$": {
-       "xml:id": "45.5",
+       "xml:id": "e_45.5",
        "region": "R0",
        "begin": "01:03:06.120",
        "end": "01:03:08.120",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl"
+         "style": "p_font2 p_al_center_start ps_bg_ghostboxedblack p_rtl p_rb_res_outside"
         },
         "span": [
          {
@@ -2647,11 +2036,11 @@
      },
      {
       "$": {
-       "xml:id": "46",
+       "xml:id": "e_46",
        "region": "R0",
        "begin": "01:03:10.359",
        "end": "01:03:13.359",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
@@ -2749,11 +2138,11 @@
      },
      {
       "$": {
-       "xml:id": "47",
+       "xml:id": "e_47",
        "region": "R0",
        "begin": "01:03:14.359",
        "end": "01:03:18.359",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
@@ -2778,16 +2167,16 @@
      },
      {
       "$": {
-       "xml:id": "48",
+       "xml:id": "e_48",
        "region": "R12",
        "begin": "01:03:20.359",
        "end": "01:03:24.359",
-       "style": "_d_default dps_shear"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2 p_rb_res_outside"
+         "style": "p_font2 p_rb_res_outside p_shear"
         },
         "span": [
          {
@@ -2857,16 +2246,16 @@
      },
      {
       "$": {
-       "xml:id": "49",
+       "xml:id": "e_49",
        "region": "R12",
        "begin": "01:03:25.359",
        "end": "01:03:29.359",
-       "style": "_d_default dps_shear"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2 p_rb_res_outside"
+         "style": "p_font2 p_rb_res_outside p_shear"
         },
         "span": [
          {
@@ -2883,13 +2272,13 @@
            {
             "_": "東南",
             "$": {
-             "style": "s_rb_b s_emf_fco ps_bg_ghostboxedblack"
+             "style": "s_rb_b s_emf_fco"
             }
            },
            {
             "_": "とうなん",
             "$": {
-             "style": "s_rb_t ps_bg_ghostboxedblack"
+             "style": "s_rb_t"
             }
            }
           ]
@@ -2907,13 +2296,13 @@
            {
             "_": " 東南",
             "$": {
-             "style": "s_rb_b s_emf_fco ps_bg_ghostboxedblack"
+             "style": "s_rb_b s_emf_fco"
             }
            },
            {
             "_": "たつみ",
             "$": {
-             "style": "s_rb_t ps_bg_ghostboxedblack"
+             "style": "s_rb_t"
             }
            }
           ]
@@ -2930,86 +2319,16 @@
      },
      {
       "$": {
-       "xml:id": "50",
-       "region": "R0",
-       "begin": "01:03:30.120",
-       "end": "01:03:30.420",
-       "style": "_d_default"
-      },
-      "p": [
-       {
-        "$": {
-         "style": "p_font2 p_al_center_start p_rtl"
-        },
-        "span": [
-         {
-          "_": "من البيان والتبيين الى",
-          "$": {
-           "style": "ps_bg_ghostboxedblack"
-          }
-         },
-         {
-          "_": " البتاع والتبتيع",
-          "$": {
-           "style": "ps_bg_ghostboxedblack s_fg_red"
-          }
-         }
-        ]
-       },
-       {
-        "$": {
-         "style": "p_font2 p_al_center_start p_ltr"
-        },
-        "span": [
-         {
-          "_": "pretty normal",
-          "$": {
-           "style": "ps_bg_ghostboxedblack"
-          }
-         },
-         {
-          "span": [
-           {
-            "br": [
-             ""
-            ]
-           }
-          ]
-         },
-         {
-          "_": "1      ",
-          "$": {
-           "style": "ps_bg_ghostboxedblack"
-          }
-         },
-         {
-          "_": "2",
-          "$": {
-           "style": "ps_bg_ghostboxedblack"
-          }
-         },
-         {
-          "_": "3",
-          "$": {
-           "style": "ps_bg_ghostboxedblack"
-          }
-         }
-        ]
-       }
-      ]
-     },
-     {
-      "$": {
-       "xml:id": "50",
+       "xml:id": "e_50",
        "region": "R0",
        "begin": "01:03:30.420",
        "end": "01:03:31.420",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2 p_al_center_start p_rtl"
+         "style": "p_font2 p_al_center_start p_rtl p_rb_res_outside"
         },
         "span": [
          {
@@ -3028,11 +2347,11 @@
        },
        {
         "$": {
-         "style": "p_font2 p_al_center_start p_ltr"
+         "style": "p_font2 p_al_center_start p_rb_res_outside"
         },
         "span": [
          {
-          "_": "pretty preserve",
+          "_": "left to right.",
           "$": {
            "style": "ps_bg_ghostboxedblack"
           }
@@ -3066,16 +2385,16 @@
      },
      {
       "$": {
-       "xml:id": "53",
+       "xml:id": "e_53",
        "region": "R0",
        "begin": "01:03:34.359",
        "end": "01:03:36.359",
-       "style": "_d_default dps_shear"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2 p_rb_res_outside"
+         "style": "p_font2 p_rb_res_outside p_shear"
         },
         "span": [
          {
@@ -3093,16 +2412,16 @@
      },
      {
       "$": {
-       "xml:id": "54",
+       "xml:id": "e_54",
        "region": "R12",
        "begin": "01:03:37.359",
        "end": "01:03:39.359",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
         "$": {
-         "style": "p_font2 p_rb_res_after"
+         "style": "p_font2 p_rb_res_outside"
         },
         "span": [
          {
@@ -3128,11 +2447,11 @@
      },
      {
       "$": {
-       "xml:id": "55",
+       "xml:id": "e_55",
        "region": "R12",
        "begin": "01:03:40.359",
        "end": "01:03:41.359",
-       "style": "_d_default"
+       "style": "d_default"
       },
       "p": [
        {
